@@ -1,0 +1,1978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
+  author="kiaraSh.Q"
+  icon="iranian-flag.png"
+  shortdescription="Iranian Presets"
+  description="Some additional presets to use with a single click"
+  link="https://wiki.openstreetmap.org/wiki/Iranian_Presets"
+  version="0.149_2019-11-14">
+
+<chunk id="wheelchair">
+            <combo key="wheelchair" text="Wheelchairs" values="yes,no,limited,designated" />
+</chunk>
+
+<chunk id="opening_hours">
+            <combo key="opening_hours" text="Opening hours" values="24/7,Sa-Th 07:00-17:00; Tu-Fr 08:00-12:00\,12:30-15:00; Sa 08:00-12:00,Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off,sunrise-sunset"/>
+</chunk>
+
+<chunk id="operator_operatortype">
+            <text text="Operator" key="operator" default=""/>
+            <combo key="operator:type" text="Operator type" values="government,private,public,religious,ngo,community,consortium,cooperative"/>
+</chunk>
+
+<chunk id="name_nameen">
+            <text text="Name" key="name" default=""/>
+            <text text="English name" key="name:en" default=""/>
+</chunk>
+
+<chunk id="contact">
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <text text="Telegram" key="contact:telegram" default=""/>
+            <text text="WhatsApp" key="contact:whatsapp" default=""/>
+            <text text="Facebook" key="facebook" default=""/>
+            <text text="Instagram" key="contact:instagram" default=""/>
+            <text text="Twitter" key="twitter" default=""/>
+            <text text="Linkedin" key="contact:linkedin" default=""/>
+            <text text="YouTube" key="contact:youtube" default=""/>
+</chunk>
+
+<group name="Iranian Presets" icon="iranian-flag.png">
+
+    <!-- Highways -->
+    <group icon="presets/transport/way/way_secondary.svg" name="Highways">
+
+        <group icon="traffic_sign.png" name="Traffic signs">
+
+            <item icon="presets/vehicle/restriction/stop.svg" name="ایست" type="node">
+                <label text="ایست"/>
+                <link wiki="Tag:highway=stop"/>
+                <key key="highway" value="stop"/>
+                <space/>
+                <combo key="direction" text="Direction" values="forward,backward"/>
+            </item>
+
+            <item icon="presets/vehicle/restriction/give_way.svg" name="حق تقدم" type="node">
+                <label text="حق تقدم"/>
+                <link wiki="Tag:highway=give_way"/>
+                <key key="highway" value="give_way"/>
+                <space/>
+                <combo key="direction" text="Direction" values="forward,backward"/>
+            </item>
+
+            <item icon="presets/vehicle/restriction/city_limit.svg" name="تابلو شهر" type="node">
+                <label text="تابلو شهر"/>
+                <link wiki="Key:traffic_sign"/>
+                <key key="traffic_sign" value="city_limit"/>
+                <space/>
+                <text key="name" text="Name" default=""/>
+                <text key="alt_name" text="Alt Name" default=""/>
+                <text key="name:en" text="English Name" default=""/>
+                <space/>
+                <combo key="direction" text="Direction" values="forward,backward"/>
+            </item>
+
+            <item icon="presets/vehicle/restriction/maxspeed.svg" name="حداکثر سرعت مجاز" type="node">
+                <label text="حداکثر سرعت مجاز"/>
+                <link wiki="Key:traffic_sign"/>
+                <key key="traffic_sign" value="maxspeed"/>
+                <key key="source:maxspeed" value="sign"/>
+                <space/>
+                <combo key="maxspeed" text="Max Speed" values="30,40,50,60,70,80,85,90,95,100,110,120"/>
+                <space/>
+                <combo key="direction" text="Direction" values="forward,backward"/>
+            </item>
+
+        </group>
+
+    </group>
+
+    <!-- Facilities -->
+    <group icon="presets/accommodation/hotel.svg" name="Facilities">
+
+        <group icon="presets/accommodation/guest_house.svg" name="Accommodation">
+
+            <item icon="presets/accommodation/guest_house.svg" name="بومگردی" type="node,closedway,multipolygon">
+                <label text="بومگردی"/>
+                <link wiki="Tag:tourism=guest_house"/>
+                <key key="tourism" value="guest_house"/>
+                <text key="name" text="Name" default=""/>
+                <text key="name:en" text="English name" default="Ecolodge"/>
+                <space />
+                <combo key="guest_house" text="Guest House" values="agritourism,bed_and_breakfast,"/>
+                <text default="" key="rooms" text="Rooms"/>
+                <text default="" key="beds" text="Beds"/>
+                <combo key="breakfast" text="Breakfast" values="Mo-Su 06:00-10:00,no,yes"/>
+                <combo key="lunch" text="Lunch" values="yes,no,Mo-Fr 11:30-14:00"/>
+                <space />
+                <reference ref="operator_operatortype" />
+                <space />
+                <reference ref="contact"/>
+                <space />
+                <reference ref="wheelchair" />
+                <space />
+                <text default="" key="description" text="Description"/>
+            </item>
+
+        </group>
+
+        <separator/>
+
+        <item icon="presets/food/restaurant.svg" name="رستوران" type="node,closedway,multipolygon">
+            <label text="رستوران"/>
+            <link wiki="Tag:amenity=restaurant"/>
+            <key key="amenity" value="restaurant"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <combo text="Opening hours kitchen" key="opening_hours:kitchen" values="24/7,Sa-Th 07:00-17:00,Fr 08:00-20:00,Mo 10:00-12:00\,12:30-15:00; Tu-Fr 08:00-12:00\,12:30-15:00; Sa 08:00-12:00,Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off,sunrise-sunset"/>
+            <space/>
+            <multiselect text="Cuisine" key="cuisine" values="italian;chinese;pizza;burger;indian;kebab;turkish;asian;french;sandwich;coffee_shop;steak_house;fish_and_chips;chicken;american;ice_cream;international;seafood;fish;noodle;barbecue;vegetarian;donut;mediterranean;friture;crepe" values_searchable="true"/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <text text="Telegram" key="contact:telegram" default=""/>
+            <text text="WhatsApp" key="contact:whatsapp" default=""/>
+            <text text="Instagram" key="contact:instagram" default=""/>
+            <space/>
+            <combo key="lunch" text="Lunch" values="yes,no,Mo-Fr 11:30-14:00"/>
+            <space/>
+            <reference ref="wheelchair"/>
+            <combo text="Toilets:Wheelchairs" key="Toilets:wheelchair" values="yes,no,limited"/>
+            <space/>
+            <checkgroup columns="2">
+            <check text="Microbrewery" key="microbrewery"/>
+            <check text="Outdoor seating" key="outdoor_seating"/>
+            </checkgroup>
+            <combo text="Takeaway" key="takeaway" values="yes,no,only"/>
+            <combo text="Delivery" key="delivery" values="yes,no,only,Mo-Su 12:00-22:00"/>
+            <combo text="Stars" key="stars" values="1,2,3,4,5,6,7"/>
+            <space/>
+            <combo text="Internet access" key="internet_access" values="yes,wlan,wired,terminal,no"/>
+            <combo text="Internet access fee" key="internet_access:fee" values="yes,no"/>
+            <combo text="Smoking" key="smoking" values="yes,dedicated,separated,isolated,outside,no"/>
+            <space/>
+            <text default="" key="description" text="Description"/>
+        </item>
+
+        <separator/>
+
+        <item name="خوابگاه دانشجویی" type="node,closedway,multipolygon">
+            <label text="خوابگاه دانشجویی"/>
+            <link wiki="Proposed_features/amenity=student_accommodation"/>
+            <key key="amenity" value="student_accommodation"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Capacity" key="capacity" default=""/>
+            <space/>
+            <combo text="Religion" key="religion" values=""/>
+            <combo text="Denomination" key="denomination" values=""/>
+            <space/>
+            <text text="Wikipedia" key="wikipedia" default=""/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+        </item>
+
+        <separator/>
+
+        <item icon="presets/social_facility/outreach.svg" type="node,closedway,multipolygon" name="بهزیستی">
+            <label text="بهزیستی"/>
+            <link wiki="Tag:social_facility=outreach"/>
+            <key value="social_facility" key="amenity"/>
+            <key value="outreach" key="social_facility"/>
+            <key value="underprivileged" key="social_facility:for"/>
+            <reference ref="name_nameen"/>
+            <space />
+            <text text="Post code" key="addr:postcode" default=""/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax Number" key="fax" default=""/>
+            <text text="Email Address" key="email" default=""/>
+            <text text="Website" key="website" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair"/>
+        </item>
+
+        <item icon="Blooddonation.png" type="node,closedway,multipolygon" name="سازمان انتقال خون">
+            <label text="سازمان انتقال خون"/>
+            <link wiki="Tag:healthcare=blood_donation"/>
+            <key key="healthcare" value="blood_donation"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <text text="Refrence" key="ref" default=""/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <check key="blood:whole" text="blood:whole"/>
+            <check key="blood:plasma" text="blood:plasma"/>
+            <check key="blood:platelets" text="blood:platelets"/>
+            <check key="blood:stemcells" text="blood:stemcells"/>
+            <check key="donation:compensation" text="donation:compensation"/>
+            <check key="donation:compensation:payment" text="donation:compensation:payment" disable_off="true"/>
+            <check key="donation:compensation:vouchers" text="donation:compensation:vouchers" disable_off="true"/>
+            <check key="donation:compensation:gift" text="donation:compensation:gift" disable_off="true"/>
+        </item>
+
+        <item icon="Healthcare.png" type="node,closedway,multipolygon" name="آزمایشگاه پزشکی">
+            <label text="آزمایشگاه پزشکی"/>
+            <link wiki="Tag:healthcare=laboratory"/>
+            <key key="healthcare" value="laboratory"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <combo key="healthcare:speciality" text="Healthcare speciality" values="biology,blood_check,clinical_pathology,diagnostic_radiology,medical_physics,medical_engineering,radiology"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <text text="Refrence" key="ref" default=""/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <reference ref="wheelchair" />
+        </item>
+
+        <separator/>
+
+        <item type="node,closedway,multipolygon" name="تالار">
+            <label text="تالار"/>
+            <link wiki="Tag:amenity=events_venue"/>
+            <key key="amenity" value="events_venue"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <reference ref="contact"/>
+        </item>
+
+        <separator/>
+
+        <item icon="presets/accommodation/shelter.svg" name="آلاچیق" type="node,closedway,multipolygon">
+            <label text="آلاچیق"/>
+            <link wiki="Tag:amenity=shelter"/>
+            <key key="amenity" value="shelter"/>
+            <key key="shelter_type" value="picnic_shelter"/>
+            <combo key="material" text="Material" values="wood,palm_leaves,metal,steel,concrete,stone,plastic"/>
+            <combo key="power_supply" text="Power supply" values="no,yes,europlug,cee_7_1,cee_7_3,cee_7_4,cee_7_5"/>
+            <checkgroup columns="2">
+            <check key="fireplace" text="Fireplace"/>
+            <check key="drinking_water" text="Drinking water"/>
+            <check key="bench" text="Bench"/>
+            <check key="table" text="Table"/>
+            </checkgroup>
+        </item>
+
+        <item icon="presets/food/drinking_water.svg" type="node" name="آب آشامیدنی">
+            <label text="آب آشامیدنی"/>
+            <link wiki="Tag:amenity=drinking_water"/>
+            <key key="amenity" value="drinking_water"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <checkgroup columns="3">
+            <check key="cold_water" text="Cold water" disable_off="true"/>
+            <check key="hot_water" text="Hot water" disable_off="true"/>
+            <check key="warm_water" text="Warm water" disable_off="true"/>
+            <check key="bottle" text="Bottle" disable_off="true"/>
+            <check key="indoor" text="Indoor"/>
+            </checkgroup>
+            <space/>
+            <text default="" key="description" text="Description"/>
+        </item>
+
+    </group>
+
+    <!-- Sports -->
+    <group icon="presets/sport/soccer.svg" name="Sports">
+
+        <item type="node,closedway,multipolygon" name="پینت بال">
+            <label text="پینت بال"/>
+            <link wiki="Tag:sport=paintball"/>
+            <key key="leisure" value="pitch"/>
+            <key key="sport" value="paintball"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="Website" key="website" default=""/>
+        </item>
+
+    </group>
+
+    <!-- Education -->
+    <group icon="presets/education/school.svg" name="Education">
+    <group icon="presets/education/school.svg" name="مدرسه">
+
+        <item icon="presets/education/kindergarten.svg" type="node,closedway,multipolygon" name="پیش دبستانی">
+            <label text="پیش دبستانی"/>
+            <link wiki="Tag:amenity=kindergarten"/>
+            <key key="amenity" value="kindergarten"/>
+            <key key="min_age" value="5"/>
+            <key key="isced:level" value="0"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Capacity" key="capacity" default=""/>
+            <space/>
+            <text text="Wikipedia" key="wikipedia" default=""/>
+            <space/>
+            <text text="Wikidata" key="wikidata" default=""/>
+            <space/>
+            <text text="Reference" key="ref" default=""/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <text text="Religion" key="religion" default=""/>
+            <text text="Denomination" key="denomination" default=""/>
+            <space/>
+            <check text="Fee" key="fee" disable_off="true"/>
+        </item>
+
+    <group icon="presets/education/school.svg" name="مدرسه پسرانه">
+
+        <item icon="presets/education/school.svg" type="node,closedway,multipolygon" name="دوره اول دبستان">
+            <label text="دوره اول دبستان"/>
+            <link wiki="Tag:amenity=school"/>
+            <key key="amenity" value="school"/>
+            <key key="male" value="yes"/>
+            <key key="min_age" value="6"/>
+            <key key="max_age" value="12"/>
+            <key key="isced:level" value="1"/>
+            <key key="grades" value="1-3"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Capacity" key="capacity" default=""/>
+            <space/>
+            <text text="Wikipedia" key="wikipedia" default=""/>
+            <space/>
+            <text text="Wikidata" key="wikidata" default=""/>
+            <space/>
+            <text text="Reference" key="ref" default=""/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <text text="Religion" key="religion" default=""/>
+            <text text="Denomination" key="denomination" default=""/>
+            <space/>
+            <check text="Fee" key="fee" disable_off="true"/>
+        </item>
+
+        <item icon="presets/education/school.svg" type="node,closedway,multipolygon" name="دوره دوم دبستان">
+            <label text="دوره دوم دبستان"/>
+            <link wiki="Tag:amenity=school"/>
+            <key key="amenity" value="school"/>
+            <key key="male" value="yes"/>
+            <key key="min_age" value="9"/>
+            <key key="max_age" value="15"/>
+            <key key="isced:level" value="1"/>
+            <key key="grades" value="4-6"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Capacity" key="capacity" default=""/>
+            <space/>
+            <text text="Wikipedia" key="wikipedia" default=""/>
+            <space/>
+            <text text="Wikidata" key="wikidata" default=""/>
+            <space/>
+            <text text="Reference" key="ref" default=""/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <text text="Religion" key="religion" default=""/>
+            <text text="Denomination" key="denomination" default=""/>
+            <space/>
+            <check text="Fee" key="fee" disable_off="true"/>
+        </item>
+
+        <item icon="presets/education/school.svg" type="node,closedway,multipolygon" name="دوره اول دبیرستان">
+            <label text="دوره اول دبیرستان"/>
+            <link wiki="Tag:amenity=school"/>
+            <key key="amenity" value="school"/>
+            <key key="male" value="yes"/>
+            <key key="min_age" value="12"/>
+            <key key="max_age" value="18"/>
+            <key key="isced:level" value="2"/>
+            <key key="grades" value="7-9"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Capacity" key="capacity" default=""/>
+            <space/>
+            <text text="Wikipedia" key="wikipedia" default=""/>
+            <space/>
+            <text text="Wikidata" key="wikidata" default=""/>
+            <space/>
+            <text text="Reference" key="ref" default=""/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <text text="Religion" key="religion" default=""/>
+            <text text="Denomination" key="denomination" default=""/>
+            <space/>
+            <check text="Fee" key="fee" disable_off="true"/>
+        </item>
+
+        <item icon="presets/education/school.svg" type="node,closedway,multipolygon" name="دوره دوم دبیرستان">
+            <label text="دوره دوم دبیرستان"/>
+            <link wiki="Tag:amenity=school"/>
+            <key key="amenity" value="school"/>
+            <key key="male" value="yes"/>
+            <key key="min_age" value="15"/>
+            <key key="max_age" value="21"/>
+            <key key="isced:level" value="3"/>
+            <key key="grades" value="10-12"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Capacity" key="capacity" default=""/>
+            <space/>
+            <text text="Wikipedia" key="wikipedia" default=""/>
+            <space/>
+            <text text="Wikidata" key="wikidata" default=""/>
+            <space/>
+            <text text="Reference" key="ref" default=""/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <text text="Religion" key="religion" default=""/>
+            <text text="Denomination" key="denomination" default=""/>
+            <space/>
+            <check text="Fee" key="fee" disable_off="true"/>
+        </item>
+
+    </group>
+
+    <group icon="presets/education/school.svg" name="مدرسه دخترانه">
+
+        <item icon="presets/education/school.svg" type="node,closedway,multipolygon" name="دوره اول دبستان">
+            <label text="دوره اول دبستان"/>
+            <link wiki="Tag:amenity=school"/>
+            <key key="amenity" value="school"/>
+            <key key="female" value="yes"/>
+            <key key="min_age" value="6"/>
+            <key key="max_age" value="12"/>
+            <key key="isced:level" value="1"/>
+            <key key="grades" value="1-3"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Capacity" key="capacity" default=""/>
+            <space/>
+            <text text="Wikipedia" key="wikipedia" default=""/>
+            <space/>
+            <text text="Wikidata" key="wikidata" default=""/>
+            <space/>
+            <text text="Reference" key="ref" default=""/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <text text="Religion" key="religion" default=""/>
+            <text text="Denomination" key="denomination" default=""/>
+            <space/>
+            <check text="Fee" key="fee" disable_off="true"/>
+        </item>
+
+        <item icon="presets/education/school.svg" type="node,closedway,multipolygon" name="دوره دوم دبستان">
+            <label text="دوره دوم دبستان"/>
+            <link wiki="Tag:amenity=school"/>
+            <key key="amenity" value="school"/>
+            <key key="female" value="yes"/>
+            <key key="min_age" value="9"/>
+            <key key="max_age" value="15"/>
+            <key key="isced:level" value="1"/>
+            <key key="grades" value="4-6"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Capacity" key="capacity" default=""/>
+            <space/>
+            <text text="Wikipedia" key="wikipedia" default=""/>
+            <space/>
+            <text text="Wikidata" key="wikidata" default=""/>
+            <space/>
+            <text text="Reference" key="ref" default=""/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <text text="Religion" key="religion" default=""/>
+            <text text="Denomination" key="denomination" default=""/>
+            <space/>
+            <check text="Fee" key="fee" disable_off="true"/>
+        </item>
+
+        <item icon="presets/education/school.svg" type="node,closedway,multipolygon" name="دوره اول دبیرستان">
+            <label text="دوره اول دبیرستان"/>
+            <link wiki="Tag:amenity=school"/>
+            <key key="amenity" value="school"/>
+            <key key="female" value="yes"/>
+            <key key="min_age" value="12"/>
+            <key key="max_age" value="18"/>
+            <key key="isced:level" value="2"/>
+            <key key="grades" value="7-9"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Capacity" key="capacity" default=""/>
+            <space/>
+            <text text="Wikipedia" key="wikipedia" default=""/>
+            <space/>
+            <text text="Wikidata" key="wikidata" default=""/>
+            <space/>
+            <text text="Reference" key="ref" default=""/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <text text="Religion" key="religion" default=""/>
+            <text text="Denomination" key="denomination" default=""/>
+            <space/>
+            <check text="Fee" key="fee" disable_off="true"/>
+        </item>
+
+        <item icon="presets/education/school.svg" type="node,closedway,multipolygon" name="دوره دوم دبیرستان">
+            <label text="دوره دوم دبیرستان"/>
+            <link wiki="Tag:amenity=school"/>
+            <key key="amenity" value="school"/>
+            <key key="female" value="yes"/>
+            <key key="min_age" value="15"/>
+            <key key="max_age" value="21"/>
+            <key key="isced:level" value="3"/>
+            <key key="grades" value="10-12"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Capacity" key="capacity" default=""/>
+            <space/>
+            <text text="Wikipedia" key="wikipedia" default=""/>
+            <space/>
+            <text text="Wikidata" key="wikidata" default=""/>
+            <space/>
+            <text text="Reference" key="ref" default=""/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <text text="Religion" key="religion" default=""/>
+            <text text="Denomination" key="denomination" default=""/>
+            <space/>
+            <check text="Fee" key="fee" disable_off="true"/>
+        </item>
+
+    </group>
+    </group>
+    </group>
+
+    <!-- Cash -->
+    <group icon="presets/money/dollar.svg" name="Cash">
+
+        <item name="بانک" icon="presets/money/bank.svg" type="node,closedway,multipolygon">
+            <label text="بانک"/>
+            <link wiki="Tag:amenity=bank"/>
+            <key key="amenity" value="bank"/>
+            <combo text="Name" key="name" values="بانک اقتصاد نوین,بانک کشاورزی,بانک مسکن,بانک ملت,بانک ملی,بانک پارسیان,بانک پاسارگاد,بانک صادرات,بانک سپه"/>
+            <combo text="English name" key="name:en" values="Eqtesad Novin,Keshavarzi,Maskan,Mellat,Melli,Parsian,Pasargad,Saderat,Shahr Bank,Sepah"/>
+            <combo text="Brand" key="brand" values="bmi,bsi,enbank,shahr-bank,sepah"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <combo text="Website" key="website" values="www.bmi.ir,www.bsi.ir,www.enbank.ir,www.banksepah.ir,www.shahr-bank.ir"/>
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Operator wikipedia" key="operator:wikipedia" default=""/>
+            <check text="Automated teller machine" key="atm"/>
+            <check text="Drive through" key="drive_through"/>
+        </item>
+
+        <item name="عابر بانک" icon="presets/money/atm.svg" type="node,closedway,multipolygon">
+            <label text="عابر بانک"/>
+            <link wiki="Tag:amenity=atm"/>
+            <key key="amenity" value="atm"/>
+            <key key="currency:IRR" value="yes"/>
+            <text text="Name" key="name" default=""/>
+            <text text="English name" key="name:en" default=""/>
+            <space />
+            <combo text="Brand" key="brand" values="BMI,BSI,Mellat"/>
+            <space />
+            <reference ref="opening_hours" />
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="wheelchair" />
+            <space />
+            <text text="Network" key="network" default=""/>
+            <space />
+            <combo text="Fee" key="fee" values="$1.75,no,some,unkonwn,yes"/>
+            <space />
+            <text text="Reference" key="ref" default=""/>
+            <checkgroup columns="2">
+            <check text="Cash in" key="cash_in"/>
+            <check text="Drive through" key="drive_through"/>
+            <check text="English language" key="language:en"/>
+            <check text="English speech output" key="speech_output:en"/>
+            </checkgroup>
+        </item>
+
+        <item name="صرافی" icon="presets/money/exchange.svg" type="node,closedway,multipolygon">
+            <label text="صرافی"/>
+            <link wiki="Tag:amenity=bureau_de_change"/>
+            <key key="amenity" value="bureau_de_change"/>
+            <reference ref="name_nameen" />
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <text text="Telegram" key="contact:telegram" default=""/>
+            <text text="WhatsApp" key="contact:whatsapp" default=""/>
+            <space/>
+            <checkgroup columns="5">
+            <check key="currency:USD" text="USD"/>
+            <check key="currency:EUR" text="EUR"/>
+            <check key="currency:GBP" text="GBP"/>
+            <check key="currency:CAD" text="CAD"/>
+            <check key="currency:JPY" text="JPY"/>
+            </checkgroup>
+        </item>
+
+        <separator/>
+
+        <item icon="Sepah-Bank.png" type="node,closedway,multipolygon" name="سپه">
+            <label text="سپه"/>
+            <link wiki="Tag:amenity=bank"/>
+            <key key="wikipedia" value="en:Bank Sepah"/>
+            <key key="amenity" value="bank"/>
+            <key key="name" value="بانک سپه"/>
+            <key key="name:en" value="Bank Sepah"/>
+            <key key="brand" value="Sepah"/>
+            <key key="website" value="www.banksepah.ir"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <reference ref="wheelchair"/>
+            <space/>
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+        </item>
+
+        <item icon="Melli-Bank.png" type="node,closedway,multipolygon" name="ملی">
+            <label text="ملی"/>
+            <key key="amenity" value="bank"/>
+            <key key="name" value="بانک ملی ایران"/>
+            <key key="name:en" value="Melli Bank"/>
+            <key key="brand" value="bmi"/>
+            <key key="website" value="www.bmi.ir"/>
+            <key key="opening_hours" value="Sa-We 07:30-13:30; Th 07:30-12:30"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="Shahr-Bank.png" type="node,closedway,multipolygon" name="بانک شهر">
+            <label text="بانک شهر"/>
+            <key key="amenity" value="bank"/>
+            <key key="name" value="بانک شهر"/>
+            <key key="name:en" value="Shahr Bank"/>
+            <key key="brand" value="shahr-bank"/>
+            <key key="website" value="www.shahr-bank.ir"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="Mellat-Bank.png" type="node,closedway,multipolygon" name="ملت">
+            <label text="ملت"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک ملت" key="name"/>
+            <key value="Mellat Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="Refah-Bank.png" type="node,closedway,multipolygon" name="رفاه">
+            <label text="رفاه"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک رفاه کارگران" key="name"/>
+            <key value="Refah Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="Sina-Bank.png" type="node,closedway,multipolygon" name="سینا">
+            <label text="سینا"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک سینا" key="name"/>
+            <key value="Sina Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="Maskan-Bank.png" type="node,closedway,multipolygon" name="مسکن">
+            <label text="مسکن"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک مسکن" key="name"/>
+            <key value="Maskan Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="Ayandeh-Bank.png" type="node,closedway,multipolygon" name="آینده">
+            <label text="آینده"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک آینده" key="name"/>
+            <key value="Ayandeh Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="Saman-Bank.png" type="node,closedway,multipolygon" name="سامان">
+            <label text="سامان"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک سامان" key="name"/>
+            <key value="Saman Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="Sarmayeh-Bank.png" type="node,closedway,multipolygon" name="سرمایه">
+            <label text="سرمایه"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک سرمایه" key="name"/>
+            <key value="Sarmayeh Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+
+        <item icon="Saderat-Bank.png" type="node,closedway,multipolygon" name="صادرات">
+            <label text="صادرات"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک صادرات ایران" key="name"/>
+            <key value="Saderat Bank" key="name:en"/>
+            <key key="brand" value="bsi"/>
+            <key key="website" value="www.bsi.ir"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+
+        <item icon="Ghavamin-Bank.png" type="node,closedway,multipolygon" name="قوامین">
+            <label text="قوامین"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک قوامین" key="name"/>
+            <key value="Ghavamin Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+
+        <item icon="Parsian-Bank.png" type="node,closedway,multipolygon" name="پارسیان">
+            <label text="پارسیان"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک پارسیان" key="name"/>
+            <key value="Parsian Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="Keshavarzi-Bank.png" type="node,closedway,multipolygon" name="کشاورزی">
+            <label text="کشاورزی"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک کشاورزی" key="name"/>
+            <key value="Keshavarzi Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="Pasargad-Bank.png" type="node,closedway,multipolygon" name="پاسارگاد">
+            <label text="پاسارگاد"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک پاسارگارد" key="name"/>
+            <key value="Pasargad Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="IranZamin-Bank.png" type="node,closedway,multipolygon" name="ایران زمین">
+            <label text="ایران زمین"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک ایران زمین" key="name"/>
+            <key value="Iran Zamin Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="EghtesadNovin-bank.png" type="node,closedway,multipolygon" name="اقتصاد نوین">
+            <label text="اقتصاد نوین"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک اقتصاد نوین" key="name"/>
+            <key value="Eghtesad Novin Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="Gardeshgari-Bank.png" type="node,closedway,multipolygon" name="گردشگری">
+            <label text="گردشگری"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک گردشگری" key="name"/>
+            <key value="Gardeshgari Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="Karafarin-Bank.png" type="node,closedway,multipolygon" name="کارآفرین">
+            <label text="کارآفرین"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک کارآفرین" key="name"/>
+            <key value="Karafarin Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+            
+        <item icon="Tosee-Saderat-Bank.png" type="node,closedway,multipolygon" name="توسعه صادرات">
+            <label text="توسعه صادرات"/>
+            <key value="bank" key="amenity"/>
+            <key value="بانک توسعه صادرات" key="name"/>
+            <key value="Tosee Saderat Bank" key="name:en"/>
+            <key value="" key="brand"/>
+            <text text="Branch" key="branch" default=""/>
+            <text text="Bank Identifier Code" key="bic" default=""/>
+            <text text="Reference" key="ref" default=""/>
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <reference ref="wheelchair" />
+            <space />
+            <check text="Drive Through" key="drive_through"/>
+            <check text="ATM" key="atm"/>
+            <link wiki="Tag:amenity=bank"/>
+        </item>
+
+    </group>
+
+    <!-- Shops -->
+    <group icon="presets/shop/mall.svg" name="Shops">
+
+        <item icon="presets/shop/charity.svg" type="node,closedway,multipolygon" name="سمساری">
+            <label text="سمساری"/>
+            <link wiki="Tag:shop=second_hand"/>
+            <key key="shop" value="second_hand"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <reference ref="wheelchair"/>
+            <space/>
+            <reference ref="contact"/>
+        </item>
+
+        <item icon="Carpet.png" type="node,closedway,multipolygon" name="فرش فروشی">
+            <label text="فرش فروشی"/>
+            <link wiki="Tag:shop=carpet"/>
+            <key key="shop" value="carpet"/>
+            <reference ref="name_nameen" />
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="Telegram" key="contact:telegram" default=""/>
+            <text text="WhatsApp" key="contact:whatsapp" default=""/>
+            <text text="Instagram" key="contact:instagram" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space />
+            <reference ref="wheelchair" />
+        </item>
+
+        <item icon="Watch.png" type="node,closedway,multipolygon" name="ساعت فروشی">
+            <label text="ساعت فروشی"/>
+            <link wiki="Tag:shop=watches"/>
+            <key key="shop" value="watches"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="Telegram" key="contact:telegram" default=""/>
+            <text text="WhatsApp" key="contact:whatsapp" default=""/>
+            <text text="Instagram" key="contact:instagram" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <reference ref="wheelchair" />
+        </item>
+
+        <item icon="Leather.png" type="node,closedway,multipolygon" name="فروشگاه محصولات چرمی">
+            <label text="فروشگاه محصولات چرمی"/>
+            <link wiki="Tag:shop=leather"/>
+            <key key="shop" value="leather"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="Telegram" key="contact:telegram" default=""/>
+            <text text="WhatsApp" key="contact:whatsapp" default=""/>
+            <text text="Instagram" key="contact:instagram" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <reference ref="wheelchair" />
+        </item>
+
+        <item icon="presets/shop/convenience.svg" type="node,closedway,multipolygon" name="سوپرمارکت">
+            <label text="سوپرمارکت"/>
+            <link wiki="Tag:shop=convenience"/>
+            <key key="shop" value="convenience"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <text text="Brand" key="brand" default=""/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <reference ref="wheelchair"/>
+            <space/>
+            <reference ref="contact"/>
+            <space/>
+            <combo text="Organic" key="organic" values="yes,no,only"/>
+            <combo text="Fair trade" key="fair_trade" values="yes,no,only"/>
+            <combo text="Bulk purchase" key="bulk_purchase" values="yes,only"/>
+            <combo text="Origin" key="origin" values="african,arab,argentinian,asian,balkan,basque,brazilian,chinese,croatian,czech,french,german,greek,hungarian,indian,iranian,italian,japanese,korean,latin_american,lebanese,mexican,peruvian,polish,romanian,russian,spanish,thai,turkish"/>
+            <space/>
+            <check key="ice_cream" text="Ice cream"/>
+        </item>
+
+        <item icon="presets/shop/supermarket.svg" type="node,closedway,multipolygon" name="فروشگاه زنجیره‌ای">
+            <label text="فروشگاه زنجیره‌ای"/>
+            <link wiki="Tag:shop=supermarket"/>
+            <key key="shop" value="supermarket"/>
+            <combo text="Name" key="name" values="فروشگاه زنجیره‌ای مایا,فروشگاه زنجیره‌ای رفاه,فروشگاه زنجیره‌ای افق کوروش,فروشگاه زنجیره ای هفت,فروشگاه زنجیره‌ای فامیلی,فروشگاه زنجیره‌ی یاس,فروشگاه زنجیره‌ای جامبو"/>
+            <combo text="English name" key="name:en" values="Refah chain store,Maya chain store,Haft chain store,Canbo chain store,Hyper Famili,Yas chain store,Ofogh Koorosh chain store"/>
+            <space/>
+            <combo text="Brand" key="brand" values="Refah,Maya,Haft,Canbo,Hyper Famili,Yas,OKCS"/>
+            <text text="Branch" key="branch" default=""/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <reference ref="wheelchair"/>
+            <space/>
+            <reference ref="contact"/>
+            <space/>
+            <combo text="Organic" key="organic" values="yes,no,only"/>
+            <combo text="Bulk purchase" key="bulk_purchase" values="yes,only"/>
+            <combo text="Origin" key="origin" values="african,arab,argentinian,asian,balkan,basque,brazilian,chinese,croatian,czech,french,german,greek,hungarian,indian,iranian,italian,japanese,korean,latin_american,lebanese,mexican,peruvian,polish,romanian,russian,spanish,thai,turkish"/>
+        </item>
+
+        <item icon="presets/shop/beverages.svg" type="node,closedway,multipolygon" name="نوشیدنی">
+            <label text="نوشیدنی"/>
+            <link wiki="Tag:shop=beverages"/>
+            <key key="shop" value="beverages"/>
+            <reference ref="name_nameen" />
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+            <space />
+            <reference ref="wheelchair" />
+            <space />
+            <reference ref="contact"/>
+        </item>
+
+    </group>
+
+    <!-- Craft -->
+    <group icon="presets/craft/painter.svg" name="Craft">
+
+        <item icon="khayaati.png" type="node,closedway,multipolygon" name="خیاطی مردانه">
+            <label text="خیاطی مردانه"/>
+            <link wiki="Tag:craft=tailor"/>
+            <key key="craft" value="tailor"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <reference ref="contact"/>
+            <space/>
+            <reference ref="wheelchair"/>
+            <space/>
+            <checkgroup columns="2">
+            <check text="Alteration service" key="tailor:alteration_service"/>
+            <check text="Bespoke tailoring" key="tailor:bespoke_tailoring"/>
+            </checkgroup>
+        </item>
+
+        <item icon="khayaati.png" type="node,closedway,multipolygon" name="خیاطی زنانه">
+            <label text="خیاطی زنانه"/>
+            <link wiki="Tag:craft=dressmaker"/>
+            <key key="craft" value="dressmaker"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <reference ref="contact"/>
+            <space/>
+            <reference ref="wheelchair"/>
+            <space/>
+            <checkgroup columns="2">
+            <check text="Alteration service" key="tailor:alteration_service"/>
+            <check text="Bespoke tailoring" key="tailor:bespoke_tailoring"/>
+            </checkgroup>
+        </item>
+
+        <item icon="presets/shop/hairdresser.svg" type="node,closedway,multipolygon" name="آرایشگاه مردانه">
+            <label text="آرایشگاه مردانه"/>
+            <link wiki="Tag:shop=hairdresser"/>
+            <key key="shop" value="hairdresser"/>
+            <key key="male" value="yes"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <combo text="Reservation" key="reservation" values="required,recommended,yes,no"/>
+            <space/>
+            <combo text="Beauty" key="beauty" values="hair_removal,tanning,spa"/>
+            <space/>
+            <reference ref="wheelchair"/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="Telegram" key="contact:telegram" default=""/>
+            <text text="WhatsApp" key="contact:whatsapp" default=""/>
+            <text text="Instagram" key="contact:instagram" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+        </item>
+
+        <item icon="Watch.png" type="node,closedway,multipolygon" name="ساعت سازی">
+            <label text="ساعت سازی"/>
+            <link wiki="Tag:craft=watchmaker"/>
+            <key key="craft" value="watchmaker"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <reference ref="wheelchair"/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="Telegram" key="contact:telegram" default=""/>
+            <text text="WhatsApp" key="contact:whatsapp" default=""/>
+            <text text="Instagram" key="contact:instagram" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+        </item>
+
+        <item icon="Leather.png" type="node,closedway,multipolygon" name="کارگاه ساخت محصولات چرمی">
+            <label text="کارگاه ساخت محصولات چرمی"/>
+            <link wiki="Tag:craft=leather"/>
+            <key key="craft" value="leather"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="Telegram" key="contact:telegram" default=""/>
+            <text text="WhatsApp" key="contact:whatsapp" default=""/>
+            <text text="Instagram" key="contact:instagram" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <space/>
+            <reference ref="wheelchair" />
+        </item>
+
+        <item type="node,closedway,multipolygon" name="کفاشی">
+            <label text="کفاشی"/>
+            <link wiki="Tag:craft=shoemaker"/>
+            <key key="craft" value="shoemaker"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <reference ref="wheelchair"/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="Telegram" key="contact:telegram" default=""/>
+            <text text="WhatsApp" key="contact:whatsapp" default=""/>
+            <text text="Instagram" key="contact:instagram" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+        </item>
+    </group>
+
+    <!-- Man made -->
+    <group icon="presets/landmark/works.svg" name="Man made">
+
+        <group icon="ghanaat.png" name="Qanat">
+
+            <item icon="ghanaat.png" type="node" name="میله چاه">
+                <label text="میله چاه"/>
+                <link wiki="Proposed_features/Qanat"/>
+                <key key="man_made" value="excavation"/>
+                <key key="excavation" value="qanat"/>
+                <text key="name" text="شماره چاه" default=""/>
+                <text key="name:en" text="English name" default=""/>
+                <space />
+                <text key="depth" text="عمق چاه" default=""/>
+                <check key="drinking_water" text="آشامیدنی"/>
+            </item>
+
+            <item icon="ghanaat.png" type="node" name="مادر چاه">
+                <label text="مادر چاه"/>
+                <link wiki="Proposed_features/Qanat"/>
+                <key key="man_made" value="excavation"/>
+                <key key="excavation" value="qanat"/>
+                <key key="name" value="مادر چاه"/>
+                <key key="name:en" value="Main shaft"/>
+                <space />
+                <text key="depth" text="عمق چاه" default=""/>
+                <check key="drinking_water" text="آشامیدنی"/>
+            </item>
+
+            <item icon="ghanaat.png" type="node" name="مظهر قنات">
+                <label text="مظهر قنات"/>
+                <link wiki="Proposed_features/Qanat"/>
+                <key key="natural" value="spring"/>
+                <key key="name" value="مظهر قنات"/>
+                <key key="name:en" value=""/>
+                <space />
+                <check text="Attraction" key="tourism" value="attraction" disable_off="true"/>
+                <check text="آشامیدنی" key="drinking_water"/>
+            </item>
+
+            <item icon="ghanaat.png" name="چاه افقی" type="way">
+                <label text="چاه افقی"/>
+                <link wiki="Proposed_features/Qanat"/>
+                <key key="waterway" value="canal"/>
+                <key key="canal" value="qanat"/>
+                <key key="tunnel" value="flooded"/>
+                <key key="lacatin" value="underground"/>
+                <key key="usage" value="headrace"/>
+                <key key="layer" value="-1"/>
+                <text default="قنات" key="name" text="Name"/>
+                <text default="Qanat" key="name:en" text="English name"/>
+                <space />
+                <check key="drinking_water" text="آشامیدنی"/>
+            </item>
+
+        </group>
+
+        <item icon="pond.png" name="آب انبار موسوم به برکه" type="node,closedway,multipolygon">
+            <label text="آب انبار موسوم به برکه"/>
+            <link wiki="Tag:man_made=reservoir_covered"/>
+            <reference ref="name_nameen" />
+            <text default="" key="capacity" text="Capacity"/>
+            <text default="" key="access" text="Access"/>
+            <key key="man_made" value="reservoir_covered"/>
+            <key key="reservoir_covered" value="berkeh"/>
+            <key key="content" value="rain_water"/>
+            <key key="drinking_water" value="untreated"/>
+            <key key="drinking_water:seasonal" value="yes"/>
+        </item>
+
+        <item icon="presets/landmark/mine.svg" name="معدن" type="node,closedway,multipolygon">
+            <label text="معدن"/>
+            <link wiki="Tag:landuse=quarry"/>
+            <key key="landuse" value="quarry"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <multiselect key="resource" text="Resource" values="gold,copper,iron_ore,coal,dimension_stone,aggregate,bauxite,clay,ilmenite,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon,antimony,arsenic,asbestos,barite,bastnäsite,bentonite,beryl,bismuth,bitumen,borax,boron,bromide,caesium,chromite,cobalt,diamond,diatomite,dolomite,feldspar,fluorite,garnet,granite,graphite,gypsum,iodine,jade,kaolinite,lanthanum,lithium,magnesite,magnesium,manganese,marble,mercury,mica,molybdenite,monazite,niobium,oil_sand,oil_shale,opal,palladium,peat,perlite,phosphate,potash,platinum,radium,ruby,rubidium,sapphire,scandium,silica,sodium carbonate,spongolite,strontium,sulphur,talc,terbium,tantalum,topaz,tungsten,uranium,vanadium,vermiculite,wollastonite,yttrium,zeolite"/>
+            <space/>
+            <text default="" key="description" text="Description"/>
+            <space/>
+            <check key="disused" text="Disused" disable_off="true"/>
+        </item>
+
+    </group>
+
+    <!-- Geography -->
+    <group icon="presets/landmark/peak.svg" name="Geography">
+
+        <group icon="presets/misc/boundaries.svg" name="Boundaries">
+
+            <group icon="presets/misc/boundaries.svg" name="Administrative">
+
+                <item type="way,closedway" icon="adminlevel_4.png" name="مرز استان">
+                    <label text="مرز استان"/>
+                    <link wiki="Tag:boundary=administrative"/>
+                    <key key="boundary" value="administrative"/>
+                    <key key="admin_level" value="3"/>
+                </item>
+
+                <item type="way,closedway" icon="adminlevel_6.png" name="مرز شهرستان">
+                    <label text="مرز شهرستان"/>
+                    <link wiki="Tag:boundary=administrative"/>
+                    <key key="boundary" value="administrative"/>
+                    <key key="admin_level" value="4"/>
+                </item>
+
+                <item type="way,closedway" icon="adminlevel_7.png" name="مرز بخش">
+                    <label text="مرز بخش"/>
+                    <link wiki="Tag:boundary=administrative"/>
+                    <key key="boundary" value="administrative"/>
+                    <key key="admin_level" value="5"/>
+                </item>
+
+                <item type="way,closedway" icon="adminlevel_8.png" name="مرز دهستان">
+                    <label text="مرز دهستان"/>
+                    <link wiki="Tag:boundary=administrative"/>
+                    <key key="boundary" value="administrative"/>
+                    <key key="admin_level" value="6"/>
+                </item>
+
+                <separator/>
+
+                <item type="way,closedway" icon="adminlevel_8.png" name="مرز شهر">
+                    <label text="مرز شهر"/>
+                    <link wiki="Tag:boundary=administrative"/>
+                    <key key="boundary" value="administrative"/>
+                    <key key="admin_level" value="6"/>
+                </item>
+
+                <item type="way,closedway" icon="adminlevel_9.png" name="مرز روستا">
+                    <label text="مرز روستا"/>
+                    <link wiki="Tag:boundary=administrative"/>
+                    <key key="boundary" value="administrative"/>
+                    <key key="admin_level" value="7"/>
+                </item>
+
+                <separator/>
+
+                <item type="way,closedway" icon="adminlevel_10.png" name="مرز منطقه شهری">
+                    <label text="مرز منطقه شهری"/>
+                    <link wiki="Tag:boundary=administrative"/>
+                    <key key="boundary" value="administrative"/>
+                    <key key="admin_level" value="8"/>
+                </item>
+
+                <item type="way,closedway" name="مرز محله">
+                    <label text="مرز محله"/>
+                    <link wiki="Tag:boundary=administrative"/>
+                    <key key="boundary" value="administrative"/>
+                    <key key="admin_level" value="10"/>
+                </item>
+
+            </group>
+
+        </group>
+
+    </group>
+
+    <!-- Relations -->
+    <group icon="presets/misc/relations.svg" name="Relations">
+
+        <group icon="presets/misc/boundaries.svg" name="Administrative">
+
+            <item type="relation,multipolygon" icon="presets/place/capital.svg" name="استان" preset_name_label="true">
+                <link wiki="Relation:boundary"/>
+                <key key="type" value="boundary"/>
+                <key key="boundary" value="administrative"/>
+                <key key="admin_level" value="3"/>
+                <key key="place" value="province"/>
+                <space/>
+                <reference ref="name_nameen"/>
+                <space/>
+                <optional>
+                <text text="Population" key="population" default=""/>
+                <text text="Population date" key="population:date" default=""/>
+                <text text="Population source" key="source:population" default=""/>
+                <space/>
+                <text text="Size" key="sqkm" default=""/>
+                <text text="Size source" key="source:sqkm" default=""/>
+                <space/>
+                <text text="Ref" key="ref" default=""/>
+                <text text="Wikipedia" key="wikipedia" default=""/>
+                </optional>
+                <roles>
+                <role text="outer segment" key="outer" type="way,closedway" requisite="required"/>
+                <role text="inner segment" key="inner" type="way,closedway" requisite="optional"/>
+                <role text="Sub area" key="subarea" type="relation" requisite="optional"/>
+                <role text="Administration centre" key="admin_centre" type="node" requisite="optional" count="1"/>
+                <role text="Label point" key="label" type="node" requisite="optional" count="1"/>
+                </roles>
+            </item>
+
+            <item type="relation,multipolygon" icon="presets/place/capital.svg" name="شهرستان" preset_name_label="true">
+                <link wiki="Relation:boundary"/>
+                <key key="type" value="boundary"/>
+                <key key="boundary" value="administrative"/>
+                <key key="admin_level" value="4"/>
+                <key key="place" value="county"/>
+                <space/>
+                <reference ref="name_nameen"/>
+                <space/>
+                <optional>
+                <text text="Population" key="population" default=""/>
+                <text text="Population date" key="population:date" default=""/>
+                <text text="Population source" key="source:population" default=""/>
+                <space/>
+                <text text="Size" key="sqkm" default=""/>
+                <text text="Size source" key="source:sqkm" default=""/>
+                <space/>
+                <text text="Wikipedia" key="wikipedia" default=""/>
+                </optional>
+                <roles>
+                <role text="outer segment" key="outer" type="way,closedway" requisite="required"/>
+                <role text="inner segment" key="inner" type="way,closedway" requisite="optional"/>
+                <role text="Sub area" key="subarea" type="relation" requisite="optional"/>
+                <role text="Administration centre" key="admin_centre" type="node" requisite="optional" count="1"/>
+                <role text="Label point" key="label" type="node" requisite="optional" count="1"/>
+                </roles>
+            </item>
+
+            <item type="relation,multipolygon" icon="presets/place/capital.svg" name="بخش" preset_name_label="true">
+                <link wiki="Relation:boundary"/>
+                <key key="type" value="boundary"/>
+                <key key="boundary" value="administrative"/>
+                <key key="admin_level" value="5"/>
+                <key key="place" value="district"/>
+                <space/>
+                <reference ref="name_nameen"/>
+                <space/>
+                <optional>
+                <text text="Population" key="population" default=""/>
+                <text text="Population date" key="population:date" default=""/>
+                <text text="Population source" key="source:population" default=""/>
+                <space/>
+                <text text="Size" key="sqkm" default=""/>
+                <text text="Size source" key="source:sqkm" default=""/>
+                <space/>
+                <text text="Wikipedia" key="wikipedia" default=""/>
+                </optional>
+                <roles>
+                <role text="outer segment" key="outer" type="way,closedway" requisite="required"/>
+                <role text="inner segment" key="inner" type="way,closedway" requisite="optional"/>
+                <role text="Sub area" key="subarea" type="relation" requisite="optional"/>
+                <role text="Administration centre" key="admin_centre" type="node" requisite="optional" count="1"/>
+                <role text="Label point" key="label" type="node" requisite="optional" count="1"/>
+                </roles>
+            </item>
+
+            <item type="relation,multipolygon" icon="presets/place/capital.svg" name="دهستان" preset_name_label="true">
+                <link wiki="Relation:boundary"/>
+                <key key="type" value="boundary"/>
+                <key key="boundary" value="administrative"/>
+                <key key="admin_level" value="6"/>
+                <key key="place" value="municipaliy"/>
+                <space/>
+                <reference ref="name_nameen"/>
+                <space/>
+                <optional>
+                <text text="Population" key="population" default=""/>
+                <text text="Population date" key="population:date" default=""/>
+                <text text="Population source" key="source:population" default=""/>
+                <space/>
+                <text text="Size" key="sqkm" default=""/>
+                <text text="Size source" key="source:sqkm" default=""/>
+                <space/>
+                <text text="Wikipedia" key="wikipedia" default=""/>
+                </optional>
+                <roles>
+                <role text="outer segment" key="outer" type="way,closedway" requisite="required"/>
+                <role text="inner segment" key="inner" type="way,closedway" requisite="optional"/>
+                <role text="Sub area" key="subarea" type="relation" requisite="optional"/>
+                <role text="Administration centre" key="admin_centre" type="node" requisite="optional" count="1"/>
+                <role text="Label point" key="label" type="node" requisite="optional" count="1"/>
+                </roles>
+            </item>
+
+            <separator/>
+
+            <item type="relation,multipolygon" icon="presets/place/city.svg" name="شهر بزرگ" preset_name_label="true">
+                <link wiki="Relation:boundary"/>
+                <key key="type" value="boundary"/>
+                <key key="boundary" value="administrative"/>
+                <key key="admin_level" value="6"/>
+                <key key="place" value="city"/>
+                <space/>
+                <reference ref="name_nameen"/>
+                <space/>
+                <optional>
+                <text text="Population" key="population" default=""/>
+                <text text="Population date" key="population:date" default=""/>
+                <text text="Population source" key="source:population" default=""/>
+                <space/>
+                <text text="Size" key="sqkm" default=""/>
+                <text text="Size source" key="source:sqkm" default=""/>
+                <space/>
+                <text text="Wikipedia" key="wikipedia" default=""/>
+                </optional>
+                <roles>
+                <role text="outer segment" key="outer" type="way,closedway" requisite="required"/>
+                <role text="inner segment" key="inner" type="way,closedway" requisite="optional"/>
+                <role text="Sub area" key="subarea" type="relation" requisite="optional"/>
+                <role text="Administration centre" key="admin_centre" type="node" requisite="optional" count="1"/>
+                </roles>
+            </item>
+
+            <item type="relation,multipolygon" icon="presets/place/town.svg" name="شهر کوچک" preset_name_label="true">
+                <link wiki="Relation:boundary"/>
+                <key key="type" value="boundary"/>
+                <key key="boundary" value="administrative"/>
+                <key key="admin_level" value="6"/>
+                <key key="place" value="town"/>
+                <space/>
+                <reference ref="name_nameen"/>
+                <space/>
+                <optional>
+                <text text="Population" key="population" default=""/>
+                <text text="Population date" key="population:date" default=""/>
+                <text text="Population source" key="source:population" default=""/>
+                <space/>
+                <text text="Size" key="sqkm" default=""/>
+                <text text="Size source" key="source:sqkm" default=""/>
+                <space/>
+                <text text="Wikipedia" key="wikipedia" default=""/>
+                </optional>
+                <roles>
+                <role text="outer segment" key="outer" type="way,closedway" requisite="required"/>
+                <role text="inner segment" key="inner" type="way,closedway" requisite="optional"/>
+                <role text="Sub area" key="subarea" type="relation" requisite="optional"/>
+                <role text="Administration centre" key="admin_centre" type="node" requisite="optional" count="1"/>
+                </roles>
+            </item>
+
+            <item type="relation,multipolygon" icon="presets/place/village.svg" name="روستا" preset_name_label="true">
+                <link wiki="Relation:boundary"/>
+                <key key="type" value="boundary"/>
+                <key key="boundary" value="administrative"/>
+                <key key="admin_level" value="7"/>
+                <key key="place" value="village"/>
+                <space/>
+                <reference ref="name_nameen"/>
+                <space/>
+                <optional>
+                <text text="Population" key="population" default=""/>
+                <text text="Population date" key="population:date" default=""/>
+                <text text="Population source" key="source:population" default=""/>
+                <space/>
+                <text text="Size" key="sqkm" default=""/>
+                <text text="Size source" key="source:sqkm" default=""/>
+                <space/>
+                <text text="Wikipedia" key="wikipedia" default=""/>
+                </optional>
+                <roles>
+                <role text="outer segment" key="outer" type="way,closedway" requisite="required"/>
+                <role text="inner segment" key="inner" type="way,closedway" requisite="optional"/>
+                <role text="Sub area" key="subarea" type="relation" requisite="optional"/>
+                <role text="Administration centre" key="admin_centre" type="node" requisite="optional" count="1"/>
+                </roles>
+            </item>
+
+            <separator/>
+
+            <item type="relation,multipolygon" icon="presets/place/suburb.svg" name="منطقه شهری" preset_name_label="true">
+                <link wiki="Relation:boundary"/>
+                <key key="type" value="boundary"/>
+                <key key="boundary" value="administrative"/>
+                <key key="admin_level" value="8"/>
+                <key key="place" value="suburb"/>
+                <space/>
+                <reference ref="name_nameen"/>
+                <space/>
+                <optional>
+                <text text="Population" key="population" default=""/>
+                <text text="Population date" key="population:date" default=""/>
+                <text text="Population source" key="source:population" default=""/>
+                <space/>
+                <text text="Size" key="sqkm" default=""/>
+                <text text="Size source" key="source:sqkm" default=""/>
+                <space/>
+                <text text="Wikipedia" key="wikipedia" default=""/>
+                </optional>
+                <roles>
+                <role text="outer segment" key="outer" type="way,closedway" requisite="required"/>
+                <role text="inner segment" key="inner" type="way,closedway" requisite="optional"/>
+                <role text="Sub area" key="subarea" type="relation" requisite="optional"/>
+                <role text="Administration centre" key="admin_centre" type="node" requisite="optional" count="1"/>
+                </roles>
+            </item>
+
+            <item type="relation,multipolygon" icon="presets/place/neighbourhood.svg" name="محله" preset_name_label="true">
+                <link wiki="Relation:boundary"/>
+                <key key="type" value="boundary"/>
+                <key key="boundary" value="administrative"/>
+                <key key="admin_level" value="10"/>
+                <key key="place" value="neighbourhood"/>
+                <space/>
+                <reference ref="name_nameen"/>
+                <space/>
+                <optional>
+                <text text="Population" key="population" default=""/>
+                <text text="Population date" key="population:date" default=""/>
+                <text text="Population source" key="source:population" default=""/>
+                <space/>
+                <text text="Size" key="sqkm" default=""/>
+                <text text="Size source" key="source:sqkm" default=""/>
+                <space/>
+                <text text="Wikipedia" key="wikipedia" default=""/>
+                </optional>
+                <roles>
+                <role text="outer segment" key="outer" type="way,closedway" requisite="required"/>
+                <role text="inner segment" key="inner" type="way,closedway" requisite="optional"/>
+                <role text="Sub area" key="subarea" type="relation" requisite="optional"/>
+                <role text="Administration centre" key="admin_centre" type="node" requisite="optional" count="1"/>
+                </roles>
+            </item>
+
+        </group>
+
+        <group icon="presets/misc/route.svg" name="Routes">
+        
+            <item type="relation" icon="presets/misc/route.svg" name="Bus route" preset_name_label="true">
+                <link wiki="Tag:route=bus"/>
+                <key key="type" value="route"/>
+                <key key="route" value="bus"/>
+                <key key="public_transport:version" value="1"/>
+                <reference ref="name_nameen"/>
+                <text text="Ref" key="ref" default=""/>
+                <optional>
+                <text text="From (initial stop)" key="from"/>
+                <text text="To (terminal stop)" key="to"/>
+                <text text="Via (intermediate stops)" key="via"/>
+                <reference ref="operator_operatortype" />
+                <text text="Network" key="network"/>
+                <reference ref="opening_hours"/>
+                <reference ref="wheelchair"/>
+                <combo text="Bicycle" key="bicycle" values="yes,no,permissive"/>
+                <combo text="Duration" key="duration" values="00:32,00:32:00,32"/>
+                <combo text="Interval" key="interval" values="00:32:30"/>
+                <combo text="Color" key="colour" values_context="color" values="black,brown,green,red,blue,gray,white,#CD853F"/>
+                <text text="Description" key="description"/>
+                <check text="Roundtrip" key="roundtrip"/>
+                </optional>
+                <roles>
+                <role text="route segment" key="" type="way,closedway" requisite="optional"/>
+                <role text="forward segment" key="forward" type="way,closedway" requisite="optional"/>
+                <role text="backward segment" key="backward" type="way,closedway" requisite="optional"/>
+                <role text="halt point" key="stop" member_expression="highway=bus_stop" type="node" requisite="optional"/>
+                <role text="forward halt point" key="forward_stop" member_expression="highway=bus_stop" type="node" requisite="optional"/>
+                <role text="backward halt point" key="backward_stop" member_expression="highway=bus_stop" type="node" requisite="optional"/>
+                <role text="platform" key="platform" member_expression="highway=platform" type="node,way,closedway" requisite="optional"/>
+                </roles>
+            </item>
+
+        </group>
+
+    </group>
+
+    <!-- Others -->
+    <group name="Others">
+
+        <item icon="presets/vehicle/car_wash.svg" type="node,closedway,multipolygon" name="کارواش">
+            <label text="کارواش"/>
+            <link wiki="Tag:amenity=car_wash"/>
+            <key key="amenity" value="car_wash"/>
+            <reference ref="name_nameen" />
+            <space />
+            <reference ref="opening_hours" />
+            <space />
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <text text="Telegram" key="contact:telegram" default=""/>
+            <text text="WhatsApp" key="contact:whatsapp" default=""/>
+            <text text="Instagram" key="contact:instagram" default=""/>
+            <space/>
+            <reference ref="operator_operatortype" />
+            <space />
+            <text default="" key="owner" text="Owner"/>
+            <text default="" key="maxwidth" text="Maxwidth"/>
+            <text default="" key="maxheight" text="Maxheight"/>
+            <text default="" key="brand" text="Brand"/>
+            <check key="self_service" text="Self service"/>
+            <combo key="self_service:opening_hours" text="Self sevice opening hours" values="24/7,Sa-Th 07:00-17:00,Fr 08:00-20:00,Mo 10:00-12:00\,12:30-15:00; Tu-Fr 08:00-12:00\,12:30-15:00; Sa 08:00-12:00,Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off,sunrise-sunset"/>
+            <check key="automated" text="Automated"/><check key="truck_wash" text="Truck wash"/>
+        </item>
+
+        <item icon="Vehicle_inspection.png" type="node,closedway,multipolygon" name="معاینه فنی خودرو">
+            <label text="معاینه فنی خودرو"/>
+            <link wiki="Tag:amenity=vehicle_inspection"/>
+            <key value="vehicle_inspection" key="amenity"/>
+            <text text="Name" key="name" default="معاینه فنی خودرو"/>
+            <text text="English name" key="name:en" default="Vehicle inspection"/>
+            <space />
+            <reference ref="contact" />
+            <space />
+            <reference ref="operator_operatortype" />
+            <space />
+            <reference ref="opening_hours" />
+        </item>
+
+        <item icon="presets/landuse/orchard.svg" type="closedway,multipolygon" name="نخلستان">
+            <label text="نخلستان"/>
+            <key key="genus" value="phoenix"/>
+            <key key="landuse" value="orchard"/>
+            <key key="leaf_cycle" value="evergreen"/>
+            <key key="leaf_type" value="broadleaved"/>
+            <key key="produce" value="date"/>
+            <key key="species" value="phoenix dactyliferal"/>
+            <key key="trees" value="date_palms"/>
+            <reference ref="name_nameen" />
+        </item>
+
+        <item type="closedway,multipolygon" name="جنگل حرا">
+            <label text="جنگل حرا"/>
+            <key key="natural" value="wetland"/>
+            <key key="wetland" value="mangrove"/>
+            <reference ref="name_nameen" />
+        </item>
+
+        <item type="node,closedway,multipolygon" name="آبزی پروری">
+            <label text="آبزی پروری"/>
+            <link wiki="Tag:landuse=aquaculture"/>
+            <key key="landuse" value="aquaculture"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <combo key="aquaculture" text="Aquaculture" values="shrimp,fish,mussles"/>
+            <space/>
+            <reference ref="opening_hours"/>
+            <space/>
+            <reference ref="contact"/>
+        </item>
+
+        <item type="node,closedway,multipolygon" name="گاوداری">
+            <label text="گاوداری"/>
+            <link wiki="Tag:amenity=animal_breeding"/>
+            <key key="amenity" value="animal_breeding"/>
+            <key key="animal_breeding" value="cow"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <text text="Telegram" key="contact:telegram" default=""/>
+            <text text="WhatsApp" key="contact:whatsapp" default=""/>
+            <text text="Instagram" key="contact:instagram" default=""/>
+        </item>
+
+        <item type="node,closedway,multipolygon" name="مرغداری">
+            <label text="مرغداری"/>
+            <link wiki="Tag:amenity=animal_breeding"/>
+            <key key="amenity" value="animal_breeding"/>
+            <key key="animal_breeding" value="chicken"/>
+            <reference ref="name_nameen"/>
+            <space/>
+            <reference ref="operator_operatortype"/>
+            <space/>
+            <text text="Phone" key="phone" default=""/>
+            <text text="Fax" key="fax" default=""/>
+            <text text="Mobile" key="contact:mobile" default=""/>
+            <text text="Website" key="website" default=""/>
+            <text text="E-Mail" key="email" default=""/>
+            <text text="Telegram" key="contact:telegram" default=""/>
+            <text text="WhatsApp" key="contact:whatsapp" default=""/>
+            <text text="Instagram" key="contact:instagram" default=""/>
+        </item>
+
+    </group>
+
+</group>        
+
+</presets>

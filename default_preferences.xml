@@ -1,0 +1,4525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences-defaults xmlns='http://josm.openstreetmap.de/preferences-1.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' version='15937'>
+  <list key='MapWithAI.apis' time='1582943214' xsi:nil='true'/>
+  <maps key='MapWithAI.apismap' time='1583761690'>
+  </maps>
+  <tag key='MapWithAI.autoswitchlayers' time='1583761916' value='true'/>
+  <tag key='MapWithAI.forkjoinpoolthreads' time='1582943273' value='4'/>
+  <tag key='MapWithAI.maximumselection' time='1583761690' value='5'/>
+  <tag key='MapWithAI.mergebuildingaddresses' time='1583761916' value='true'/>
+  <tag key='MapWithAI.remote_control' time='1583761915' value='true'/>
+  <maps key='MapWithAI.replacementtags' time='1583761690'>
+    <map>
+    </map>
+  </maps>
+  <tag key='MapWithAI.stubendlength' time='1583761690' value='5.0'/>
+  <tag key='alignways_cfg.buttonhiding' time='1583660405' value='DYNAMIC'/>
+  <tag key='alignways_cfg.docked' time='1583660405' value='true'/>
+  <tag key='alignways_cfg.minimized' time='1583660405' value='false'/>
+  <tag key='alignways_cfg.preferredHeight' time='1583660405' value='70'/>
+  <tag key='alignways_cfg.visible' time='1583660405' value='false'/>
+  <list key='apikey.sites' time='1583761893'>
+    <entry value='https://josm.openstreetmap.de/mapkey/'/>
+  </list>
+  <tag key='asynchronous.upload' time='1583655566' value='true'/>
+  <tag key='audio.calibration' time='1583660410' value='1.0'/>
+  <tag key='audio.fastfwdmultiplier' time='1583761669' value='1.3'/>
+  <tag key='audio.forwardbackamount' time='1583660410' value='10.0'/>
+  <tag key='audio.leadin' time='1583660410' value='1.0'/>
+  <tag key='audio.menuinvisible' time='1583761670' value='false'/>
+  <tag key='auto.filter.defaults' time='1583761915' value='true'/>
+  <tag key='auto.filter.enabled' time='1583761915' value='true'/>
+  <tag key='auto.filter.rule' time='1583761915' value='level'/>
+  <tag key='autocomplete.dont_complete_numbers' time='1583660074' value='true'/>
+  <maps key='automatic-tag-conflict-resolution.choice' time='1582944044'>
+    <map>
+      <tag key='key' value='source'/>
+      <tag key='group' value='FR:cadastre'/>
+      <tag key='description' value='FR cadastre source, manual value'/>
+      <tag key='isRegex' value='true'/>
+      <tag key='value' value='cadastre'/>
+      <tag key='score' value='0'/>
+    </map>
+    <map>
+      <tag key='key' value='source'/>
+      <tag key='group' value='FR:cadastre'/>
+      <tag key='description' value='FR cadastre source, initial format'/>
+      <tag key='isRegex' value='true'/>
+      <tag key='value' value='extraction vectorielle v1 cadastre-dgi-fr source : Direction G[eé]n[eé]rale des Imp[oô]ts - Cadas\. Mise [aà] jour : (2[0-9]{3})'/>
+      <tag key='score' value='$1 1'/>
+    </map>
+    <map>
+      <tag key='key' value='source'/>
+      <tag key='group' value='FR:cadastre'/>
+      <tag key='description' value='FR cadastre source, last format'/>
+      <tag key='isRegex' value='true'/>
+      <tag key='value' value='(?:cadastre-dgi-fr source : )?Direction G[eé]n[eé]rale des (?:Imp[oô]ts|Finances Publiques) - Cadas(?:tre)?(?:\.| ;) [Mm]ise [aà] jour : (2[0-9]{3})'/>
+      <tag key='score' value='$1 2'/>
+    </map>
+    <map>
+      <tag key='key' value='source'/>
+      <tag key='group' value='CA:canvec'/>
+      <tag key='description' value='CA canvec source, initial value'/>
+      <tag key='isRegex' value='true'/>
+      <tag key='value' value='CanVec_Import_2009'/>
+      <tag key='score' value='00'/>
+    </map>
+    <map>
+      <tag key='key' value='source'/>
+      <tag key='group' value='CA:canvec'/>
+      <tag key='description' value='CA canvec source, 4.0/6.0 value'/>
+      <tag key='isRegex' value='true'/>
+      <tag key='value' value='CanVec ([1-9]).0 - NRCan'/>
+      <tag key='score' value='0$1'/>
+    </map>
+    <map>
+      <tag key='key' value='source'/>
+      <tag key='group' value='CA:canvec'/>
+      <tag key='description' value='CA canvec source, 7.0/8.0 value'/>
+      <tag key='isRegex' value='true'/>
+      <tag key='value' value='NRCan-CanVec-([1-9]).0'/>
+      <tag key='score' value='0$1'/>
+    </map>
+    <map>
+      <tag key='key' value='source'/>
+      <tag key='group' value='CA:canvec'/>
+      <tag key='description' value='CA canvec source, 10.0/12.0 value'/>
+      <tag key='isRegex' value='true'/>
+      <tag key='value' value='NRCan-CanVec-(1[012]).0'/>
+      <tag key='score' value='$1'/>
+    </map>
+  </maps>
+  <maps key='automatic-tag-conflict-resolution.combine' time='1582944044'>
+    <map>
+      <tag key='key' value='tiger:tlid'/>
+      <tag key='description' value='US TIGER tlid'/>
+      <tag key='separator' value=':'/>
+      <tag key='sort' value='Integer'/>
+    </map>
+    <map>
+      <tag key='key' value='tiger:(?!tlid$).*'/>
+      <tag key='description' value='US TIGER not tlid'/>
+      <tag key='isRegex' value='true'/>
+      <tag key='separator' value=':'/>
+      <tag key='sort' value='String'/>
+    </map>
+  </maps>
+  <tag key='autosave.deletedLayersBackupCount' time='1583761691' value='5'/>
+  <tag key='autosave.enabled' time='1583761691' value='true'/>
+  <tag key='autosave.extension' time='1583660688' value='osm'/>
+  <tag key='autosave.filesPerLayer' time='1583761691' value='1'/>
+  <tag key='autosave.index-limit' time='1583761691' value='1000'/>
+  <tag key='autosave.interval' time='1583761691' value='300'/>
+  <tag key='autosave.notes.extension' time='1583655521' value='osn'/>
+  <tag key='autosave.notification' time='1583761692' value='false'/>
+  <lists key='bookmarks' time='1582816033' xsi:nil='true'/>
+  <tag key='bookmarks.changesets.max-entries' time='1583761893' value='15'/>
+  <list key='browser.unix' time='1583660424'>
+    <entry value='xdg-open'/>
+    <entry value='#DESKTOP#'/>
+    <entry value='$BROWSER'/>
+    <entry value='gnome-open'/>
+    <entry value='kfmclient openURL'/>
+    <entry value='firefox'/>
+  </list>
+  <tag key='buildings_tool.shape' time='1583660405' value=''/>
+  <tag key='buildings_tools.addrNode' time='1583660405' value='false'/>
+  <tag key='buildings_tools.noclickdrag' time='1583017552' value='false'/>
+  <tag key='buildings_tools.softcursor' time='1582944064' value='false'/>
+  <list key='buildings_tools.tags' time='1583017553'>
+    <entry value='building'/>
+    <entry value='yes'/>
+  </list>
+  <tag key='cache.capabilities1637351842' time='1583761672' value='0'/>
+  <tag key='cache.folder' time='1582813235' xsi:nil='true'/>
+  <tag key='cache.jcs.max_threads' time='1583761673' value='10'/>
+  <tag key='cache.motd.html' time='1583761670' value='0'/>
+  <tag key='cache.motd.html.java' time='1583660370' value=''/>
+  <tag key='cache.motd.html.lang' time='1583660370' value=''/>
+  <tag key='cache.motd.html.version' time='1583660370' value='-999'/>
+  <tag key='changeset-dialog.for-selected-objects-only' time='1583660404' value='false'/>
+  <tag key='changeset.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='changeset.docked' time='1583660404' value='true'/>
+  <tag key='changeset.minimized' time='1583660404' value='false'/>
+  <tag key='changeset.preferredHeight' time='1583660404' value='120'/>
+  <tag key='changeset.updater.interval' time='1583761691' value='60'/>
+  <tag key='changeset.visible' time='1583660404' value='false'/>
+  <tag key='changesetdialog.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='changesetdialog.docked' time='1583660404' value='true'/>
+  <tag key='changesetdialog.minimized' time='1583660404' value='false'/>
+  <tag key='changesetdialog.preferredHeight' time='1583660404' value='200'/>
+  <tag key='changesetdialog.visible' time='1583660404' value='false'/>
+  <list key='clr.general.Advanced Background: Changed' time='1583761690'>
+    <entry value='#C8FFC8'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Advanced Background: Changed'/>
+  </list>
+  <list key='clr.general.Advanced Background: NonDefault' time='1583761690'>
+    <entry value='#FFFFC8'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Advanced Background: NonDefault'/>
+  </list>
+  <list key='clr.general.Conflict background' time='1583761915'>
+    <entry value='#FFFFFF'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background'/>
+  </list>
+  <list key='clr.general.Conflict background: combined' time='1583761915'>
+    <entry value='#D9FFD9'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: combined'/>
+  </list>
+  <list key='clr.general.Conflict background: decided' time='1583761915'>
+    <entry value='#D9FFD9'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: decided'/>
+  </list>
+  <list key='clr.general.Conflict background: drop' time='1583761915'>
+    <entry value='#FFFFFF'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: drop'/>
+  </list>
+  <list key='clr.general.Conflict background: drop tag' time='1583761915'>
+    <entry value='#C0C0C0'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: drop tag'/>
+  </list>
+  <list key='clr.general.Conflict background: empty row' time='1583761915'>
+    <entry value='#EAEAEA'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: empty row'/>
+  </list>
+  <list key='clr.general.Conflict background: frozen' time='1583761915'>
+    <entry value='#EAEAEA'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: frozen'/>
+  </list>
+  <list key='clr.general.Conflict background: in comparison' time='1583761915'>
+    <entry value='#000000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: in comparison'/>
+  </list>
+  <list key='clr.general.Conflict background: in opposite' time='1583761915'>
+    <entry value='#FFEAD5'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: in opposite'/>
+  </list>
+  <list key='clr.general.Conflict background: keep' time='1583761915'>
+    <entry value='#D9FFD9'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: keep'/>
+  </list>
+  <list key='clr.general.Conflict background: keep all tags' time='1583761915'>
+    <entry value='#FFEAD5'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: keep all tags'/>
+  </list>
+  <list key='clr.general.Conflict background: keep member' time='1583761915'>
+    <entry value='#D9FFD9'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: keep member'/>
+  </list>
+  <list key='clr.general.Conflict background: keep one tag' time='1583761915'>
+    <entry value='#D9FFD9'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: keep one tag'/>
+  </list>
+  <list key='clr.general.Conflict background: no conflict' time='1583761915'>
+    <entry value='#EAEAEA'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: no conflict'/>
+  </list>
+  <list key='clr.general.Conflict background: not in opposite' time='1583761915'>
+    <entry value='#FFC5C5'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: not in opposite'/>
+  </list>
+  <list key='clr.general.Conflict background: remove member' time='1583761915'>
+    <entry value='#C0C0C0'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: remove member'/>
+  </list>
+  <list key='clr.general.Conflict background: same position in opposite' time='1583761915'>
+    <entry value='#D9FFD9'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: same position in opposite'/>
+  </list>
+  <list key='clr.general.Conflict background: selected' time='1583761915'>
+    <entry value='#8FAAFF'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: selected'/>
+  </list>
+  <list key='clr.general.Conflict background: sum all numeric tags' time='1583761915'>
+    <entry value='#FFEAD5'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: sum all numeric tags'/>
+  </list>
+  <list key='clr.general.Conflict background: undecided' time='1583761915'>
+    <entry value='#FFC5C5'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict background: undecided'/>
+  </list>
+  <list key='clr.general.Conflict foreground' time='1583761915'>
+    <entry value='#000000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict foreground'/>
+  </list>
+  <list key='clr.general.Conflict foreground: drop' time='1583761915'>
+    <entry value='#C0C0C0'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict foreground: drop'/>
+  </list>
+  <list key='clr.general.Conflict foreground: drop tag' time='1583761915'>
+    <entry value='#000000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict foreground: drop tag'/>
+  </list>
+  <list key='clr.general.Conflict foreground: in comparison' time='1583761915'>
+    <entry value='#FFFFFF'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict foreground: in comparison'/>
+  </list>
+  <list key='clr.general.Conflict foreground: keep' time='1583761915'>
+    <entry value='#000000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict foreground: keep'/>
+  </list>
+  <list key='clr.general.Conflict foreground: keep all tags' time='1583761915'>
+    <entry value='#000000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict foreground: keep all tags'/>
+  </list>
+  <list key='clr.general.Conflict foreground: keep member' time='1583761915'>
+    <entry value='#000000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict foreground: keep member'/>
+  </list>
+  <list key='clr.general.Conflict foreground: keep one tag' time='1583761915'>
+    <entry value='#000000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict foreground: keep one tag'/>
+  </list>
+  <list key='clr.general.Conflict foreground: remove member' time='1583761915'>
+    <entry value='#000000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict foreground: remove member'/>
+  </list>
+  <list key='clr.general.Conflict foreground: sum all numeric tags' time='1583761915'>
+    <entry value='#000000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict foreground: sum all numeric tags'/>
+  </list>
+  <list key='clr.general.Conflict foreground: undecided' time='1583761915'>
+    <entry value='#000000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Conflict foreground: undecided'/>
+  </list>
+  <list key='clr.general.External resource entry: Active' time='1583659102'>
+    <entry value='#C8FFC8'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='External resource entry: Active'/>
+  </list>
+  <list key='clr.general.External resource entry: Inactive' time='1582942662'>
+    <entry value='#C8C8C8'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='External resource entry: Inactive'/>
+  </list>
+  <list key='clr.general.Extrude: helper line' time='1583660404'>
+    <entry value='#FFC800'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Extrude: helper line'/>
+  </list>
+  <list key='clr.general.Extrude: main line' time='1583660404'>
+    <entry value='#FF0000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Extrude: main line'/>
+  </list>
+  <list key='clr.general.Imagery Background: Default' time='1583660413'>
+    <entry value='#C8FFC8'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Imagery Background: Default'/>
+  </list>
+  <list key='clr.general.Node: connection' time='1583660405'>
+    <entry value='#FFFF00'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Node: connection'/>
+  </list>
+  <list key='clr.general.Node: standard' time='1583660405'>
+    <entry value='#FFFF00'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Node: standard'/>
+  </list>
+  <list key='clr.general.Node: tagged' time='1583660405'>
+    <entry value='#CCFFFF'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Node: tagged'/>
+  </list>
+  <list key='clr.general.Relation: selected' time='1583660405'>
+    <entry value='#FF00FF'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Relation: selected'/>
+  </list>
+  <list key='clr.general.Status bar background' time='1583761915'>
+    <entry value='#B8CFE5'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Status bar background'/>
+  </list>
+  <list key='clr.general.Status bar background: active' time='1583761915'>
+    <entry value='#AAFF5E'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Status bar background: active'/>
+  </list>
+  <list key='clr.general.Status bar foreground' time='1583761915'>
+    <entry value='#000000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Status bar foreground'/>
+  </list>
+  <list key='clr.general.Status bar foreground: active' time='1583761915'>
+    <entry value='#000000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='Status bar foreground: active'/>
+  </list>
+  <list key='clr.general.background' time='1583761941'>
+    <entry value='#000000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='background'/>
+  </list>
+  <list key='clr.general.conflict' time='1583761915'>
+    <entry value='#808080'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='conflict'/>
+  </list>
+  <list key='clr.general.gps marker' time='1583761915'>
+    <entry value='#FF00FF'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='gps marker'/>
+  </list>
+  <list key='clr.general.gps point' time='1583761915'>
+    <entry value='#FF00FF'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='gps point'/>
+  </list>
+  <list key='clr.general.helper line' time='1583655340'>
+    <entry value='#FF0000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='helper line'/>
+  </list>
+  <list key='clr.general.highlight' time='1583660405'>
+    <entry value='#FF0000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='highlight'/>
+  </list>
+  <list key='clr.general.improve way accuracy helper arc fill' time='1583660404'>
+    <entry value='#C8C8C832'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='improve way accuracy helper arc fill'/>
+  </list>
+  <list key='clr.general.improve way accuracy helper arc stroke' time='1583660404'>
+    <entry value='#F0F0F096'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='improve way accuracy helper arc stroke'/>
+  </list>
+  <list key='clr.general.improve way accuracy helper distance text' time='1583660404'>
+    <entry value='#F0F0F078'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='improve way accuracy helper distance text'/>
+  </list>
+  <list key='clr.general.improve way accuracy helper equal angle circle' time='1583660404'>
+    <entry value='#F0F0F096'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='improve way accuracy helper equal angle circle'/>
+  </list>
+  <list key='clr.general.improve way accuracy helper line' time='1583660404'>
+    <entry value='#FF0000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='improve way accuracy helper line'/>
+  </list>
+  <list key='clr.general.improve way accuracy helper perpendicular line' time='1583660404'>
+    <entry value='#F0F0F096'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='improve way accuracy helper perpendicular line'/>
+  </list>
+  <list key='clr.general.improve way accuracy helper turn angle text' time='1583660404'>
+    <entry value='#F0F0F0C8'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='improve way accuracy helper turn angle text'/>
+  </list>
+  <list key='clr.general.inactive' time='1583660405'>
+    <entry value='#404040'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='inactive'/>
+  </list>
+  <list key='clr.general.outside downloaded area' time='1583761941'>
+    <entry value='#FFFF00'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='outside downloaded area'/>
+  </list>
+  <list key='clr.general.scale' time='1583761915'>
+    <entry value='#FFFFFF'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='scale'/>
+  </list>
+  <list key='clr.general.selected' time='1583761670'>
+    <entry value='#FF0000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='selected'/>
+  </list>
+  <list key='clr.general.text' time='1583660405'>
+    <entry value='#FFFFFF'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='text'/>
+  </list>
+  <list key='clr.general.untagged' time='1583660405'>
+    <entry value='#808080'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='untagged'/>
+  </list>
+  <list key='clr.general.validation error' time='1583761685'>
+    <entry value='#FF0000'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='validation error'/>
+  </list>
+  <list key='clr.general.validation other' time='1583761685'>
+    <entry value='#00FFFF'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='validation other'/>
+  </list>
+  <list key='clr.general.validation warning' time='1583761685'>
+    <entry value='#FFFF00'/>
+    <entry value='general'/>
+    <entry value=''/>
+    <entry value='validation warning'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).address' time='1583761673'>
+    <entry value='#1C86EE'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='address'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).advertising' time='1583761673'>
+    <entry value='#880000'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='advertising'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).aerialway' time='1583761673'>
+    <entry value='#663300'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='aerialway'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).aeroway' time='1583761673'>
+    <entry value='#660000'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='aeroway'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).aeroway_dark' time='1583761673'>
+    <entry value='#330000'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='aeroway_dark'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).aeroway_light' time='1583761673'>
+    <entry value='#990000'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='aeroway_light'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).allotments' time='1583761673'>
+    <entry value='#5DBF80'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='allotments'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).amenity' time='1583761673'>
+    <entry value='#ECBA52'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='amenity'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).amenity_light' time='1583761673'>
+    <entry value='#F7EFB7'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='amenity_light'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).amenity_traffic' time='1583761673'>
+    <entry value='#F7EFB7'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='amenity_traffic'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).aquaculture' time='1583761673'>
+    <entry value='#189DFF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='aquaculture'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).attraction' time='1583761673'>
+    <entry value='#FFBFD3'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='attraction'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).bare_rock' time='1583761673'>
+    <entry value='#F8F8C7'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='bare_rock'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).barrier' time='1583761673'>
+    <entry value='#F0F050'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='barrier'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).basin' time='1583761673'>
+    <entry value='#0000BF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='basin'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).beach' time='1583761673'>
+    <entry value='#F8DBA2'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='beach'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).bicycle' time='1583761673'>
+    <entry value='#B100FF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='bicycle'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).boundary' time='1583761673'>
+    <entry value='#FF6600'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='boundary'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).bridge' time='1583761673'>
+    <entry value='#0000FF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='bridge'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).brownfield' time='1583761673'>
+    <entry value='#ECBA32'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='brownfield'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).building' time='1583761673'>
+    <entry value='#CB9999'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='building'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).buildingpart' time='1583761673'>
+    <entry value='#DCBBBB'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='buildingpart'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).cemetery' time='1583761673'>
+    <entry value='#B1EFC8'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='cemetery'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).cemetery_sector' time='1583761673'>
+    <entry value='#DBF8E6'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='cemetery_sector'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).changing_table' time='1583761673'>
+    <entry value='#F7EFB7'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='changing_table'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).construction' time='1583761673'>
+    <entry value='#FFFF00'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='construction'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).craft' time='1583761673'>
+    <entry value='#999900'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='craft'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).cutline' time='1583761673'>
+    <entry value='#BBFF7C'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='cutline'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).destination' time='1583761673'>
+    <entry value='#8080FF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='destination'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).dock' time='1583761673'>
+    <entry value='#0000CF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='dock'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).dyke' time='1583761673'>
+    <entry value='#0AA846'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='dyke'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).elevator' time='1583761673'>
+    <entry value='#A6BACE'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='elevator'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).embankment' time='1583761673'>
+    <entry value='#C14D00'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='embankment'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).emergency' time='1583761673'>
+    <entry value='#EEEEEE'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='emergency'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).emergency_access_point' time='1583761673'>
+    <entry value='#C0C0C0'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='emergency_access_point'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).farmland' time='1583761673'>
+    <entry value='#B8E0B1'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='farmland'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).farmyard' time='1583761673'>
+    <entry value='#F0F0F0'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='farmyard'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).ferry' time='1583761673'>
+    <entry value='#809BC0'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='ferry'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).flowerbed' time='1583761673'>
+    <entry value='#91C956'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='flowerbed'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).foot' time='1583761673'>
+    <entry value='#00FF00'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='foot'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).forest' time='1583761673'>
+    <entry value='#B1EFC8'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='forest'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).garages' time='1583761673'>
+    <entry value='#D6C8AA'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='garages'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).glacier' time='1583761673'>
+    <entry value='#FFFFFF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='glacier'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).golf' time='1583761673'>
+    <entry value='#C7F1A3'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='golf'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).golf_bunker' time='1583761673'>
+    <entry value='#FFAB00'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='golf_bunker'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).golf_driving_range' time='1583761673'>
+    <entry value='#C7F1A3'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='golf_driving_range'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).golf_fairway' time='1583761673'>
+    <entry value='#009A00'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='golf_fairway'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).golf_green' time='1583761673'>
+    <entry value='#00E700'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='golf_green'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).golf_hole' time='1583761673'>
+    <entry value='#808080'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='golf_hole'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).golf_rough' time='1583761673'>
+    <entry value='#006700'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='golf_rough'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).golf_water_hazard' time='1583761673'>
+    <entry value='#0000FF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='golf_water_hazard'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).grass' time='1583761673'>
+    <entry value='#97CA96'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='grass'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).grave' time='1583761673'>
+    <entry value='#663300'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='grave'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).green' time='1583761673'>
+    <entry value='#B1E0C2'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='green'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).greenfield' time='1583761673'>
+    <entry value='#B1EC5C'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='greenfield'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).health' time='1583761673'>
+    <entry value='#EEEEEE'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='health'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).heath' time='1583761673'>
+    <entry value='#FFFFC0'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='heath'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).highway_platform' time='1583761673'>
+    <entry value='#C0C0C0'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='highway_platform'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).highway_road' time='1583761673'>
+    <entry value='#770000'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='highway_road'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).highway_track' time='1583761673'>
+    <entry value='#6E541C'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='highway_track'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).historic' time='1583761673'>
+    <entry value='#663300'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='historic'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).horse' time='1583761673'>
+    <entry value='#A18559'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='horse'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).hotel' time='1583761673'>
+    <entry value='#FECED0'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='hotel'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).industrial' time='1583761673'>
+    <entry value='#ECD8FF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='industrial'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).junction' time='1583761673'>
+    <entry value='#C0C0C0'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='junction'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).landfill' time='1583761673'>
+    <entry value='#663300'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='landfill'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).leisure' time='1583761673'>
+    <entry value='#C7F1A3'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='leisure'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).leisuretrack' time='1583761673'>
+    <entry value='#D4F4B9'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='leisuretrack'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).light_water' time='1583761673'>
+    <entry value='#00005F'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='light_water'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).livingdashed' time='1583761673'>
+    <entry value='#00FF00'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='livingdashed'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).lock' time='1583761673'>
+    <entry value='#303030'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='lock'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).lock_gate' time='1583761673'>
+    <entry value='#303030'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='lock_gate'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).manmade' time='1583761673'>
+    <entry value='#D8D8D8'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='manmade'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).marina' time='1583761673'>
+    <entry value='#0070CF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='marina'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).marsh' time='1583761673'>
+    <entry value='#4F4FF3'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='marsh'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).meadow' time='1583761673'>
+    <entry value='#B1E0B6'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='meadow'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).military' time='1583761673'>
+    <entry value='#B62C2C'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='military'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).motorroad' time='1583761673'>
+    <entry value='#3377FF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='motorroad'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).motorway' time='1583761673'>
+    <entry value='#809BC0'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='motorway'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).mud' time='1583761673'>
+    <entry value='#CBA762'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='mud'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).natural' time='1583761673'>
+    <entry value='#002F00'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='natural'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).no' time='1583761673'>
+    <entry value='#FF8080'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='no'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).node_connection' time='1583761673'>
+    <entry value='#FFFF00'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='node_connection'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).node_selected' time='1583761673'>
+    <entry value='#FF0000'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='node_selected'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).node_standard' time='1583761673'>
+    <entry value='#FFFF00'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='node_standard'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).node_tagged' time='1583761673'>
+    <entry value='#00FFFF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='node_tagged'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).node_tagged_without_icon' time='1583761673'>
+    <entry value='#00FFFF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='node_tagged_without_icon'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).office' time='1583761673'>
+    <entry value='#DE5696'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='office'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).oldrail' time='1583761673'>
+    <entry value='#404040'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='oldrail'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).otherrail' time='1583761673'>
+    <entry value='#808080'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='otherrail'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).parking_space' time='1583761673'>
+    <entry value='#F7EFB8'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='parking_space'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).permissive' time='1583761673'>
+    <entry value='#80FF80'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='permissive'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).pier' time='1583761673'>
+    <entry value='#660000'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='pier'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).pipeline' time='1583761673'>
+    <entry value='#660000'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='pipeline'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).piste_advanced' time='1583761673'>
+    <entry value='#606060'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='piste_advanced'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).piste_easy' time='1583761673'>
+    <entry value='#0000FF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='piste_easy'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).piste_expert' time='1583761673'>
+    <entry value='#606060'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='piste_expert'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).piste_freeride' time='1583761673'>
+    <entry value='#FFFF00'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='piste_freeride'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).piste_intermediate' time='1583761673'>
+    <entry value='#FF0000'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='piste_intermediate'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).piste_novice' time='1583761673'>
+    <entry value='#00FF00'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='piste_novice'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).pitch' time='1583761673'>
+    <entry value='#BAEE8D'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='pitch'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).place' time='1583761673'>
+    <entry value='#8DE3CB'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='place'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).police' time='1583761673'>
+    <entry value='#ECBA52'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='police'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).power' time='1583761673'>
+    <entry value='#EEEEEE'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='power'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).primary' time='1583761673'>
+    <entry value='#FB805F'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='primary'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).private' time='1583761673'>
+    <entry value='#FF8080'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='private'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).quarry' time='1583761673'>
+    <entry value='#888888'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='quarry'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).raceway' time='1583761673'>
+    <entry value='#FF80FF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='raceway'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).rail' time='1583761673'>
+    <entry value='#404040'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='rail'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).raildashed' time='1583761673'>
+    <entry value='#FFFFFF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='raildashed'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).railland' time='1583761673'>
+    <entry value='#888888'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='railland'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).railover' time='1583761673'>
+    <entry value='#202020'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='railover'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).railwaypoint' time='1583761673'>
+    <entry value='#F7EFB7'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='railwaypoint'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).railyard' time='1583761673'>
+    <entry value='#552200'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='railyard'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).reef' time='1583761673'>
+    <entry value='#80C9FF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='reef'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).religious' time='1583761673'>
+    <entry value='#FFD454'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='religious'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).residential' time='1583761673'>
+    <entry value='#F0F0F0'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='residential'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).retail' time='1583761673'>
+    <entry value='#FFC4EE'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='retail'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).riverbank' time='1583761673'>
+    <entry value='#0000CF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='riverbank'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).salt_pond' time='1583761673'>
+    <entry value='#EEEEEE'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='salt_pond'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).sand' time='1583761673'>
+    <entry value='#F8DBA2'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='sand'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).scree' time='1583761673'>
+    <entry value='#C3C3C3'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='scree'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).scrub' time='1583761673'>
+    <entry value='#007000'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='scrub'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).secondary' time='1583761673'>
+    <entry value='#FDBF6F'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='secondary'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).service' time='1583761673'>
+    <entry value='#809BC0'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='service'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).services' time='1583761673'>
+    <entry value='#C0C0C0'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='services'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).shingle' time='1583761673'>
+    <entry value='#C3C3C3'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='shingle'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).shop' time='1583761673'>
+    <entry value='#00005F'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='shop'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).ski' time='1583761673'>
+    <entry value='#809BC0'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='ski'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).sport' time='1583761673'>
+    <entry value='#BDE3CB'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='sport'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).sport_athletics' time='1583761673'>
+    <entry value='#CFEBD7'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='sport_athletics'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).sport_multi' time='1583761673'>
+    <entry value='#CFEBD9'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='sport_multi'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).sport_running' time='1583761673'>
+    <entry value='#CFEBD8'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='sport_running'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).stone' time='1583761673'>
+    <entry value='#F8F8C7'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='stone'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).stream' time='1583761673'>
+    <entry value='#6600CC'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='stream'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).street' time='1583761673'>
+    <entry value='#C0C0C0'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='street'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).subway' time='1583761673'>
+    <entry value='#606060'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='subway'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).swimming_pool' time='1583761673'>
+    <entry value='#51C4EF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='swimming_pool'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).telecom' time='1583761673'>
+    <entry value='#D8D8D8'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='telecom'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).terminal' time='1583761673'>
+    <entry value='#BB0000'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='terminal'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).tertiary' time='1583761673'>
+    <entry value='#F7F496'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='tertiary'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).tidal_channel' time='1583761673'>
+    <entry value='#0000FF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='tidal_channel'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).tourism' time='1583761673'>
+    <entry value='#E180A2'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='tourism'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).trunk' time='1583761673'>
+    <entry value='#7FC97F'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='trunk'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).tunnel' time='1583761673'>
+    <entry value='#964B00'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='tunnel'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).water' time='1583761673'>
+    <entry value='#0000FF'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='water'/>
+  </list>
+  <list key='clr.mappaint.JOSM default (MapCSS).woodarea' time='1583761673'>
+    <entry value='#008000'/>
+    <entry value='mappaint'/>
+    <entry value='JOSM default (MapCSS)'/>
+    <entry value='woodarea'/>
+  </list>
+  <list key='clr.mappaint.MapWithAI.mapWithAIDecemberSelected' time='1583761673'>
+    <entry value='#FF0000'/>
+    <entry value='mappaint'/>
+    <entry value='MapWithAI'/>
+    <entry value='mapWithAIDecemberSelected'/>
+  </list>
+  <list key='clr.mappaint.MapWithAI.mapwithai' time='1583761673'>
+    <entry value='#FF00FF'/>
+    <entry value='mappaint'/>
+    <entry value='MapWithAI'/>
+    <entry value='mapwithai'/>
+  </list>
+  <list key='clr.mappaint.MapWithAI.mapwithaiDecemberGreen' time='1583761673'>
+    <entry value='#00FF00'/>
+    <entry value='mappaint'/>
+    <entry value='MapWithAI'/>
+    <entry value='mapwithaiDecemberGreen'/>
+  </list>
+  <list key='clr.mappaint.MapWithAI.mapwithaiDecemberRed' time='1583761673'>
+    <entry value='#FC6262'/>
+    <entry value='mappaint'/>
+    <entry value='MapWithAI'/>
+    <entry value='mapwithaiDecemberRed'/>
+  </list>
+  <list key='clr.mappaint.MapWithAI.mapwithaiDecemberWhite' time='1583761673'>
+    <entry value='#FFFFFF'/>
+    <entry value='mappaint'/>
+    <entry value='MapWithAI'/>
+    <entry value='mapwithaiDecemberWhite'/>
+  </list>
+  <tag key='color.selected' time='1583658014' value=''/>
+  <tag key='colorschemes.names' time='1583761915' value=''/>
+  <tag key='colorschemes.sdf.color.clr.general.Advanced Background: Changed' time='1583658697' value=''/>
+  <tag key='colorschemes.sdf.color.clr.general.Advanced Background: NonDefault' time='1583658697' value=''/>
+  <tag key='commandstack.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='commandstack.docked' time='1583660404' value='true'/>
+  <tag key='commandstack.minimized' time='1583660404' value='false'/>
+  <tag key='commandstack.preferredHeight' time='1583660404' value='100'/>
+  <tag key='commandstack.visible' time='1583660404' value='false'/>
+  <tag key='conflict.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='conflict.docked' time='1583660404' value='true'/>
+  <tag key='conflict.minimized' time='1583660404' value='false'/>
+  <tag key='conflict.preferredHeight' time='1583660404' value='100'/>
+  <tag key='conflict.visible' time='1583660404' value='false'/>
+  <tag key='coordinates' time='1583761668' value=''/>
+  <tag key='curves.circlearc.angle-separation' time='1583761690' value='20'/>
+  <tag key='customsettings.lastDirectory' time='1583659063' value=''/>
+  <tag key='debug.advanced-keypress-detector.enable' time='1583660404' value='true'/>
+  <tag key='debug.checkDeleteReferenced' time='1583761673' value='true'/>
+  <tag key='debug.checkNullCoor' time='1583761673' value='true'/>
+  <tag key='debug.edt-checker.enable' time='1583761691' value='false'/>
+  <tag key='default.osm.tile.source.url' time='1583761892' value='https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png'/>
+  <tag key='dialog.align.left' time='1583660405' value='false'/>
+  <tag key='dialog.dynamic.buttons' time='1583761915' value='false'/>
+  <tag key='dialog.layer.colorname' time='1583660660' value='true'/>
+  <tag key='display.discardable-keys' time='1583761915' value='false'/>
+  <tag key='download.autorun' time='1583761893' value='false'/>
+  <tag key='download.location.newlayer' time='1583761669' value='false'/>
+  <tag key='download.location.zoomtodata' time='1583761669' value='true'/>
+  <tag key='download.osm.data' time='1583761893' value='true'/>
+  <tag key='download.osm.gps' time='1583761893' value='false'/>
+  <tag key='download.osm.notes' time='1583761893' value='false'/>
+  <tag key='download.overpass.for-multi-fetch' time='1583659114' value='false'/>
+  <maps key='download.overpass.queries' time='1583761892'>
+  </maps>
+  <tag key='download.overpass.query' time='1583761893' value='/*&#xA;Place your Overpass query below or generate one using the Overpass Turbo Query Wizard&#xA;*/'/>
+  <tag key='download.overpass.query-list.opened' time='1583761892' value='false'/>
+  <tag key='download.overpass.server' time='1583659114' value='https://overpass-api.de/api/'/>
+  <list key='download.overpass.servers' time='1583659114'>
+    <entry value='https://overpass-api.de/api/'/>
+    <entry value='http://overpass.openstreetmap.ru/cgi/'/>
+  </list>
+  <list key='download.places.history' time='1583761893'>
+  </list>
+  <tag key='download.source.tab' time='1583761893' value='osmdownloadpanel'/>
+  <tag key='download.tab' time='1583761893' value='0'/>
+  <tag key='download.tabsplit.overpassdownloadpanel' time='1583761892' value='150'/>
+  <tag key='download.zoomtodata' time='1583761893' value='true'/>
+  <list key='draw.anglesnap.angles' time='1583660404'>
+    <entry value='0'/>
+    <entry value='30'/>
+    <entry value='45'/>
+    <entry value='60'/>
+    <entry value='90'/>
+    <entry value='120'/>
+    <entry value='135'/>
+    <entry value='150'/>
+    <entry value='180'/>
+  </list>
+  <tag key='draw.anglesnap.drawConstructionGeometry' time='1583761670' value='true'/>
+  <tag key='draw.anglesnap.drawProjectedPoint' time='1583761670' value='true'/>
+  <tag key='draw.anglesnap.projectionsnap' time='1583761670' value='true'/>
+  <tag key='draw.anglesnap.showAngle' time='1583761670' value='true'/>
+  <tag key='draw.anglesnap.stroke.helper' time='1583761670' value='1.0 4.0'/>
+  <tag key='draw.anglesnap.stroke.highlight' time='1583761670' value='10.0'/>
+  <tag key='draw.anglesnap.toggleOnRepeatedA' time='1583761670' value='true'/>
+  <tag key='draw.anglesnap.tolerance' time='1583761670' value='5.0'/>
+  <tag key='draw.area.extent_threshold' time='1582940676' xsi:nil='true'/>
+  <tag key='draw.data.area_outline_only' time='1583761915' value='false'/>
+  <tag key='draw.data.downloaded_area' time='1583761915' value='true'/>
+  <tag key='draw.data.inactive_color' time='1583761915' value='true'/>
+  <tag key='draw.dialogspanel' time='1583761670' value='true'/>
+  <tag key='draw.fullscreen' time='1583761670' value='false'/>
+  <tag key='draw.fullscreen.exclusive-mode' time='1583761691' value='auto'/>
+  <tag key='draw.helper-line' time='1583761915' value='true'/>
+  <tag key='draw.oneway' time='1583761915' value='true'/>
+  <tag key='draw.rawgps.colormode' time='1583761915' value='-1'/>
+  <tag key='draw.rawgps.colormode.dynamic-range' time='1583761915' value='false'/>
+  <tag key='draw.rawgps.colormode.heatmap.colormap' time='1583761915' value='0'/>
+  <tag key='draw.rawgps.colormode.heatmap.gain' time='1583761915' value='0'/>
+  <tag key='draw.rawgps.colormode.heatmap.lower-limit' time='1583761915' value='0'/>
+  <tag key='draw.rawgps.colormode.heatmap.use-points' time='1583761915' value='false'/>
+  <tag key='draw.rawgps.colormode.velocity.tune' time='1583761915' value='45'/>
+  <tag key='draw.rawgps.lines' time='1583761915' value='-1'/>
+  <tag key='draw.rawgps.lines.alpha-blend' time='1583761915' value='false'/>
+  <tag key='draw.rawgps.lines.arrows' time='1583761915' value='false'/>
+  <tag key='draw.rawgps.lines.arrows.fast' time='1583761915' value='false'/>
+  <tag key='draw.rawgps.lines.arrows.min-distance' time='1583761915' value='40'/>
+  <tag key='draw.rawgps.lines.force' time='1583761915' value='false'/>
+  <tag key='draw.rawgps.lines.max-length' time='1583761915' value='200'/>
+  <tag key='draw.rawgps.lines.max-length.local' time='1583761915' value='-1'/>
+  <tag key='draw.rawgps.lines.width' time='1583761915' value='0'/>
+  <tag key='draw.rawgps.markers.audio.pattern' time='1583761915' value='?{ &apos;{name}&apos; | &apos;{desc}&apos; | &apos;{formattedWaypointOffset}&apos; }'/>
+  <tag key='draw.rawgps.markers.pattern' time='1583761915' value='?{ &apos;{name} ({desc})&apos; | &apos;{name} ({cmt})&apos; | &apos;{name}&apos; | &apos;{desc}&apos; | &apos;{cmt}&apos; }'/>
+  <tag key='draw.rawgps.points.hdopcircle' time='1583761915' value='false'/>
+  <tag key='draw.rawgps.points.large' time='1583761915' value='false'/>
+  <tag key='draw.segment.direction' time='1583761915' value='false'/>
+  <tag key='draw.segment.head_only' time='1583761915' value='false'/>
+  <tag key='draw.segment.order_number' time='1583761915' value='false'/>
+  <tag key='draw.segment.order_number.on_selected' time='1583761915' value='false'/>
+  <tag key='draw.show-user' time='1583761915' value='false'/>
+  <tag key='draw.splashscreen' time='1583761915' value='true'/>
+  <tag key='draw.stroke.helper-line' time='1583761670' value='3.0'/>
+  <tag key='draw.target-highlight' time='1583761915' value='true'/>
+  <tag key='draw.viewport.following' time='1583761670' value='false'/>
+  <tag key='edit.initial-move-delay' time='1583660405' value='200'/>
+  <tag key='edit.initial-move-threshold' time='1583660405' value='5'/>
+  <tag key='edit.make-parallel-way-action.add-to-selection-modifier-combo' time='1583660404' value='caS'/>
+  <tag key='edit.make-parallel-way-action.copy-tags-default' time='1583660404' value='true'/>
+  <tag key='edit.make-parallel-way-action.copy-tags-modifier-combo' time='1583660404' value='?As'/>
+  <tag key='edit.make-parallel-way-action.initial-move-delay' time='1583660404' value='200'/>
+  <tag key='edit.make-parallel-way-action.set-selection-modifier-combo' time='1583660404' value='cas'/>
+  <tag key='edit.make-parallel-way-action.snap-default' time='1583660404' value='true'/>
+  <tag key='edit.make-parallel-way-action.snap-distance-chinese' time='1583660404' value='1.0'/>
+  <tag key='edit.make-parallel-way-action.snap-distance-imperial' time='1583660404' value='1.0'/>
+  <tag key='edit.make-parallel-way-action.snap-distance-metric' time='1583660404' value='0.5'/>
+  <tag key='edit.make-parallel-way-action.snap-distance-nautical' time='1583660404' value='0.1'/>
+  <tag key='edit.make-parallel-way-action.snap-modifier-combo' time='1583660404' value='C?s'/>
+  <tag key='edit.make-parallel-way-action.snap-threshold-percent' time='1583660404' value='0.7'/>
+  <tag key='edit.make-parallel-way-action.stroke.hepler-line' time='1583660404' value='1.0'/>
+  <tag key='edit.make-parallel-way-action.stroke.ref-line' time='1583660404' value='2.0 2.0 3.0'/>
+  <tag key='edit.make-parallel-way-action.toggle-selection-modifier-combo' time='1583660404' value='Cas'/>
+  <tag key='edit.snap-intersection-threshold' time='1583761670' value='10.0'/>
+  <tag key='edit.zoom-enlarge-bbox' time='1583660791' value='2.0E-4'/>
+  <tag key='expert' time='1583761670' value='false'/>
+  <tag key='extrude.angle-symbol-radius' time='1583660404' value='8.0'/>
+  <tag key='extrude.ctrl.stroke.old-line' time='1583660404' value='1'/>
+  <tag key='extrude.drag-nodes-without-ctrl' time='1583660404' value='false'/>
+  <tag key='extrude.dualalign.keep-segment-direction' time='1583660404' value='true'/>
+  <tag key='extrude.dualalign.toggleOnRepeatedX' time='1583660404' value='true'/>
+  <tag key='extrude.ignore-shared-nodes' time='1583660404' value='true'/>
+  <tag key='extrude.initial-move-threshold' time='1583660404' value='1'/>
+  <tag key='extrude.stroke.helper-line' time='1583660404' value='1 4'/>
+  <tag key='extrude.stroke.main' time='1583660404' value='3'/>
+  <list key='file-open.history' time='1582938445' xsi:nil='true'/>
+  <tag key='file-open.history.max-size' time='1583016791' value='15'/>
+  <tag key='filter.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='filter.docked' time='1583660404' value='true'/>
+  <tag key='filter.minimized' time='1583660404' value='false'/>
+  <tag key='filter.preferredHeight' time='1583660404' value='162'/>
+  <tag key='filter.visible' time='1583660404' value='false'/>
+  <maps key='filters.entries' time='1582938448' xsi:nil='true'/>
+  <tag key='fix.data.on.upload' time='1583655552' value='true'/>
+  <tag key='glyph-bug' time='1583660601' value='auto'/>
+  <tag key='gui.geometry' time='1583761969' value=''/>
+  <tag key='gui.maximized' time='1583761691' value='false'/>
+  <tag key='gui.scale' time='1583761663' value='1.0'/>
+  <tag key='gui.scale.menu.font' time='1583761668' value='1.0'/>
+  <tag key='gui.start.animation' time='1583761691' value='true'/>
+  <tag key='help.baseurl' time='1583761670' value='https://josm.openstreetmap.de'/>
+  <tag key='help.displaymotd' time='1583761670' value='true'/>
+  <tag key='help.pathhelp' time='1583655515' value='/Help'/>
+  <tag key='iconsize.cursor' time='1583761662' value='32'/>
+  <tag key='iconsize.default' time='1583761662' value='24'/>
+  <tag key='iconsize.largeicon' time='1583761662' value='24'/>
+  <tag key='iconsize.layer' time='1583761662' value='16'/>
+  <tag key='iconsize.map' time='1583761662' value='16'/>
+  <tag key='iconsize.mapmax' time='1583761662' value='48'/>
+  <tag key='iconsize.settingstab' time='1583761662' value='48'/>
+  <tag key='iconsize.sidebutton' time='1583761662' value='20'/>
+  <tag key='iconsize.smallicon' time='1583761662' value='16'/>
+  <tag key='imagery.cache.max_disk_size' time='1583761915' value='512'/>
+  <maps key='imagery.entries' time='1582813247' xsi:nil='true'/>
+  <tag key='imagery.generic.default_autoload' time='1583761915' value='true'/>
+  <tag key='imagery.generic.default_autozoom' time='1583761915' value='true'/>
+  <tag key='imagery.generic.default_showerrors' time='1583761915' value='true'/>
+  <tag key='imagery.generic.loader.cachedir' time='1583761915' value='/home/dearrude/.cache/JOSM/tiles'/>
+  <tag key='imagery.generic.max_zoom_lvl' time='1583761679' value='20'/>
+  <tag key='imagery.generic.maximum_expires' time='1583761673' value='2592000000'/>
+  <tag key='imagery.generic.min_zoom_lvl' time='1583761679' value='2'/>
+  <tag key='imagery.generic.minimum_expires' time='1583761675' value='3600000'/>
+  <tag key='imagery.generic.zoom_offset' time='1583761679' value='0'/>
+  <list key='imagery.layers.default' time='1582813250' xsi:nil='true'/>
+  <list key='imagery.layers.sites' time='1583761673'>
+    <entry value='https://josm.openstreetmap.de/maps%&lt;?ids=&gt;'/>
+  </list>
+  <maps key='imagery.offsetbookmarks' time='1582813250' xsi:nil='true'/>
+  <tag key='imagery.sharpen_level' time='1583761679' value='0'/>
+  <tag key='imagery.tms.add_to_slippymap_chooser' time='1583761893' value='true'/>
+  <tag key='imagery.tms.max_zoom_lvl' time='1583761915' value='20'/>
+  <tag key='imagery.tms.min_zoom_lvl' time='1583761915' value='2'/>
+  <tag key='imagery.tms.tmsloader.maxjobs' time='1583761915' value='25'/>
+  <tag key='imagery.tms.tmsloader.maxjobsperhost' time='1583761915' value='6'/>
+  <tag key='imagery.wms.default_autoload' time='1583761915' value='true'/>
+  <tag key='imagery.wms.default_autozoom' time='1583761915' value='true'/>
+  <tag key='imagery.wms.default_showerrors' time='1583761915' value='true'/>
+  <tag key='imagery.wms.imageSize' time='1583761915' value='512'/>
+  <tag key='imagery.wms.loader.maxjobs' time='1583761915' value='3'/>
+  <tag key='imagery.wmts.default_autoload' time='1583761915' value='true'/>
+  <tag key='imagery.wmts.default_autozoom' time='1583761915' value='true'/>
+  <tag key='imagery.wmts.default_showerrors' time='1583761915' value='true'/>
+  <tag key='improvewayaccuracy.dot-size' time='1583660404' value='6'/>
+  <tag key='improvewayaccuracy.helper-arc-radius' time='1583660404' value='200'/>
+  <tag key='improvewayaccuracy.helper-distance-text-distance' time='1583660404' value='15'/>
+  <tag key='improvewayaccuracy.helper-equal-angle-circle-radius' time='1583660404' value='15'/>
+  <tag key='improvewayaccuracy.helper-perpendicular-line-length' time='1583660404' value='100'/>
+  <tag key='improvewayaccuracy.helper-turn-text-distance' time='1583660404' value='15'/>
+  <tag key='improvewayaccuracy.long-keypress-time' time='1583660404' value='250'/>
+  <tag key='improvewayaccuracy.stroke.add-node' time='1583660404' value='1'/>
+  <tag key='improvewayaccuracy.stroke.delete-node' time='1583660404' value='1'/>
+  <tag key='improvewayaccuracy.stroke.helper-arc' time='1583660404' value='1'/>
+  <tag key='improvewayaccuracy.stroke.helper-eual-angle-circle' time='1583660404' value='1'/>
+  <tag key='improvewayaccuracy.stroke.helper-perpendicular-line' time='1583660404' value='1 6'/>
+  <tag key='improvewayaccuracy.stroke.move-node' time='1583660404' value='1 6'/>
+  <tag key='improvewayaccuracy.stroke.move-node-intersecting' time='1583660404' value='1 2 6'/>
+  <tag key='improvewayaccuracy.stroke.select-target' time='1583660404' value='2'/>
+  <tag key='iso.dates' time='1583761915' value='false'/>
+  <tag key='jcs.cache.max_objects_in_memory' time='1583761680' value='1000'/>
+  <tag key='jcs.cache.use_block_cache' time='1583761915' value='true'/>
+  <tag key='jdk.tls.disableSNIExtension' time='1583761941' value='false'/>
+  <tag key='jmapviewer.osm-tile-loader.threads' time='1583761892' value='8'/>
+  <tag key='josm.url' time='1583761893' value='https://josm.openstreetmap.de'/>
+  <tag key='laf' time='1583761915' value='javax.swing.plaf.metal.MetalLookAndFeel'/>
+  <tag key='language' time='1583761941' value=''/>
+  <tag key='lastDirectory' time='1583761897' value=''/>
+  <tag key='latlon.dm.decimal-format' time='1583761668' value='00.000'/>
+  <tag key='latlon.dms.decimal-format' time='1583761668' value='00.0'/>
+  <tag key='layerlist.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='layerlist.display.numbers' time='1583661406' value='true'/>
+  <tag key='layerlist.docked' time='1583660404' value='true'/>
+  <tag key='layerlist.lastHeight' time='1583660404' value='100'/>
+  <tag key='layerlist.minimized' time='1583660404' value='false'/>
+  <tag key='layerlist.preferredHeight' time='1583660404' value='100'/>
+  <tag key='layerlist.visible' time='1583660404' value='true'/>
+  <tag key='mappaint.StyledMapRenderer.style_creation.numberOfThreads' time='1583761669' value='4'/>
+  <tag key='mappaint.auto_reload_local_styles' time='1583761673' value='true'/>
+  <tag key='mappaint.fillalpha' time='1583660763' value='50'/>
+  <tag key='mappaint.fillareas' time='1583660793' value='10000000'/>
+  <tag key='mappaint.font' time='1583660405' value='Droid Sans'/>
+  <tag key='mappaint.fontsize' time='1583660405' value='8'/>
+  <tag key='mappaint.gpx.use-antialiasing' time='1583761915' value='false'/>
+  <tag key='mappaint.hide.labels.while.dragging' time='1583761915' value='true'/>
+  <tag key='mappaint.highlight.bigger-increment' time='1583761669' value='5'/>
+  <tag key='mappaint.highlight.radius' time='1583761669' value='7'/>
+  <tag key='mappaint.highlight.step' time='1583761669' value='4'/>
+  <tag key='mappaint.highlight.width' time='1583761669' value='4'/>
+  <tag key='mappaint.icon-image-alpha' time='1583660776' value='255'/>
+  <tag key='mappaint.icon.enable-defaults' time='1583761674' value='true'/>
+  <list key='mappaint.icon.sources' time='1582813247' xsi:nil='true'/>
+  <tag key='mappaint.lefthandtraffic' time='1583761669' value='false'/>
+  <tag key='mappaint.multipolygon' time='1583660793' value='true'/>
+  <list key='mappaint.multipolygon.inner.role-prefixes' time='1582813245' xsi:nil='true'/>
+  <list key='mappaint.multipolygon.inner.roles' time='1582813245' xsi:nil='true'/>
+  <list key='mappaint.multipolygon.outer.role-prefixes' time='1582813245' xsi:nil='true'/>
+  <list key='mappaint.multipolygon.outer.roles' time='1582813245' xsi:nil='true'/>
+  <list key='mappaint.nameComplementOrder' time='1583660405'>
+    <entry value='capacity'/>
+  </list>
+  <list key='mappaint.nameOrder' time='1583660405'>
+    <entry value='name:en'/>
+    <entry value='name'/>
+    <entry value='int_name'/>
+    <entry value='distance'/>
+    <entry value='ref'/>
+    <entry value='operator'/>
+    <entry value='brand'/>
+    <entry value='addr:housenumber'/>
+  </list>
+  <tag key='mappaint.node.connection-size' time='1583661406' value='5'/>
+  <tag key='mappaint.node.fill-connection' time='1583661406' value='false'/>
+  <tag key='mappaint.node.fill-selected' time='1583661406' value='true'/>
+  <tag key='mappaint.node.fill-tagged' time='1583661406' value='true'/>
+  <tag key='mappaint.node.fill-unselected' time='1583661406' value='false'/>
+  <tag key='mappaint.node.selected-size' time='1583661406' value='5'/>
+  <tag key='mappaint.node.snap-distance' time='1583761670' value='10'/>
+  <tag key='mappaint.node.tagged-size' time='1583661406' value='3'/>
+  <tag key='mappaint.node.unselected-size' time='1583661406' value='3'/>
+  <tag key='mappaint.node.virtual-size' time='1583761941' value='8'/>
+  <tag key='mappaint.node.virtual-snap-distance' time='1583660405' value='8'/>
+  <tag key='mappaint.node.virtual-space' time='1583660793' value='70'/>
+  <tag key='mappaint.render.benchmark' time='1583660793' value='false'/>
+  <tag key='mappaint.renderer-class-name' time='1582813243' xsi:nil='true'/>
+  <tag key='mappaint.restriction' time='1583660793' value='true'/>
+  <tag key='mappaint.segment.default-width' time='1583661406' value='2'/>
+  <tag key='mappaint.segment.snap-distance' time='1583661405' value='10'/>
+  <tag key='mappaint.segmentnumber.space' time='1583660793' value='40'/>
+  <tag key='mappaint.select.toggle-lasso-on-repeated-S' time='1583660405' value='true'/>
+  <tag key='mappaint.select.waits-for-mouse-up' time='1583660405' value='false'/>
+  <tag key='mappaint.showicons' time='1583661406' value='10000000'/>
+  <tag key='mappaint.shownames' time='1583661406' value='10000000'/>
+  <tag key='mappaint.strokes' time='1583661406' value='10000000'/>
+  <maps key='mappaint.style.entries' time='1582813246' xsi:nil='true'/>
+  <list key='mappaint.style.known-defaults' time='1582813246' xsi:nil='true'/>
+  <tag key='mappaint.text-antialiasing' time='1583761669' value='default'/>
+  <tag key='mappaint.use-antialiasing' time='1583761915' value='true'/>
+  <tag key='mappaint.useRealWidth' time='1583661406' value='false'/>
+  <tag key='mappaint.wireframe.use-antialiasing' time='1583761915' value='false'/>
+  <tag key='mapstyle.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='mapstyle.docked' time='1583660404' value='true'/>
+  <tag key='mapstyle.minimized' time='1583660404' value='false'/>
+  <tag key='mapstyle.preferredHeight' time='1583660404' value='150'/>
+  <tag key='mapstyle.visible' time='1583660404' value='false'/>
+  <tag key='marker.audiofromexplicitwaypoints' time='1583660410' value='true'/>
+  <tag key='marker.audiofromnamedtrackpoints' time='1583660410' value='false'/>
+  <tag key='marker.audiofromstart' time='1583660410' value='false'/>
+  <tag key='marker.audiofromuntimedwaypoints' time='1583660410' value='true'/>
+  <tag key='marker.audiofromwavtimestamps' time='1583660410' value='false'/>
+  <tag key='marker.buttonlabels' time='1583660410' value='true'/>
+  <tag key='marker.makeautomarkers' time='1583761915' value='true'/>
+  <tag key='marker.traceaudio' time='1583660410' value='true'/>
+  <tag key='measure.buttonhiding' time='1583660405' value='DYNAMIC'/>
+  <tag key='measure.docked' time='1583660405' value='true'/>
+  <tag key='measure.minimized' time='1583660405' value='false'/>
+  <tag key='measure.preferredHeight' time='1583660405' value='150'/>
+  <tag key='measure.visible' time='1583660405' value='false'/>
+  <tag key='message.' time='1583660738' value='true'/>
+  <tag key='message.imagery.nagPanel.https://services.digitalglobe.com/earthservice/tmsaccess/tms/1.0.0/DigitalGlobe:ImageryTileService@EPSG:3857@jpg/{zoom}/{x}/{-y}.jpg?connectId=_apiKey_&amp;foo=premium' time='1583660648' value='true'/>
+  <tag key='message.imagery.nagPanel.https://services.digitalglobe.com/earthservice/tmsaccess/tms/1.0.0/DigitalGlobe:ImageryTileService@EPSG:3857@jpg/{zoom}/{x}/{-y}.jpg?connectId=_apiKey_&amp;foo=standard' time='1582940393' value='true'/>
+  <tag key='message.notifier.enabled' time='1583761691' value='true'/>
+  <tag key='message.notifier.interval' time='1583761691' value='5'/>
+  <tag key='message.upload_source_is_empty' time='1583655566' value='true'/>
+  <tag key='message.upload_source_is_empty.value' time='1583655566' value='-1'/>
+  <tag key='minimap.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='minimap.docked' time='1583660404' value='true'/>
+  <tag key='minimap.minimized' time='1583660404' value='false'/>
+  <tag key='minimap.preferredHeight' time='1583660404' value='150'/>
+  <tag key='minimap.visible' time='1583660404' value='false'/>
+  <list key='mirror./home/dearrude/.cache/JOSM/images.https://josm.openstreetmap.de/browser/josm/trunk/images/data/changeset.svg?format_raw' time='1583655517' xsi:nil='true'/>
+  <list key='mirror./home/dearrude/.cache/JOSM/images.https://josm.openstreetmap.de/browser/trunk/images/dialogs/changeset/changesetmanager.svg?format_raw' time='1583655518' xsi:nil='true'/>
+  <list key='mirror.https://gokaart.gitlab.io/JOSM_MapWithAI/json/sources.json' time='1582943273' xsi:nil='true'/>
+  <list key='mirror.https://josm.openstreetmap.de/josmfile?page_Presets/Iranian_Preset&amp;zip_1' time='1582943040' xsi:nil='true'/>
+  <list key='mirror.https://josm.openstreetmap.de/josmfile?page_Styles/Admin_Boundaries&amp;zip_1' time='1582943167' xsi:nil='true'/>
+  <list key='mirror.https://josm.openstreetmap.de/josmfile?page_Styles/MapWithAI&amp;zip_1' time='1582943168' xsi:nil='true'/>
+  <list key='mirror.https://josm.openstreetmap.de/maps' time='1582813247' xsi:nil='true'/>
+  <list key='mirror.https://josm.openstreetmap.de/presets' time='1582942705' xsi:nil='true'/>
+  <list key='mirror.https://josm.openstreetmap.de/remote/geofabrik-index-v1-nogeom.json' time='1582813245' xsi:nil='true'/>
+  <list key='mirror.https://josm.openstreetmap.de/remote/sophox-sparql?query_SELECT+%28CONCAT%28%22Key%3A%22%2C+%3Fpermanent_key_ID%29+as+%3FOSM_key%29+%3Fformatter_URL+WHERE+%7B%0A++%3Fitem+osmdt%3AP2+osmd%3AQ7.%0A++%3Fitem+osmdt%3AP16+%3Fpermanent_key_ID.%0A++%3Fitem+osmdt%3AP8+%3Fformatter_URL.%0A%7D%0A' time='1582813247' xsi:nil='true'/>
+  <list key='mirror.https://josm.openstreetmap.de/remote/wikidata-sparql?query_SELECT+%3FOSM_key+%3Fformatter_URL+WHERE+%7B%0A++%7B+%3Fitem+wdt%3AP1282+%3FOSM_key.+%7D%0A++FILTER%28STRSTARTS%28%3FOSM_key%2C+%27Key%3A%27%29%29+.%0A%0A++%7B%0A++++%7B+%3Fitem+wdt%3AP1630+%3Fformatter_URL.+%7D%0A++++UNION%0A++++%7B+%3Fitem+wdt%3AP3303+%3Fformatter_URL.+%7D%0A++%7D%0A%7D%0A' time='1582813247' xsi:nil='true'/>
+  <list key='mirror.https://josm.openstreetmap.de/rules' time='1583659089' xsi:nil='true'/>
+  <list key='mirror.https://josm.openstreetmap.de/styles' time='1582942650' xsi:nil='true'/>
+  <list key='mirror.https://raw.githubusercontent.com/facebookmicrosites/Open-Mapping-At-Facebook/master/data/rapid_releases.geojson' time='1582943275' xsi:nil='true'/>
+  <tag key='mirror.maxtime' time='1583761676' value='604800'/>
+  <tag key='modeless' time='1583761915' value='false'/>
+  <tag key='namefinder.server' time='1583761893' value='Nominatim'/>
+  <tag key='note.text.break-on-sentence-mark' time='1583657964' value='false'/>
+  <tag key='notes/note_open.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='notes/note_open.docked' time='1583660404' value='true'/>
+  <tag key='notes/note_open.lastHeight' time='1583660404' value='150'/>
+  <tag key='notes/note_open.minimized' time='1583660404' value='false'/>
+  <tag key='notes/note_open.preferredHeight' time='1583660404' value='150'/>
+  <tag key='notes/note_open.visible' time='1583660404' value='false'/>
+  <tag key='notification-default-pause-time-ms' time='1583660408' value='300'/>
+  <tag key='notification-time-default-ms' time='1583660408' value='5000'/>
+  <tag key='notification-time-long-ms' time='1583660408' value='10000'/>
+  <tag key='notification-time-short-ms' time='1583660408' value='3000'/>
+  <tag key='notification-time-very_long-ms' time='1583660408' value='20000'/>
+  <tag key='oauth.access-token.key' time='1582813239' xsi:nil='true'/>
+  <tag key='oauth.access-token.save-to-preferences' time='1583761662' value='true'/>
+  <tag key='oauth.access-token.secret' time='1582813239' xsi:nil='true'/>
+  <tag key='oauth.settings.use-default' time='1583659114' value='true'/>
+  <tag key='org.openstreetmap.josm.actions.ImageryAdjustAction$ImageryOffsetDialog.geometry' time='1583652865' value=''/>
+  <tag key='org.openstreetmap.josm.gui.dialogs.properties.TagEditHelper$AddTagsDialog.geometry' time='1583660074' value=''/>
+  <tag key='org.openstreetmap.josm.gui.dialogs.properties.TagEditHelper$EditTagDialog.geometry' time='1583655341' value=''/>
+  <tag key='org.openstreetmap.josm.gui.download.DownloadDialog.geometry' time='1583761893' value=''/>
+  <tag key='org.openstreetmap.josm.gui.help.HelpBrowser.geometry' time='1583655517' value=''/>
+  <tag key='org.openstreetmap.josm.gui.history.HistoryBrowserDialogManager.geometry' time='1583655529' value=''/>
+  <tag key='org.openstreetmap.josm.gui.io.UploadDialog.geometry' time='1583655552' value=''/>
+  <tag key='org.openstreetmap.josm.gui.preferences.PreferenceDialog.geometry' time='1583761915' value=''/>
+  <tag key='org.openstreetmap.josm.gui.preferences.advanced.ListEditor.geometry' time='1583659051' value=''/>
+  <tag key='osm-browse.url' time='1583655569' value='https://www.openstreetmap.org'/>
+  <tag key='osm-download.bounds' time='1583761893' value=''/>
+  <tag key='osm-primitives.localize-name' time='1583761915' value='true'/>
+  <tag key='osm-primitives.showcoor' time='1583761915' value='false'/>
+  <tag key='osm-primitives.showid' time='1583761915' value='false'/>
+  <tag key='osm-primitives.showid.new-primitives' time='1583661013' value='false'/>
+  <tag key='osm-primitives.showversion' time='1583761915' value='false'/>
+  <tag key='osm-server.auth-method' time='1583761691' value='oauth'/>
+  <tag key='osm-server.max-num-retries' time='1583655568' value='5'/>
+  <tag key='osm-server.max-request-area' time='1583761893' value='0.25'/>
+  <tag key='osm-server.password' time='1582813243' xsi:nil='true'/>
+  <tag key='osm-server.upload-strategy' time='1582944132' xsi:nil='true'/>
+  <tag key='osm-server.upload-strategy.chunk-size' time='1583655552' value='1000'/>
+  <tag key='osm-server.url' time='1583761691' value='https://api.openstreetmap.org/api'/>
+  <list key='osm-server.url-history' time='1583761915'>
+    <entry value='https://api06.dev.openstreetmap.org/api'/>
+    <entry value='https://master.apis.dev.openstreetmap.org/api'/>
+  </list>
+  <tag key='osm-server.username' time='1582813243' xsi:nil='true'/>
+  <tag key='osm-user.url' time='1583655529' value='https://www.openstreetmap.org/user'/>
+  <tag key='osm.notes.daysClosed' time='1583660603' value='7'/>
+  <tag key='osm.notes.downloadLimit' time='1583660603' value='1000'/>
+  <tag key='osm.url' time='1583761893' value='https://www.openstreetmap.org'/>
+  <list key='overlapping-ways.ignored-keys' time='1583761672'>
+    <entry value='barrier'/>
+    <entry value='indoor'/>
+    <entry value='building'/>
+    <entry value='building:part'/>
+    <entry value='historic:building'/>
+    <entry value='demolished:building'/>
+    <entry value='removed:building'/>
+    <entry value='disused:building'/>
+    <entry value='abandoned:building'/>
+    <entry value='proposed:building'/>
+    <entry value='man_made'/>
+  </list>
+  <tag key='overpass.wizard.timeout' time='1583761681' value='90'/>
+  <tag key='pluginmanager.lastupdate' time='1583761667' value='0'/>
+  <list key='pluginmanager.sites' time='1582942737'>
+    <entry value='https://josm.openstreetmap.de/pluginicons%&lt;?plugins=&gt;'/>
+  </list>
+  <tag key='pluginmanager.time-based-update.interval' time='1583761916' value='30'/>
+  <tag key='pluginmanager.time-based-update.policy' time='1583761916' value='ask'/>
+  <tag key='pluginmanager.version' time='1583761667' value='0'/>
+  <tag key='pluginmanager.version-based-update.policy' time='1583761916' value='ask'/>
+  <list key='plugins' time='1583761665'>
+  </list>
+  <tag key='prefer.ipv6' time='1583761941' value='auto'/>
+  <tag key='preferences.reset.draw.rawgps.lines' time='1583761651' value='false'/>
+  <tag key='progressdialog.size' time='1583761925' value='600'/>
+  <tag key='projection.default' time='1583761668' value='core:mercator'/>
+  <list key='projection.default.sub' time='1582813242' xsi:nil='true'/>
+  <list key='projection.sub.core:belgianLambert1972' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:belgianLambert2008' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:code' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:custom' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:dutchrd' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:gauss-krueger' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:lambert' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:lambert93' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:lambertcc9' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:lambertest' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:mercator' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:puwg' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:sweref99' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:swissgrid' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:tmerclv' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:utm' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:utmfrancedom' time='1582938521' xsi:nil='true'/>
+  <list key='projection.sub.core:wgs84' time='1582938521' xsi:nil='true'/>
+  <tag key='properties.autocomplete-keys' time='1583660404' value='true'/>
+  <tag key='properties.autocomplete-values' time='1583660404' value='true'/>
+  <tag key='properties.fix-tag-combobox-locale' time='1583660404' value='false'/>
+  <tag key='properties.last-closed-relations-size' time='1583761915' value='20'/>
+  <tag key='properties.menu.add_edit_delete' time='1583660404' value='true'/>
+  <tag key='properties.presets.top' time='1583660404' value='true'/>
+  <tag key='properties.presets.visible' time='1583660404' value='true'/>
+  <list key='properties.recent-tags' time='1583660404'>
+  </list>
+  <tag key='properties.recent-tags.ignore' time='1583660404' value=''/>
+  <tag key='properties.recently-added-tags' time='1583660404' value='5'/>
+  <tag key='properties.recently-added-tags-existing-key' time='1583660404' value='DISABLE'/>
+  <tag key='properties.refresh-recently-added-tags' time='1583660404' value='STATUS'/>
+  <tag key='properties.remember-recently-added-tags' time='1583661406' value='true'/>
+  <tag key='propertiesdialog.autoresizeTagsTable' time='1583661406' value='false'/>
+  <tag key='propertiesdialog.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='propertiesdialog.docked' time='1583660404' value='true'/>
+  <tag key='propertiesdialog.lastHeight' time='1583660404' value='150'/>
+  <tag key='propertiesdialog.minimized' time='1583660404' value='false'/>
+  <tag key='propertiesdialog.preferredHeight' time='1583660404' value='150'/>
+  <tag key='propertiesdialog.visible' time='1583660404' value='true'/>
+  <list key='proxy.exceptions' time='1583761662'>
+    <entry value='localhost'/>
+    <entry value='127.0.0.1'/>
+    <entry value='::1'/>
+  </list>
+  <tag key='proxy.http.host' time='1583659114' value=''/>
+  <tag key='proxy.http.port' time='1583659114' value=''/>
+  <tag key='proxy.pass' time='1582938521' xsi:nil='true'/>
+  <tag key='proxy.policy' time='1583761662' value=''/>
+  <tag key='proxy.socks.host' time='1583659114' value=''/>
+  <tag key='proxy.socks.port' time='1583659114' value=''/>
+  <tag key='proxy.user' time='1582938521' xsi:nil='true'/>
+  <list key='relation.nameOrder' time='1583660602'>
+    <entry value='name'/>
+    <entry value='ref'/>
+    <entry value='amenity'/>
+    <entry value='landuse'/>
+    <entry value='leisure'/>
+    <entry value='natural'/>
+    <entry value='public_transport'/>
+    <entry value='restriction'/>
+    <entry value='water'/>
+    <entry value='waterway'/>
+    <entry value='wetland'/>
+    <entry value=':LocationCode'/>
+    <entry value='note'/>
+    <entry value='?building'/>
+    <entry value='?building:part'/>
+  </list>
+  <tag key='relationlist.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='relationlist.docked' time='1583660404' value='true'/>
+  <tag key='relationlist.lastHeight' time='1583652625' value='150'/>
+  <tag key='relationlist.minimized' time='1583660404' value='false'/>
+  <tag key='relationlist.preferredHeight' time='1583660404' value='150'/>
+  <tag key='relationlist.visible' time='1583660404' value='true'/>
+  <tag key='reltoolbox.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='reltoolbox.docked' time='1583660404' value='true'/>
+  <tag key='reltoolbox.hidetopline' time='1583660404' value='false'/>
+  <tag key='reltoolbox.minimized' time='1583660404' value='false'/>
+  <tag key='reltoolbox.multipolygon.allowsplit' time='1583660404' value='false'/>
+  <tag key='reltoolbox.multipolygon.alltags' time='1583660404' value='false'/>
+  <tag key='reltoolbox.multipolygon.boundary' time='1583661406' value='false'/>
+  <tag key='reltoolbox.multipolygon.boundaryways' time='1583660404' value='true'/>
+  <tag key='reltoolbox.multipolygon.tags' time='1583660404' value='true'/>
+  <tag key='reltoolbox.preferredHeight' time='1583660404' value='150'/>
+  <tag key='reltoolbox.visible' time='1583660404' value='true'/>
+  <tag key='remote.control.host.ipv4' time='1583761691' value='127.0.0.1'/>
+  <tag key='remote.control.host.ipv6' time='1583761691' value='::1'/>
+  <tag key='remote.control.port' time='1583761691' value='8111'/>
+  <tag key='remotecontrol.always-confirm' time='1583660412' value='false'/>
+  <tag key='remotecontrol.enabled' time='1583761691' value='false'/>
+  <tag key='remotecontrol.new-layer' time='1583660412' value='false'/>
+  <tag key='remotecontrol.permission.change-selection' time='1583761915' value='true'/>
+  <tag key='remotecontrol.permission.change-viewport' time='1583761915' value='true'/>
+  <tag key='remotecontrol.permission.create-objects' time='1583761915' value='true'/>
+  <tag key='remotecontrol.permission.imagery' time='1583761915' value='true'/>
+  <tag key='remotecontrol.permission.import' time='1583761915' value='true'/>
+  <tag key='remotecontrol.permission.load-data' time='1583761915' value='true'/>
+  <tag key='remotecontrol.permission.open-files' time='1583761915' value='false'/>
+  <tag key='remotecontrol.permission.read-protocolversion' time='1583761915' value='true'/>
+  <tag key='resource://styles/standard/elemstyles.mapcss:boolean:alt_turn_icons' time='1583761673' value='false'/>
+  <tag key='resource://styles/standard/elemstyles.mapcss:boolean:hide_icons' time='1583761673' value='true'/>
+  <tag key='resource://styles/standard/elemstyles.mapcss:boolean:hide_tagged_waynodes' time='1583761673' value='true'/>
+  <tag key='resource://styles/standard/elemstyles.mapcss:boolean:highway_labels' time='1583761673' value='true'/>
+  <tag key='resource://styles/standard/elemstyles.mapcss:boolean:partial_fill' time='1583761673' value='true'/>
+  <tag key='resource://styles/standard/elemstyles.mapcss:boolean:place_fill_colour' time='1583761673' value='false'/>
+  <tag key='resource://styles/standard/elemstyles.mapcss:boolean:shrink_nodes' time='1583761673' value='true'/>
+  <tag key='save.extension.gpx' time='1583761669' value='gpx'/>
+  <tag key='save.extension.osm' time='1583761915' value='osm'/>
+  <tag key='save.keepbackup' time='1583761915' value='false'/>
+  <list key='search.history' time='1583761669'>
+  </list>
+  <tag key='search.history-size' time='1583761915' value='15'/>
+  <tag key='select.history-size' time='1583660778' value='10'/>
+  <tag key='selectaction.cycles.multiple.matches' time='1583660405' value='false'/>
+  <tag key='selection.fast_sort_above' time='1583655054' value='10000'/>
+  <tag key='selection.max-ways-for-statusline' time='1583661406' value='250'/>
+  <tag key='selection.no_sort_above' time='1583655054' value='100000'/>
+  <tag key='selection.sort_relations_before_ways' time='1583655054' value='true'/>
+  <tag key='selectionlist.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='selectionlist.docked' time='1583660404' value='true'/>
+  <tag key='selectionlist.lastHeight' time='1583660404' value='150'/>
+  <tag key='selectionlist.minimized' time='1583660404' value='false'/>
+  <tag key='selectionlist.preferredHeight' time='1583660404' value='150'/>
+  <tag key='selectionlist.visible' time='1583660404' value='true'/>
+  <list key='shortcut.entry.Tool:changeset-viewer' time='1583660404'>
+    <entry value='Toggle: Tool:changeset-Viewer'/>
+    <entry value='84'/>
+    <entry value='5010'/>
+    <entry value='84'/>
+    <entry value='704'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.addnode' time='1583761669'>
+    <entry value='Edit: Add Node...'/>
+    <entry value='68'/>
+    <entry value='5005'/>
+    <entry value='68'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.audio:back' time='1583761669'>
+    <entry value='Audio: Back'/>
+    <entry value='117'/>
+    <entry value='5003'/>
+    <entry value='117'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.audio:faster' time='1583761669'>
+    <entry value='Audio: Faster'/>
+    <entry value='120'/>
+    <entry value='5003'/>
+    <entry value='120'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.audio:forward' time='1583761669'>
+    <entry value='Audio: Forward'/>
+    <entry value='118'/>
+    <entry value='5003'/>
+    <entry value='118'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.audio:next' time='1583761669'>
+    <entry value='Audio: Next Marker'/>
+    <entry value='119'/>
+    <entry value='5003'/>
+    <entry value='119'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.audio:pause' time='1583761669'>
+    <entry value='Audio: Play/Pause'/>
+    <entry value='46'/>
+    <entry value='5003'/>
+    <entry value='46'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.audio:prev' time='1583761669'>
+    <entry value='Audio: Previous Marker'/>
+    <entry value='116'/>
+    <entry value='5003'/>
+    <entry value='116'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.audio:slower' time='1583761669'>
+    <entry value='Audio: Slower'/>
+    <entry value='115'/>
+    <entry value='5003'/>
+    <entry value='115'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.buildings_tools:circle' time='1583761690'>
+    <entry value='Data: Set buildings shape to circle'/>
+    <entry value='90'/>
+    <entry value='5004'/>
+    <entry value='90'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.buildings_tools:rectangle' time='1583761690'>
+    <entry value='Data: Set buildings shape to rectangle'/>
+    <entry value='82'/>
+    <entry value='5004'/>
+    <entry value='82'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.copy:coordinates' time='1583761669'>
+    <entry value='Edit: Copy Coordinates'/>
+    <entry value='67'/>
+    <entry value='5009'/>
+    <entry value='67'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core:cyclelayerdown' time='1583660404'>
+    <entry value='Cycle layers down'/>
+    <entry value='93'/>
+    <entry value='5005'/>
+    <entry value='93'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core:cyclelayerup' time='1583660404'>
+    <entry value='Cycle layers up'/>
+    <entry value='91'/>
+    <entry value='5005'/>
+    <entry value='91'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core:historyinfo' time='1583761669'>
+    <entry value='History'/>
+    <entry value='72'/>
+    <entry value='5006'/>
+    <entry value='72'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core:historyinfoweb' time='1583761669'>
+    <entry value='History (web)'/>
+    <entry value='72'/>
+    <entry value='5009'/>
+    <entry value='72'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core:info' time='1583761669'>
+    <entry value='Advanced info'/>
+    <entry value='73'/>
+    <entry value='5006'/>
+    <entry value='73'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core:infoweb' time='1583761669'>
+    <entry value='Advanced info (web)'/>
+    <entry value='73'/>
+    <entry value='5009'/>
+    <entry value='73'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core:movedown' time='1583761670'>
+    <entry value='Move objects down'/>
+    <entry value='40'/>
+    <entry value='5005'/>
+    <entry value='40'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core:moveleft' time='1583761670'>
+    <entry value='Move objects left'/>
+    <entry value='37'/>
+    <entry value='5005'/>
+    <entry value='37'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core:moveright' time='1583761670'>
+    <entry value='Move objects right'/>
+    <entry value='39'/>
+    <entry value='5005'/>
+    <entry value='39'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core:moveup' time='1583761670'>
+    <entry value='Move objects up'/>
+    <entry value='38'/>
+    <entry value='5005'/>
+    <entry value='38'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core:none' time='1583761690'>
+    <entry value='No Shortcut'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core_multikey:activateLayer' time='1583660404'>
+    <entry value='Multikey: Activate layer'/>
+    <entry value='65'/>
+    <entry value='5007'/>
+    <entry value='65'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core_multikey:enableFilter' time='1583660404'>
+    <entry value='Multikey: Enable filter'/>
+    <entry value='69'/>
+    <entry value='5008'/>
+    <entry value='69'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core_multikey:hidingFilter' time='1583660404'>
+    <entry value='Multikey: Hide filter'/>
+    <entry value='72'/>
+    <entry value='5008'/>
+    <entry value='72'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core_multikey:nextMarker' time='1583660404'>
+    <entry value='Multikey: Next marker'/>
+    <entry value='74'/>
+    <entry value='5008'/>
+    <entry value='74'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core_multikey:previousMarker' time='1583660404'>
+    <entry value='Multikey: Previous marker'/>
+    <entry value='80'/>
+    <entry value='5008'/>
+    <entry value='80'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.core_multikey:showHideLayer' time='1583660404'>
+    <entry value='Multikey: Show/hide layer'/>
+    <entry value='83'/>
+    <entry value='5005'/>
+    <entry value='83'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.data:attemptmergeway' time='1583761690'>
+    <entry value='Attempt to merge potential duplicate ways'/>
+    <entry value='517'/>
+    <entry value='5010'/>
+    <entry value='517'/>
+    <entry value='704'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.data:mapWithAI' time='1583761690'>
+    <entry value='Data: MapWithAI'/>
+    <entry value='82'/>
+    <entry value='5006'/>
+    <entry value='82'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.data:mapwithaiadd' time='1583761690'>
+    <entry value='MapWithAI: Add selected data'/>
+    <entry value='65'/>
+    <entry value='5005'/>
+    <entry value='65'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.edit:buildingsdialog' time='1583761690'>
+    <entry value='Edit: Set buildings size'/>
+    <entry value='66'/>
+    <entry value='5008'/>
+    <entry value='66'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.edit:mergeaddrpoints' time='1583761690'>
+    <entry value='Edit: Merge address points'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.edit:unselectall' time='1583761669'>
+    <entry value='Edit: Unselect All'/>
+    <entry value='27'/>
+    <entry value='5003'/>
+    <entry value='27'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.file:download' time='1583761669'>
+    <entry value='File: Download data'/>
+    <entry value='40'/>
+    <entry value='5009'/>
+    <entry value='40'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.file:download_along' time='1583761669'>
+    <entry value='File: Download Along'/>
+    <entry value='68'/>
+    <entry value='5007'/>
+    <entry value='68'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.file:downloadreferrers' time='1583761669'>
+    <entry value='File: Download parent ways/relations...'/>
+    <entry value='68'/>
+    <entry value='5008'/>
+    <entry value='68'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.file:exportgpx' time='1583761669'>
+    <entry value='Export to GPX...'/>
+    <entry value='69'/>
+    <entry value='5006'/>
+    <entry value='69'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.file:restart' time='1583761669'>
+    <entry value='File: Restart'/>
+    <entry value='74'/>
+    <entry value='5010'/>
+    <entry value='74'/>
+    <entry value='704'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.file:updatedata' time='1583761669'>
+    <entry value='File: Update data'/>
+    <entry value='85'/>
+    <entry value='5006'/>
+    <entry value='85'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.file:updatemodified' time='1583761669'>
+    <entry value='File: Update modified'/>
+    <entry value='77'/>
+    <entry value='5008'/>
+    <entry value='77'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.file:updateselection' time='1583761669'>
+    <entry value='File: Update selection'/>
+    <entry value='85'/>
+    <entry value='5008'/>
+    <entry value='85'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.file:upload' time='1583761669'>
+    <entry value='File: Upload data'/>
+    <entry value='38'/>
+    <entry value='5009'/>
+    <entry value='38'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.file:uploadSelection' time='1583761669'>
+    <entry value='File: Upload selection'/>
+    <entry value='85'/>
+    <entry value='5010'/>
+    <entry value='85'/>
+    <entry value='704'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.help:search-items' time='1583761670'>
+    <entry value='Search menu items'/>
+    <entry value='32'/>
+    <entry value='5006'/>
+    <entry value='32'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.help:showstatusreport' time='1583761669'>
+    <entry value='Help: Show Status Report'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.imagery:rectimg' time='1583761669'>
+    <entry value='Imagery: Rectified Image...'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.imagery:reorder (1)' time='1583761670'>
+    <entry value='Reorder imagery layers'/>
+    <entry value='192'/>
+    <entry value='5003'/>
+    <entry value='192'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.imagery:reorder (2)' time='1583761670'>
+    <entry value='Reorder imagery layers'/>
+    <entry value='128'/>
+    <entry value='5003'/>
+    <entry value='128'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.imagery:reorder (3)' time='1583761670'>
+    <entry value='Reorder imagery layers'/>
+    <entry value='16777931'/>
+    <entry value='5003'/>
+    <entry value='16777931'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.latlon' time='1583761690'>
+    <entry value='Edit: Lat Lon tool'/>
+    <entry value='76'/>
+    <entry value='5009'/>
+    <entry value='76'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:ImproveWay' time='1583660404'>
+    <entry value='Mode: Improve Way'/>
+    <entry value='87'/>
+    <entry value='5007'/>
+    <entry value='87'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:ImproveWayAccuracy' time='1583660404'>
+    <entry value='Mode: Improve Way Accuracy'/>
+    <entry value='87'/>
+    <entry value='5003'/>
+    <entry value='87'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:alignways' time='1583660405'>
+    <entry value='Mode: Align Ways'/>
+    <entry value='78'/>
+    <entry value='5005'/>
+    <entry value='78'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:backspace' time='1583660404'>
+    <entry value='Backspace in Add mode'/>
+    <entry value='8'/>
+    <entry value='5003'/>
+    <entry value='8'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:buildings' time='1583660405'>
+    <entry value='Mode: Draw buildings'/>
+    <entry value='66'/>
+    <entry value='5003'/>
+    <entry value='66'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:delete' time='1583660404'>
+    <entry value='Mode: Delete'/>
+    <entry value='127'/>
+    <entry value='5006'/>
+    <entry value='127'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:draw' time='1583660404'>
+    <entry value='Mode: Draw'/>
+    <entry value='65'/>
+    <entry value='5003'/>
+    <entry value='65'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:drawanglesnapping' time='1583660404'>
+    <entry value='Mode: Draw Angle snapping'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:enablewayaccuracyhelpers' time='1583660404'>
+    <entry value='Mode: Enable way accuracy helpers'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:extrude' time='1583660404'>
+    <entry value='Mode: Extrude'/>
+    <entry value='88'/>
+    <entry value='5003'/>
+    <entry value='88'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:extrudedualalign' time='1583660404'>
+    <entry value='Mode: Extrude Dual alignment'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:lasso' time='1583660404'>
+    <entry value='Mode: Lasso Mode'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:parallel' time='1583660404'>
+    <entry value='Mode: Parallel'/>
+    <entry value='80'/>
+    <entry value='5005'/>
+    <entry value='80'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:select' time='1583660404'>
+    <entry value='Mode: Select mode'/>
+    <entry value='83'/>
+    <entry value='5003'/>
+    <entry value='83'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.mapmode:zoom' time='1583660404'>
+    <entry value='Mode: Zoom mode'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:Audio' time='1583761670'>
+    <entry value='Menu: Audio'/>
+    <entry value='85'/>
+    <entry value='5001'/>
+    <entry value='85'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:CADTools' time='1583761690'>
+    <entry value='Menu: CAD Tools'/>
+    <entry value='71'/>
+    <entry value='5008'/>
+    <entry value='71'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:Data' time='1583761669'>
+    <entry value='Menu: Data'/>
+    <entry value='68'/>
+    <entry value='5001'/>
+    <entry value='68'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:Edit' time='1583761669'>
+    <entry value='Menu: Edit'/>
+    <entry value='69'/>
+    <entry value='5001'/>
+    <entry value='69'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:File' time='1583761669'>
+    <entry value='Menu: File'/>
+    <entry value='70'/>
+    <entry value='5001'/>
+    <entry value='70'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:GPS' time='1583761669'>
+    <entry value='Menu: GPS'/>
+    <entry value='71'/>
+    <entry value='5001'/>
+    <entry value='71'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:Help' time='1583761670'>
+    <entry value='Menu: Help'/>
+    <entry value='72'/>
+    <entry value='5001'/>
+    <entry value='72'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:Imagery' time='1583761669'>
+    <entry value='Menu: Imagery'/>
+    <entry value='73'/>
+    <entry value='5001'/>
+    <entry value='73'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:Mode' time='1583761669'>
+    <entry value='Menu: Mode'/>
+    <entry value='77'/>
+    <entry value='5001'/>
+    <entry value='77'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:More tools' time='1583761669'>
+    <entry value='Menu: More tools'/>
+    <entry value='79'/>
+    <entry value='5001'/>
+    <entry value='79'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:Presets' time='1583761669'>
+    <entry value='Menu: Presets'/>
+    <entry value='80'/>
+    <entry value='5001'/>
+    <entry value='80'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:Selection' time='1583761669'>
+    <entry value='Menu: Selection'/>
+    <entry value='78'/>
+    <entry value='5001'/>
+    <entry value='78'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:Tools' time='1583761669'>
+    <entry value='Menu: Tools'/>
+    <entry value='84'/>
+    <entry value='5001'/>
+    <entry value='84'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:View' time='1583761669'>
+    <entry value='Menu: View'/>
+    <entry value='86'/>
+    <entry value='5001'/>
+    <entry value='86'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:Windows' time='1583761670'>
+    <entry value='Menu: Windows'/>
+    <entry value='87'/>
+    <entry value='5001'/>
+    <entry value='87'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:edit:pasteAtSource' time='1583761669'>
+    <entry value='Edit: Paste at source position'/>
+    <entry value='86'/>
+    <entry value='5008'/>
+    <entry value='86'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:view:dialogspanel' time='1583761670'>
+    <entry value='Toggle dialogs panel'/>
+    <entry value='9'/>
+    <entry value='5003'/>
+    <entry value='9'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:view:fullscreen' time='1583761670'>
+    <entry value='Toggle fullscreen view'/>
+    <entry value='122'/>
+    <entry value='5003'/>
+    <entry value='122'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:view:viewportfollow' time='1583761670'>
+    <entry value='Toggle Viewport Following'/>
+    <entry value='70'/>
+    <entry value='5009'/>
+    <entry value='70'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:view:wireframe' time='1583761669'>
+    <entry value='Toggle Wireframe view'/>
+    <entry value='87'/>
+    <entry value='5006'/>
+    <entry value='87'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.menu:windows:changesetdialog' time='1583761669'>
+    <entry value='Toggle visibility of Changeset Manager window'/>
+    <entry value='67'/>
+    <entry value='5008'/>
+    <entry value='67'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.movenode' time='1583761669'>
+    <entry value='Edit: Move Node...'/>
+    <entry value='77'/>
+    <entry value='5000'/>
+    <entry value='77'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.multitag' time='1583761690'>
+    <entry value='Edit: Tag multiple objects'/>
+    <entry value='84'/>
+    <entry value='5006'/>
+    <entry value='84'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.preset:search' time='1583761670'>
+    <entry value='Search presets'/>
+    <entry value='114'/>
+    <entry value='5003'/>
+    <entry value='114'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.preset:search-objects' time='1583761670'>
+    <entry value='Search for objects by preset'/>
+    <entry value='114'/>
+    <entry value='5005'/>
+    <entry value='114'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.properties:add' time='1583660404'>
+    <entry value='Add Tag'/>
+    <entry value='65'/>
+    <entry value='5004'/>
+    <entry value='65'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.properties:delete' time='1583660404'>
+    <entry value='Delete Tags'/>
+    <entry value='68'/>
+    <entry value='5010'/>
+    <entry value='68'/>
+    <entry value='704'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.properties:edit' time='1583660404'>
+    <entry value='Edit Tags'/>
+    <entry value='83'/>
+    <entry value='5004'/>
+    <entry value='83'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.properties:recent:1' time='1583660074'>
+    <entry value='Choose recent tag 1'/>
+    <entry value='49'/>
+    <entry value='5006'/>
+    <entry value='49'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.properties:recent:2' time='1583660074'>
+    <entry value='Choose recent tag 2'/>
+    <entry value='50'/>
+    <entry value='5006'/>
+    <entry value='50'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.properties:recent:3' time='1583660074'>
+    <entry value='Choose recent tag 3'/>
+    <entry value='51'/>
+    <entry value='5006'/>
+    <entry value='51'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.properties:recent:4' time='1583660074'>
+    <entry value='Choose recent tag 4'/>
+    <entry value='52'/>
+    <entry value='5006'/>
+    <entry value='52'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.properties:recent:5' time='1583660074'>
+    <entry value='Choose recent tag 5'/>
+    <entry value='53'/>
+    <entry value='5006'/>
+    <entry value='53'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.properties:recent:apply:1' time='1583660074'>
+    <entry value='Apply recent tag 1'/>
+    <entry value='49'/>
+    <entry value='5009'/>
+    <entry value='49'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.properties:recent:apply:2' time='1583660074'>
+    <entry value='Apply recent tag 2'/>
+    <entry value='50'/>
+    <entry value='5009'/>
+    <entry value='50'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.properties:recent:apply:3' time='1583660074'>
+    <entry value='Apply recent tag 3'/>
+    <entry value='51'/>
+    <entry value='5009'/>
+    <entry value='51'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.properties:recent:apply:4' time='1583660074'>
+    <entry value='Apply recent tag 4'/>
+    <entry value='52'/>
+    <entry value='5009'/>
+    <entry value='52'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.properties:recent:apply:5' time='1583660074'>
+    <entry value='Apply recent tag 5'/>
+    <entry value='53'/>
+    <entry value='5009'/>
+    <entry value='53'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.relationeditor:editrecentrelation' time='1583660404'>
+    <entry value='Relation Editor: Open recent relation'/>
+    <entry value='27'/>
+    <entry value='5005'/>
+    <entry value='27'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.reltoolbox:addremove' time='1583660404'>
+    <entry value='Relation Toolbox: Add/remove members from the chosen relation'/>
+    <entry value='61'/>
+    <entry value='5007'/>
+    <entry value='61'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.reltoolbox:changerole' time='1583660404'>
+    <entry value='Relation Toolbox: Enter role for selected members'/>
+    <entry value='82'/>
+    <entry value='5008'/>
+    <entry value='82'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.reltoolbox:create' time='1583660404'>
+    <entry value='Relation Toolbox: Create a new relation'/>
+    <entry value='78'/>
+    <entry value='5008'/>
+    <entry value='78'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.reltoolbox:find' time='1583660404'>
+    <entry value='Relation Toolbox: Find a relation'/>
+    <entry value='70'/>
+    <entry value='5008'/>
+    <entry value='70'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.reltoolbox:multipolygon' time='1583660404'>
+    <entry value='Relation Toolbox: Create multipolygon'/>
+    <entry value='65'/>
+    <entry value='5008'/>
+    <entry value='65'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.reportbug' time='1583761669'>
+    <entry value='Report a ticket to JOSM bugtracker'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:authors' time='1583660404'>
+    <entry value='Toggle: Authors'/>
+    <entry value='65'/>
+    <entry value='5007'/>
+    <entry value='65'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:commandstack' time='1583660404'>
+    <entry value='Toggle: Command Stack'/>
+    <entry value='79'/>
+    <entry value='5007'/>
+    <entry value='79'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:conflict' time='1583660404'>
+    <entry value='Toggle: Conflict'/>
+    <entry value='67'/>
+    <entry value='5007'/>
+    <entry value='67'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:filter' time='1583660404'>
+    <entry value='Toggle: Filter'/>
+    <entry value='70'/>
+    <entry value='5007'/>
+    <entry value='70'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:layers' time='1583660404'>
+    <entry value='Toggle: Layers'/>
+    <entry value='76'/>
+    <entry value='5007'/>
+    <entry value='76'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:layers:toggleLayer1' time='1583660404'>
+    <entry value='Toggle visibility of layer: 1'/>
+    <entry value='49'/>
+    <entry value='5004'/>
+    <entry value='49'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:layers:toggleLayer10' time='1583660404'>
+    <entry value='Toggle visibility of layer: 10'/>
+    <entry value='48'/>
+    <entry value='5004'/>
+    <entry value='48'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:layers:toggleLayer2' time='1583660404'>
+    <entry value='Toggle visibility of layer: 2'/>
+    <entry value='50'/>
+    <entry value='5004'/>
+    <entry value='50'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:layers:toggleLayer3' time='1583660404'>
+    <entry value='Toggle visibility of layer: 3'/>
+    <entry value='51'/>
+    <entry value='5004'/>
+    <entry value='51'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:layers:toggleLayer4' time='1583660404'>
+    <entry value='Toggle visibility of layer: 4'/>
+    <entry value='52'/>
+    <entry value='5004'/>
+    <entry value='52'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:layers:toggleLayer5' time='1583660404'>
+    <entry value='Toggle visibility of layer: 5'/>
+    <entry value='53'/>
+    <entry value='5004'/>
+    <entry value='53'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:layers:toggleLayer6' time='1583660404'>
+    <entry value='Toggle visibility of layer: 6'/>
+    <entry value='54'/>
+    <entry value='5004'/>
+    <entry value='54'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:layers:toggleLayer7' time='1583660404'>
+    <entry value='Toggle visibility of layer: 7'/>
+    <entry value='55'/>
+    <entry value='5004'/>
+    <entry value='55'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:layers:toggleLayer8' time='1583660404'>
+    <entry value='Toggle visibility of layer: 8'/>
+    <entry value='56'/>
+    <entry value='5004'/>
+    <entry value='56'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:layers:toggleLayer9' time='1583660404'>
+    <entry value='Toggle visibility of layer: 9'/>
+    <entry value='57'/>
+    <entry value='5004'/>
+    <entry value='57'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:mappaint' time='1583660404'>
+    <entry value='Toggle: MapPaint'/>
+    <entry value='77'/>
+    <entry value='5007'/>
+    <entry value='77'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:measurement' time='1583660405'>
+    <entry value='Toggle: Measured values'/>
+    <entry value='85'/>
+    <entry value='5009'/>
+    <entry value='85'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:properties' time='1583660404'>
+    <entry value='Toggle: Tags/Memberships'/>
+    <entry value='80'/>
+    <entry value='5007'/>
+    <entry value='80'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:relations' time='1583660404'>
+    <entry value='Toggle: Relations'/>
+    <entry value='82'/>
+    <entry value='5007'/>
+    <entry value='82'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:selection' time='1583660404'>
+    <entry value='Toggle: Current Selection'/>
+    <entry value='84'/>
+    <entry value='5007'/>
+    <entry value='84'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.subwindow:validator' time='1583660404'>
+    <entry value='Toggle: Validation Results'/>
+    <entry value='86'/>
+    <entry value='5007'/>
+    <entry value='86'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:about' time='1583761669'>
+    <entry value='About'/>
+    <entry value='112'/>
+    <entry value='5005'/>
+    <entry value='112'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:closechangeset' time='1583761669'>
+    <entry value='File: Close open changesets'/>
+    <entry value='81'/>
+    <entry value='5008'/>
+    <entry value='81'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:copy' time='1583761669'>
+    <entry value='Edit: Copy'/>
+    <entry value='67'/>
+    <entry value='5006'/>
+    <entry value='67'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:copy:cua' time='1583761669'>
+    <entry value='Edit: Copy'/>
+    <entry value='155'/>
+    <entry value='5006'/>
+    <entry value='155'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:copytags' time='1583761690'>
+    <entry value='Edit: Copy Tags'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:delete' time='1583761669'>
+    <entry value='Edit: Delete'/>
+    <entry value='127'/>
+    <entry value='5003'/>
+    <entry value='127'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:deletelayer' time='1583761669'>
+    <entry value='File: Delete Layer'/>
+    <entry value='115'/>
+    <entry value='5006'/>
+    <entry value='115'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:download_primitive' time='1583761669'>
+    <entry value='File: Download object...'/>
+    <entry value='79'/>
+    <entry value='5009'/>
+    <entry value='79'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:duplicate' time='1583761669'>
+    <entry value='Edit: Duplicate'/>
+    <entry value='68'/>
+    <entry value='5006'/>
+    <entry value='68'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:find' time='1583761669'>
+    <entry value='Search...'/>
+    <entry value='70'/>
+    <entry value='5006'/>
+    <entry value='70'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:help' time='1583761670'>
+    <entry value='Help'/>
+    <entry value='112'/>
+    <entry value='5003'/>
+    <entry value='112'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:menuexit' time='1583761669'>
+    <entry value='Exit'/>
+    <entry value='81'/>
+    <entry value='5006'/>
+    <entry value='81'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:merge' time='1583761669'>
+    <entry value='Edit: Merge'/>
+    <entry value='77'/>
+    <entry value='5006'/>
+    <entry value='77'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:mergeselection' time='1583761669'>
+    <entry value='Edit: Merge selection'/>
+    <entry value='77'/>
+    <entry value='5009'/>
+    <entry value='77'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:movefocusdown' time='1583660405'>
+    <entry value='Map: Move down'/>
+    <entry value='40'/>
+    <entry value='5006'/>
+    <entry value='40'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:movefocusleft' time='1583660405'>
+    <entry value='Map: Move left'/>
+    <entry value='37'/>
+    <entry value='5006'/>
+    <entry value='37'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:movefocusright' time='1583660405'>
+    <entry value='Map: Move right'/>
+    <entry value='39'/>
+    <entry value='5006'/>
+    <entry value='39'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:movefocusup' time='1583660405'>
+    <entry value='Map: Move up'/>
+    <entry value='38'/>
+    <entry value='5006'/>
+    <entry value='38'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:new' time='1583761668'>
+    <entry value='File: New Layer'/>
+    <entry value='78'/>
+    <entry value='5006'/>
+    <entry value='78'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:open' time='1583761669'>
+    <entry value='File: Open...'/>
+    <entry value='79'/>
+    <entry value='5006'/>
+    <entry value='79'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:open_location' time='1583761669'>
+    <entry value='File: Open Location...'/>
+    <entry value='76'/>
+    <entry value='5006'/>
+    <entry value='76'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:paste' time='1583761669'>
+    <entry value='Edit: Paste'/>
+    <entry value='86'/>
+    <entry value='5006'/>
+    <entry value='86'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:paste:cua' time='1583761669'>
+    <entry value='Edit: Paste'/>
+    <entry value='155'/>
+    <entry value='5005'/>
+    <entry value='155'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:pastestyle' time='1583761669'>
+    <entry value='Edit: Paste Tags'/>
+    <entry value='86'/>
+    <entry value='5009'/>
+    <entry value='86'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:preferences' time='1583761669'>
+    <entry value='Preferences'/>
+    <entry value='123'/>
+    <entry value='5003'/>
+    <entry value='123'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:purge' time='1583761669'>
+    <entry value='Edit: Purge'/>
+    <entry value='80'/>
+    <entry value='5009'/>
+    <entry value='80'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:redo' time='1583761669'>
+    <entry value='Edit: Redo'/>
+    <entry value='89'/>
+    <entry value='5006'/>
+    <entry value='89'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:save' time='1583761669'>
+    <entry value='File: Save'/>
+    <entry value='83'/>
+    <entry value='5006'/>
+    <entry value='83'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:saveas' time='1583761669'>
+    <entry value='File: Save As...'/>
+    <entry value='83'/>
+    <entry value='5009'/>
+    <entry value='83'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:selectall' time='1583761669'>
+    <entry value='Edit: Select All'/>
+    <entry value='65'/>
+    <entry value='5006'/>
+    <entry value='65'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.system:undo' time='1583761669'>
+    <entry value='Edit: Undo'/>
+    <entry value='90'/>
+    <entry value='5006'/>
+    <entry value='90'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tool:revert' time='1583761690'>
+    <entry value='Tool: Revert changeset'/>
+    <entry value='84'/>
+    <entry value='5009'/>
+    <entry value='84'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.toolbar:imagery-offset' time='1583761690'>
+    <entry value='Toolbar: Imagery offset'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.toolbar:tagginggroup_Facilities/Food+Drinks' time='1583761690'>
+    <entry value='Toolbar: Facilities/Food+Drinks'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.toolbar:tagginggroup_Facilities/Tourism' time='1583761690'>
+    <entry value='Toolbar: Facilities/Tourism'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.toolbar:tagginggroup_Highways/Barriers' time='1583761690'>
+    <entry value='Toolbar: Highways/Barriers'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.toolbar:tagginggroup_Highways/Streets' time='1583761690'>
+    <entry value='Toolbar: Highways/Streets'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.toolbar:tagginggroup_Highways/Waypoints' time='1583761690'>
+    <entry value='Toolbar: Highways/Waypoints'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.toolbar:tagginggroup_Highways/Ways' time='1583761690'>
+    <entry value='Toolbar: Highways/Ways'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.toolbar:tagginggroup_Man Made/Historic Places' time='1583761690'>
+    <entry value='Toolbar: Man Made/Historic Places'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.toolbar:tagginggroup_Man Made/Man Made' time='1583761690'>
+    <entry value='Toolbar: Man Made/Man Made'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.toolbar:tagginggroup_Transport/Car' time='1583761690'>
+    <entry value='Toolbar: Transport/Car'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.toolbar:tagginggroup_Transport/Public Transport' time='1583761690'>
+    <entry value='Toolbar: Transport/Public Transport'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:addintersect' time='1583761690'>
+    <entry value='Tool: Add nodes at intersections'/>
+    <entry value='73'/>
+    <entry value='5005'/>
+    <entry value='73'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:adjnodes' time='1583761690'>
+    <entry value='Tool: Adjacent nodes'/>
+    <entry value='69'/>
+    <entry value='5003'/>
+    <entry value='69'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:adjways' time='1583761690'>
+    <entry value='Tool: Adjacent ways'/>
+    <entry value='69'/>
+    <entry value='5005'/>
+    <entry value='69'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:adjwaysall' time='1583761690'>
+    <entry value='Tool: All connected ways'/>
+    <entry value='69'/>
+    <entry value='5009'/>
+    <entry value='69'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:aligncircle' time='1583761669'>
+    <entry value='Tool: Align Nodes in Circle'/>
+    <entry value='79'/>
+    <entry value='5003'/>
+    <entry value='79'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:alignline' time='1583761669'>
+    <entry value='Tool: Align Nodes in Line'/>
+    <entry value='76'/>
+    <entry value='5003'/>
+    <entry value='76'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:alignwaynodes' time='1583761690'>
+    <entry value='Tool: Align Way Nodes'/>
+    <entry value='76'/>
+    <entry value='5005'/>
+    <entry value='76'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:alignways' time='1583761690'>
+    <entry value='Tool: Align Ways'/>
+    <entry value='32'/>
+    <entry value='5005'/>
+    <entry value='32'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:combineway' time='1583761669'>
+    <entry value='Tool: Combine Way'/>
+    <entry value='67'/>
+    <entry value='5003'/>
+    <entry value='67'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:createcircle' time='1583761669'>
+    <entry value='Tool: Create Circle'/>
+    <entry value='79'/>
+    <entry value='5005'/>
+    <entry value='79'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:createcurve' time='1583761690'>
+    <entry value='Tool: Create a circle arc'/>
+    <entry value='67'/>
+    <entry value='5005'/>
+    <entry value='67'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:distribute' time='1583761669'>
+    <entry value='Tool: Distribute Nodes'/>
+    <entry value='66'/>
+    <entry value='5005'/>
+    <entry value='66'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:easy_presets_create' time='1583761690'>
+    <entry value='Tool: Create Preset'/>
+    <entry value='114'/>
+    <entry value='5010'/>
+    <entry value='114'/>
+    <entry value='704'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:extnode' time='1583761690'>
+    <entry value='Tool: Extract node'/>
+    <entry value='74'/>
+    <entry value='5007'/>
+    <entry value='74'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:followline' time='1583761669'>
+    <entry value='Tool: Follow'/>
+    <entry value='70'/>
+    <entry value='5003'/>
+    <entry value='70'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:intway' time='1583761690'>
+    <entry value='Tool: Intersecting ways'/>
+    <entry value='73'/>
+    <entry value='5003'/>
+    <entry value='73'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:intwayall' time='1583761690'>
+    <entry value='Tool: All intersecting ways'/>
+    <entry value='106'/>
+    <entry value='5006'/>
+    <entry value='106'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:joinareas' time='1583761669'>
+    <entry value='Tool: Join overlapping Areas'/>
+    <entry value='74'/>
+    <entry value='5005'/>
+    <entry value='74'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:joinnodeway' time='1583761669'>
+    <entry value='Tool: Join Node to Way'/>
+    <entry value='74'/>
+    <entry value='5003'/>
+    <entry value='74'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:jumpto' time='1583761669'>
+    <entry value='Tool: Jump to Position'/>
+    <entry value='74'/>
+    <entry value='5006'/>
+    <entry value='74'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:mergenodes' time='1583761669'>
+    <entry value='Tool: Merge Nodes'/>
+    <entry value='77'/>
+    <entry value='5003'/>
+    <entry value='77'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:midnodes' time='1583761690'>
+    <entry value='Tool: Middle nodes'/>
+    <entry value='69'/>
+    <entry value='5007'/>
+    <entry value='69'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:mirror' time='1583761669'>
+    <entry value='Tool: Mirror'/>
+    <entry value='77'/>
+    <entry value='5005'/>
+    <entry value='77'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:movenodeontoway' time='1583761669'>
+    <entry value='Tool: Move Node onto Way'/>
+    <entry value='78'/>
+    <entry value='5003'/>
+    <entry value='78'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:multipoly_create' time='1583761669'>
+    <entry value='Tool: Create multipolygon'/>
+    <entry value='66'/>
+    <entry value='5006'/>
+    <entry value='66'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:multipoly_update' time='1583761669'>
+    <entry value='Tool: Update multipolygon'/>
+    <entry value='66'/>
+    <entry value='5009'/>
+    <entry value='66'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:openurl' time='1583761690'>
+    <entry value='Tool: Open custom URL'/>
+    <entry value='72'/>
+    <entry value='5005'/>
+    <entry value='72'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:orthogonalize' time='1583761669'>
+    <entry value='Tool: Orthogonalize Shape'/>
+    <entry value='81'/>
+    <entry value='5003'/>
+    <entry value='81'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:orthogonalizeUndo' time='1583761669'>
+    <entry value='Tool: Orthogonalize Shape / Undo'/>
+    <entry value='81'/>
+    <entry value='5005'/>
+    <entry value='81'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:pasterelations' time='1583761690'>
+    <entry value='Tool: Paste Relations'/>
+    <entry value='65535'/>
+    <entry value='5000'/>
+    <entry value='65535'/>
+    <entry value='-1'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:replacegeometry' time='1583761690'>
+    <entry value='Tool: Replace Geometry'/>
+    <entry value='71'/>
+    <entry value='5009'/>
+    <entry value='71'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:reverse' time='1583761669'>
+    <entry value='Tool: Reverse Ways'/>
+    <entry value='82'/>
+    <entry value='5003'/>
+    <entry value='82'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:selboundary' time='1583761690'>
+    <entry value='Tool: Area boundary [testing]'/>
+    <entry value='47'/>
+    <entry value='5005'/>
+    <entry value='47'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:selecthighway' time='1583761690'>
+    <entry value='Tool: Select Highway'/>
+    <entry value='87'/>
+    <entry value='5008'/>
+    <entry value='87'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:selectwaynodes' time='1583761690'>
+    <entry value='Tool: Select Way Nodes'/>
+    <entry value='78'/>
+    <entry value='5009'/>
+    <entry value='78'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:selinside' time='1583761690'>
+    <entry value='Tool: All inside'/>
+    <entry value='73'/>
+    <entry value='5007'/>
+    <entry value='73'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:selmodnodes' time='1583761690'>
+    <entry value='Tool: Select last modified nodes'/>
+    <entry value='90'/>
+    <entry value='5005'/>
+    <entry value='90'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:selmodways' time='1583761690'>
+    <entry value='Tool: Select last modified ways'/>
+    <entry value='90'/>
+    <entry value='5007'/>
+    <entry value='90'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:simplify' time='1583761669'>
+    <entry value='Tool: Simplify Way'/>
+    <entry value='89'/>
+    <entry value='5005'/>
+    <entry value='89'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:sourcetag' time='1583761690'>
+    <entry value='Tool: Add Source Tag'/>
+    <entry value='83'/>
+    <entry value='5008'/>
+    <entry value='83'/>
+    <entry value='640'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:splitobject' time='1583761690'>
+    <entry value='Tool: Split Object'/>
+    <entry value='88'/>
+    <entry value='5004'/>
+    <entry value='88'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:splitonintersections' time='1583761690'>
+    <entry value='Tool: Split adjacent ways'/>
+    <entry value='80'/>
+    <entry value='5010'/>
+    <entry value='80'/>
+    <entry value='704'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:splitway' time='1583761669'>
+    <entry value='Tool: Split Way'/>
+    <entry value='80'/>
+    <entry value='5003'/>
+    <entry value='80'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:symmetry' time='1583761690'>
+    <entry value='Tool: Symmetry'/>
+    <entry value='83'/>
+    <entry value='5007'/>
+    <entry value='83'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:tagbuffer' time='1583761690'>
+    <entry value='Tool: Paste tags from previous selection'/>
+    <entry value='82'/>
+    <entry value='5005'/>
+    <entry value='82'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:undoselection' time='1583761690'>
+    <entry value='Tool: Undo selection'/>
+    <entry value='90'/>
+    <entry value='5009'/>
+    <entry value='90'/>
+    <entry value='192'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:unglue' time='1583761669'>
+    <entry value='Tool: UnGlue Ways'/>
+    <entry value='71'/>
+    <entry value='5003'/>
+    <entry value='71'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:ungluerelation' time='1583761690'>
+    <entry value='Tool: UnGlue Relations'/>
+    <entry value='71'/>
+    <entry value='5007'/>
+    <entry value='71'/>
+    <entry value='576'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:unjoinnodeway' time='1583761669'>
+    <entry value='Tool: Disconnect Node from Way'/>
+    <entry value='74'/>
+    <entry value='5004'/>
+    <entry value='74'/>
+    <entry value='512'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:unsnodes' time='1583761690'>
+    <entry value='Tool: Unselect nodes'/>
+    <entry value='85'/>
+    <entry value='5005'/>
+    <entry value='85'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:validate' time='1583660404'>
+    <entry value='Tool: Validation'/>
+    <entry value='86'/>
+    <entry value='5005'/>
+    <entry value='86'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.tools:validate:ignore-for-now' time='1583660404'>
+    <entry value='Ignore and remove from tree.'/>
+    <entry value='45'/>
+    <entry value='5005'/>
+    <entry value='45'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoomconflict' time='1583761670'>
+    <entry value='View: Zoom to conflict'/>
+    <entry value='52'/>
+    <entry value='5003'/>
+    <entry value='52'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoomdata' time='1583761670'>
+    <entry value='View: Zoom to data'/>
+    <entry value='49'/>
+    <entry value='5003'/>
+    <entry value='49'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoomdownload' time='1583761670'>
+    <entry value='View: Zoom to download'/>
+    <entry value='53'/>
+    <entry value='5003'/>
+    <entry value='53'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoomin' time='1583761670'>
+    <entry value='View: Zoom In'/>
+    <entry value='521'/>
+    <entry value='5003'/>
+    <entry value='521'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoominalternate' time='1583660405'>
+    <entry value='Map: Zoom In'/>
+    <entry value='44'/>
+    <entry value='5006'/>
+    <entry value='44'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoominbis' time='1583761670'>
+    <entry value='View: Zoom In'/>
+    <entry value='61'/>
+    <entry value='5005'/>
+    <entry value='61'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoominkeypad' time='1583761670'>
+    <entry value='View: Zoom In (Keypad)'/>
+    <entry value='107'/>
+    <entry value='5003'/>
+    <entry value='107'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoominter' time='1583761670'>
+    <entry value='View: Zoom In'/>
+    <entry value='61'/>
+    <entry value='5003'/>
+    <entry value='61'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoomlayer' time='1583761670'>
+    <entry value='View: Zoom to layer'/>
+    <entry value='50'/>
+    <entry value='5003'/>
+    <entry value='50'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoomnext' time='1583761670'>
+    <entry value='View: Zoom to next'/>
+    <entry value='57'/>
+    <entry value='5003'/>
+    <entry value='57'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoomout' time='1583761670'>
+    <entry value='View: Zoom Out'/>
+    <entry value='45'/>
+    <entry value='5003'/>
+    <entry value='45'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoomoutalternate' time='1583660405'>
+    <entry value='Map: Zoom Out'/>
+    <entry value='46'/>
+    <entry value='5006'/>
+    <entry value='46'/>
+    <entry value='128'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoomoutkeypad' time='1583761670'>
+    <entry value='View: Zoom Out (Keypad)'/>
+    <entry value='109'/>
+    <entry value='5003'/>
+    <entry value='109'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoomprevious' time='1583761670'>
+    <entry value='View: Zoom to previous'/>
+    <entry value='56'/>
+    <entry value='5003'/>
+    <entry value='56'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoomproblem' time='1583761670'>
+    <entry value='View: Zoom to problem'/>
+    <entry value='54'/>
+    <entry value='5003'/>
+    <entry value='54'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.view:zoomselection' time='1583761670'>
+    <entry value='View: Zoom to selection'/>
+    <entry value='51'/>
+    <entry value='5003'/>
+    <entry value='51'/>
+    <entry value='0'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <list key='shortcut.entry.wayselector:wayselect' time='1583761669'>
+    <entry value='Non-branching way sequences'/>
+    <entry value='87'/>
+    <entry value='5005'/>
+    <entry value='87'/>
+    <entry value='64'/>
+    <entry value='true'/>
+    <entry value='false'/>
+  </list>
+  <tag key='sidetoolbar.hidden.dialogs/alignways_cfg' time='1582943266' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/changeset' time='1582943265' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/changesetdialog' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/commandstack' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/conflict' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/filter' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/layerlist' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/mapstyle' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/measure' time='1582943266' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/minimap' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/notes/note_open' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/propertiesdialog' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/relationlist' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/reltoolbox' time='1582943265' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/selectionlist' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/userlist' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.dialogs/validator' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.mapmode/alignways.png' time='1582943265' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.mapmode/building' time='1582943266' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.mapmode/delete' time='1582938447' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.mapmode/extrude/extrude' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.mapmode/improveway' time='1582943265' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.mapmode/improvewayaccuracy' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.mapmode/move/move' time='1582938447' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.mapmode/node/autonode' time='1582938447' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.mapmode/parallel' time='1582938448' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.mapmode/rope' time='1582938447' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.mapmode/zoom' time='1582938447' xsi:nil='true'/>
+  <tag key='sidetoolbar.hidden.org.openstreetmap.josm.plugins.measurement.MeasurementMode' time='1582943266' xsi:nil='true'/>
+  <tag key='sidetoolbar.hideDisabledButtons' time='1583661406' value='false'/>
+  <tag key='sidetoolbar.mapmodes.visible' time='1583660404' value='true'/>
+  <tag key='sidetoolbar.scrollable' time='1583660404' value='true'/>
+  <tag key='sidetoolbar.toggledialogs.visible' time='1583660404' value='true'/>
+  <tag key='sidetoolbar.visible' time='1583761670' value='true'/>
+  <tag key='slippy_map_chooser.file_cache' time='1583761892' value='true'/>
+  <tag key='slippy_map_chooser.mapstyle' time='1583761893' value='Mapnik'/>
+  <tag key='slippy_map_chooser.max_tiles' time='1583761892' value='1000'/>
+  <tag key='slippy_map_chooser.show_downloaded_area' time='1583761893' value='true'/>
+  <tag key='slippy_map_chooser.zoomcontrols' time='1583761892' value='false'/>
+  <tag key='socket.maxredirects' time='1583761930' value='5'/>
+  <tag key='socket.timeout.connect' time='1583761930' value='15'/>
+  <tag key='socket.timeout.read' time='1583761930' value='30'/>
+  <tag key='sourcetag.value' time='1583761690' value=''/>
+  <tag key='statusbar.change-system-of-measurement-on-click' time='1583660404' value='true'/>
+  <tag key='statusbar.decimal-format' time='1583660404' value='0.00'/>
+  <tag key='statusbar.distance-threshold' time='1583761690' value='0.01'/>
+  <tag key='statusline.visible' time='1583660404' value='true'/>
+  <tag key='system_of_measurement' time='1583761668' value='Imperial'/>
+  <tag key='system_of_measurement.use_only_custom_area_unit' time='1583661406' value='false'/>
+  <tag key='system_of_measurement.use_only_lower_unit' time='1583661406' value='false'/>
+  <tag key='table.header-inset' time='1583655529' value='0'/>
+  <tag key='tag-correction.reverse-way' time='1583761669' value='true'/>
+  <tag key='taggingpreset.dialog.only-applicable-to-selection' time='1583655300' value='true'/>
+  <tag key='taggingpreset.dialog.search-in-tags' time='1583653024' value='true'/>
+  <tag key='taggingpreset.display-keys-as-hint' time='1583655313' value='true'/>
+  <maps key='taggingpreset.entries' time='1582813246' xsi:nil='true'/>
+  <tag key='taggingpreset.fill-default-for-tagged-primitives' time='1583761672' value='false'/>
+  <list key='taggingpreset.icon.sources' time='1582813246' xsi:nil='true'/>
+  <tag key='taggingpreset.min-elements-for-scroller' time='1583761679' value='15'/>
+  <tag key='taggingpreset.sortmenu' time='1583761679' value='false'/>
+  <tag key='taggingpreset.sortvalues' time='1583761679' value='true'/>
+  <tag key='taginfo.url' time='1583660404' value='https://taginfo.openstreetmap.org/'/>
+  <tag key='tags.direction' time='1583761662' value='oneway? | (aerialway=chair_lift &amp; -oneway=no) | (aerialway=rope_tow &amp; -oneway=no) | (aerialway=magic_carpet &amp; -oneway=no) | (aerialway=zip_line &amp; -oneway=no) | (aerialway=drag_lift &amp; -oneway=no) | (aerialway=t-bar &amp; -oneway=no) | (aerialway=j-bar &amp; -oneway=no) | (aerialway=platter &amp; -oneway=no) | waterway=stream | waterway=river | waterway=ditch | waterway=drain | waterway=tidal_channel | (&quot;piste:type&quot;=downhill &amp; -area=yes) | (&quot;piste:type&quot;=sled &amp; -area=yes) | (man_made=&quot;piste:halfpipe&quot; &amp; -area=yes) | junction=circular | junction=roundabout | (highway=motorway &amp; -oneway=no &amp; -oneway=reversible) | (highway=motorway_link &amp; -oneway=no &amp; -oneway=reversible)'/>
+  <list key='tags.discardable' time='1583761670'>
+    <entry value='created_by'/>
+    <entry value='converted_by'/>
+    <entry value='geobase:datasetName'/>
+    <entry value='geobase:uuid'/>
+    <entry value='KSJ2:ADS'/>
+    <entry value='KSJ2:ARE'/>
+    <entry value='KSJ2:AdminArea'/>
+    <entry value='KSJ2:COP_label'/>
+    <entry value='KSJ2:DFD'/>
+    <entry value='KSJ2:INT'/>
+    <entry value='KSJ2:INT_label'/>
+    <entry value='KSJ2:LOC'/>
+    <entry value='KSJ2:LPN'/>
+    <entry value='KSJ2:OPC'/>
+    <entry value='KSJ2:PubFacAdmin'/>
+    <entry value='KSJ2:RAC'/>
+    <entry value='KSJ2:RAC_label'/>
+    <entry value='KSJ2:RIC'/>
+    <entry value='KSJ2:RIN'/>
+    <entry value='KSJ2:WSC'/>
+    <entry value='KSJ2:coordinate'/>
+    <entry value='KSJ2:curve_id'/>
+    <entry value='KSJ2:curve_type'/>
+    <entry value='KSJ2:filename'/>
+    <entry value='KSJ2:lake_id'/>
+    <entry value='KSJ2:lat'/>
+    <entry value='KSJ2:long'/>
+    <entry value='KSJ2:river_id'/>
+    <entry value='odbl'/>
+    <entry value='odbl:note'/>
+    <entry value='osmarender:nameDirection'/>
+    <entry value='osmarender:renderName'/>
+    <entry value='osmarender:renderRef'/>
+    <entry value='osmarender:rendernames'/>
+    <entry value='SK53_bulk:load'/>
+    <entry value='sub_sea:type'/>
+    <entry value='tiger:source'/>
+    <entry value='tiger:separated'/>
+    <entry value='tiger:tlid'/>
+    <entry value='tiger:upload_uuid'/>
+    <entry value='yh:LINE_NAME'/>
+    <entry value='yh:LINE_NUM'/>
+    <entry value='yh:STRUCTURE'/>
+    <entry value='yh:TOTYUMONO'/>
+    <entry value='yh:TYPE'/>
+    <entry value='yh:WIDTH'/>
+    <entry value='yh:WIDTH_RANK'/>
+  </list>
+  <tag key='tags.reversed_direction' time='1583761662' value='oneway=&quot;-1&quot;'/>
+  <list key='tags.uninteresting' time='1583761670'>
+    <entry value='source'/>
+    <entry value='source_ref'/>
+    <entry value='source:'/>
+    <entry value='comment'/>
+    <entry value='watch'/>
+    <entry value='watch:'/>
+    <entry value='description'/>
+    <entry value='attribution'/>
+    <entry value='gpx:'/>
+    <entry value='KSJ2:RIC'/>
+    <entry value='KSJ2:curve_type'/>
+    <entry value='yh:LINE_NAME'/>
+    <entry value='KSJ2:RAC'/>
+    <entry value='KSJ2:coordinate'/>
+    <entry value='yh:WIDTH_RANK'/>
+    <entry value='KSJ2:RAC_label'/>
+    <entry value='KSJ2:RIN'/>
+    <entry value='geobase:datasetName'/>
+    <entry value='yh:STRUCTURE'/>
+    <entry value='tiger:separated'/>
+    <entry value='KSJ2:filename'/>
+    <entry value='osmarender:renderName'/>
+    <entry value='tiger:upload_uuid'/>
+    <entry value='KSJ2:OPC'/>
+    <entry value='osmarender:renderRef'/>
+    <entry value='KSJ2:ADS'/>
+    <entry value='odbl:note'/>
+    <entry value='tiger:tlid'/>
+    <entry value='sub_sea:type'/>
+    <entry value='KSJ2:river_id'/>
+    <entry value='KSJ2:COP_label'/>
+    <entry value='KSJ2:INT_label'/>
+    <entry value='SK53_bulk:load'/>
+    <entry value='KSJ2:LPN'/>
+    <entry value='yh:WIDTH'/>
+    <entry value='KSJ2:curve_id'/>
+    <entry value='yh:LINE_NUM'/>
+    <entry value='KSJ2:INT'/>
+    <entry value='KSJ2:AdminArea'/>
+    <entry value='converted_by'/>
+    <entry value='KSJ2:DFD'/>
+    <entry value='yh:TYPE'/>
+    <entry value='KSJ2:lake_id'/>
+    <entry value='odbl'/>
+    <entry value='created_by'/>
+    <entry value='geobase:uuid'/>
+    <entry value='osmarender:rendernames'/>
+    <entry value='tiger:source'/>
+    <entry value='osmarender:nameDirection'/>
+    <entry value='KSJ2:ARE'/>
+    <entry value='KSJ2:PubFacAdmin'/>
+    <entry value='KSJ2:lat'/>
+    <entry value='KSJ2:LOC'/>
+    <entry value='KSJ2:long'/>
+    <entry value='yh:TOTYUMONO'/>
+    <entry value='KSJ2:WSC'/>
+    <entry value='note'/>
+    <entry value='FIXME'/>
+    <entry value='fixme'/>
+  </list>
+  <list key='tags.workinprogress' time='1583761670'>
+    <entry value='note'/>
+    <entry value='fixme'/>
+    <entry value='FIXME'/>
+  </list>
+  <tag key='text.popupmenu.useicons' time='1583761969' value='true'/>
+  <tag key='tls.add-missing-certificates' time='1583761661' value='true'/>
+  <tag key='toggleDialogs.width' time='1583761915' value='330'/>
+  <list key='toolbar' time='1583761690'>
+    <entry value='open'/>
+    <entry value='save'/>
+    <entry value='download'/>
+    <entry value='upload'/>
+    <entry value='|'/>
+    <entry value='undo'/>
+    <entry value='redo'/>
+    <entry value='|'/>
+    <entry value='dialogs/search'/>
+    <entry value='preference'/>
+    <entry value='|'/>
+    <entry value='splitway'/>
+    <entry value='combineway'/>
+    <entry value='wayflip'/>
+    <entry value='|'/>
+    <entry value='imagery-offset'/>
+    <entry value='|'/>
+    <entry value='tagginggroup_Highways/Streets'/>
+    <entry value='tagginggroup_Highways/Ways'/>
+    <entry value='tagginggroup_Highways/Waypoints'/>
+    <entry value='tagginggroup_Highways/Barriers'/>
+    <entry value='|'/>
+    <entry value='tagginggroup_Transport/Car'/>
+    <entry value='tagginggroup_Transport/Public Transport'/>
+    <entry value='|'/>
+    <entry value='tagginggroup_Facilities/Tourism'/>
+    <entry value='tagginggroup_Facilities/Food+Drinks'/>
+    <entry value='|'/>
+    <entry value='tagginggroup_Man Made/Historic Places'/>
+    <entry value='|'/>
+    <entry value='tagginggroup_Man Made/Man Made'/>
+  </list>
+  <tag key='toolbar.visible' time='1583761690' value='true'/>
+  <tag key='undo.max' time='1583655547' value='1000'/>
+  <tag key='upload.changeset.close' time='1583655434' value='true'/>
+  <tag key='upload.changeset.hashtags' time='1583655566' value='true'/>
+  <list key='upload.comment.exception-terms' time='1583655566'>
+  </list>
+  <list key='upload.comment.forbidden-terms' time='1583655566'>
+  </list>
+  <list key='upload.comment.history' time='1583655552'>
+  </list>
+  <tag key='upload.comment.last-used' time='1583655552' value='0'/>
+  <list key='upload.comment.mandatory-terms' time='1583655566'>
+  </list>
+  <tag key='upload.comment.max-age' time='1583655566' value='14400'/>
+  <list key='upload.source.exception-terms' time='1583655566'>
+  </list>
+  <list key='upload.source.forbidden-terms' time='1583655566'>
+  </list>
+  <list key='upload.source.history' time='1583655552'>
+    <entry value='knowledge'/>
+    <entry value='survey'/>
+    <entry value='Bing'/>
+  </list>
+  <list key='upload.source.mandatory-terms' time='1583655566'>
+  </list>
+  <tag key='upload.source.obtainautomatically' time='1583655434' value='false'/>
+  <tag key='url.openstreetmap-wiki' time='1583655313' value='https://wiki.openstreetmap.org'/>
+  <tag key='use.native.file.dialog' time='1583761915' value='false'/>
+  <tag key='userlist.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='userlist.docked' time='1583660404' value='true'/>
+  <tag key='userlist.minimized' time='1583660404' value='false'/>
+  <tag key='userlist.preferredHeight' time='1583660404' value='150'/>
+  <tag key='userlist.visible' time='1583660404' value='false'/>
+  <tag key='utilsplugin2.customurl' time='1583659027' value='http://osm.mapki.com/history/{#type}.php?id={#id}'/>
+  <list key='utilsplugin2.urlHistory' time='1583658986' xsi:nil='true'/>
+  <tag key='validated.ipv6' time='1583761651' value='false'/>
+  <tag key='validator.RightAngleBuilding.maximumDelta' time='1583655552' value='10.0'/>
+  <tag key='validator.RightAngleBuilding.minimumDelta' time='1583655552' value='1.0'/>
+  <tag key='validator.TagChecker.checkComplex' time='1583660412' value='true'/>
+  <tag key='validator.TagChecker.checkComplexBeforeUpload' time='1583660412' value='true'/>
+  <tag key='validator.TagChecker.checkFixmes' time='1583660412' value='true'/>
+  <tag key='validator.TagChecker.checkFixmesBeforeUpload' time='1583660412' value='true'/>
+  <tag key='validator.TagChecker.checkKeys' time='1583660412' value='true'/>
+  <tag key='validator.TagChecker.checkKeysBeforeUpload' time='1583660412' value='true'/>
+  <tag key='validator.TagChecker.checkPresetsTypes' time='1583660412' value='true'/>
+  <tag key='validator.TagChecker.checkPresetsTypesBeforeUpload' time='1583660412' value='true'/>
+  <tag key='validator.TagChecker.checkValues' time='1583761686' value='true'/>
+  <tag key='validator.TagChecker.checkValuesBeforeUpload' time='1583660412' value='true'/>
+  <list key='validator.TagChecker.source' time='1583761686'>
+    <entry value='resource://data/validator/ignoretags.cfg'/>
+    <entry value='resource://data/validator/words.cfg'/>
+  </list>
+  <tag key='validator.UnconnectedWays.node_way_distance' time='1583655552' value='10.0'/>
+  <tag key='validator.UnconnectedWays.way_way_distance' time='1583655552' value='0.0'/>
+  <tag key='validator.addresses.max_duplicate_distance' time='1583761672' value='200.0'/>
+  <tag key='validator.addresses.max_street_distance' time='1583761672' value='200.0'/>
+  <tag key='validator.auto_reload_local_rules' time='1583761685' value='true'/>
+  <tag key='validator.buttonhiding' time='1583660404' value='DYNAMIC'/>
+  <tag key='validator.check_assert_local_rules' time='1583761685' value='false'/>
+  <tag key='validator.docked' time='1583660404' value='true'/>
+  <tag key='validator.duplicatenodes.precision' time='1583655552' value='0.0'/>
+  <tag key='validator.ignore' time='1583761674' value='true'/>
+  <maps key='validator.ignorelist' time='1582813247' xsi:nil='true'/>
+  <list key='validator.knownkeys' time='1583761686'>
+    <entry value='is_in'/>
+    <entry value='int_ref'/>
+    <entry value='fixme'/>
+    <entry value='population'/>
+  </list>
+  <tag key='validator.layer' time='1583761674' value='true'/>
+  <tag key='validator.maximum.segment.length' time='1583655552' value='15000'/>
+  <tag key='validator.minimized' time='1583660404' value='false'/>
+  <maps key='validator.org.openstreetmap.josm.data.validation.tests.MapCSSTagChecker.entries' time='1582813254' xsi:nil='true'/>
+  <tag key='validator.other' time='1583761674' value='false'/>
+  <tag key='validator.otherUpload' time='1583761674' value='false'/>
+  <tag key='validator.preferredHeight' time='1583660404' value='150'/>
+  <tag key='validator.routingislands.maxrecursion' time='1583655552' value='1000'/>
+  <list key='validator.skip' time='1582813250' xsi:nil='true'/>
+  <list key='validator.skipBeforeUpload' time='1582813250' xsi:nil='true'/>
+  <tag key='validator.visible' time='1583660404' value='false'/>
+  <tag key='viewportfollow.notification' time='1583761670' value='true'/>
+  <tag key='warn.move.maxelements' time='1583655186' value='20'/>
+  <list key='way.split.roles.nowarn' time='1582944044'>
+    <entry value='outer'/>
+    <entry value='inner'/>
+    <entry value='forward'/>
+    <entry value='backward'/>
+    <entry value='north'/>
+    <entry value='south'/>
+    <entry value='east'/>
+    <entry value='west'/>
+  </list>
+  <tag key='zoom.intermediate-steps' time='1583761915' value='true'/>
+  <tag key='zoom.ratio' time='1583761915' value='2.0'/>
+  <tag key='zoom.reverse-wheel' time='1583761915' value='false'/>
+  <tag key='zoom.scale-follow-native-resolution-at-load' time='1583761670' value='true'/>
+  <tag key='zoom.undo.delay' time='1583660791' value='1.0'/>
+  <tag key='zoom.undo.max' time='1583660791' value='50'/>
+</preferences-defaults>
