@@ -105,46 +105,46 @@
         </optional>
 	    </chunk>
 	    <chunk id="min_age">
-	        <text key="min_age" text="Minimum age" />
+	        <text key="min_age" text="حداقل سن" />
 	    </chunk>
 	    <chunk id="max_age">
-	        <text key="max_age" text="Maximum age" />
+	        <text key="max_age" text="حداکثر سن" />
 	    </chunk>
 	    <chunk id="name_ref">
-	        <text key="name" text="Name" />
-	        <text key="ref" text="Reference" />
+	        <text key="name" text="نام" />
+	        <text key="ref" text="مرجع" />
 	    </chunk>
 	    <chunk id="ref_operator">
-	        <text key="ref" text="Reference" />
-	        <text key="operator" text="Operator" />
+	        <text key="ref" text="مرجع" />
+	        <text key="operator" text="مسئول" />
 	    </chunk>
 	    <chunk id="name_ref_operator">
-	        <text key="name" text="Name" />
-	        <reference ref="ref_operator" />
+	        <text key="name" text="نام" />
+	        <reference ref="مرجع مسئول" />
 	    </chunk>
 	    <chunk id="name_operator">
-	        <text key="name" text="Name" />
-	        <text key="operator" text="Operator" />
+	        <text key="name" text="نام" />
+	        <text key="operator" text="مسئول" />
 	    </chunk>
 	    <chunk id="name_layer">
-	        <text key="name" text="Name" />
-	        <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
+	        <text key="name" text="نام" />
+	        <combo key="layer" text="لایه" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
 	    </chunk>
 	    <chunk id="service_times">
-	        <combo key="service_times" text="Service Times" delimiter="|" values="18:00|sunset,sunrise|Su 09:30,11:00|Sa,Su,PH 09:00|Sa 18:00; Su 10:45|Fr 08:00-18:00; Apr 10-15 off; Jun 07:00-20:00; Aug off; Dec 24 08:00-24:00|Sa 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" />
+	        <combo key="service_times" text="ساعت سرویس" delimiter="|" values="18:00|sunset,sunrise|Su 09:30,11:00|Sa,Su,PH 09:00|Sa 18:00; Su 10:45|Fr 08:00-18:00; Apr 10-15 off; Jun 07:00-20:00; Aug off; Dec 24 08:00-24:00|Sa 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" />
 	    </chunk>
 	    <chunk id="oh">
-	        <combo key="opening_hours" text="Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Su 09:00-21:00|Mo-Sa 08:00-18:00|Mo-Fr 09:00-17:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00; Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" />
+	        <combo key="opening_hours" text="ساعت بازبودن" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Su 09:00-21:00|Mo-Sa 08:00-18:00|Mo-Fr 09:00-17:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00; Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" />
 	    </chunk>
 	    <chunk id="wheelchair">
-	        <combo key="wheelchair" text="Wheelchairs" values="yes,limited,no" />
+	        <combo key="wheelchair" text="ویلچر" values="yes,limited,no" />
 	    </chunk>
 	    <chunk id="oh_wheelchair">
 	        <reference ref="oh" />
 	        <reference ref="wheelchair" />
 	    </chunk>
 	    <chunk id="name_oh_wheelchair">
-	        <text key="name" text="Name" />
+	        <text key="name" text="نام" />
 	        <reference ref="oh_wheelchair" />
 	    </chunk>
 	    <chunk id="name_operator_oh_wheelchair">
@@ -152,52 +152,52 @@
 	        <reference ref="oh_wheelchair" />
 	    </chunk>
 	    <chunk id="name_brand_operator_oh_wheelchair">
-	        <text key="name" text="Name" />
-	        <text key="brand" text="Brand" />
-	        <text key="operator" text="Operator" />
+	        <text key="name" text="نام" />
+	        <text key="brand" text="برند" />
+	        <text key="operator" text="مسئول" />
 	        <reference ref="oh_wheelchair" />
 	    </chunk>
 	    <chunk id="name_brand_oh_wheelchair">
-	        <text key="name" text="Name" />
-	        <text key="brand" text="Brand" />
+	        <text key="name" text="نام" />
+	        <text key="brand" text="برند" />
 	        <reference ref="oh_wheelchair" />
 	    </chunk>
 	    <chunk id="cuisine">
-	    <multiselect key="cuisine" text="Cuisine" values="african;american;arab;argentinian;asian;bagel;balkan;barbecue;bavarian;beef_bowl;brazilian;burger;cake;caribbean;chicken;chinese;coffee_shop;crepe;curry;danish;donut;ethiopian;filipino;fish;fish_and_chips;french;friture;frozen_yogurt;german;georgian;greek;heuriger;hot_dog;ice_cream;indian;indonesian;international;italian;japanese;kebab;korean;lebanese;malaysian;mediterranean;mexican;moroccan;noodle;pancake;pasta;persian;peruvian;pizza;polish;portuguese;ramen;regional;russian;sandwich;sausage;seafood;soba;spanish;steak_house;sushi;tex-mex;tapas;thai;turkish;vietnamese;wings" values_searchable="true" />
+	    <multiselect key="cuisine" text="نوع غذا" values="african;american;arab;argentinian;asian;bagel;balkan;barbecue;bavarian;beef_bowl;brazilian;burger;cake;caribbean;chicken;chinese;coffee_shop;crepe;curry;danish;donut;ethiopian;filipino;fish;fish_and_chips;french;friture;frozen_yogurt;german;georgian;greek;heuriger;hot_dog;ice_cream;indian;indonesian;international;italian;japanese;kebab;korean;lebanese;malaysian;mediterranean;mexican;moroccan;noodle;pancake;pasta;persian;peruvian;pizza;polish;portuguese;ramen;regional;russian;sandwich;sausage;seafood;soba;spanish;steak_house;sushi;tex-mex;tapas;thai;turkish;vietnamese;wings" values_searchable="true" />
 	    </chunk>
 	    <chunk id="internet">
-	        <combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" />
-	        <combo key="internet_access:fee" text="Internet access fee" values="yes,no" />
+	        <combo key="internet_access" text="دسترسی به اینترنت" values="yes,wlan,wired,terminal,no" />
+	        <combo key="internet_access:fee" text="هزینه دسترسی به اینترنت" values="yes,no" />
 	    </chunk>
 	    <chunk id="internet_smoking">
 	        <reference ref="internet" />
-	        <combo key="smoking" text="Smoking" values="yes,dedicated,separated,isolated,outside,no" />
+	        <combo key="smoking" text="استعمال دخانیات" values="yes,dedicated,separated,isolated,outside,no" />
 	    </chunk>
 	    <chunk id="optional_height">
 	        <optional>
-	            <text key="height" text="Height (meters)" length="7" />
+	            <text key="height" text="ارتفاع (متر)" length="7" />
 	        </optional>
 	    </chunk>
 	    <chunk id="optional_maxwidth">
 	        <optional>
-	            <text key="maxwidth" text="Max. width (meters)" length="7" />
+	            <text key="maxwidth" text="حداکثر عرض (متر)" length="7" />
 	        </optional>
 	    </chunk>
 	    <chunk id="optional_maxheight_maxwidth">
 	        <optional>
-	            <text key="maxheight" text="Max. height (meters)" length="7" />
-	            <text key="maxwidth" text="Max. width (meters)" length="7" />
+	            <text key="maxheight" text="ارتفاع (متر)" length="7" />
+	            <text key="maxwidth" text="حداکثر عرض (متر)" length="7" />
 	        </optional>
 	    </chunk>
 	    <chunk id="optional_name">
 	        <optional>
-	            <text key="name" text="Name" />
+	            <text key="name" text="نام" />
 	        </optional>
 	    </chunk>
 	    <chunk id="optional_name_operator">
 	        <optional>
-	            <text key="name" text="Name" />
-	            <text key="operator" text="Operator" />
+	            <text key="name" text="نام" />
+	            <text key="operator" text="مسئول" />
 	        </optional>
 	    </chunk>
 	    <chunk id="name_leisure_pitch">
