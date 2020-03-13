@@ -967,17 +967,17 @@
 	            <space />
 
 	        </item> <!-- Cycle Lane/Track -->
-	        <item name="Dedicated Cycleway" icon="presets/transport/way/dedicated_cycleway.svg" type="way,closedway" preset_name_label="true">
+	        <item name="معبر دوچرخه سواری" icon="presets/transport/way/dedicated_cycleway.svg" type="way,closedway" preset_name_label="true">
 	            <link wiki="Tag:highway=cycleway" />
 	            <key key="highway" value="cycleway" />
 	            <optional>
 	                <reference ref="name_layer" />
 	                <reference ref="surface_smoothness" />
 	                <reference ref="highway_yesno_incline_oneway_lit_width" />
-	                <combo key="foot" text="Pedestrians" values="yes,no,designated" />
+	                <combo key="foot" text="عابر پیاده" values="yes,no,designated" />
 	            </optional>
 	        </item> <!-- Dedicated Cycleway -->
-	        <item name="Segregated Foot- and Cycleway" icon="presets/transport/way/segregated_foot_cycleway.svg" type="way,closedway" preset_name_label="true">
+	        <item name="راه جدا برای پیاده و دوچرخه" icon="presets/transport/way/segregated_foot_cycleway.svg" type="way,closedway" preset_name_label="true">
 	            <link wiki="Tag:highway=path" />
 	            <key key="highway" value="path" />
 	            <key key="bicycle" value="designated" />
@@ -989,7 +989,7 @@
 	                <reference ref="highway_yesno_incline_oneway_lit_width" />
 	            </optional>
 	        </item> <!-- Segregated Foot- and Cycleway -->
-	        <item name="Combined Foot- and Cycleway" icon="presets/transport/way/combined_foot_cycleway.svg" type="way,closedway" preset_name_label="true">
+	        <item name="راه یکی برای پیاده و دوچرخه" icon="presets/transport/way/combined_foot_cycleway.svg" type="way,closedway" preset_name_label="true">
 	            <link wiki="Tag:highway=path" />
 	            <key key="highway" value="path" />
 	            <key key="bicycle" value="designated" />
@@ -1002,285 +1002,276 @@
 	                <check key="passing_places" text="Passing Places" />
 	            </optional>
 	        </item> <!-- Combined Foot- and Cycleway -->
-	        <item name="Dedicated Footway" icon="presets/transport/way/dedicated_footway.svg" type="way,closedway" preset_name_label="true">
+	        <item name="معبر پیاده" icon="presets/transport/way/dedicated_footway.svg" type="way,closedway" preset_name_label="true">
 	            <link wiki="Tag:highway=footway" />
 	            <key key="highway" value="footway" />
 	            <optional>
-	                <combo key="footway" text="Type" values="sidewalk,crossing" values_context="footway" />
+	                <combo key="footway" text="نوع" values="sidewalk,crossing" values_context="footway" />
 	                <reference ref="name_layer" />
 	                <reference ref="surface_smoothness" />
 	                <reference ref="highway_yesno_incline_oneway_lit_width" />
 	                <combo key="bicycle" text="Bicycle" values="yes,no,designated" />
 	            </optional>
 	        </item> <!-- Dedicated Footway -->
-	        <item name="Steps" icon="presets/transport/way/steps.svg" type="way" preset_name_label="true">
+	        <item name="پله" icon="presets/transport/way/steps.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:highway=steps" />
 	            <key key="highway" value="steps" />
 	            <optional>
 	                <reference ref="name_layer" />
 	                <reference ref="surface" />
-	                <text key="step_count" text="Amount of Steps" />
+	                <text key="step_count" text="تعداد پله‌ها" />
 	                <space />
 	                <check key="ramp" text="Ramp" />
 	                <checkgroup columns="2" >
 	                    <check key="ramp:stroller" text="Stroller ramp" />
 	                    <check key="ramp:bicycle" text="Bicycle ramp" />
 	                </checkgroup>
-	                <combo key="ramp:wheelchair" text="Wheelchair ramp" values="yes,limited,no" />
-	                <combo key="ramp:luggage" text="Luggage ramp" values="yes,automatic,manual,no" />
+	                <combo key="ramp:wheelchair" text="رمپ ویلچر" values="yes,limited,no" />
+	                <combo key="ramp:luggage" text="رمپ چمدان" values="yes,automatic,manual,no" />
 	                <space />
-	                <check key="handrail" text="Handrail" />
+	                <check key="handrail" text="نرده دستگیره" />
 	                <checkgroup columns="3" >
-	                    <check key="handrail:left" text="Left handrail" />
-	                    <check key="handrail:center" text="Center handrail" />
-	                    <check key="handrail:right" text="Right handrail" />
+	                    <check key="handrail:left" text="نرده دستگیره چپ" />
+	                    <check key="handrail:center" text="نرده دستگیره وسط" />
+	                    <check key="handrail:right" text="نرده دستگیره راست" />
 	                </checkgroup>
 	                <space />
-	                <combo key="conveying" text="Escalator" values="yes,forward,backward,reversible" />
+	                <combo key="conveying" text="پله برقی" values="yes,forward,backward,reversible" />
 	                <space />
 	                <reference ref="highway_yesno_incline_oneway_lit_width" />
 	            </optional>
 	        </item> <!-- Steps -->
 	    </group> <!-- Ways -->
-	    <group name="Waypoints" icon="presets/vehicle/waypoints.svg">
-	        <item name="Motorway Junction" icon="presets/vehicle/motorway_junction.svg" type="node" preset_name_label="true">
+	    <group name="نقاط میانی" icon="presets/vehicle/waypoints.svg">
+	        <item name="خروجی آزادراه" icon="presets/vehicle/motorway_junction.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:highway=motorway_junction" />
 	            <space />
 	            <key key="highway" value="motorway_junction" />
 	            <text key="name" text="نام" />
-	            <text key="ref" text="Number" />
+	            <text key="ref" text="شماره" />
 	        </item> <!-- Motorway Junction -->
-	        <item name="Services" icon="presets/vehicle/services.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="معبر دسترسی" icon="presets/vehicle/services.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:highway=services" />
 	            <key key="highway" value="services" />
 	            <optional>
 	                <text key="name" text="نام" />
-	                <text key="operator" text="Operator" />
-	                <check key="toilets" text="Toilets" />
+	                <text key="operator" text="مسئول" />
+	                <check key="toilets" text="سرویس بهداشتی" />
 	            </optional>
 	        </item> <!-- Services -->
-	        <item name="Rest Area" icon="presets/vehicle/rest_area.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="تفرجگاه جاده‌ای" icon="presets/vehicle/rest_area.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:highway=rest_area" />
 	            <key key="highway" value="rest_area" />
 	            <optional>
 	                <text key="name" text="نام" />
-	                <check key="toilets" text="Toilets" />
+	                <check key="toilets" text="سرویس بهداشتی" />
 	                <check key="drinking_water" text="Drinking Water" />
 	            </optional>
 	        </item> <!-- Rest Area -->
 	        <separator/>
-	        <item name="Traffic Signal" icon="presets/vehicle/traffic_signals.svg" type="node" preset_name_label="true">
+	        <item name="علائم ترافیکی" icon="presets/vehicle/traffic_signals.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:highway=traffic_signals" />
 	            <key key="highway" value="traffic_signals" />
 	            <optional>
-	                <combo key="traffic_signals:direction" text="Direction" values="forward,backward,both" />
+	                <combo key="traffic_signals:direction" text="جهت" values="forward,backward,both" />
 	            </optional>
-	            <optional text="Optional crossing attributes:">
-	                <combo key="crossing" text="Pedestrian crossing type" values="uncontrolled,traffic_signals,unmarked,no" />
-	                <combo key="crossing_ref" text="Crossing type name (UK)" values="zebra,pelican,toucan,puffin,pegasus,tiger" />
-	                <combo key="kerb" text="Kerb" values="flush,lowered,no,raised,rolled,yes" values_context="kerb" />
-	                <check key="crossing:island" text="With island" />
-	                <check key="button_operated" text="Button operated" />
-	                <check key="traffic_signals:sound" text="Sound signals" />
-	                <combo key="supervised" text="Crossing attendant" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" />
-	                <check key="bicycle" text="Cross by bicycle" />
-	                <check key="horse" text="Cross on horseback" />
-	            </optional>
-	            <optional text="Optional values for specific countries">
-	                <text key="name" text="نام" />
+	            <optional text="صفت‌های معبری انتخابی:">
+	                <combo key="crossing" text="نوع عبور عابرهای پیاده" values="uncontrolled,traffic_signals,unmarked,no" />
+	                <combo key="kerb" text="جدول" values="flush,lowered,no,raised,rolled,yes" values_context="kerb" />
+	                <check key="button_operated" text="گذر دکمه‌ای" />
+	                <check key="traffic_signals:sound" text="علائم صوتی" />
+	                <check key="bicycle" text="عبور با دوچرخه" />
+	                <check key="horse" text="عبور با اسب" />
 	            </optional>
 	            </item> <!-- Traffic Signal -->
-	        <item name="Stop" icon="presets/vehicle/restriction/stop.svg" type="node" preset_name_label="true">
+	        <item name="ایست" icon="presets/vehicle/restriction/stop.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:highway=stop" />
 	            <key key="highway" value="stop" />
 	            <optional>
-	                <combo key="direction" text="Direction" values="N,E,S,W,0,90,180,270,forward,backward" values_sort="false" />
+	                <combo key="direction" text="جهت" values="N,E,S,W,0,90,180,270,forward,backward" values_sort="false" />
 	            </optional>
 	        </item> <!-- Stop -->
-	        <item name="Give Way" icon="presets/vehicle/restriction/give_way.svg" type="node" preset_name_label="true">
+	        <item name="رعایت حق تقدم" icon="presets/vehicle/restriction/give_way.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:highway=give_way" />
 	            <key key="highway" value="give_way" />
 	            <optional>
-	                <combo key="direction" text="Direction" values="N,E,S,W,0,90,180,270,forward,backward" values_sort="false" />
+	                <combo key="direction" text="جهت" values="N,E,S,W,0,90,180,270,forward,backward" values_sort="false" />
 	            </optional>
 	        </item> <!-- Give Way -->
-	        <item name="Advanced stop line" icon="presets/vehicle/asl.svg" type="node" preset_name_label="true">
+	        <item name="عبور مخصوص دوچرخه" icon="presets/vehicle/asl.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:cycleway=asl" />
 	            <key key="cycleway" value="asl" />
 	        </item> <!-- Advanced stop line -->
-	        <item name="Mini-Roundabout" icon="presets/vehicle/restriction/mini_roundabout_left.svg" type="node" preset_name_label="true">
+	        <item name="فلکه کوچک" icon="presets/vehicle/restriction/mini_roundabout_left.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:highway=mini_roundabout" />
 	            <key key="highway" value="mini_roundabout" />
 	            <space />
-	            <combo key="direction" text="Direction" values="clockwise" />
+	            <combo key="direction" text="جهت" values="clockwise" />
 	        </item> <!-- Mini-Roundabout -->
-	        <item name="Pedestrian Crossing" icon="presets/vehicle/crossing.svg" type="node" preset_name_label="true">
+	        <item name="عبور عابران پیاده" icon="presets/vehicle/crossing.svg" type="node" preset_name_label="true">
 	            <link wiki="Key:crossing" />
 	            <space />
 	            <key key="highway" value="crossing" />
-	            <combo key="crossing" text="Pedestrian crossing type" >
+	            <combo key="crossing" text="نوع عبور عابران" >
 	                <list_entry value="uncontrolled" icon="presets/vehicle/crossing.svg" />
 	                <list_entry value="traffic_signals" icon="presets/vehicle/crossing_traffic_signals.svg" />
 	                <list_entry value="unmarked" icon="presets/vehicle/crossing_unmarked.svg" />
 	            </combo>
-	            <combo key="crossing_ref" text="Crossing type name (UK)" values="zebra,pelican,toucan,puffin,pegasus,tiger" values_searchable="true" />
-	            <combo key="kerb" text="Kerb" values="flush,lowered,no,raised,rolled,yes" values_context="kerb" />
-	            <combo key="supervised" text="Crossing attendant" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" />
-	            <combo key="tactile_paving" text="Tactile Paving" values="yes,no,incorrect" />
-	            <check key="crossing:island" text="With island" />
-	            <check key="bicycle" text="Cross by bicycle" />
-	            <check key="horse" text="Cross on horseback" />
-	            <label text="In case of traffic signals:" />
-	            <check key="button_operated" text="Button operated" />
-	            <check key="traffic_signals:sound" text="Sound signals" />
+	            <combo key="kerb" text="جدول" values="flush,lowered,no,raised,rolled,yes" values_context="kerb" />
+	            <combo key="tactile_paving" text="سنگ‌فرش لمسی" values="yes,no,incorrect" />
+	            <check key="bicycle" text="عبور با دوچرخه" />
+	            <check key="horse" text="عبور با اسب" />
+	            <label text="درصورت وجود علائم ترافیکی" />
+	            <check key="button_operated" text="علائم دکمه‌ای" />
+	            <check key="traffic_signals:sound" text="علائم صوتی" />
 	        </item> <!-- Pedestrian Crossing -->
-	        <group name="Traffic Calming" icon="presets/vehicle/choker.svg"> 
-	            <item name="Bump" icon="presets/vehicle/bump.svg" type="node,way" preset_name_label="true">
+	        <group name="آرام‌کننده ترافیک" icon="presets/vehicle/choker.svg"> 
+	            <item name="معمولی" icon="presets/vehicle/bump.svg" type="node,way" preset_name_label="true">
 	                <link wiki="Key:traffic_calming" />
 	                <space />
 	                <key key="traffic_calming" value="bump" />
 	            </item> <!-- Bump -->
-	            <item name="Hump" icon="presets/vehicle/hump.svg" type="node,way" preset_name_label="true">
+	            <item name="تپه‌ای" icon="presets/vehicle/hump.svg" type="node,way" preset_name_label="true">
 	                <link wiki="Key:traffic_calming" />
 	                <space />
 	                <key key="traffic_calming" value="hump" />
 	            </item> <!-- Hump -->
-	            <item name="Table" icon="presets/vehicle/table.svg" type="node,way" preset_name_label="true">
+	            <item name="جدولی" icon="presets/vehicle/table.svg" type="node,way" preset_name_label="true">
 	                <link wiki="Key:traffic_calming" />
 	                <space />
 	                <key key="traffic_calming" value="table" />
 	            </item> <!-- Table -->
-	            <item name="Cushion" icon="presets/vehicle/cushion.svg" type="node,way" preset_name_label="true">
+	            <item name="تپه‌ای متقاطع" icon="presets/vehicle/cushion.svg" type="node,way" preset_name_label="true">
 	                <link wiki="Key:traffic_calming" />
 	                <space />
 	                <key key="traffic_calming" value="cushion" />
 	            </item> <!-- Cushion -->
-	            <item name="Rumble strip" icon="presets/vehicle/rumble_strip.svg" type="node,way" preset_name_label="true">
+	            <item name="لرزاننده عرضی" icon="presets/vehicle/rumble_strip.svg" type="node,way" preset_name_label="true">
 	                <link wiki="Key:traffic_calming" />
 	                <space />
 	                <key key="traffic_calming" value="rumble_strip" />
 	            </item> <!-- Rumble strip -->
-	            <item name="Dip" icon="presets/vehicle/dip.svg" type="node,way" preset_name_label="true">
+	            <item name="چاله" icon="presets/vehicle/dip.svg" type="node,way" preset_name_label="true">
 	                <link wiki="Key:traffic_calming" />
 	                <space />
 	                <key key="traffic_calming" value="dip" />
 	            </item> <!-- Dip -->
 	            <separator/>
-	            <item name="Chicane" icon="presets/vehicle/chicane.svg" type="node,way" preset_name_label="true">
+	            <item name="مارپیچ" icon="presets/vehicle/chicane.svg" type="node,way" preset_name_label="true">
 	                <link wiki="Key:traffic_calming" />
 	                <space />
 	                <key key="traffic_calming" value="chicane" />
 	            </item> <!-- Chicane -->
-	            <item name="Choker" icon="presets/vehicle/choker.svg" type="node,way" preset_name_label="true">
+	            <item name="باریک‌کننده" icon="presets/vehicle/choker.svg" type="node,way" preset_name_label="true">
 	                <link wiki="Key:traffic_calming" />
 	                <space />
 	                <key key="traffic_calming" value="choker" />
 	            </item> <!-- Choker -->
-	            <item name="Island" name_context="traffic_calming" icon="presets/vehicle/island.svg" type="node,way" preset_name_label="true">
+	            <item name="جداکننده فیزیکی" name_context="traffic_calming" icon="presets/vehicle/island.svg" type="node,way" preset_name_label="true">
 	                <link wiki="Key:traffic_calming" />
 	                <space />
 	                <key key="traffic_calming" value="island" />
 	            </item> <!-- Island -->
 	        </group> <!-- Traffic Calming -->
-	        <item name="Passing Place" icon="presets/vehicle/passing_place.svg" type="node" preset_name_label="true">
+	        <item name="شانه گذرگاه" icon="presets/vehicle/passing_place.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:highway=passing_place" />
 	            <key key="highway" value="passing_place" />
 	        </item> <!-- Passing Place -->
-	        <item name="Turning Circle" icon="presets/vehicle/turning_circle.svg" type="node" preset_name_label="true">
+	        <item name="بن گرد" icon="presets/vehicle/turning_circle.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:highway=turning_circle" />
 	            <key key="highway" value="turning_circle" />
 	        </item> <!-- Turning Circle -->
-	        <item name="Turning Loop" icon="presets/vehicle/turning_loop.svg" type="node" preset_name_label="true">
+	        <item name="گره گرد" icon="presets/vehicle/turning_loop.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:highway=turning_loop" />
 	            <key key="highway" value="turning_loop" />
 	        </item> <!-- Turning Loop -->
-	        <item name="City Limit Sign" icon="presets/vehicle/restriction/city_limit.svg" type="node" preset_name_label="true">
+	        <item name="تابلو حد شهری" icon="presets/vehicle/restriction/city_limit.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:traffic_sign=city_limit" />
 	            <space />
 	            <key key="traffic_sign" value="city_limit" />
 	            <text key="name" text="نام" />
 	            <optional>
 	                <text key="alt_name" text="Second Name" />
-	                <combo key="direction" text="Direction" values="N,E,S,W,0,90,180,270,forward,backward" values_sort="false" />
+	                <combo key="direction" text="جهت" values="N,E,S,W,0,90,180,270,forward,backward" values_sort="false" />
 	            </optional>
 	        </item> <!-- City Limit -->
-	        <item name="Speed Limit Sign" icon="presets/vehicle/restriction/maxspeed.svg" type="node" preset_name_label="true">
+	        <item name="تابلو حد سرعت" icon="presets/vehicle/restriction/maxspeed.svg" type="node" preset_name_label="true">
 	            <link wiki="Key:traffic_sign" />
 	            <space />
 	            <key key="traffic_sign" value="maxspeed" />
 	            <text key="maxspeed" text="حداکثر سرعت (ک.م / ساعت)" />
 	            <optional>
-	                <combo key="direction" text="Direction" values="N,E,S,W,0,90,180,270,forward,backward" values_sort="false" />
+	                <combo key="direction" text="جهت" values="N,E,S,W,0,90,180,270,forward,backward" values_sort="false" />
 	            </optional>
 	        </item> <!-- Speed Limit -->
-	        <item name="Speed Camera" icon="presets/vehicle/restriction/speed_camera.svg" type="node" preset_name_label="true">
+	        <item name="دوربین سرعت" icon="presets/vehicle/restriction/speed_camera.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:highway=speed_camera" />
 	            <key key="highway" value="speed_camera" />
 	            <optional>
 	                <text key="maxspeed" text="حداکثر سرعت (ک.م / ساعت)" />
 	            </optional>
 	        </item> <!-- Speed Camera -->
-	        <item name="عوارض gantry" icon="presets/vehicle/restriction/toll_gantry.svg" type="node" preset_name_label="true">
+	        <item name="نردبان عوارضی" icon="presets/vehicle/restriction/toll_gantry.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:highway=toll_gantry" />
 	            <key key="highway" value="toll_gantry" />
 	            <optional>
-	                <text key="operator" text="Operator" />
+	                <text key="operator" text="مسئول" />
 	            </optional>
 	        </item> <!-- عوارض gantry -->
-	        <item name="Traffic Mirror" icon="presets/vehicle/traffic_mirror.svg" type="node" preset_name_label="true">
+	        <item name="آینه ترافیکی" icon="presets/vehicle/traffic_mirror.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:highway=traffic_mirror" />
 	            <key key="highway" value="traffic_mirror" />
 	        </item> <!-- Traffic Mirror -->
-	        <item name="Highway milestone" icon="presets/vehicle/milestone.svg" type="node" preset_name_label="true">
+	        <item name="تابلو فرسخ‌شمار" icon="presets/vehicle/milestone.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:highway=milestone" />
 	            <key key="highway" value="milestone" />
-	            <text key="distance" text="Distance (kilometers)" />
+	            <text key="distance" text="فاصله به کیلومتر" />
 	            <text key="ref" text="مرجع" />
 	        </item> <!-- Highway Milestone -->
-	        <item name="Named Junction" name_context="junction=yes" icon="presets/vehicle/junction.svg" type="node,closedway" preset_name_label="true">
+	        <item name="تقاطع با اسم" name_context="junction=yes" icon="presets/vehicle/junction.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:junction=yes" />
 	            <key key="junction" value="yes" />
-	            <label text="Used in some countries for a named road junction who’s name serves for local orientation." />
+	            <label text="در جاهایی تقاطع را معمولا با نام آن می‌شناسند." />
 	            <text key="name" text="نام" />
 	        </item> <!-- Named Junction -->
 	        <separator/>
-	        <item name="Elevator" icon="presets/service/elevator.svg" type="node,way,closedway" preset_name_label="true">
+	        <item name="آسانسور" icon="presets/service/elevator.svg" type="node,way,closedway" preset_name_label="true">
 	            <link wiki="Tag:highway=elevator" />
 	            <key key="highway" value="elevator" />
-	            <text key="capacity:persons" text="Capacity (persons)" />
+	            <text key="capacity:persons" text="ظرفیت به نفر" />
 	            <text key="maxweight" text="حداکثر وزن به تن" />
-	            <text key="level" text="Storey" />
+	            <text key="level" text="تعداد طبقات" />
 	            <optional>
-	                <text key="manufacturer" text="Manufacturer" />
+	                <text key="manufacturer" text="شرکت سازنده" />
 	                <reference ref="name_ref_operator" />
 	                <reference ref="oh_wheelchair" />
-	                <check key="handrail" text="Handrail" />
-	                <check key="bicycle" text="Bicycle" />
-	                <check key="indoor" text="Indoor" />
+	                <check key="handrail" text="دسته" />
+	                <check key="bicycle" text="دوچرخه" />
+	                <check key="indoor" text="داخلی" />
 	                <reference ref="fee" />
-	                <combo key="goods" text="Freight elevator" values="yes,designated,no" />
-	                <combo key="access" text="Access" values="yes,no,customers,private" />
-	                <combo key="surveillance" text="Surveillance Camera" values="indoor,outdoor" />
+	                <combo key="goods" text="آسانسور حمل کالا" values="yes,designated,no" />
+	                <combo key="access" text="دسترسی" values="yes,no,customers,private" />
+	                <combo key="surveillance" text="دوربین مداربسته" values="indoor,outdoor" />
 	            </optional>
 	        </item> <!-- Elevator -->
 	        <separator/>
-	        <item name="Grit Bin" icon="presets/misc/grit_bin.svg" type="node" preset_name_label="true">
+	        <item name="جعبه گریت" icon="presets/misc/grit_bin.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=grit_bin" />
 	            <key key="amenity" value="grit_bin" />
 	        </item> <!-- Grit Bin -->
 	        <separator/>
-	        <item name="Mountain Pass" icon="presets/landmark/mountain_pass.svg" type="node" preset_name_label="true">
+	        <item name="قله‌گذر" icon="presets/landmark/mountain_pass.svg" type="node" preset_name_label="true">
 	            <link wiki="Key:mountain_pass" />
 	            <key key="mountain_pass" value="yes" />
 	            <optional>
 	                <text key="name" text="نام" />
-	                <text key="ele" text="Elevation" />
-	                <text key="wikipedia" text="Wikipedia" />
+	                <text key="ele" text="ارتفاع" />
+	                <text key="wikipedia" text="ویکی‌پدیا" />
 	            </optional>
 	        </item> <!-- Mountain Pass -->
 	    </group> <!-- Waypoints -->
-	    <group name="Barriers" icon="presets/barrier/wall.svg"> <!-- *** Node Barriers *** -->
-	        <item name="Block" icon="presets/barrier/block.svg" type="node,way,closedway" preset_name_label="true">
+	    <group name="حائل" icon="presets/barrier/wall.svg"> <!-- *** Node Barriers *** -->
+	        <item name="بلوک" icon="presets/barrier/block.svg" type="node,way,closedway" preset_name_label="true">
 	            <link wiki="Tag:barrier=block" />
 	            <key key="barrier" value="block" />
 	            <reference ref="barrier_4" />
@@ -1289,53 +1280,53 @@
 	                <combo key="material" text="Material" values="concrete,reinforced_concrete,stone" />
 	            </optional>
 	        </item> <!-- Block -->
-	        <item name="Bollard" icon="presets/barrier/bollard.svg" type="node,way" preset_name_label="true">
+	        <item name="بولارد" icon="presets/barrier/bollard.svg" type="node,way" preset_name_label="true">
 	            <link wiki="Tag:barrier=bollard" />
 	            <space />
 	            <key key="barrier" value="bollard" />
-	            <combo key="bollard" text="Bollard type" values="rising,removable" />
+	            <combo key="bollard" text="نوع بولارد" values="rising,removable" />
 	            <reference ref="barrier_4" />
 	            <optional>
-	                <text key="maxwidth" text="Max. عرض به متر" length="7" />
-	                <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" />
+	                <text key="maxwidth" text="حداکثر عرض به متر" length="7" />
+	                <combo key="material" text="جنس" values="concrete,metal,plastic,stone,wood" />
 	            </optional>
 	        </item> <!-- Bollard -->
-	        <item name="Cycle Barrier" icon="presets/barrier/cycle_barrier.svg" type="node" preset_name_label="true">
+	        <item name="حائل دوچرخه" icon="presets/barrier/cycle_barrier.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=cycle_barrier" />
 	            <key key="barrier" value="cycle_barrier" />
 	            <reference ref="barrier_4" />
 	            <reference ref="optional_maxwidth" />
 	        </item> <!-- Cycle Barrier -->
-	        <item name="Cattle Grid" icon="presets/barrier/cattle_grid.svg" type="node" preset_name_label="true">
+	        <item name="سُم‌گیر" icon="presets/barrier/cattle_grid.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=cattle_grid" />
 	            <key key="barrier" value="cattle_grid" />
 	            <reference ref="barrier_4" />
 	        </item> <!-- Cattle Grid -->
-	        <item name="Bus Trap" type="node" preset_name_label="true">
+	        <item name="حائل عرض وسیله" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=bus_trap" />
 	            <key key="barrier" value="bus_trap" />
 	            <reference ref="optional_maxwidth" />
 	        </item> <!-- Bus Trap -->
-	        <item name="Spikes" icon="presets/barrier/spikes.svg" type="node" preset_name_label="true">
+	        <item name="میخ جمع‌شونده" icon="presets/barrier/spikes.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=spikes" />
 	            <key key="barrier" value="spikes" />
 	            <reference ref="barrier_5" />
 	        </item> <!-- Spikes -->
-	        <item name="عوارض Booth" icon="presets/barrier/toll_station.svg" type="node,closedway" preset_name_label="true">
+	        <item name="باجه عوارض" icon="presets/barrier/toll_station.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:barrier=toll_booth" />
 	            <key key="barrier" value="toll_booth" />
 	            <optional>
 	                <text key="name" text="نام" />
-	                <text key="operator" text="Operator" />
+	                <text key="operator" text="مسئول" />
 	            </optional>
 	        </item> <!-- عوارض Booth -->
-	        <item name="Border Control" icon="presets/barrier/douane.svg" type="node" preset_name_label="true">
+	        <item name="باجه مرزی" icon="presets/barrier/douane.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=border_control" />
 	            <key key="barrier" value="border_control" />
 	            <reference ref="barrier_5" />
 	        </item> <!-- Border Control -->
 	        <separator/> <!-- *** Linear Barriers *** -->
-	        <item name="Hedge" icon="presets/barrier/hedge.svg" type="way,closedway,multipolygon" preset_name_label="true">
+	        <item name="پرچین" icon="presets/barrier/hedge.svg" type="way,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:barrier=hedge" />
 	            <space />
 	            <key key="barrier" value="hedge" />
@@ -1345,7 +1336,7 @@
 	                <text key="height" text="Height (meters)" length="7" />
 	            </optional>
 	        </item> <!-- Hedge -->
-	        <item name="Fence" icon="presets/barrier/fence.svg" type="way,closedway" preset_name_label="true">
+	        <item name="حصار" icon="presets/barrier/fence.svg" type="way,closedway" preset_name_label="true">
 	            <link wiki="Tag:barrier=fence" />
 	            <key key="barrier" value="fence" />
 	            <optional>
@@ -1353,7 +1344,7 @@
 	                <text key="height" text="Height (meters)" length="7" />
 	            </optional>
 	        </item> <!-- Fence -->
-	        <item name="Handrail" icon="presets/barrier/handrail.svg" type="way,closedway" preset_name_label="true">
+	        <item name="نرده دست" icon="presets/barrier/handrail.svg" type="way,closedway" preset_name_label="true">
 	            <link wiki="Tag:barrier=handrail" />
 	            <key key="barrier" value="handrail" />
 	            <optional>
@@ -1361,76 +1352,76 @@
 	                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
 	            </optional>
 	        </item> <!-- Handrail -->
-	        <item name="Cable barrier" icon="presets/barrier/cable_barrier.svg" type="way,closedway" preset_name_label="true">
+	        <item name="حصار کابلی" icon="presets/barrier/cable_barrier.svg" type="way,closedway" preset_name_label="true">
 	            <link wiki="Tag:barrier=cable_barrier" />
 	            <key key="barrier" value="cable_barrier" />
 	            <reference ref="optional_height" />
 	        </item> <!-- Cable barrier -->
-	        <item name="Guard Rail" icon="presets/barrier/guard_rail.svg" type="way,closedway" preset_name_label="true">
+	        <item name="گارد ریل" icon="presets/barrier/guard_rail.svg" type="way,closedway" preset_name_label="true">
 	            <link wiki="Tag:barrier=guard_rail" />
 	            <key key="barrier" value="guard_rail" />
 	            <reference ref="optional_height" />
 	        </item> <!-- Guard Rail -->
-	        <item name="Wall" icon="presets/barrier/wall.svg" type="way,closedway" preset_name_label="true">
+	        <item name="دیوار" icon="presets/barrier/wall.svg" type="way,closedway" preset_name_label="true">
 	            <link wiki="Tag:barrier=wall" />
 	            <key key="barrier" value="wall" />
 	            <reference ref="optional_height" />
 	            <combo key="wall" text="Type" values="castle_wall,dry_stone,flood_wall,noise_barrier,seawall" />
 	            <reference ref="wall_material" />
 	        </item> <!-- Wall -->
-	        <item name="City Wall" icon="presets/barrier/city_wall.svg" type="way,closedway" preset_name_label="true">
+	        <item name="دیوار دور شهر" icon="presets/barrier/city_wall.svg" type="way,closedway" preset_name_label="true">
 	            <link wiki="Tag:barrier=city_wall" />
 	            <key key="barrier" value="city_wall" />
 	            <reference ref="optional_height" />
 	            <reference ref="wall_material" />
 	        </item> <!-- City Wall -->
-	        <item name="Retaining Wall" icon="presets/barrier/retaining_wall.svg" type="way,closedway" preset_name_label="true">
+	        <item name="دیوار بازدارنده" icon="presets/barrier/retaining_wall.svg" type="way,closedway" preset_name_label="true">
 	            <link wiki="Tag:barrier=retaining_wall" />
 	            <key key="barrier" value="retaining_wall" />
 	            <reference ref="optional_height" />
 	            <reference ref="wall_material" />
 	        </item> <!-- Retaining Wall -->
-	        <item name="Jersey Barrier" icon="presets/barrier/jersey_barrier.svg"  type="node,way,closedway" preset_name_label="true">
+	        <item name="بلوک نیوجرسی" icon="presets/barrier/jersey_barrier.svg"  type="node,way,closedway" preset_name_label="true">
 	            <link wiki="Tag:barrier=jersey_barrier" />
 	            <key key="barrier" value="jersey_barrier" />
 	            <combo key="material" text="Material" values="concrete,plastic" />
 	        </item> <!-- Jersey Barrier -->
-	        <item name="Ditch" name_context="Barrier" type="way,closedway" preset_name_label="true">
+	        <item name="گودال" name_context="Barrier" type="way,closedway" preset_name_label="true">
 	            <link wiki="Tag:barrier=ditch" />
 	            <key key="barrier" value="ditch" />
 	            <optional>
 	                <text key="width" text="عرض به متر" length="7" />
 	            </optional>
 	        </item> <!-- Ditch -->
-	        <item name="Kerb" icon="presets/barrier/kerb.svg" type="node,way,closedway" preset_name_label="true">
+	        <item name="جدول" icon="presets/barrier/kerb.svg" type="node,way,closedway" preset_name_label="true">
 	            <link wiki="Tag:barrier=kerb" />
 	            <key key="barrier" value="kerb" />
 	            <reference ref="optional_height" />
 	            <reference ref="wheelchair" />
 	            <combo key="tactile_paving" text="Tactile paving" values="yes,no,incorrect" />
-	        </item> <!-- Kerb -->
+	        </item> <!-- جدول -->
 	        <separator/> <!-- *** Access *** -->
-	        <item name="Entrance (Barrier Opening)" icon="presets/barrier/entrance.svg" type="node" preset_name_label="true">
+	        <item name="مدخل" icon="presets/barrier/entrance.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=entrance" />
 	            <key key="barrier" value="entrance" />
 	            <reference ref="barrier_5" />
 	            <reference ref="optional_maxwidth" />
 	        </item> <!-- Entrance (Barrier Opening) -->
-	        <item name="Gate" icon="presets/barrier/gate.svg" type="node" preset_name_label="true">
+	        <item name="گیت" icon="presets/barrier/gate.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=gate" />
 	            <key key="barrier" value="gate" />
 	            <reference ref="barrier_5" />
 	            <reference ref="optional_maxheight_maxwidth" />
 	            <reference ref="general_access" />
 	        </item> <!-- Gate -->
-	        <item name="Lift Gate" icon="presets/barrier/lift_gate.svg" type="node" preset_name_label="true">
+	        <item name="گیت بالابر" icon="presets/barrier/lift_gate.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=lift_gate" />
 	            <key key="barrier" value="lift_gate" />
 	            <reference ref="barrier_5" />
 	            <reference ref="optional_maxwidth" />
 	            <reference ref="general_access" />
 	        </item> <!-- Lift Gate -->
-	        <item name="Swing Gate" icon="presets/barrier/swing_gate.svg" type="node" preset_name_label="true">
+	        <item name="گیت عرضی" icon="presets/barrier/swing_gate.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=swing_gate" />
 	            <key key="barrier" value="swing_gate" />
 	            <combo key="swing_gate:type" text="Type" values="single,double" values_context="swing_gate" />
@@ -1438,35 +1429,35 @@
 	            <reference ref="optional_maxwidth" />
 	            <reference ref="general_access" />
 	        </item> <!-- Swing Gate -->
-	        <item name="Hampshire Gate" type="node" preset_name_label="true">
+	        <item name="گیت همپشایری" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=hampshire_gate" />
 	            <key key="barrier" value="hampshire_gate" />
 	            <reference ref="barrier_5" />
 	            <reference ref="optional_maxwidth" />
 	        </item> <!-- Hampshire Gate -->
-	        <item name="Bump Gate" type="node" preset_name_label="true">
+	        <item name="گیت دست‌انداز" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=bump_gate" />
 	            <key key="barrier" value="bump_gate" />
 	            <reference ref="barrier_5" />
 	            <reference ref="optional_maxwidth" />
 	        </item> <!-- Bump Gate -->
-	        <item name="Kissing Gate" icon="presets/barrier/kissing_gate.svg" type="node" preset_name_label="true">
+	        <item name="گیت حیوان‌گیر" icon="presets/barrier/kissing_gate.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=kissing_gate" />
 	            <key key="barrier" value="kissing_gate" />
 	            <reference ref="barrier_2" />
 	            <reference ref="optional_maxwidth" />
 	        </item> <!-- Kissing Gate -->
-	        <item name="Chain" icon="presets/barrier/chain.svg" type="node,way,closedway" preset_name_label="true">
+	        <item name="زنجیر" icon="presets/barrier/chain.svg" type="node,way,closedway" preset_name_label="true">
 	            <link wiki="Tag:barrier=chain" />
 	            <key key="barrier" value="chain" />
 	            <reference ref="barrier_5" />
 	            <reference ref="optional_maxwidth" />
 	        </item> <!-- Chain -->
-	        <item name="Stile" icon="presets/barrier/stile.svg" type="node" preset_name_label="true">
+	        <item name="گیت ثابت" icon="presets/barrier/stile.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=stile" />
 	            <space />
 	            <key key="barrier" value="stile" />
-	            <combo key="stile" text="Type" values="ladder,squeezer,stepover" />
+	            <combo key="stile" text="نوع" values="ladder,squeezer,stepover" />
 	            <optional>
 	                <combo key="material" text="Material" values="metal,stone,wood" />
 	            </optional>
@@ -1681,7 +1672,7 @@
 	            <combo key="location" text="Location" values="overground,underground" values_context="pipeline" />
 	            <optional>
 	                <text key="name" text="نام" />
-	                <text key="operator" text="Operator" />
+	                <text key="operator" text="مسئول" />
 	                <combo key="diameter" text="Diameter (mm)" values="800,1000,1200,1500,1600,1800,2200,2300,2400,2500,2600,2800,3200,3300,3400,3500,4000,4200,4300,4800" />
 	                <text key="pressure" text="Pressure (bar)" />
 	                <combo key="material" text="Material" values="metal,steel" />
@@ -2008,8 +1999,8 @@
 	            <optional>
 	                <combo key="crossing" text="Crossing type" values="uncontrolled,traffic_signals" />
 	                <reference ref="supervised" />
-	                <check key="horse" text="Cross on horseback" />
-	                <check key="bicycle" text="Cross by bicycle" />
+	                <check key="horse" text="عبور با اسب" />
+	                <check key="bicycle" text="عبور با دوچرخه" />
 	                <check key="crossing:light" text="Traffic lights" />
 	                <check key="crossing:bell" text="Sound signals" />
 	                <combo key="crossing:barrier" text="Barrier" values="yes,no,half,full,double_half" values_context="crossing:barrier" />
@@ -2028,19 +2019,19 @@
 	            <key key="railway" value="switch" />
 	            <combo key="railway:switch" text="Type" values="abt,default,double_slip,single_slip,three_way,wye" />
 	            <text key="ref" text="مرجع" />
-	            <text key="operator" text="Operator" />
+	            <text key="operator" text="مسئول" />
 	        </item> <!-- Railway Switch -->
 	        <item name="Railway crossing" icon="presets/transport/railway/railway_crossing.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:railway=railway_crossing" />
 	            <key key="railway" value="railway_crossing" />
 	            <text key="ref" text="مرجع" />
-	            <text key="operator" text="Operator" />
+	            <text key="operator" text="مسئول" />
 	        </item> <!-- Railway crossing -->
 	        <item name="Railway Signal" icon="presets/transport/railway/signal.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:railway=signal" />
 	            <key key="railway" value="signal" />
 	            <text key="ref" text="مرجع" />
-	            <text key="operator" text="Operator" />
+	            <text key="operator" text="مسئول" />
 	        </item> <!-- Railway Signal -->
 	        <item name="Railway milestone" icon="presets/transport/railway/milestone.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:railway=milestone" />
@@ -2204,7 +2195,7 @@
 	            <combo key="brand" text="Brand" values="Agip,Aral,Avia,BP,Chevron,Citgo,Eni,Esso,Exxon,Gulf,Mobil,OMV,Petro-Canada,Pioneer,Q8,Repsol,Shell,Socar,Statoil,Sunoco,Tamoil,Texaco,Total,Independent" values_searchable="true" />
 	            <optional>
 	                <text key="name" text="نام" />
-	                <text key="operator" text="Operator" />
+	                <text key="operator" text="مسئول" />
 	                <reference ref="oh_wheelchair" />
 	                <combo key="shop" text="With shop" values="yes,convenience,kiosk,no" />
 	                <space />
@@ -2344,7 +2335,7 @@
 2390	            <link wiki="Tag:amenity=car_pooling" />
 2391	            <space />
 2392	            <key key="amenity" value="car_pooling" />
-2393	            <text key="operator" text="Operator" />
+2393	            <text key="operator" text="مسئول" />
 2394	            <text key="network" text="Network" />
 2395	            <text key="capacity" text="Capacity" />
 2396	            <reference ref="name_oh_wheelchair" />
@@ -2354,7 +2345,7 @@
 2400	            <link wiki="Tag:amenity=car_sharing" />
 2401	            <space />
 2402	            <key key="amenity" value="car_sharing" />
-2403	            <text key="operator" text="Operator" />
+2403	            <text key="operator" text="مسئول" />
 2404	            <text key="capacity" text="Capacity" />
 2405	            <reference ref="name_oh_wheelchair" />
 2406	            <text key="website" text="Website" />
@@ -2377,7 +2368,7 @@
 2423	            <key key="shop" value="motorcycle" />
 2424	            <text key="name" text="نام" />
 2425	            <reference ref="motorcycle_brands" />
-2426	            <text key="operator" text="Operator" />
+2426	            <text key="operator" text="مسئول" />
 2427	            <reference ref="oh_wheelchair" />
 2428	            <combo key="second_hand" text="Second hand" values="yes,no,only" />
 2429	            <optional text="Services:">
@@ -2432,7 +2423,7 @@
 2478	            <optional>
 2479	            <text key="name" text="نام" />
 2480	            <text key="brand" text="Brand" />
-2481	            <text key="operator" text="Operator" />
+2481	            <text key="operator" text="مسئول" />
 2482	            <reference ref="oh" />
 2483	            <check key="service:bicycle:pump" text="Free bicycle pump" />
 2484	            <check key="service:bicycle:chain_tool" text="Chain tool" />
@@ -2488,7 +2479,7 @@
 2534	            <combo key="route_master" text="Route type" values="train,subway,monorail,tram,bus,trolleybus,share_taxi,aerialway,ferry" />
 2535	            <reference ref="name_ref" />
 2536	            <optional>
-2537	                <text key="operator" text="Operator" />
+2537	                <text key="operator" text="مسئول" />
 2538	                <text key="network" text="Network" />
 2539	                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
 2540	            </optional>
@@ -2506,7 +2497,7 @@
 2552	                <text key="ref" text="مرجع" />
 2553	                <text key="uic_ref" text="UIC reference" />
 2554	                <text key="uic_name" text="UIC name" />
-2555	                <text key="operator" text="Operator" />
+2555	                <text key="operator" text="مسئول" />
 2556	                <text key="network" text="Network" />
 2557	            </optional>
 2558	            <roles>
@@ -2526,7 +2517,7 @@
 2572	                <text key="ref" text="مرجع" />
 2573	                <text key="uic_ref" text="UIC reference" />
 2574	                <text key="uic_name" text="UIC name" />
-2575	                <text key="operator" text="Operator" />
+2575	                <text key="operator" text="مسئول" />
 2576	                <text key="network" text="Network" />
 2577	                <combo key="tactile_paving" text="Tactile Paving" values="yes,no,incorrect" />
 2578	            </optional>
@@ -2564,7 +2555,7 @@
 2610	            <text key="name" text="نام" />
 2611	            <check key="area" text="Area" disable_off="true" />
 2612	            <check key="building" text="Building" disable_off="true" />
-2613	            <text key="operator" text="Operator" />
+2613	            <text key="operator" text="مسئول" />
 2614	            <text key="network" text="Network" />
 2615	        </item> <!-- Station -->
 2616	        <separator/> <!-- *** Access *** -->
@@ -2597,7 +2588,7 @@
 2643	                <text key="from" text="From (initial stop)" />
 2644	                <text key="to" text="To (terminal stop)" />
 2645	                <text key="via" text="Via (intermediate stops)" />
-2646	                <text key="operator" text="Operator" />
+2646	                <text key="operator" text="مسئول" />
 2647	                <text key="network" text="Network" />
 2648	                <text key="description" text="Description" />
 2649	                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
@@ -2881,7 +2872,7 @@
 2927	            <combo key="access" text="Access rights" values="yes,permissive,customers,private" />
 2928	            <text key="capacity" text="Capacity" />
 2929	            <reference ref="fee" />
-2930	            <check key="toilets" text="Toilets" />
+2930	            <check key="toilets" text="سرویس بهداشتی" />
 2931	            <check key="shower" text="Shower" />
 2932	            <combo key="drinking_water" text="Drinking Water" values="yes,no,seasonal" />
 2933	            <combo key="reservation" text="Reservation" values="yes,no,required,recommended,members_only" />
@@ -3106,7 +3097,7 @@
 3152	            <space />
 3153	            <key key="tourism" value="viewpoint" />
 3154	            <text key="name" text="نام" />
-3155	            <combo key="direction" text="Direction" delimiter="|" values="N|E|S|W|NE|NNE-S|180|90-270|270-90|0-360|70-110;250-290" values_no_i18n="true" values_sort="false" />
+3155	            <combo key="direction" text="جهت" delimiter="|" values="N|E|S|W|NE|NNE-S|180|90-270|270-90|0-360|70-110;250-290" values_no_i18n="true" values_sort="false" />
 3156	            <space />
 3157	            <label text="" icon="presets/misc/angles.svg" icon_size="300" />
 3158	            <!--<check key="man_made" value="tower" text="Look-Out Tower" />-->
@@ -3750,7 +3741,7 @@
 3796	            <key key="highway" value="emergency_access_point" />
 3797	            <text key="ref" text="Point Number" />
 3798	            <text key="name" text="Point Name" />
-3799	            <text key="operator" text="Operator" />
+3799	            <text key="operator" text="مسئول" />
 3800	            <text key="emergency_telephone_code" text="Emergency Phone Number" />
 3801	            <label text="(Use number as shown on plate.)" />
 3802	            <space />
@@ -3785,7 +3776,7 @@
 3831	            <space />
 3832	            <key key="emergency" value="defibrillator" />
 3833	            <reference ref="oh_wheelchair" />
-3834	            <text key="operator" text="Operator" />
+3834	            <text key="operator" text="مسئول" />
 3835	            <text key="defibrillator:location" text="Location description" />
 3836	            <text key="phone" text="Phone number" />
 3837	            <label text="Use E.123 format, e.g. +49 11223 456 7890" />
@@ -3804,7 +3795,7 @@
 3850	            <space />
 3851	            <key key="emergency" value="fire_extinguisher" />
 3852	            <text key="ref" text="مرجع" />
-3853	            <text key="operator" text="Operator" />
+3853	            <text key="operator" text="مسئول" />
 3854	            <check key="indoor" text="Indoor" />
 3855	        </item> <!-- Fire Extinguisher -->
 3856	        <item name="Fire Hose" icon="presets/emergency/fire_hose.svg" type="node" preset_name_label="true">
@@ -3812,7 +3803,7 @@
 3858	            <space />
 3859	            <key key="emergency" value="fire_hose" />
 3860	            <text key="ref" text="مرجع" />
-3861	            <text key="operator" text="Operator" />
+3861	            <text key="operator" text="مسئول" />
 3862	        </item> <!-- Fire Hose -->
 3863	        <item name="Fire Hydrant" icon="presets/service/fire_hydrant.svg" type="node" preset_name_label="true">
 3864	            <link wiki="Tag:emergency=fire_hydrant" />
@@ -3866,7 +3857,7 @@
 3912	                <combo key="cap:colour" text="Colour of the caps" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" values_context="color" />
 3913	                <space />
 3914	                <text key="manufacturer" text="Manufacturer" />
-3915	                <text key="operator" text="Operator" />
+3915	                <text key="operator" text="مسئول" />
 3916	                <text key="name" text="نام" />
 3917	                </optional>
 3918	        </item> <!-- Fire Hydrant -->
@@ -3889,13 +3880,13 @@
 3935	            <link wiki="Tag:emergency=phone" />
 3936	            <key key="emergency" value="phone" />
 3937	            <text key="ref" text="مرجع" />
-3938	            <text key="operator" text="Operator" />
+3938	            <text key="operator" text="مسئول" />
 3939	        </item> <!-- Emergency Phone -->
 3940	        <item name="Siren" icon="presets/emergency/siren.svg" type="node" preset_name_label="true">
 3941	            <link wiki="Tag:emergency=siren" />
 3942	            <key key="emergency" value="siren" />
 3943	            <text key="ref" text="مرجع" />
-3944	            <text key="operator" text="Operator" />
+3944	            <text key="operator" text="مسئول" />
 3945	            <space />
 3946	            <combo key="siren:type" text="Type" values="pneumatic,electronic,mechanical" />
 3947	            <multiselect key="siren:purpose" text="Purpose" values="tornado;fire;air_raid;civil_defense" values_searchable="true" />
@@ -3967,7 +3958,7 @@
 4013	        </item> <!-- Food Bank -->
 4014	    </group> <!-- Social Facility -->
 4015	    <group name="Facilities" icon="presets/service/telephone.svg">
-4016	        <item name="Toilets/Restrooms" icon="presets/service/toilets.svg" type="node,closedway" preset_name_label="true">
+4016	        <item name="سرویس بهداشتی/Restrooms" icon="presets/service/toilets.svg" type="node,closedway" preset_name_label="true">
 4017	            <link wiki="Tag:amenity=toilets" />
 4018	            <space />
 4019	            <key key="amenity" value="toilets" />
@@ -3981,13 +3972,13 @@
 4027	                <combo key="toilets:disposal" text="Type" values="flush,pitlatrine,chemical,bucket" />
 4028	                <text key="description" text="Description" />
 4029	                <reference ref="fee" />
-4030	                <text key="operator" text="Operator" />
+4030	                <text key="operator" text="مسئول" />
 4031	                <combo key="toilets:position" text="Usage Position" values="seated,seated;urinal,squat,urinal" />
 4032	                <reference ref="wheelchair" />
 4033	                <check key="drinking_water" text="Drinking Water" />
 4034	            </optional>
 4035	            <preset_link preset_name="Changing table" />
-4036	        </item> <!-- Toilets/Restrooms -->
+4036	        </item> <!-- سرویس بهداشتی/Restrooms -->
 4037	        <item name="Shower" icon="presets/service/shower.svg" type="node,closedway" preset_name_label="true">
 4038	            <link wiki="Tag:amenity=shower" />
 4039	            <space />
@@ -4001,7 +3992,7 @@
 4047	                </checkgroup>
 4048	                <text key="description" text="Description" />
 4049	                <reference ref="fee" />
-4050	                <text key="operator" text="Operator" />
+4050	                <text key="operator" text="مسئول" />
 4051	                <reference ref="oh_wheelchair" />
 4052	            </optional>
 4053	        </item> <!-- Shower -->
@@ -4013,7 +4004,7 @@
 4059	                <check key="changing_table:fee" text="Fee" />
 4060	                <combo key="changing_table:count" text="Count" values="1,2,3,4,5" />
 4061	                <multiselect key="changing_table:location" text="Location" text_context="Changing table" values="dedicated_room;female_toilet;male_toilet;room;sales_area;unisex_toilet;wheelchair_toilet" />
-4062	                <text key="operator" text="Operator" />
+4062	                <text key="operator" text="مسئول" />
 4063	                <reference ref="wheelchair" />
 4064	            </optional>
 4065	        </item> <!-- Changing table -->
@@ -4022,7 +4013,7 @@
 4068	            <link wiki="Tag:amenity=post_box" />
 4069	            <space />
 4070	            <key key="amenity" value="post_box" />
-4071	            <text key="operator" text="Operator" />
+4071	            <text key="operator" text="مسئول" />
 4072	            <text key="ref" text="مرجع number" />
 4073	            <combo key="collection_times" text="Collection times" delimiter="|" values="Mo-Sa 09:00|Mo-Sa 08:00|Mo-Fr 09:00; Sa 07:00|Mo-Fr 17:30; Sa 12:00|Mo-Fr 15:00,19:00; Sa 15:10; Su 10:30" values_no_i18n="true" />
 4074	            <combo key="post_box:type" text="Type" values="pillar,lamp,wall,meter" values_context="post_box" />
@@ -4032,7 +4023,7 @@
 4078	            <link wiki="Tag:amenity=telephone" />
 4079	            <space />
 4080	            <key key="amenity" value="telephone" />
-4081	            <text key="operator" text="Operator" />
+4081	            <text key="operator" text="مسئول" />
 4082	            <combo key="covered" text="Covered" values="yes,no,booth" />
 4083	            <space />
 4084	            <check key="payment:coins" text="Coins" />
@@ -4078,7 +4069,7 @@
 4124	            <space />
 4125	            <key key="amenity" value="recycling" />
 4126	            <key key="recycling_type" value="container" />
-4127	            <text key="operator" text="Operator" />
+4127	            <text key="operator" text="مسئول" />
 4128	            <combo key="opening_hours" text="Throw in times" delimiter="|" values="24/7|Mo-Fr 06:30-12:30,15:30-20:00; Sa 08:00-12:00; PH off" values_no_i18n="true" />
 4129	            <combo key="wheelchair" text="ویلچر" values="yes,limited,no" />
 4130	            <space />
@@ -4147,7 +4138,7 @@
 4193	            <check key="sanitary_dump_station:basin" text="Casette or Elsan Disposal" />
 4194	            <combo key="access" text="Access" values="yes,customers,no" />
 4195	            <reference ref="fee" />
-4196	            <text key="operator" text="Operator" />
+4196	            <text key="operator" text="مسئول" />
 4197	            <combo key="opening_hours" text="Operation times" values="24/7" values_no_i18n="true" />
 4198	        </item> <!-- Sanitary Dump Station -->
 4199	        <separator/>
@@ -4219,7 +4210,7 @@
 4265	            <space />
 4266	            <key key="amenity" value="compressed_air" />
 4267	            <reference ref="name_ref" />
-4268	            <text key="operator" text="Operator" />
+4268	            <text key="operator" text="مسئول" />
 4269	            <reference ref="fee" />
 4270	            <multiselect key="valves" text="Valves" values="dunlop;schrader;sclaverand;regina" display_values="Dunlop (Woods);Schrader;Sclaverand (Presta);Regina" values_searchable="true" />
 4271	        </item> <!-- Compressed Air -->
@@ -4813,7 +4804,7 @@
 4859	            <combo key="police" text="Type" values="barracks,car_pound,checkpoint,detention,naval_base,offices,range,storage,training_area,yes" values_context="police" match="keyvalue!" values_searchable="true" />
 4860	            <optional>
 4861	                <text key="name" text="نام" />
-4862	                <text key="operator" text="Operator" />
+4862	                <text key="operator" text="مسئول" />
 4863	            </optional>
 4864	            <reference ref="link_contact_address" />
 4865	        </item> <!-- Non-public police facility -->
@@ -4825,7 +4816,7 @@
 4871	            <combo key="tower:type" text="Tower type" values="bell_tower,communication,cooling,defensive,observation,radar,watchtower" values_searchable="true" />
 4872	            <optional>
 4873	                <text key="height" text="Height (meters)" />
-4874	                <text key="operator" text="Operator" />
+4874	                <text key="operator" text="مسئول" />
 4875	            </optional>
 4876	        </item> <!-- Tower -->
 4877	        <item name="Flagpole" icon="presets/misc/flag.svg" type="node" preset_name_label="true">
@@ -4917,7 +4908,7 @@
 4963	            <text key="name" text="نام" />
 4964	            <combo key="mineshaft_type" text="Function" values="winding,air" />
 4965	            <text key="depth" text="Depth in meters" />
-4966	            <text key="operator" text="Operator" />
+4966	            <text key="operator" text="مسئول" />
 4967	            <combo key="resource" text="Resource" values="aggregate,bauxite,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon" />
 4968	            <check key="headframe" text="Visible Headframe" />
 4969	            <check key="disused" text="Disused" />
@@ -4928,7 +4919,7 @@
 4974	            <key key="man_made" value="adit" />
 4975	            <text key="name" text="نام" />
 4976	            <text key="length" text="Length in meters" />
-4977	            <text key="operator" text="Operator" />
+4977	            <text key="operator" text="مسئول" />
 4978	            <combo key="resource" text="Resource" values="aggregate,bauxite,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon" />
 4979	            <check key="disused" text="Disused" />
 4980	        </item> <!-- Adit -->
@@ -4956,7 +4947,7 @@
 5002	            <combo key="valve" text="Valve type" values="butterfly,globe,ball,plug,gate,needle,spool" values_context="valve" />
 5003	            <combo key="actuator" text="Actuator" values="electric_motor,hydraulic_cylinder,manual,pneumatic_cylinder,solenoid,thermostatic" values_context="actuator" />
 5004	            <combo key="handle" text="Handle" values="lever,wheel,cross,button" values_context="handle" />
-5005	            <combo key="turn_to_close" text="Direction to close" values="clockwise,anti_clockwise" />
+5005	            <combo key="turn_to_close" text="جهت to close" values="clockwise,anti_clockwise" />
 5006	            <combo key="sensor:position" text="Position sensor" values="optical,mechanical,inductive,yes" />
 5007	            <reference ref="ref_operator" />
 5008	        </item> <!-- Pipeline Valve -->
@@ -5104,7 +5095,7 @@
 5150	            <key key="surveillance:type" value="camera" />
 5151	            <combo key="surveillance" text="Type" values="indoor,outdoor,public" />
 5152	            <combo key="surveillance:zone" text="Zone" values="town,parking,traffic,shop,bank,building" />
-5153	            <text key="operator" text="Operator" />
+5153	            <text key="operator" text="مسئول" />
 5154	            <optional>
 5155	                <text key="name" text="نام" />
 5156	                <text key="ref" text="مرجع" />
@@ -5115,7 +5106,7 @@
 5161	            <combo key="camera:type" text="Type" values="fixed,panning,dome" values_context="camera:type" match="key" />
 5162	            <combo key="camera:mount" text="Mounted on" values="wall,pole,ceiling" values_context="camera:mount" match="key" />
 5163	            <optional>
-5164	                <text key="camera:direction" text="Direction in degrees" match="key" />
+5164	                <text key="camera:direction" text="جهت in degrees" match="key" />
 5165	                <text key="camera:angle" text="Inclination in degrees" match="key" />
 5166	                <text key="height" text="Height (meters)" />
 5167	            </optional>
@@ -5470,7 +5461,7 @@
 5516	            <optional>
 5517	                <combo key="line_attachment" text="Line attachment" values="anchor,pin,pulley,suspension" values_context="power" />
 5518	                <text key="ref" text="مرجع" />
-5519	                <text key="operator" text="Operator" />
+5519	                <text key="operator" text="مسئول" />
 5520	            </optional>
 5521	        </item> <!-- Terminal -->
 5522	        <item name="Power Portal" icon="presets/power/portal.svg" type="node,way" preset_name_label="true">
@@ -5542,7 +5533,7 @@
 5588	            <key key="power" value="catenary_mast" />
 5589	            <optional>
 5590	                <text key="ref" text="مرجع" />
-5591	                <text key="operator" text="Operator" />
+5591	                <text key="operator" text="مسئول" />
 5592	            </optional>
 5593	        </item> <!-- Catenary mast -->
 5594	        <item name="Insulator" icon="presets/power/insulator.svg" type="node,way" preset_name_label="true">
@@ -6040,7 +6031,7 @@
 6086	            <space />
 6087	            <key key="amenity" value="atm" />
 6088	            <text key="brand" text="Brand" />
-6089	            <text key="operator" text="Operator" />
+6089	            <text key="operator" text="مسئول" />
 6090	            <reference ref="oh_wheelchair" />
 6091	        </item> <!-- Automated Teller Machine -->
 6092	        <item name="Pawnbroker" icon="presets/shop/pawnbroker.svg" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6457,7 +6448,7 @@
 6503	        <space />
 6504	        <key key="amenity" value="vending_machine" />
 6505	        <multiselect key="vending" text="Vending products" values="admission_tickets;animal_feed;bicycle_tube;cigarettes;coffee;condoms;drinks;elongated_coin;excrement_bags;food;milk;newspapers;parking_tickets;parcel_pickup;parcel_mail_in;photos;public_transport_tickets;SIM_cards;stamps;sweets;telephone_vouchers;toys" values_searchable="true" />
-6506	        <text key="operator" text="Operator" />
+6506	        <text key="operator" text="مسئول" />
 6507	        <text key="ref" text="مرجع number" />
 6508	        <preset_link preset_name="Payment Methods" />
 6509	    </item> <!-- Vending Machine -->
@@ -7316,7 +7307,7 @@
 	            <space />
 	            <key key="landuse" value="flowerbed" />
 	            <optional>
-	                <text key="operator" text="Operator" />
+	                <text key="operator" text="مسئول" />
 	                <reference ref="genus_species_taxon" />
 	            </optional>
 	        </item> <!-- Flowerbed -->
@@ -7800,7 +7791,7 @@
 	                <key key="route" value="detour"/>
 	                <reference ref="name_ref"/>
 	                <optional>
-	                    <text key="operator" text="Operator" />
+	                    <text key="operator" text="مسئول" />
 	                    <text key="destination" text="مقصد"/>
 	                    <text key="detour" text="Ref of the way this is a detour to"/>
 	                </optional>
@@ -7838,7 +7829,7 @@
 	                <key key="route" value="road"/>
 	                <reference ref="name_ref"/>
 	                <text key="network" text="Network" />
-	                <text key="operator" text="Operator" />
+	                <text key="operator" text="مسئول" />
 	                <text key="distance" text="Distance (km)"/>
 	                <roles>
 	                    <role key="" text="route segment" requisite="optional" type="way,closedway" member_expression="highway|route=ferry"/>
@@ -7867,7 +7858,7 @@
 	            <text key="name" text="نام" />
 	            <optional>
 	                <text key="network" text="Network" />
-	                <text key="operator" text="Operator" />
+	                <text key="operator" text="مسئول" />
 	            </optional>
 	            <roles>
 	                <role key="" text="member" requisite="required" type="relation" />
@@ -7945,7 +7936,7 @@
 	            <reference ref="name_ref" />
 	            <text key="height" text="Height (meters)" />
 	            <text key="length" text="Length (meters)" />
-	            <text key="operator" text="Operator" />
+	            <text key="operator" text="مسئول" />
 	            <roles>
 	                <role key="across" text="ways supported by (on top of) the bridge" requisite="optional" type="way" />
 	                <role key="under" text="ways passing under the bridge" requisite="optional" type="way" />
@@ -7960,7 +7951,7 @@
 	            <combo key="layer" text="لایه" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
 	            <reference ref="name_ref" />
 	            <text key="length" text="Length (meters)" />
-	            <text key="operator" text="Operator" />
+	            <text key="operator" text="مسئول" />
 	            <roles>
 	                <role key="through" text="ways passing through the tunnel" requisite="required" type="way" />
 	                <role key="outline" text="way forming the outline footprint" requisite="optional" count="1" type="closedway,multipolygon" />
