@@ -1881,9 +1881,9 @@
 	        </item> <!-- Dock -->
 	    </group> <!-- Shipping -->
 	  </group> <!-- Water -->
-	  <group name="Transport" icon="presets/transport/railway/rail.svg">
-	    <group name="Railway" icon="presets/transport/railway/rail.svg">
-	        <item name="Rail" icon="presets/transport/railway/rail.svg" type="way" preset_name_label="true">
+	  <group name="حمل و نقل" icon="presets/transport/railway/rail.svg">
+	    <group name="راه‌آهن" icon="presets/transport/railway/rail.svg">
+	        <item name="خط‌ آهن" icon="presets/transport/railway/rail.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:railway=rail" />
 	            <key key="railway" value="rail" />
 	            <optional>
@@ -1891,7 +1891,7 @@
 	                <reference ref="railway_service_gauge_electrified_yesno" />
 	            </optional>
 	        </item> <!-- Rail -->
-	        <item name="Narrow Gauge Rail" icon="presets/transport/railway/narrow_gauge_rail.svg" type="way" preset_name_label="true">
+	        <item name="خط آهن باریک" icon="presets/transport/railway/narrow_gauge_rail.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:railway=narrow_gauge" />
 	            <key key="railway" value="narrow_gauge" />
 	            <optional>
@@ -1899,7 +1899,7 @@
 	                <reference ref="railway_service_gauge_electrified_yesno" />
 	            </optional>
 	        </item> <!-- Narrow Gauge Rail -->
-	        <item name="Monorail" icon="presets/transport/railway/monorail.svg" type="way" preset_name_label="true">
+	        <item name="تکریلی" icon="presets/transport/railway/monorail.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:railway=monorail" />
 	            <key key="railway" value="monorail" />
 	            <optional>
@@ -1907,42 +1907,42 @@
 	                <reference ref="railway_electrified_yesno" />
 	            </optional>
 	        </item> <!-- Monorail -->
-	        <item name="Preserved" icon="presets/transport/railway/preserved.svg" type="way" preset_name_label="true">
+	        <item name="خط آهن محفوظ" icon="presets/transport/railway/preserved.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:railway=preserved" />
 	            <key key="railway" value="preserved" />
 	            <optional>
 	                <reference ref="railway_service_gauge_electrified_yesno" />
 	            </optional>
 	        </item> <!-- Preserved -->
-	        <item name="Light Rail" icon="presets/transport/railway/light_rail.svg" type="way" preset_name_label="true">
+	        <item name="ریل سبک" icon="presets/transport/railway/light_rail.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:railway=light_rail" />
 	            <key key="railway" value="light_rail" />
 	            <optional>
 	                <reference ref="railway_service_gauge_electrified_yesno" />
 	            </optional>
 	        </item> <!-- Light Rail -->
-	        <item name="Subway" icon="presets/transport/railway/subway.svg" type="way" preset_name_label="true">
+	        <item name="مترو" icon="presets/transport/railway/subway.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:railway=subway" />
 	            <key key="railway" value="subway" />
 	            <optional>
 	                <reference ref="railway_service_gauge_electrified_yesno" />
 	            </optional>
 	        </item> <!-- Subway -->
-	        <item name="Tram" icon="presets/transport/railway/tram.svg" type="way" preset_name_label="true">
+	        <item name="‍‍تراموا" icon="presets/transport/railway/tram.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:railway=tram" />
 	            <key key="railway" value="tram" />
 	            <optional>
 	                <reference ref="railway_service_gauge_electrified_yesno" />
 	            </optional>
 	        </item> <!-- Tram -->
-	        <item name="Funicular" icon="presets/transport/railway/funicular.svg" type="way" preset_name_label="true">
+	        <item name="قطار بافه‌ای" icon="presets/transport/railway/funicular.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:railway=funicular" />
 	            <key key="railway" value="funicular" />
 	            <optional>
 	                <reference ref="railway_service_gauge_electrified_yesno" />
 	            </optional>
 	        </item> <!-- Funicular -->
-	        <item name="Bus Guideway" icon="presets/transport/railway/bus_guideway.svg" type="way" preset_name_label="true">
+	        <item name="اتوبوس‌راه" icon="presets/transport/railway/bus_guideway.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:highway=bus_guideway" />
 	            <key key="highway" value="bus_guideway" />
 	            <optional>
@@ -1956,7 +1956,7 @@
 	            </optional>
 	        </item> <!-- Bus Guideway -->
 	        <separator/>
-	        <item name="Railway construction" icon="presets/transport/railway/railway_construction.svg" type="way" preset_name_label="true">
+	        <item name="تعمیر ریلی" icon="presets/transport/railway/railway_construction.svg" type="way" preset_name_label="true">
 	            <link wiki="Key:construction" />
 	            <key key="railway" value="construction" />
 	            <combo key="construction" text="Railway type" values="rail,narrow_gauge,monorail,preserved,light_rail,subway,tram,funicular" />
@@ -1965,7 +1965,7 @@
 	                <reference ref="railway_service_gauge_electrified_yesno" />
 	            </optional>
 	        </item> <!-- Railway construction -->
-	        <item name="Disused Rail" icon="presets/transport/railway/disused_rail.svg" type="way" preset_name_label="true">
+	        <item name="خط آهن متروک" icon="presets/transport/railway/disused_rail.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:railway=disused" />
 	            <key key="railway" value="disused" />
 	            <optional>
@@ -1973,7 +1973,7 @@
 	                <reference ref="highway_yesno" />
 	            </optional>
 	        </item> <!-- Disused Rail -->
-	        <item name="Abandoned Rail" icon="presets/transport/railway/abandoned_rail.svg" type="way" preset_name_label="true">
+	        <item name="خط آهن برداشته‌شده" icon="presets/transport/railway/abandoned_rail.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:railway=abandoned" />
 	            <key key="railway" value="abandoned" />
 	            <optional>
@@ -1982,17 +1982,17 @@
 	            </optional>
 	        </item> <!-- Abandoned Rail -->
 	        <separator/>
-	        <item name="Level Crossing" icon="presets/transport/railway/level_crossing.svg" type="node" preset_name_label="true">
+	        <item name="تقاطع خط آهن و جاده" icon="presets/transport/railway/level_crossing.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:railway=level_crossing" />
 	            <key key="railway" value="level_crossing" />
 	            <optional>
 	                <reference ref="supervised" />
-	                <check key="crossing:light" text="Traffic lights" />
-	                <check key="crossing:bell" text="Sound signals" />
-	                <combo key="crossing:barrier" text="Barrier" values="yes,no,half,full,double_half" values_context="crossing:barrier" />
+	                <check key="crossing:light" text="چراغ ترافیکی" />
+	                <check key="crossing:bell" text="علائم صوتی" />
+	                <combo key="crossing:barrier" text="حائل" values="yes,no,half,full,double_half" values_context="crossing:barrier" />
 	            </optional>
 	        </item> <!-- Level Crossing -->
-	        <item name="Crossing" icon="presets/transport/railway/crossing.svg" type="node" preset_name_label="true">
+	        <item name="عبور پیاده از خط آهن" icon="presets/transport/railway/crossing.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:railway=crossing" />
 	            <key key="railway" value="crossing" />
 	            <optional>
@@ -2000,42 +2000,42 @@
 	                <reference ref="supervised" />
 	                <check key="horse" text="عبور با اسب" />
 	                <check key="bicycle" text="عبور با دوچرخه" />
-	                <check key="crossing:light" text="Traffic lights" />
-	                <check key="crossing:bell" text="Sound signals" />
-	                <combo key="crossing:barrier" text="Barrier" values="yes,no,half,full,double_half" values_context="crossing:barrier" />
+	                <check key="crossing:light" text="چراغ ترافیکی" />
+	                <check key="crossing:bell" text="علائم صوتی" />
+	                <combo key="crossing:barrier" text="حائل" values="yes,no,half,full,double_half" values_context="crossing:barrier" />
 	            </optional>
 	        </item> <!-- Crossing -->
-	        <item name="Turntable" icon="presets/transport/railway/turntable.svg" type="node,closedway" preset_name_label="true">
+	        <item name="سینی دوار" icon="presets/transport/railway/turntable.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:railway=turntable" />
 	            <key key="railway" value="turntable" />
 	        </item> <!-- Turntable -->
-	        <item name="Buffer Stop" icon="presets/transport/railway/buffer_stop.svg" type="node" preset_name_label="true">
+	        <item name="حائل ایست" icon="presets/transport/railway/buffer_stop.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:railway=buffer_stop" />
 	            <key key="railway" value="buffer_stop" />
 	        </item> <!-- Buffer Stop -->
-	        <item name="Railway Switch" icon="presets/transport/railway/switch.svg" type="node" preset_name_label="true">
+	        <item name="سوئیچ خط آهن" icon="presets/transport/railway/switch.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:railway=switch" />
 	            <key key="railway" value="switch" />
 	            <combo key="railway:switch" text="Type" values="abt,default,double_slip,single_slip,three_way,wye" />
 	            <text key="ref" text="مرجع" />
 	            <text key="operator" text="مسئول" />
 	        </item> <!-- Railway Switch -->
-	        <item name="Railway crossing" icon="presets/transport/railway/railway_crossing.svg" type="node" preset_name_label="true">
+	        <item name="تقاطع دو خط آهن" icon="presets/transport/railway/railway_crossing.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:railway=railway_crossing" />
 	            <key key="railway" value="railway_crossing" />
 	            <text key="ref" text="مرجع" />
 	            <text key="operator" text="مسئول" />
 	        </item> <!-- Railway crossing -->
-	        <item name="Railway Signal" icon="presets/transport/railway/signal.svg" type="node" preset_name_label="true">
+	        <item name="علائم خط آهن" icon="presets/transport/railway/signal.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:railway=signal" />
 	            <key key="railway" value="signal" />
 	            <text key="ref" text="مرجع" />
 	            <text key="operator" text="مسئول" />
 	        </item> <!-- Railway Signal -->
-	        <item name="Railway milestone" icon="presets/transport/railway/milestone.svg" type="node" preset_name_label="true">
+	        <item name="تابلو فرسخ‌شمار راه‌آهن" icon="presets/transport/railway/milestone.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:railway=milestone" />
 	            <key key="railway" value="milestone" />
-	            <text key="distance" text="Distance (kilometers)" />
+	            <text key="distance" text="فاصله به کیلومتر" />
 	            <text key="ref" text="مرجع" />
 	        </item> <!-- Railway Milestone -->
 	    </group> <!-- Railway -->
