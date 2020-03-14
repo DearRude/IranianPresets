@@ -2039,87 +2039,87 @@
 	            <text key="ref" text="مرجع" />
 	        </item> <!-- Railway Milestone -->
 	    </group> <!-- Railway -->
-	    <group name="Aerialway" icon="presets/transport/aerialway/gondola.svg">
-	        <item name="Cable Car" icon="presets/transport/aerialway/cable_car.svg" type="way" preset_name_label="true">
+	    <group name="راه هوایی" icon="presets/transport/aerialway/gondola.svg">
+	        <item name="تله کابین" icon="presets/transport/aerialway/cable_car.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:aerialway=cable_car" />
 	            <space />
 	            <key key="aerialway" value="cable_car" />
 	            <reference ref="name_ref" />
 	            <optional>
-	                <text key="aerialway:capacity" text="Number of people per hour" />
-	                <text key="aerialway:occupancy" text="Number of people per car" />
-	                <text key="aerialway:duration" text="Typical journey time in minutes" />
-	                <check key="aerialway:heating" text="Has heating?" />
+	                <text key="aerialway:capacity" text="تعداد افراد بر ساعت" />
+	                <text key="aerialway:occupancy" text="تعداد افراد بر ماشین" />
+	                <text key="aerialway:duration" text="طول سفر به دقیقه" />
+	                <check key="aerialway:heating" text="سیستم گرمایشی" />
 	            </optional>
 	        </item> <!-- Cable Car -->
-	        <item name="Chair Lift" icon="presets/transport/aerialway/chair_lift.svg" type="way" preset_name_label="true">
+	        <item name="تله صندلی" icon="presets/transport/aerialway/chair_lift.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:aerialway=chair_lift" />
 	            <space />
 	            <key key="aerialway" value="chair_lift" />
 	            <reference ref="name_ref" />
 	            <optional>
-	                <text key="aerialway:capacity" text="Number of people per hour" />
-	                <text key="aerialway:occupancy" text="Number of people per chair" />
-	                <text key="aerialway:duration" text="Typical journey time in minutes" />
-	                <check key="aerialway:bubble" text="Has bubble?" />
-	                <check key="aerialway:heating" text="Has heating?" />
+	                <text key="aerialway:capacity" text="تعداد افراد بر ساعت" />
+	                <text key="aerialway:occupancy" text="تعداد افراد بر صندلی" />
+	                <text key="aerialway:duration" text="طول سفر به دقیقه" />
+	                <check key="aerialway:bubble" text="حفاظ" />
+	                <check key="aerialway:heating" text="سیستم گرمایشی" />
 	            </optional>
 	        </item> <!-- Chair Lift -->
-	        <item name="Gondola" icon="presets/transport/aerialway/gondola.svg" type="way" preset_name_label="true">
+	        <item name="واگن سربازبر" icon="presets/transport/aerialway/gondola.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:aerialway=gondola" />
 	            <space />
 	            <key key="aerialway" value="gondola" />
 	            <reference ref="name_ref" />
 	            <optional>
-	                <text key="aerialway:capacity" text="Number of people per hour" />
-	                <text key="aerialway:occupancy" text="Number of people per gondola" />
-	                <text key="aerialway:duration" text="Typical journey time in minutes" />
-	                <check key="aerialway:heating" text="Has heating?" />
+	                <text key="aerialway:capacity" text="تعداد افراد بر ساعت" />
+	                <text key="aerialway:occupancy" text="تعداد افراد بر واگن" />
+	                <text key="aerialway:duration" text="طول سفر به دقیقه" />
+	                <check key="aerialway:heating" text="سیستم گرمایشی" />
 	            </optional>
 	        </item> <!-- Gondola -->
-	        <item name="Mixed Lift" icon="presets/transport/aerialway/mixed_lift.svg" type="way" preset_name_label="true">
+	        <item name="تله هیبریدی" icon="presets/transport/aerialway/mixed_lift.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:aerialway=mixed_lift" />
 	            <space />
 	            <key key="aerialway" value="mixed_lift" />
 	            <reference ref="name_ref" />
 	            <optional>
-	                <text key="aerialway:capacity" text="Number of people per hour" />
-	                <text key="aerialway:occupancy" text="Number of people per gondola/chair" />
-	                <text key="aerialway:duration" text="Typical journey time in minutes" />
-	                <check key="aerialway:bubble" text="Has bubble?" />
-	                <check key="aerialway:heating" text="Has heating?" />
+	                <text key="aerialway:capacity" text="تعداد افراد بر ساعت" />
+	                <text key="aerialway:occupancy" text="تعداد افراد بر صندلی" />
+	                <text key="aerialway:duration" text="طول سفر به دقیقه" />
+	                <check key="aerialway:bubble" text="حفاظ" />
+	                <check key="aerialway:heating" text="سیستم گرمایشی" />
 	            </optional>
 	        </item> <!-- Mixed Lift -->
-	        <item name="Drag Lift" icon="presets/transport/aerialway/drag_lift.svg" type="way" preset_name_label="true">
+	        <item name="تله تی‌مانند" icon="presets/transport/aerialway/drag_lift.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:aerialway=drag_lift" />
 	            <space />
 	            <combo key="aerialway" text="Type" values="drag_lift,t-bar,j-bar,platter,rope_tow" display_values="drag_lift (general type - use only if exact type (see values below) is unknown),t-bar,j-bar,platter,rope_tow" match="keyvalue" />
 	            <reference ref="name_ref" />
 	            <optional>
-	                <text key="aerialway:capacity" text="Number of people per hour" />
-	                <text key="aerialway:duration" text="Typical journey time in minutes" />
+	                <text key="aerialway:capacity" text="تعداد افراد بر ساعت" />
+	                <text key="aerialway:duration" text="طول سفر به دقیقه" />
 	            </optional>
 	        </item> <!-- Drag Lift -->
-	        <item name="Magic Carpet" icon="presets/transport/aerialway/magic_carpet.svg" type="way" preset_name_label="true">
+	        <item name="قالیچه پرنده" icon="presets/transport/aerialway/magic_carpet.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:aerialway=magic_carpet" />
 	            <space />
 	            <key key="aerialway" value="magic_carpet" />
 	            <reference ref="name_ref" />
 	            <optional>
-	                <text key="aerialway:capacity" text="Number of people per hour" />
-	                <text key="aerialway:duration" text="Typical journey time in minutes" />
+	                <text key="aerialway:capacity" text="تعداد افراد بر ساعت" />
+	                <text key="aerialway:duration" text="طول سفر به دقیقه" />
 	            </optional>
 	        </item> <!-- Magic Carpet -->
-	        <item name="Goods" icon="presets/transport/aerialway/goods.svg" type="way" preset_name_label="true">
+	        <item name="تله اجسام" icon="presets/transport/aerialway/goods.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:aerialway=goods" />
 	            <space />
 	            <key key="aerialway" value="goods" />
 	            <reference ref="name_ref" />
 	            <optional>
-	                <text key="aerialway:duration" text="Typical journey time in minutes" />
+	                <text key="aerialway:duration" text="طول سفر به دقیقه" />
 	            </optional>
 	        </item> <!-- Goods -->
-	        <item name="Zip line" icon="presets/transport/aerialway/zip_line.svg" type="way" preset_name_label="true">
+	        <item name="زیپ‌لاین" icon="presets/transport/aerialway/zip_line.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:aerialway=zip_line" />
 	            <space />
 	            <key key="aerialway" value="zip_line" />
@@ -2132,13 +2132,13 @@
 	            </optional>
 	        </item> <!-- Zip line -->
 	        <separator/>
-	        <item name="Station" name_context="aerialway" icon="presets/transport/aerialway/station.svg" type="node,closedway" preset_name_label="true">
+	        <item name="پایانه" name_context="aerialway" icon="presets/transport/aerialway/station.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:aerialway=station" />
 	            <space />
 	            <key key="aerialway" value="station" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Station -->
-	        <item name="Pylon" icon="presets/transport/aerialway/pylon.svg" type="node" preset_name_label="true">
+	        <item name="ستون" icon="presets/transport/aerialway/pylon.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:aerialway=pylon" />
 	            <space />
 	            <key key="aerialway" value="pylon" />
