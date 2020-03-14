@@ -2146,37 +2146,37 @@
 	        </item> <!-- Pylon -->
 	    </group> <!-- Aerialway -->
 	    <separator/>
-	    <group name="Car" icon="presets/shop/vehicle.svg">
-	        <item name="Parking" name_context="car" icon="presets/vehicle/parking/parking.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="خودرو" icon="presets/shop/vehicle.svg">
+	        <item name="پارکینگ" name_context="car" icon="presets/vehicle/parking/parking.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=parking" />
 	            <space />
 	            <key key="amenity" value="parking" />
 	            <reference ref="parking_name_type_ref" />
 	            <text key="maxheight" text="حداکثر ارتفاع به متر" />
-	            <combo key="park_ride" text="Park and Ride" values="yes,no,bus,train,tram,metro,ferry" />
+	            <combo key="park_ride" text="نزدیک ایستگاه" values="yes,no,bus,train,tram,metro,ferry" />
 	            <reference ref="parking_access_fee_operator_surface_smoothness" />
 	            <space />
-	            <text key="capacity" text="Capacity (overall)" />
-	            <combo key="capacity:disabled" text="Spaces for Disabled" values="yes,no,1,2,3" />
-	            <combo key="capacity:women" text="Spaces for Women" values="yes,no,1,2,3" />
-	            <combo key="capacity:parent" text="Spaces for Parents" values="yes,no,1,2,3" />
-	            <label text="See the Wiki for other capacity:[types]=*." />
+	            <text key="capacity" text="ظرفیت کل" />
+	            <combo key="capacity:disabled" text="ظرفیت برای معلولان" values="yes,no,1,2,3" />
+	            <combo key="capacity:women" text="ظرفیت برای خانم‌ها" values="yes,no,1,2,3" />
+	            <combo key="capacity:parent" text="ظرفیت برای والدین" values="yes,no,1,2,3" />
+	            <label text="برای دیدن انواع دیگر ظرفیت ویکی را ببینید" />
 	            <space />
 	            <reference ref="maxstay" />
 	            <reference ref="supervised_lit_oh" />
 	        </item> <!-- Parking -->
-	        <item name="Parking Space" icon="presets/vehicle/parking/parking_space.svg" type="node,closedway" preset_name_label="true">
+	        <item name="فضای پارکینگ" icon="presets/vehicle/parking/parking_space.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:amenity=parking_space" />
 	            <space />
 	            <key key="amenity" value="parking_space" />
 	            <reference ref="parking_name_type_ref" />
-	            <text key="capacity" text="Capacity" />
+	            <text key="capacity" text="ظرفیت" />
 	            <reference ref="parking_access_fee_operator_surface_smoothness" />
 	            <reference ref="maxstay" />
 	            <reference ref="supervised_lit_oh" />
-	            <check key="covered" text="Covered (with roof)" />
+	            <check key="covered" text="سقف" />
 	        </item> <!-- Parking Space -->
-	        <item name="Parking Entrance" icon="presets/vehicle/parking/parking.svg" type="node" preset_name_label="true">
+	        <item name="ورودی پارکنیگ" icon="presets/vehicle/parking/parking.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=parking_entrance" />
 	            <space />
 	            <key key="amenity" value="parking_entrance" />
@@ -2184,21 +2184,21 @@
 	            <text key="maxheight" text="حداکثر ارتفاع به متر" />
 	            <reference ref="parking_access_fee_operator_surface_smoothness" />
 	            <reference ref="supervised_lit_oh" />
-	            <check key="covered" text="Covered (with roof)" />
+	            <check key="covered" text="سقف" />
 	        </item> <!-- Parking Entrance -->
 	        <separator/>
-	        <item name="Fuel" icon="presets/vehicle/fuel.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="جایگاه سوخت" icon="presets/vehicle/fuel.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=fuel" />
 	            <space />
 	            <key key="amenity" value="fuel" />
-	            <combo key="brand" text="Brand" values="Agip,Aral,Avia,BP,Chevron,Citgo,Eni,Esso,Exxon,Gulf,Mobil,OMV,Petro-Canada,Pioneer,Q8,Repsol,Shell,Socar,Statoil,Sunoco,Tamoil,Texaco,Total,Independent" values_searchable="true" />
+	            <combo key="brand" text="برند" values="Agip,Aral,Avia,BP,Chevron,Citgo,Eni,Esso,Exxon,Gulf,Mobil,OMV,Petro-Canada,Pioneer,Q8,Repsol,Shell,Socar,Statoil,Sunoco,Tamoil,Texaco,Total,Independent" values_searchable="true" />
 	            <optional>
 	                <text key="name" text="نام" />
 	                <text key="operator" text="مسئول" />
 	                <reference ref="oh_wheelchair" />
-	                <combo key="shop" text="With shop" values="yes,convenience,kiosk,no" />
+	                <combo key="shop" text="دارای مغازه" values="yes,convenience,kiosk,no" />
 	                <space />
-	                <label text="Fuel types:" />
+	                <label text="نوع سوخت" />
 	                <checkgroup columns="2">
 	                    <check key="fuel:diesel" text="دیزل" />
 	                    <check key="fuel:biodiesel" text="Bio دیزل" />
@@ -2214,27 +2214,15 @@
 	                    <check key="fuel:e10" text="سوخت E10 ۱۰ درصد اتانول" />
 	                    <check key="fuel:e85" text="سوخت E85 ۸۵ درصد اتانول" />
 	                    <check key="fuel:ethanol" text="اتانول (الکل)" />
-	                    <check key="fuel:1_25" text="1/25 mix (mofa/moped)" />
-	                    <check key="fuel:1_50" text="1/50 mix (mofa/moped)" />
 	                    <check key="fuel:lpg" text="LPG (Liquefied petroleum gas)" />
 	                    <check key="fuel:cng" text="CNG (Compressed Natural Gas)" />
-	                    <check key="fuel:biogas" text="Biogas" />
-	                </checkgroup>
-	                <space />
-	                <label text="Additives:" />
-	                <check key="fuel:adblue" text="دیزل Exhaust Fluid (AdBlue/AUS32)" />
-	                <space />
-	                <label text="Fuel cards:" />
-	                <checkgroup columns="3">
-	                    <check key="payment:dkv" text="DKV" />
-	                    <check key="payment:routex" text="Routex" />
-	                    <check key="payment:uta" text="UTA" />
+	                    <check key="fuel:biogas" text="بیوگاز" />
 	                </checkgroup>
 	            </optional>
 	            <reference ref="link_contact_address_payment" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Fuel -->
-	        <item name="Charging Station" icon="presets/vehicle/charging_station.svg" type="node" preset_name_label="true">
+	        <item name="جایگاه شارژ" icon="presets/vehicle/charging_station.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=charging_station" />
 	            <space />
 	            <key key="amenity" value="charging_station" />
@@ -2242,20 +2230,20 @@
 	            <reference ref="oh" />
 	            <reference ref="fee" />
 	            <space />
-	            <combo key="voltage" text="Voltage" values="230,400"/>
-	            <combo key="amperage" text="Amperage" values="16,32" />
-	            <combo key="capacity" text="Capacity" values="1,2,3,4,5,6" />
+	            <combo key="voltage" text="ولتاژ" values="230,400"/>
+	            <combo key="amperage" text="آمپراژ" values="16,32" />
+	            <combo key="capacity" text="ظرفیت" values="1,2,3,4,5,6" />
 	            <space />
-	            <label text="Types of vehicles which can be charged:" />
+	            <label text="نوع وسائطی که می‌توانند شارژ شوند:" />
 	            <checkgroup columns="4">
-	                <check key="bicycle" text="Bicycle" />
-	                <check key="scooter" text="Scooter" />
-	                <check key="motorcycle" text="Motorcycle" />
-	                <check key="motorcar" text="Motorcar" />
-	                <check key="truck" text="Truck" />
+	                <check key="bicycle" text="دوچرخه" />
+	                <check key="scooter" text="اسکوتر" />
+	                <check key="motorcycle" text="موتور سیکلت" />
+	                <check key="motorcar" text="اتومبیل" />
+	                <check key="truck" text="کامیون" />
 	            </checkgroup>
 	            <space />
-	            <label text="Number of Sockets:" />
+	            <label text="شماره سوکت‌ها:" />
 	            <combo key="socket:type1" text="SAE J1772 (IEC Type 1)" values="1,2,3,4,5,6" />
 	            <combo key="socket:type1_combo" text="SAE J1772 Combo (DC)" values="1,2,3,4,5,6" />
 	            <combo key="socket:type2" text="IEC Type 2 (Mennekes)" values="1,2,3,4,5,6" />
@@ -2270,44 +2258,44 @@
 	            <combo key="socket:nema_5_15" text="NEMA 5-15" values="1,2,3,4,5,6" />
 	            <combo key="socket:nema_5_20" text="NEMA 5-20" values="1,2,3,4,5,6" />
 	            <space />
-	            <label text="Authentication:" />
+	            <label text="احراز هویت:" />
 	            <checkgroup columns="4">
-	                <check key="authentication:none" text="None" />
-	                <check key="authentication:phone_call" text="Phone call" />
-	                <check key="authentication:short_message" text="Short message" />
+	                <check key="authentication:none" text="هیچ" />
+	                <check key="authentication:phone_call" text="تماس" />
+	                <check key="authentication:short_message" text="پیام کوتاه" />
 	                <check key="authentication:nfc" text="NFC" />
 	            </checkgroup>
-	            <combo key="authentication:membership_card" text="Membership card" values="yes" />
+	            <combo key="authentication:membership_card" text="کارت عضویت" values="yes" />
 	            <preset_link preset_name="Payment Methods" />
 	        </item> <!-- Charging Station -->
-	        <item name="Wash" icon="presets/vehicle/car_wash.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کارواش" icon="presets/vehicle/car_wash.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=car_wash" />
 	            <space />
 	            <key key="amenity" value="car_wash" />
 	            <reference ref="name_brand_operator_oh_wheelchair" />
-	            <check key="self_service" text="Self Service" />
+	            <check key="self_service" text="سلف‌سرویس" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Wash -->
 	        <separator/>
-	        <item name="Car Dealer" icon="presets/shop/vehicle.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه خودرو" icon="presets/shop/vehicle.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=car" />
 	            <space />
 	            <key key="shop" value="car" />
 	            <reference ref="car_brands" />
 	            <reference ref="name_operator_oh_wheelchair" />
-	            <combo key="second_hand" text="Second hand" values="yes,no,only" />
+	            <combo key="second_hand" text="دست دوم" values="yes,no,only" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Car Dealer -->
-	        <item name="Repair" icon="presets/vehicle/repair_shop.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="تعمیرگاه خودرو" icon="presets/vehicle/repair_shop.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=car_repair" />
 	            <space />
 	            <key key="shop" value="car_repair" />
 	            <reference ref="car_brands" />
 	            <reference ref="name_operator_oh_wheelchair" />
-	            <multiselect key="service" text="Service" text_context="shop=car_repair" values="dealer;repair;parts;tyres" />
+	            <multiselect key="service" text="نوع سرویس" text_context="shop=car_repair" values="dealer;repair;parts;tyres" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Repair -->
-	        <item name="Parts" icon="presets/vehicle/car_parts.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="لوازم یدکی خودرو" icon="presets/vehicle/car_parts.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=car_parts" />
 	            <space />
 	            <key key="shop" value="car_parts" />
@@ -2315,7 +2303,7 @@
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Parts -->
-	        <item name="Tires" icon="presets/vehicle/tyres.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="چرخ خودرو" icon="presets/vehicle/tyres.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=tyres" />
 	            <space />
 	            <key key="shop" value="tyres" />
@@ -2323,363 +2311,363 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Tires -->
 	        <separator/>
-	        <item name="Rental" icon="presets/vehicle/car_rental.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="اجاره خودرو" icon="presets/vehicle/car_rental.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=car_rental" />
 	            <space />
 	            <key key="amenity" value="car_rental" />
 	            <reference ref="name_brand_operator_oh_wheelchair" />
-2387	            <reference ref="link_contact_address_payment" />
-2388	        </item> <!-- Rental -->
-2389	        <item name="Pooling" icon="presets/vehicle/car_pooling.svg" type="node,closedway,multipolygon" preset_name_label="true">
-2390	            <link wiki="Tag:amenity=car_pooling" />
-2391	            <space />
-2392	            <key key="amenity" value="car_pooling" />
-2393	            <text key="operator" text="مسئول" />
-2394	            <text key="network" text="Network" />
-2395	            <text key="capacity" text="Capacity" />
-2396	            <reference ref="name_oh_wheelchair" />
-2397	            <text key="website" text="Website" />
-2398	        </item> <!-- Pooling -->
-2399	        <item name="Sharing" icon="presets/vehicle/car_sharing.svg" type="node,closedway,multipolygon" preset_name_label="true">
-2400	            <link wiki="Tag:amenity=car_sharing" />
-2401	            <space />
-2402	            <key key="amenity" value="car_sharing" />
-2403	            <text key="operator" text="مسئول" />
-2404	            <text key="capacity" text="Capacity" />
-2405	            <reference ref="name_oh_wheelchair" />
-2406	            <text key="website" text="Website" />
-2407	        </item> <!-- Sharing -->
-2408	    </group> <!-- Car -->
-2409	    <group name="Motorcycle" icon="presets/vehicle/motorbike.svg">
-2410	        <item name="Parking" name_context="motorcycle" icon="presets/vehicle/parking/motorbike.svg" type="node,closedway,multipolygon" preset_name_label="true">
-2411	            <link wiki="Tag:amenity=motorcycle_parking" />
-2412	            <space />
-2413	            <key key="amenity" value="motorcycle_parking" />
-2414	            <reference ref="parking_name_type_ref" />
-2415	            <text key="capacity" text="Capacity" />
-2416	            <reference ref="parking_access_fee_operator_surface_smoothness" />
-2417	            <reference ref="supervised_lit_oh" />
-2418	            <check key="covered" text="Covered (with roof)" />
-2419	        </item> <!-- Parking -->
-2420	        <item name="Motorcycle Dealer" icon="presets/vehicle/motorbike.svg" type="node,closedway,multipolygon" preset_name_label="true">
-2421	            <link wiki="Tag:shop=motorcycle" />
-2422	            <space />
-2423	            <key key="shop" value="motorcycle" />
-2424	            <text key="name" text="نام" />
-2425	            <reference ref="motorcycle_brands" />
-2426	            <text key="operator" text="مسئول" />
-2427	            <reference ref="oh_wheelchair" />
-2428	            <combo key="second_hand" text="Second hand" values="yes,no,only" />
-2429	            <optional text="Services:">
-2430	                <combo key="sale" text="Sale" values="yes,brand,no" />
-2431	                <combo key="rental" text="Rental" values="yes,brand,no" />
-2432	                <combo key="repair" text="Repair" values="yes,brand,oldtimer,no" />
-2433	                <combo key="safety_inspection" text="Safety inspection" values="yes,DEKRA,GTÜ,MOT,TÜV,no" />
-2434	                <combo key="parts" text="Parts" values="yes,brand,oldtimer,no" />
-2435	                <combo key="clothes" text="Clothes" values="yes,brand,no" />
-2436	                <text key="services" text="Other" />
-2437	            </optional>
-2438	            <reference ref="link_contact_address_payment" />
-2439	        </item> <!-- Motorcycle Dealer -->
-2440	    </group> <!-- Motorcycle -->
-2441	    <group name="Bicycle" icon="presets/shop/bicycle.svg">
-2442	        <item name="Parking" name_context="bicycle" icon="presets/vehicle/parking/bicycle.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
-2443	            <link wiki="Tag:amenity=bicycle_parking" />
-2444	            <space />
-2445	            <key key="amenity" value="bicycle_parking" />
-2446	            <combo key="bicycle_parking" text="Type" values="anchors,bollard,building,ground_slots,informal,lockers,rack,shed,stands,wall_loops" />
-2447	            <text key="name" text="نام" />
-2448	            <text key="capacity" text="Capacity" />
-2449	            <reference ref="parking_access_fee_operator_surface_smoothness" />
-2450	            <check key="covered" text="Covered" />
-2451	            <reference ref="supervised_lit_oh" />
-2452	        </item> <!-- Parking -->
-2453	        <item name="Bike Dealer" icon="presets/shop/bicycle.svg" type="node,closedway,multipolygon" preset_name_label="true">
-2454	            <link wiki="Tag:shop=bicycle" />
-2455	            <space />
-2456	            <key key="shop" value="bicycle" />
-2457	            <reference ref="name_oh_wheelchair" />
-2458	            <check key="service:bicycle:retail" text="Bicycles are sold" />
-2459	            <check key="service:bicycle:second_hand" text="Second-hand bicycles are sold" />
-2460	            <check key="service:bicycle:repair" text="Bicycles are repaired" />
-2461	            <check key="service:bicycle:rental" text="Bicycles are rented" />
-2462	            <check key="service:bicycle:pump" text="Free bicycle pump" />
-2463	            <check key="service:bicycle:diy" text="Tools for do-it-yourself repair (may be a bike co-operative)" />
-2464	            <check key="service:bicycle:cleaning" text="Bicycles are washed (for a fee)" />
-2465	            <reference ref="link_contact_address_payment" />
-2466	        </item> <!-- Bike Dealer -->
-2467	        <item name="Rental" icon="presets/vehicle/bicycle_rental.svg" type="node,closedway,multipolygon" preset_name_label="true">
-2468	            <link wiki="Tag:amenity=bicycle_rental" />
-2469	            <space />
-2470	            <key key="amenity" value="bicycle_rental" />
-2471	            <text key="name" text="نام" />
-2472	            <reference ref="link_contact_address_payment" />
-2473	        </item> <!-- Rental -->
-2474	        <item name="Public Bicycle Repair Station" icon="presets/vehicle/bicycle_repair_station.svg" type="node,closedway,multipolygon" preset_name_label="true">
-2475	            <link wiki="Tag:amenity=bicycle_repair_station" />
-2476	            <space />
-2477	            <key key="amenity" value="bicycle_repair_station" />
-2478	            <optional>
-2479	            <text key="name" text="نام" />
-2480	            <text key="brand" text="Brand" />
-2481	            <text key="operator" text="مسئول" />
-2482	            <reference ref="oh" />
-2483	            <check key="service:bicycle:pump" text="Free bicycle pump" />
-2484	            <check key="service:bicycle:chain_tool" text="Chain tool" />
-2485	            </optional>
-2486	        </item> <!-- Public Bicycle Repair Station -->
-2487	    </group> <!-- Bicycle -->
-2488	    <group name="Public Transport" icon="presets/transport/bus.svg">
-2489	        <item name="Public Transport Route (Rail)" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
-2490	            <link wiki="Public_transport#Service_routes" />
-2491	            <space />
-2492	            <key key="type" value="route" />
-2493	            <combo key="route" text="Route type" values="train,subway,monorail,tram,light_rail" values_searchable="true" match="keyvalue!" />
-2494	            <key key="public_transport:version" value="2" /> <!-- only validate marked relations in order to avoid false positives -->
-2495	            <reference ref="name_ref" />
-2496	            <optional>
-2497	                <reference ref="public_transport_route_optionals" />
-2498	            </optional>
-2499	            <roles>
-2500	                <role key="stop" text="stop position" requisite="optional" type="node" member_expression="public_transport=stop_position (train=yes OR subway=yes OR monorail=yes OR tram=yes OR light_rail=yes)" />
-2501	                <role key="stop_exit_only" text="stop position (exit only)" requisite="optional" type="node" member_expression="public_transport=stop_position (train=yes OR subway=yes OR monorail=yes OR tram=yes OR light_rail=yes)" />
-2502	                <role key="stop_entry_only" text="stop position (entry only)" requisite="optional" type="node" member_expression="public_transport=stop_position (train=yes OR subway=yes OR monorail=yes OR tram=yes OR light_rail=yes)" />
-2503	                <role key="platform" text="platform" requisite="optional" type="node,way,closedway,multipolygon" member_expression="public_transport=platform" />
-2504	                <role key="platform_exit_only" text="platform (exit only)" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
-2505	                <role key="platform_entry_only" text="platform (entry only)" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
-2506	                <role key="" text="route segment" requisite="required" type="way,closedway" member_expression="railway" />
-2507	            </roles>
-2508	        </item> <!-- Public Transport Route (Rail) -->
-2509	        <item name="Public Transport Route (Bus)" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
-2510	            <link wiki="Public_transport#Service_routes" />
-2511	            <space />
-2512	            <key key="type" value="route" />
-2513	            <combo key="route" text="Route type" values="bus,share_taxi,trolleybus" values_searchable="true" match="keyvalue!" />
-2514	            <key key="public_transport:version" value="2" /> <!-- only validate marked relations in order to avoid false positives -->
-2515	            <reference ref="name_ref" />
-2516	            <optional>
-2517	                <reference ref="public_transport_route_optionals" />
-2518	            </optional>
-2519	            <roles>
-2520	                <role key="stop" text="stop position" requisite="optional" type="node" member_expression="public_transport=stop_position (bus=yes OR share_taxi=yes OR trolleybus=yes)" />
-2521	                <role key="stop_exit_only" text="stop position (exit only)" requisite="optional" type="node" member_expression="public_transport=stop_position (bus=yes OR share_taxi=yes OR trolleybus=yes)" />
-2522	                <role key="stop_entry_only" text="stop position (entry only)" requisite="optional" type="node" member_expression="public_transport=stop_position (bus=yes OR share_taxi=yes OR trolleybus=yes)" />
-2523	                <role key="platform" text="platform" requisite="optional" type="node,way,closedway,multipolygon" member_expression="public_transport=platform" />
-2524	                <role key="platform_exit_only" text="platform (exit only)" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
-2525	                <role key="platform_entry_only" text="platform (entry only)" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
-2526	                <role key="" text="route segment" requisite="required" type="way,closedway" member_expression="highway" />
-2527	                <role key="hail_and_ride" text="hail and ride route segment" requisite="optional" type="way,closedway" member_expression="highway" />
-2528	            </roles>
-2529	        </item> <!-- Public Transport Route (Bus) -->
-2530	        <item name="Route Master" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
-2531	            <link wiki="Public_transport#Route_Master_relations" />
-2532	            <space />
-2533	            <key key="type" value="route_master" />
-2534	            <combo key="route_master" text="Route type" values="train,subway,monorail,tram,bus,trolleybus,share_taxi,aerialway,ferry" />
-2535	            <reference ref="name_ref" />
-2536	            <optional>
-2537	                <text key="operator" text="مسئول" />
-2538	                <text key="network" text="Network" />
-2539	                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
-2540	            </optional>
-2541	            <roles>
-2542	                <role key="" text="route variant/direction (at least 2)" requisite="required" type="relation" member_expression="type=route" /> <!-- fixme: at least 2 members are required -->
-2543	            </roles>
-2544	        </item> <!-- Route Master -->
-2545	        <item name="Stop Area" type="relation" icon="presets/misc/interpolation.svg" preset_name_label="true">
-2546	            <link wiki="Tag:public_transport=stop_area" />
-2547	            <space />
-2548	            <key key="type" value="public_transport" />
-2549	            <key key="public_transport" value="stop_area" />
-2550	            <text key="name" text="نام" />
-2551	            <optional>
-2552	                <text key="ref" text="مرجع" />
-2553	                <text key="uic_ref" text="UIC reference" />
-2554	                <text key="uic_name" text="UIC name" />
-2555	                <text key="operator" text="مسئول" />
-2556	                <text key="network" text="Network" />
-2557	            </optional>
-2558	            <roles>
-2559	                <role key="stop" text="Stop Position" requisite="optional" type="node" member_expression="public_transport=stop_position" />
-2560	                <role key="platform" text="Platform" requisite="optional" type="node,way,closedway,multipolygon" member_expression="public_transport=platform" />
-2561	                <role key="" text="Subway Entrance" requisite="optional" type="node" member_expression="railway=subway_entrance" />
-2562	                <role key="" text="Station or amenities" requisite="optional" type="node,way,closedway" member_expression="amenity|public_transport=station" />
-2563	            </roles>
-2564	        </item> <!-- Stop Area -->
-2565	        <separator/>
-2566	        <item name="Stop Position" type="node" icon="presets/transport/stop_position.svg" preset_name_label="true">
-2567	            <link wiki="Tag:public_transport=stop_position" />
-2568	            <space />
-2569	            <key key="public_transport" value="stop_position" />
-2570	            <text key="name" text="نام" />
-2571	            <optional>
-2572	                <text key="ref" text="مرجع" />
-2573	                <text key="uic_ref" text="UIC reference" />
-2574	                <text key="uic_name" text="UIC name" />
-2575	                <text key="operator" text="مسئول" />
-2576	                <text key="network" text="Network" />
-2577	                <combo key="tactile_paving" text="Tactile Paving" values="yes,no,incorrect" />
-2578	            </optional>
-2579	            <space />
-2580	            <check key="bus" text="Bus" icon="presets/transport/bus.svg" />
-2581	            <check key="tram" text="Tram" icon="presets/transport/railway/tram.svg" />
-2582	            <check key="train" text="Train" icon="presets/transport/train.svg" />
-2583	            <check key="trolleybus" text="Trolleybus" icon="presets/transport/trolleybus.svg" />
-2584	            <check key="share_taxi" text="Share taxi" icon="presets/transport/share_taxi.svg" />
-2585	            <check key="subway" text="Subway" icon="presets/transport/railway/subway.svg" />
-2586	            <check key="light_rail" text="Light Rail" icon="presets/transport/railway/light_rail.svg" />
-2587	            <check key="monorail" text="Monorail" icon="presets/transport/railway/monorail.svg" />
-2588	            <check key="funicular" text="Funicular" icon="presets/transport/railway/funicular.svg" />
-2589	            <check key="aerialway" text="Aerialway" icon="presets/transport/aerialway/station.svg" />
-2590	            <check key="ferry" text="Ferry" icon="presets/nautical/ferry.svg" />
-2591	        </item> <!-- Stop Position -->
-2592	        <item name="Platform" type="node,way,closedway,multipolygon" icon="presets/transport/platform.svg" preset_name_label="true">
-2593	            <link wiki="Tag:public_transport=platform" />
-2594	            <space />
-2595	            <key key="public_transport" value="platform" />
-2596	            <text key="name" text="نام" />
-2597	            <check key="bench" text="Bench" />
-2598	            <check key="shelter" text="Shelter" />
-2599	            <check key="bin" text="Waste Basket/Trash Can" />
-2600	            <check key="covered" text="Covered" />
-2601	            <check key="passenger_information_display" text="Passenger information display" />
-2602	            <text key="route_ref" text="Route references" />
-2603	            <reference ref="wheelchair" />
-2604	            <combo key="tactile_paving" text="Tactile Paving" values="yes,no,incorrect" />
-2605	        </item> <!-- Platform -->
-2606	        <item name="Station" name_context="railway" type="node,closedway,multipolygon" icon="presets/transport/station.svg" preset_name_label="true">
-2607	            <link wiki="Tag:public_transport=station" />
-2608	            <space />
-2609	            <key key="public_transport" value="station" />
-2610	            <text key="name" text="نام" />
-2611	            <check key="area" text="Area" disable_off="true" />
-2612	            <check key="building" text="Building" disable_off="true" />
-2613	            <text key="operator" text="مسئول" />
-2614	            <text key="network" text="Network" />
-2615	        </item> <!-- Station -->
-2616	        <separator/> <!-- *** Access *** -->
-2617	        <item name="Subway Entrance" icon="presets/transport/underground.svg" type="node" preset_name_label="true">
-2618	            <link wiki="Tag:railway=subway_entrance" />
-2619	            <key key="railway" value="subway_entrance" />
-2620	            <optional>
-2621	                <text key="name" text="نام" />
-2622	                <reference ref="wheelchair" />
-2623	                <check key="bicycle" text="Bicycle" />
-2624	            </optional>
-2625	        </item> <!-- Subway Entrance -->
-2626	        <item name="Ticket Machine" icon="presets/transport/ticket-machine.svg" type="node" preset_name_label="true">
-2627	            <link wiki="Tag:amenity=vending_machine" />
-2628	            <space />
-2629	            <key key="amenity" value="vending_machine" />
-2630	            <key key="vending" value="public_transport_tickets" />
-2631	            <reference ref="name_operator" />
-2632	            <text key="ref" text="مرجع number" />
-2633	            <preset_link preset_name="Payment Methods" />
-2634	        </item> <!-- Ticket Machine -->
-2635	    </group> <!-- Public Transport -->
-2636	    <group name="Public Transport (Legacy)" icon="presets/transport/bus_old.svg">
-2637	        <item name="Public transport route (Legacy)" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
-2638	            <key key="type" value="route" />
-2639	            <combo key="route" text="Route type" values="train,subway,monorail,tram,bus,trolleybus,share_taxi,aerialway,ferry" values_searchable="true" match="keyvalue!" />
-2640	            <key key="public_transport:version" value="1" /> <!-- only validate marked relations in order to avoid false positives -->
-2641	            <reference ref="name_ref" />
-2642	            <optional>
-2643	                <text key="from" text="From (initial stop)" />
-2644	                <text key="to" text="To (terminal stop)" />
-2645	                <text key="via" text="Via (intermediate stops)" />
-2646	                <text key="operator" text="مسئول" />
-2647	                <text key="network" text="Network" />
-2648	                <text key="description" text="Description" />
-2649	                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
-2650	            </optional>
-2651	            <roles>
-2652	                <role key="" text="route segment" requisite="optional" type="way,closedway" />
-2653	                <role key="forward" text="forward segment" requisite="optional" type="way,closedway" />
-2654	                <role key="backward" text="backward segment" requisite="optional" type="way,closedway" />
-2655	                <role key="stop" text="halt point" requisite="optional" type="node" member_expression="highway=bus_stop OR railway=station OR railway=halt OR railway=tram_stop" />
-2656	                <role key="forward_stop" text="forward halt point" requisite="optional" type="node" member_expression="highway=bus_stop OR railway=station OR railway=halt OR railway=tram_stop" />
-2657	                <role key="backward_stop" text="backward halt point" requisite="optional" type="node" member_expression="highway=bus_stop OR railway=station OR railway=halt OR railway=tram_stop" />
-2658	                <role key="platform" text="platform" requisite="optional" type="node,way,closedway" member_expression="highway=platform OR railway=platform" />
-2659	            </roles>
-2660	        </item> <!-- Public transport route (Legacy) -->
-2661	        <item name="Station" name_context="railway" icon="presets/transport/railway_station.svg" type="node,closedway,multipolygon" preset_name_label="true">
-2662	            <link wiki="Tag:railway=station" />
-2663	            <key key="railway" value="station" />
-2664	            <optional>
-2665	                <text key="name" text="نام" />
-2666	                <text key="uic_ref" text="UIC-مرجع" />
-2667	            </optional>
-2668	        </item> <!-- Station -->
-2669	        <item name="Railway Halt" icon="presets/transport/railway_halt.svg" type="node" preset_name_label="true">
-2670	            <link wiki="Tag:railway=halt" />
-2671	            <key key="railway" value="halt" />
-2672	            <optional>
-2673	                <text key="name" text="نام" />
-2674	            </optional>
-2675	        </item> <!-- Railway Halt -->
-2676	        <item name="Tram Stop" icon="presets/transport/tram.svg" type="node" preset_name_label="true">
-2677	           <link wiki="Tag:railway=tram_stop" />
-2678	            <key key="railway" value="tram_stop" />
-2679	            <optional>
-2680	                <text key="name" text="نام" />
-2681	            </optional>
-2682	        </item> <!-- Tram Stop -->
-2683	        <item name="Railway Platform" icon="presets/transport/platform_rail.svg" type="way,closedway,multipolygon" preset_name_label="true">
-2684	            <link wiki="Tag:railway=platform" />
-2685	            <space />
-2686	            <key key="railway" value="platform" />
-2687	            <text key="ref" text="مرجع (track number)" />
-2688	            <text key="width" text="عرض به متر" />
-2689	            <check key="area" text="Area" />
-2690	        </item> <!-- Railway Platform -->
-2691	        <separator/>
-2692	        <item name="Bus Station" icon="presets/transport/bus_old.svg" type="node,closedway,multipolygon" preset_name_label="true">
-2693	            <link wiki="Tag:amenity=bus_station" />
-2694	            <key key="amenity" value="bus_station" />
-2695	            <optional>
-2696	                <text key="name" text="نام" />
-2697	            </optional>
-2698	        </item> <!-- Bus Station -->
-2699	        <item name="Bus Stop" icon="presets/transport/bus_small.svg" type="node" preset_name_label="true">
-2700	            <link wiki="Tag:highway=bus_stop" />
-2701	            <key key="highway" value="bus_stop" />
-2702	            <optional>
-2703	                <text key="name" text="نام" />
-2704	                <check key="bench" text="Bench" />
-2705	                <check key="shelter" text="Shelter" />
-2706	                <check key="bin" text="Waste Basket/Trash Can" />
-2707	                <check key="passenger_information_display" text="Passenger information display" />
-2708	                <text key="route_ref" text="Route references" />
-2709	                <combo key="tactile_paving" text="Tactile Paving" values="yes,no,incorrect" />
-2710	            </optional>
-2711	        </item> <!-- Bus Stop -->
-2712	        <item name="Bus Platform" icon="presets/transport/platform_bus.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
-2713	            <link wiki="Tag:highway=platform" />
-2714	            <space />
-2715	            <key key="highway" value="platform" />
-2716	            <text key="ref" text="مرجع (track number)" />
-2717	            <text key="width" text="عرض به متر" />
-2718	            <check key="area" text="Area" />
-2719	            <combo key="tactile_paving" text="Tactile Paving" values="yes,no,incorrect" />
-2720	        </item> <!-- Bus Platform -->
-2721	    </group> <!-- Public Transport -->
-2722	    <item name="Taxi" icon="presets/transport/taxi.svg" type="node,closedway,multipolygon" preset_name_label="true">
-2723	        <link wiki="Tag:amenity=taxi" />
-2724	        <space />
-2725	        <key key="amenity" value="taxi" />
-2726	        <text key="name" text="نام" />
-2727	    </item> <!-- Taxi -->
-2728	    <separator/>
-2729	    <group name="Airport" icon="presets/transport/airport.svg">
-2730	        <item name="Airport Ground" icon="presets/transport/airport.svg" type="node,closedway,multipolygon" preset_name_label="true">
-2731	            <link wiki="Tag:aeroway=aerodrome" />
-2732	            <space />
-2733	            <reference ref="aerodrome" />
-2734	        </item> <!-- Airport Ground -->
-2735	        <separator/>
-2736	        <item name="Runway" icon="presets/transport/airport/runway.svg" type="way,closedway" preset_name_label="true">
-2737	            <link wiki="Tag:aeroway=runway" />
-2738	            <key key="aeroway" value="runway" />
+	            <reference ref="link_contact_address_payment" />
+	        </item> <!-- Rental -->
+	        <item name="ائتلاف خودرو" icon="presets/vehicle/car_pooling.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:amenity=car_pooling" />
+	            <space />
+	            <key key="amenity" value="car_pooling" />
+	            <text key="operator" text="مسئول" />
+	            <text key="network" text="شبکه" />
+	            <text key="capacity" text="ظرفیت" />
+	            <reference ref="name_oh_wheelchair" />
+	            <text key="website" text="وبسایت" />
+	        </item> <!-- Pooling -->
+	        <item name="اشتراک خودرو" icon="presets/vehicle/car_sharing.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:amenity=car_sharing" />
+	            <space />
+	            <key key="amenity" value="car_sharing" />
+	            <text key="operator" text="مسئول" />
+	            <text key="capacity" text="ظرفیت" />
+	            <reference ref="name_oh_wheelchair" />
+	            <text key="website" text="وبسایت" />
+	        </item> <!-- Sharing -->
+	    </group> <!-- Car -->
+	    <group name="موتور سیکلت" icon="presets/vehicle/motorbike.svg">
+	        <item name="پارکینگ" name_context="motorcycle" icon="presets/vehicle/parking/motorbike.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:amenity=motorcycle_parking" />
+	            <space />
+	            <key key="amenity" value="motorcycle_parking" />
+	            <reference ref="parking_name_type_ref" />
+	            <text key="capacity" text="ظرفیت" />
+	            <reference ref="parking_access_fee_operator_surface_smoothness" />
+	            <reference ref="supervised_lit_oh" />
+	            <check key="covered" text="سقف" />
+	        </item> <!-- Parking -->
+	        <item name="فروشگاه موتور سیکلت" icon="presets/vehicle/motorbike.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:shop=motorcycle" />
+	            <space />
+	            <key key="shop" value="motorcycle" />
+	            <text key="name" text="نام" />
+	            <reference ref="motorcycle_brands" />
+	            <text key="operator" text="مسئول" />
+	            <reference ref="oh_wheelchair" />
+	            <combo key="second_hand" text="دست دوم" values="yes,no,only" />
+	            <optional text="نوع سرویس:">
+	                <combo key="sale" text="فروش" values="yes,brand,no" />
+	                <combo key="rental" text="اجاره" values="yes,brand,no" />
+	                <combo key="repair" text="تعمیر" values="yes,brand,oldtimer,no" />
+	                <combo key="safety_inspection" text="معاینه فنی" values="yes,DEKRA,GTÜ,MOT,TÜV,no" />
+	                <combo key="parts" text="لوازم یدکی" values="yes,brand,oldtimer,no" />
+	                <combo key="clothes" text="پوشاک" values="yes,brand,no" />
+	                <text key="services" text="غیره" />
+	            </optional>
+	            <reference ref="link_contact_address_payment" />
+	        </item> <!-- Motorcycle Dealer -->
+	    </group> <!-- Motorcycle -->
+	    <group name="دوچرخه" icon="presets/shop/bicycle.svg">
+	        <item name="پارکینگ" name_context="bicycle" icon="presets/vehicle/parking/bicycle.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:amenity=bicycle_parking" />
+	            <space />
+	            <key key="amenity" value="bicycle_parking" />
+	            <combo key="bicycle_parking" text="نوع" values="anchors,bollard,building,ground_slots,informal,lockers,rack,shed,stands,wall_loops" />
+	            <text key="name" text="نام" />
+	            <text key="capacity" text="ظرفیت" />
+	            <reference ref="parking_access_fee_operator_surface_smoothness" />
+	            <check key="covered" text="سقف" />
+	            <reference ref="supervised_lit_oh" />
+	        </item> <!-- Parking -->
+	        <item name="فروشگاه دوچرخه" icon="presets/shop/bicycle.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:shop=bicycle" />
+	            <space />
+	            <key key="shop" value="bicycle" />
+	            <reference ref="name_oh_wheelchair" />
+	            <check key="service:bicycle:retail" text="فروش" />
+	            <check key="service:bicycle:second_hand" text="دست دوم" />
+	            <check key="service:bicycle:repair" text="تعمیر" />
+	            <check key="service:bicycle:rental" text="اجاره" />
+	            <check key="service:bicycle:pump" text="پمپ رایگان" />
+	            <check key="service:bicycle:diy" text="سلف سرویس" />
+	            <check key="service:bicycle:cleaning" text="شستن" />
+	            <reference ref="link_contact_address_payment" />
+	        </item> <!-- Bike Dealer -->
+	        <item name="اجاره دوچرخه" icon="presets/vehicle/bicycle_rental.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:amenity=bicycle_rental" />
+	            <space />
+	            <key key="amenity" value="bicycle_rental" />
+	            <text key="name" text="نام" />
+	            <reference ref="link_contact_address_payment" />
+	        </item> <!-- Rental -->
+	        <item name="پایانه عمومی تعمیر دوچرخه" icon="presets/vehicle/bicycle_repair_station.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:amenity=bicycle_repair_station" />
+	            <space />
+	            <key key="amenity" value="bicycle_repair_station" />
+	            <optional>
+	            <text key="name" text="نام" />
+	            <text key="brand" text="برند" />
+	            <text key="operator" text="مسئول" />
+	            <reference ref="oh" />
+	            <check key="service:bicycle:pump" text="پمپ رایگان" />
+	            <check key="service:bicycle:chain_tool" text="ابزار زنجیر" />
+	            </optional>
+	        </item> <!-- Public Bicycle Repair Station -->
+	    </group> <!-- Bicycle -->
+	    <group name="Public Transport" icon="presets/transport/bus.svg">
+	        <item name="Public Transport Route (Rail)" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <link wiki="Public_transport#Service_routes" />
+	            <space />
+	            <key key="type" value="route" />
+	            <combo key="route" text="Route type" values="train,subway,monorail,tram,light_rail" values_searchable="true" match="keyvalue!" />
+	            <key key="public_transport:version" value="2" /> <!-- only validate marked relations in order to avoid false positives -->
+	            <reference ref="name_ref" />
+	            <optional>
+	                <reference ref="public_transport_route_optionals" />
+	            </optional>
+	            <roles>
+	                <role key="stop" text="stop position" requisite="optional" type="node" member_expression="public_transport=stop_position (train=yes OR subway=yes OR monorail=yes OR tram=yes OR light_rail=yes)" />
+	                <role key="stop_exit_only" text="stop position (exit only)" requisite="optional" type="node" member_expression="public_transport=stop_position (train=yes OR subway=yes OR monorail=yes OR tram=yes OR light_rail=yes)" />
+	                <role key="stop_entry_only" text="stop position (entry only)" requisite="optional" type="node" member_expression="public_transport=stop_position (train=yes OR subway=yes OR monorail=yes OR tram=yes OR light_rail=yes)" />
+	                <role key="platform" text="platform" requisite="optional" type="node,way,closedway,multipolygon" member_expression="public_transport=platform" />
+	                <role key="platform_exit_only" text="platform (exit only)" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
+	                <role key="platform_entry_only" text="platform (entry only)" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
+	                <role key="" text="route segment" requisite="required" type="way,closedway" member_expression="railway" />
+	            </roles>
+	        </item> <!-- Public Transport Route (Rail) -->
+	        <item name="Public Transport Route (Bus)" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <link wiki="Public_transport#Service_routes" />
+	            <space />
+	            <key key="type" value="route" />
+	            <combo key="route" text="Route type" values="bus,share_taxi,trolleybus" values_searchable="true" match="keyvalue!" />
+	            <key key="public_transport:version" value="2" /> <!-- only validate marked relations in order to avoid false positives -->
+	            <reference ref="name_ref" />
+	            <optional>
+	                <reference ref="public_transport_route_optionals" />
+	            </optional>
+	            <roles>
+	                <role key="stop" text="stop position" requisite="optional" type="node" member_expression="public_transport=stop_position (bus=yes OR share_taxi=yes OR trolleybus=yes)" />
+	                <role key="stop_exit_only" text="stop position (exit only)" requisite="optional" type="node" member_expression="public_transport=stop_position (bus=yes OR share_taxi=yes OR trolleybus=yes)" />
+	                <role key="stop_entry_only" text="stop position (entry only)" requisite="optional" type="node" member_expression="public_transport=stop_position (bus=yes OR share_taxi=yes OR trolleybus=yes)" />
+	                <role key="platform" text="platform" requisite="optional" type="node,way,closedway,multipolygon" member_expression="public_transport=platform" />
+	                <role key="platform_exit_only" text="platform (exit only)" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
+	                <role key="platform_entry_only" text="platform (entry only)" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
+	                <role key="" text="route segment" requisite="required" type="way,closedway" member_expression="highway" />
+	                <role key="hail_and_ride" text="hail and ride route segment" requisite="optional" type="way,closedway" member_expression="highway" />
+	            </roles>
+	        </item> <!-- Public Transport Route (Bus) -->
+	        <item name="Route Master" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <link wiki="Public_transport#Route_Master_relations" />
+	            <space />
+	            <key key="type" value="route_master" />
+	            <combo key="route_master" text="Route type" values="train,subway,monorail,tram,bus,trolleybus,share_taxi,aerialway,ferry" />
+	            <reference ref="name_ref" />
+	            <optional>
+	                <text key="operator" text="مسئول" />
+	                <text key="network" text="Network" />
+	                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
+	            </optional>
+	            <roles>
+	                <role key="" text="route variant/direction (at least 2)" requisite="required" type="relation" member_expression="type=route" /> <!-- fixme: at least 2 members are required -->
+	            </roles>
+	        </item> <!-- Route Master -->
+	        <item name="Stop Area" type="relation" icon="presets/misc/interpolation.svg" preset_name_label="true">
+	            <link wiki="Tag:public_transport=stop_area" />
+	            <space />
+	            <key key="type" value="public_transport" />
+	            <key key="public_transport" value="stop_area" />
+	            <text key="name" text="نام" />
+	            <optional>
+	                <text key="ref" text="مرجع" />
+	                <text key="uic_ref" text="UIC reference" />
+	                <text key="uic_name" text="UIC name" />
+	                <text key="operator" text="مسئول" />
+	                <text key="network" text="Network" />
+	            </optional>
+	            <roles>
+	                <role key="stop" text="Stop Position" requisite="optional" type="node" member_expression="public_transport=stop_position" />
+	                <role key="platform" text="Platform" requisite="optional" type="node,way,closedway,multipolygon" member_expression="public_transport=platform" />
+	                <role key="" text="Subway Entrance" requisite="optional" type="node" member_expression="railway=subway_entrance" />
+	                <role key="" text="Station or amenities" requisite="optional" type="node,way,closedway" member_expression="amenity|public_transport=station" />
+	            </roles>
+	        </item> <!-- Stop Area -->
+	        <separator/>
+	        <item name="Stop Position" type="node" icon="presets/transport/stop_position.svg" preset_name_label="true">
+	            <link wiki="Tag:public_transport=stop_position" />
+	            <space />
+	            <key key="public_transport" value="stop_position" />
+	            <text key="name" text="نام" />
+	            <optional>
+	                <text key="ref" text="مرجع" />
+	                <text key="uic_ref" text="UIC reference" />
+	                <text key="uic_name" text="UIC name" />
+	                <text key="operator" text="مسئول" />
+	                <text key="network" text="Network" />
+	                <combo key="tactile_paving" text="Tactile Paving" values="yes,no,incorrect" />
+	            </optional>
+	            <space />
+	            <check key="bus" text="Bus" icon="presets/transport/bus.svg" />
+	            <check key="tram" text="Tram" icon="presets/transport/railway/tram.svg" />
+	            <check key="train" text="Train" icon="presets/transport/train.svg" />
+	            <check key="trolleybus" text="Trolleybus" icon="presets/transport/trolleybus.svg" />
+	            <check key="share_taxi" text="Share taxi" icon="presets/transport/share_taxi.svg" />
+	            <check key="subway" text="Subway" icon="presets/transport/railway/subway.svg" />
+	            <check key="light_rail" text="Light Rail" icon="presets/transport/railway/light_rail.svg" />
+	            <check key="monorail" text="Monorail" icon="presets/transport/railway/monorail.svg" />
+	            <check key="funicular" text="Funicular" icon="presets/transport/railway/funicular.svg" />
+	            <check key="aerialway" text="Aerialway" icon="presets/transport/aerialway/station.svg" />
+	            <check key="ferry" text="Ferry" icon="presets/nautical/ferry.svg" />
+	        </item> <!-- Stop Position -->
+	        <item name="Platform" type="node,way,closedway,multipolygon" icon="presets/transport/platform.svg" preset_name_label="true">
+	            <link wiki="Tag:public_transport=platform" />
+	            <space />
+	            <key key="public_transport" value="platform" />
+	            <text key="name" text="نام" />
+	            <check key="bench" text="Bench" />
+	            <check key="shelter" text="Shelter" />
+	            <check key="bin" text="Waste Basket/Trash Can" />
+	            <check key="covered" text="Covered" />
+	            <check key="passenger_information_display" text="Passenger information display" />
+	            <text key="route_ref" text="Route references" />
+	            <reference ref="wheelchair" />
+	            <combo key="tactile_paving" text="Tactile Paving" values="yes,no,incorrect" />
+	        </item> <!-- Platform -->
+	        <item name="Station" name_context="railway" type="node,closedway,multipolygon" icon="presets/transport/station.svg" preset_name_label="true">
+	            <link wiki="Tag:public_transport=station" />
+	            <space />
+	            <key key="public_transport" value="station" />
+	            <text key="name" text="نام" />
+	            <check key="area" text="Area" disable_off="true" />
+	            <check key="building" text="Building" disable_off="true" />
+	            <text key="operator" text="مسئول" />
+	            <text key="network" text="Network" />
+	        </item> <!-- Station -->
+	        <separator/> <!-- *** Access *** -->
+	        <item name="Subway Entrance" icon="presets/transport/underground.svg" type="node" preset_name_label="true">
+	            <link wiki="Tag:railway=subway_entrance" />
+	            <key key="railway" value="subway_entrance" />
+	            <optional>
+	                <text key="name" text="نام" />
+	                <reference ref="wheelchair" />
+	                <check key="bicycle" text="Bicycle" />
+	            </optional>
+	        </item> <!-- Subway Entrance -->
+	        <item name="Ticket Machine" icon="presets/transport/ticket-machine.svg" type="node" preset_name_label="true">
+	            <link wiki="Tag:amenity=vending_machine" />
+	            <space />
+	            <key key="amenity" value="vending_machine" />
+	            <key key="vending" value="public_transport_tickets" />
+	            <reference ref="name_operator" />
+	            <text key="ref" text="مرجع number" />
+	            <preset_link preset_name="Payment Methods" />
+	        </item> <!-- Ticket Machine -->
+	    </group> <!-- Public Transport -->
+	    <group name="Public Transport (Legacy)" icon="presets/transport/bus_old.svg">
+	        <item name="Public transport route (Legacy)" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <key key="type" value="route" />
+	            <combo key="route" text="Route type" values="train,subway,monorail,tram,bus,trolleybus,share_taxi,aerialway,ferry" values_searchable="true" match="keyvalue!" />
+	            <key key="public_transport:version" value="1" /> <!-- only validate marked relations in order to avoid false positives -->
+	            <reference ref="name_ref" />
+	            <optional>
+	                <text key="from" text="From (initial stop)" />
+	                <text key="to" text="To (terminal stop)" />
+	                <text key="via" text="Via (intermediate stops)" />
+	                <text key="operator" text="مسئول" />
+	                <text key="network" text="Network" />
+	                <text key="description" text="Description" />
+	                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
+	            </optional>
+	            <roles>
+	                <role key="" text="route segment" requisite="optional" type="way,closedway" />
+	                <role key="forward" text="forward segment" requisite="optional" type="way,closedway" />
+	                <role key="backward" text="backward segment" requisite="optional" type="way,closedway" />
+	                <role key="stop" text="halt point" requisite="optional" type="node" member_expression="highway=bus_stop OR railway=station OR railway=halt OR railway=tram_stop" />
+	                <role key="forward_stop" text="forward halt point" requisite="optional" type="node" member_expression="highway=bus_stop OR railway=station OR railway=halt OR railway=tram_stop" />
+	                <role key="backward_stop" text="backward halt point" requisite="optional" type="node" member_expression="highway=bus_stop OR railway=station OR railway=halt OR railway=tram_stop" />
+	                <role key="platform" text="platform" requisite="optional" type="node,way,closedway" member_expression="highway=platform OR railway=platform" />
+	            </roles>
+	        </item> <!-- Public transport route (Legacy) -->
+	        <item name="Station" name_context="railway" icon="presets/transport/railway_station.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:railway=station" />
+	            <key key="railway" value="station" />
+	            <optional>
+	                <text key="name" text="نام" />
+	                <text key="uic_ref" text="UIC-مرجع" />
+	            </optional>
+	        </item> <!-- Station -->
+	        <item name="Railway Halt" icon="presets/transport/railway_halt.svg" type="node" preset_name_label="true">
+	            <link wiki="Tag:railway=halt" />
+	            <key key="railway" value="halt" />
+	            <optional>
+	                <text key="name" text="نام" />
+	            </optional>
+	        </item> <!-- Railway Halt -->
+	        <item name="Tram Stop" icon="presets/transport/tram.svg" type="node" preset_name_label="true">
+	           <link wiki="Tag:railway=tram_stop" />
+	            <key key="railway" value="tram_stop" />
+	            <optional>
+	                <text key="name" text="نام" />
+	            </optional>
+	        </item> <!-- Tram Stop -->
+	        <item name="Railway Platform" icon="presets/transport/platform_rail.svg" type="way,closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:railway=platform" />
+	            <space />
+	            <key key="railway" value="platform" />
+	            <text key="ref" text="مرجع (track number)" />
+	            <text key="width" text="عرض به متر" />
+	            <check key="area" text="Area" />
+	        </item> <!-- Railway Platform -->
+	        <separator/>
+	        <item name="Bus Station" icon="presets/transport/bus_old.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:amenity=bus_station" />
+	            <key key="amenity" value="bus_station" />
+	            <optional>
+	                <text key="name" text="نام" />
+	            </optional>
+	        </item> <!-- Bus Station -->
+	        <item name="Bus Stop" icon="presets/transport/bus_small.svg" type="node" preset_name_label="true">
+	            <link wiki="Tag:highway=bus_stop" />
+	            <key key="highway" value="bus_stop" />
+	            <optional>
+	                <text key="name" text="نام" />
+	                <check key="bench" text="Bench" />
+	                <check key="shelter" text="Shelter" />
+	                <check key="bin" text="Waste Basket/Trash Can" />
+	                <check key="passenger_information_display" text="Passenger information display" />
+	                <text key="route_ref" text="Route references" />
+	                <combo key="tactile_paving" text="Tactile Paving" values="yes,no,incorrect" />
+	            </optional>
+	        </item> <!-- Bus Stop -->
+	        <item name="Bus Platform" icon="presets/transport/platform_bus.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:highway=platform" />
+	            <space />
+	            <key key="highway" value="platform" />
+	            <text key="ref" text="مرجع (track number)" />
+	            <text key="width" text="عرض به متر" />
+	            <check key="area" text="Area" />
+	            <combo key="tactile_paving" text="Tactile Paving" values="yes,no,incorrect" />
+	        </item> <!-- Bus Platform -->
+	    </group> <!-- Public Transport -->
+	    <item name="Taxi" icon="presets/transport/taxi.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <link wiki="Tag:amenity=taxi" />
+	        <space />
+	        <key key="amenity" value="taxi" />
+	        <text key="name" text="نام" />
+	    </item> <!-- Taxi -->
+	    <separator/>
+	    <group name="Airport" icon="presets/transport/airport.svg">
+	        <item name="Airport Ground" icon="presets/transport/airport.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:aeroway=aerodrome" />
+	            <space />
+	            <reference ref="aerodrome" />
+	        </item> <!-- Airport Ground -->
+	        <separator/>
+	        <item name="Runway" icon="presets/transport/airport/runway.svg" type="way,closedway" preset_name_label="true">
+	            <link wiki="Tag:aeroway=runway" />
+	            <key key="aeroway" value="runway" />
 2739	            <optional>
 2740	                <text key="ref" text="مرجع" />
 2741	                <reference ref="surface" />
@@ -2869,7 +2857,7 @@
 2925	            <key key="tourism" value="wilderness_hut" />
 2926	            <reference ref="name_operator" />
 2927	            <combo key="access" text="Access rights" values="yes,permissive,customers,private" />
-2928	            <text key="capacity" text="Capacity" />
+2928	            <text key="capacity" text="ظرفیت" />
 2929	            <reference ref="fee" />
 2930	            <check key="toilets" text="سرویس بهداشتی" />
 2931	            <check key="shower" text="Shower" />
@@ -3899,7 +3887,7 @@
 3955	            <key key="amenity" value="social_facility" />
 3956	            <key key="social_facility" value="nursing_home" />
 3957	            <reference ref="name_operator" />
-3958	            <text key="capacity" text="Capacity" />
+3958	            <text key="capacity" text="ظرفیت" />
 3959	            <reference ref="link_contact_address" />
 3960	        </item> <!-- Nursing Home -->
 3961	        <item name="Nursing Home (Legacy)" icon="presets/social_facility/nursing_home.svg" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3907,7 +3895,7 @@
 3963	            <space />
 3964	            <key key="amenity" value="nursing_home" />
 3965	            <reference ref="name_operator" />
-3966	            <text key="capacity" text="Capacity" />
+3966	            <text key="capacity" text="ظرفیت" />
 3967	            <reference ref="link_contact_address" />
 3968	        </item> <!-- Nursing Home (Legacy)-->
 3969	        <item name="Group Home" icon="presets/social_facility/group_home.svg" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3917,7 +3905,7 @@
 3973	            <key key="social_facility" value="group_home" />
 3974	            <reference ref="name_operator" />
 3975	            <combo key="social_facility:for" text="For" value="senior" default="senior" />
-3976	            <text key="capacity" text="Capacity" />
+3976	            <text key="capacity" text="ظرفیت" />
 3977	            <reference ref="link_contact_address" />
 3978	        </item> <!-- Group Home -->
 3979	        <item name="Assisted Living" icon="presets/social_facility/assisted_living.svg" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3927,7 +3915,7 @@
 3983	            <key key="social_facility" value="assisted_living" />
 3984	            <reference ref="name_operator" />
 3985	            <combo key="social_facility:for" text="For" value="senior" default="senior" />
-3986	            <text key="capacity" text="Capacity" />
+3986	            <text key="capacity" text="ظرفیت" />
 3987	            <reference ref="link_contact_address" />
 3988	        </item> <!-- Assisted Living -->
 3989	        <item name="Outreach" icon="presets/social_facility/outreach.svg" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3944,7 +3932,7 @@
 4000	            <key key="amenity" value="social_facility" />
 4001	            <key key="social_facility" value="shelter" />
 4002	            <reference ref="name_operator" />
-4003	            <text key="capacity" text="Capacity" />
+4003	            <text key="capacity" text="ظرفیت" />
 4004	            <reference ref="link_contact_address" />
 4005	        </item> <!-- Shelter -->
 4006	        <item name="Food Bank" icon="presets/social_facility/food_bank.svg" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5808,7 +5796,7 @@
 5864	            <space />
 5865	            <key key="amenity" value="marketplace" />
 5866	            <reference ref="name_operator_oh_wheelchair" />
-5867	            <text key="website" text="Website" />
+5867	            <text key="website" text="وبسایت" />
 5868	            <combo key="organic" text="Organic" values="yes,no,only" />
 5869	        </item> <!-- Public Market -->
 5870	        <item name="Greengrocer" icon="presets/shop/groceries/greengrocer.svg" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5868,7 +5856,7 @@
 5924	            <space />
 5925	            <key key="shop" value="clothes" />
 5926	            <reference ref="name_oh_wheelchair" />
-5927	            <combo key="second_hand" text="Second hand" values="yes,no,only" />
+5927	            <combo key="second_hand" text="دست دوم" values="yes,no,only" />
 5928	            <combo key="organic" text="Organic" values="yes,no,only" />
 5929	            <reference ref="link_contact_address_payment" />
 5930	        </item> <!-- Clothes -->
@@ -5884,7 +5872,7 @@
 5940	            <space />
 5941	            <key key="shop" value="shoes" />
 5942	            <reference ref="name_oh_wheelchair" />
-5943	            <combo key="second_hand" text="Second hand" values="yes,no,only" />
+5943	            <combo key="second_hand" text="دست دوم" values="yes,no,only" />
 5944	            <combo key="organic" text="Organic" values="yes,no,only" />
 5945	            <check key="shoes:repair" text="Offers repairs" text_context="shoes" />
 5946	            <reference ref="link_contact_address_payment" />
@@ -6140,7 +6128,7 @@
 6196	            <space />
 6197	            <key key="shop" value="books" />
 6198	            <reference ref="name_brand_oh_wheelchair" />
-6199	            <combo key="second_hand" text="Second hand" values="yes,no,only" />
+6199	            <combo key="second_hand" text="دست دوم" values="yes,no,only" />
 6200	            <reference ref="link_contact_address_payment" />
 6201	        </item> <!-- Book Store -->
 6202	        <item name="Newspaper Stand" icon="presets/shop/news.svg" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6963,7 +6951,7 @@
 	            <key key="place" value="quarter" />
 	            <reference ref="name_wikipedia" />
 	            <text key="population" text="Population" />
-	            <text key="website" text="Website" />
+	            <text key="website" text="وبسایت" />
 	        </item> <!-- Quarter -->
 	        <item name="Neighbourhood" icon="presets/place/neighbourhood.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:place=neighbourhood" />
@@ -6971,7 +6959,7 @@
 	            <key key="place" value="neighbourhood" />
 	            <reference ref="name_wikipedia" />
 	            <text key="population" text="Population" />
-	            <text key="website" text="Website" />
+	            <text key="website" text="وبسایت" />
 	        </item> <!-- Neighbourhood -->
 	        <item name="Farm" icon="presets/place/farm.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:place=farm" />
@@ -7499,7 +7487,7 @@
 	        <item name="Contact (Common Schema)" icon="presets/misc/contact.svg" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
 	            <link wiki="Annotations" />
 	            <space />
-	            <text key="website" text="Website" match="key" />
+	            <text key="website" text="وبسایت" match="key" />
 	            <text key="email" text="Email Address" match="key" />
 	            <space />
 	            <text key="phone" text="Phone number" match="key" />
@@ -7512,7 +7500,7 @@
 	        <item name="Contact (Schema with 'contact:*' Prefix)" icon="presets/misc/contact.svg" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
 	            <link wiki="Key:contact" />
 	            <space />
-	            <text key="contact:website" text="Website" match="key" />
+	            <text key="contact:website" text="وبسایت" match="key" />
 	            <text key="contact:email" text="Email Address" match="key" />
 	            <space />
 	            <text key="contact:phone" text="Phone number" match="key" />
