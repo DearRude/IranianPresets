@@ -1463,19 +1463,19 @@
 	            </optional>
 	            <reference ref="barrier_2" />
 	        </item> <!-- Stile -->
-	        <item name="Turnstile" icon="presets/barrier/turnstile.svg" type="node" preset_name_label="true">
+	        <item name="گیت نرده گردان" icon="presets/barrier/turnstile.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=turnstile" />
 	            <key key="barrier" value="turnstile" />
 	            <reference ref="barrier_2" />
 	        </item> <!-- Turnstile -->
-	        <item name="Sally Port" icon="presets/barrier/sally_port.svg" type="node" preset_name_label="true">
+	        <item name="قلعه‌ای" icon="presets/barrier/sally_port.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:barrier=sally_port" />
 	            <key key="barrier" value="sally_port" />
 	            <reference ref="barrier_5" />
 	            <reference ref="optional_maxheight_maxwidth" />
 	        </item> <!-- Sally Port -->
 	    </group> <!-- Barriers -->
-	    <group name="Passageways" icon="presets/transport/passage/tunnel.svg">
+	    <group name="دالان‌ها" icon="presets/transport/passage/tunnel.svg">
 	        <item name="تونل" icon="presets/transport/passage/tunnel.svg" type="way" preset_name_label="true">
 	            <link wiki="Key:tunnel" />
 	            <key key="tunnel" value="yes" />
@@ -1489,11 +1489,11 @@
 	                <text key="maxspeed:forward" text="حداکثر سرعت در سمت موافق" />
 	                <text key="maxspeed:backward" text="حداکثر سرعت در سمت مخالف" />
 	                <space />
-	                <combo key="incline" text="Incline" values="10%,-10%,10°,-10°,up,down" />
+	                <combo key="incline" text="شیب" values="10%,-10%,10°,-10°,up,down" />
 	                <check key="toll" text="عوارض" />
 	            </optional>
 	        </item> <!-- تونل -->
-	        <item name="Building Passage" icon="presets/transport/passage/tunnel_building_passage.svg" type="way" preset_name_label="true">
+	        <item name="دالان ساختمانی" icon="presets/transport/passage/tunnel_building_passage.svg" type="way" preset_name_label="true">
 	            <link wiki="Key:tunnel" />
 	            <key key="tunnel" value="building_passage" />
 	            <optional>
@@ -1501,41 +1501,41 @@
 	                <text key="width" text="عرض به متر" />
 	                <text key="maxheight" text="حداکثر ارتفاع به متر" />
 	                <text key="maxspeed" text="حداکثر سرعت (ک.م / ساعت)" />
-	                <combo key="incline" text="Incline" values="10%,-10%,10°,-10°,up,down" />
+	                <combo key="incline" text="شیب" values="10%,-10%,10°,-10°,up,down" />
 	            </optional>
 	        </item> <!-- Building Passage -->
-	        <item name="Arcade" icon="presets/transport/passage/arcade.svg" type="way" preset_name_label="true">
+	        <item name="طاقگان" icon="presets/transport/passage/arcade.svg" type="way" preset_name_label="true">
 	            <link wiki="Key:covered" />
 	            <space />
 	            <key key="covered" value="arcade" />
-	            <check key="arcade:left" value_on="open" text="Open on left side" />
-	            <check key="arcade:right" value_on="open" text="Open on right side" />
+	            <check key="arcade:left" value_on="open" text="از چپ باز است" />
+	            <check key="arcade:right" value_on="open" text="از راست باز است" />
 	            <optional>
 	                <reference ref="name_layer" />
 	                <text key="width" text="عرض به متر" />
 	            </optional>
 	        </item> <!-- Arcade -->
-	        <item name="Colonnade" icon="presets/transport/passage/colonnade.svg" type="way" preset_name_label="true">
+	        <item name="تختگان" icon="presets/transport/passage/colonnade.svg" type="way" preset_name_label="true">
 	            <link wiki="Key:covered" />
 	            <space />
 	            <key key="covered" value="colonnade" />
-	            <check key="colonnade:left" value_on="open" text="Open on left side" />
-	            <check key="colonnade:right" value_on="open" text="Open on right side" />
+	            <check key="colonnade:left" value_on="open" text="از چپ باز است" />
+	            <check key="colonnade:right" value_on="open" text="از راست باز است" />
 	            <optional>
 	                <reference ref="name_layer" />
 	                <text key="width" text="عرض به متر" />
 	            </optional>
 	        </item> <!-- Colonnade -->
-	        <item name="Avalanche Protector" icon="presets/transport/passage/tunnel_avalanche_protector.svg" type="way" preset_name_label="true">
+	        <item name="تونل‌گان" icon="presets/transport/passage/tunnel_avalanche_protector.svg" type="way" preset_name_label="true">
 	            <link wiki="Key:tunnel" />
 	            <space />
 	            <key key="tunnel" value="avalanche_protector" />
-	            <check key="avalanche_protector:left" value_on="open" text="Open on left side" />
-	            <check key="avalanche_protector:right" value_on="open" text="Open on right side" />
+	            <check key="avalanche_protector:left" value_on="open" text="از چپ باز است" />
+	            <check key="avalanche_protector:right" value_on="open" text="از راست باز است" />
 	            <optional>
 	                <reference ref="name_layer" />
 	                <text key="width" text="عرض به متر" />
-	                <combo key="incline" text="Incline" values="10%,-10%,10°,-10°,up,down" />
+	                <combo key="incline" text="شیب" values="10%,-10%,10°,-10°,up,down" />
 	            </optional>
 	        </item> <!-- Avalanche Protector -->
 	    </group> <!-- Passageways -->
