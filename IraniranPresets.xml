@@ -3180,11 +3180,11 @@
 	            <link wiki="Tag:leisure=swimming_pool" />
 	            <key key="leisure" value="swimming_pool" />
 	            <space />
-	            <label text="Used for the water area only." />
+	            <label text="برای مکان‌های آبی تنها استفاده می‌شود." />
 	            <space />
-	            <combo key="access" text="Access" values="yes,customers,private" />
+	            <combo key="access" text="دسترسی" values="yes,customers,private" />
 	        </item> <!-- Swimming Pool -->
-	        <item name="Dive centre" icon="presets/leisure/dive_centre.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="مرکز غواصی" icon="presets/leisure/dive_centre.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=dive_centre" />
 	            <space />
 	            <key key="amenity" value="dive_centre" />
@@ -3192,24 +3192,24 @@
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Dive centre -->
-	        <item name="Fitness Station" icon="presets/leisure/fitness_station.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="ایستگاه تناسب اندام" icon="presets/leisure/fitness_station.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=fitness_station" />
 	            <space />
 	            <key key="leisure" value="fitness_station" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <text key="ref" text="مرجع" />
-	            <text key="description" text="Description" />
+	            <text key="description" text="اطلاعات بیشتر" />
 	        </item> <!-- Fitness Station -->
-	        <item name="Sauna" icon="presets/leisure/sauna.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="سونا" icon="presets/leisure/sauna.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=sauna" />
 	            <space />
 	            <key key="leisure" value="sauna" />
 	            <reference ref="name_operator_oh_wheelchair" />
-	            <combo key="access" text="Access" values="yes,permissive,private" />
+	            <combo key="access" text="دسترسی" values="yes,permissive,private" />
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Sauna -->
-	        <item name="Horse Riding" icon="presets/leisure/horse_riding.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="اسب سواری" icon="presets/leisure/horse_riding.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=horse_riding" />
 	            <space />
 	            <key key="leisure" value="horse_riding" />
@@ -3218,7 +3218,7 @@
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Horse Riding -->
-	        <item name="Hackerspace" icon="presets/leisure/hackerspace.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="هکر اسپیس" icon="presets/leisure/hackerspace.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=hackerspace" />
 	            <space />
 	            <key key="leisure" value="hackerspace" />
@@ -3233,54 +3233,54 @@
 	            <reference ref="name_operator_oh_wheelchair" />
 	        </item> <!-- صندلی در هوای آزاد -->
 	        <separator/>
-	        <item name="Playground" icon="presets/leisure/playground.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="زمین بازی" icon="presets/leisure/playground.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=playground" />
 	            <space />
 	            <key key="leisure" value="playground" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="max_age" />
 	        </item> <!-- Playground -->
-	        <item name="Picnic Site" icon="presets/leisure/picnic.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="محل گردش" icon="presets/leisure/picnic.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=picnic_site" />
 	            <space />
 	            <key key="tourism" value="picnic_site" />
 	            <text key="name" text="نام" />
 	            <check key="fireplace" text="Fireplace" />
 	        </item> <!-- Picnic Site -->
-	        <item name="Picnic Table" icon="presets/leisure/picnic.svg" type="node" preset_name_label="true">
+	        <item name="میز گردش" icon="presets/leisure/picnic.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:leisure=picnic_table" />
 	            <space />
 	            <key key="leisure" value="picnic_table" />
 	            <check key="covered" text="Covered" />
 	        </item> <!-- Picnic Table -->
-	        <item name="Public Grill" icon="presets/leisure/bbq.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="منقل عمومی" icon="presets/leisure/bbq.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=bbq" />
 	            <space />
 	            <key key="amenity" value="bbq" />
 	            <text key="name" text="نام" />
-	            <combo key="fuel" text="Fuel" text_context="grill" values="charcoal,electric,wood" />
-	            <check key="covered" text="Covered" />
+	            <combo key="fuel" text="سوخت" text_context="grill" values="charcoal,electric,wood" />
+	            <check key="covered" text="سقف" />
 	        </item> <!-- Public Grill -->
-	        <item name="Firepit" icon="presets/leisure/firepit.svg" type="node,closedway" preset_name_label="true">
+	        <item name="آتش‌چال" icon="presets/leisure/firepit.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:leisure=firepit" />
 	            <space />
 	            <key key="leisure" value="firepit" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Firepit -->
-	        <item name="Fishing" icon="presets/sport/fishing.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="ماهی‌گیری" icon="presets/sport/fishing.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=fishing" />
 	            <space />
 	            <key key="leisure" value="fishing" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Fishing -->
-	        <item name="Bird Hide" icon="presets/leisure/bird_hide.svg" type="node,closedway" preset_name_label="true">
+	        <item name="اتاق مشاهده پرندگان" icon="presets/leisure/bird_hide.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:leisure=bird_hide" />
 	            <space />
 	            <key key="leisure" value="bird_hide" />
 	            <reference ref="name_ref_operator" />
 	        </item> <!-- Bird Hide -->
 	        <separator/>
-	        <item name="Night Club" icon="presets/leisure/nightclub.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کلوپ شبانه" icon="presets/leisure/nightclub.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=nightclub" />
 	            <space />
 	            <key key="amenity" value="nightclub" />
@@ -3291,7 +3291,7 @@
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Night Club -->
-	        <item name="Casino" icon="presets/leisure/casino.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کازینو" icon="presets/leisure/casino.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=casino" />
 	            <space />
 	            <key key="amenity" value="casino" />
@@ -3301,7 +3301,7 @@
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Casino -->
-	        <item name="Strip Club" icon="presets/leisure/stripclub.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کلوپ برهنگی" icon="presets/leisure/stripclub.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=stripclub" />
 	            <space />
 	            <key key="amenity" value="stripclub" />
@@ -3311,7 +3311,7 @@
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Strip Club -->
-	        <item name="Brothel" icon="presets/leisure/brothel.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="روسپی‌خانه" icon="presets/leisure/brothel.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=brothel" />
 	            <space />
 	            <key key="amenity" value="brothel" />
@@ -3322,7 +3322,7 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Brothel -->
 	    </group> <!-- Leisure -->
-	    <group name="Culture" icon="presets/leisure/theater.svg">
+	    <group name="فرهنگی" icon="presets/leisure/theater.svg">
 	        <item name="Museum" icon="presets/sightseeing/museum.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=museum" />
 	            <space />
