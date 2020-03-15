@@ -2658,16 +2658,16 @@
 	        </item> <!-- Gate -->
 	    </group> <!-- Airport -->
 	  </group> <!-- Transport -->
-	  <group name="Facilities" icon="presets/accommodation/hotel.svg">
-	    <group name="Accommodation" icon="presets/accommodation/hotel.svg">
-	        <item name="Hotel" icon="presets/accommodation/hotel.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	  <group name="امکنه" icon="presets/accommodation/hotel.svg">
+	    <group name="اقامت" icon="presets/accommodation/hotel.svg">
+	        <item name="هتل" icon="presets/accommodation/hotel.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=hotel" />
 	            <space />
 	            <key key="tourism" value="hotel" />
 	            <reference ref="name_operator" />
-	            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
-	            <text key="rooms" text="Rooms" />
-	            <text key="beds" text="Beds" />
+	            <combo key="stars" text="ستاره" values="1,2,3,4,5,6,7" />
+	            <text key="rooms" text="اتاق‌ها" />
+	            <text key="beds" text="تخت‌ها" />
 	            <reference ref="wheelchair" />
 	            <space />
 	            <reference ref="internet_smoking" />
@@ -2675,14 +2675,14 @@
 	            <reference ref="link_contact_address_payment" />
 	            <preset_link preset_name="Residential Building" />
 	        </item> <!-- Hotel -->
-	        <item name="Motel" icon="presets/accommodation/motel.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="متل" icon="presets/accommodation/motel.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=motel" />
 	            <space />
 	            <key key="tourism" value="motel" />
 	            <reference ref="name_operator" />
-	            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
-	            <text key="rooms" text="Rooms" />
-	            <text key="beds" text="Beds" />
+	            <combo key="stars" text="ستاره" values="1,2,3,4,5,6,7" />
+	            <text key="rooms" text="اتاق‌ها" />
+	            <text key="beds" text="تخت‌ها" />
 	            <reference ref="wheelchair" />
 	            <space />
 	            <reference ref="internet_smoking" />
@@ -2690,15 +2690,15 @@
 	            <reference ref="link_contact_address_payment" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Motel -->
-	        <item name="Guest House/Bed &amp; Breakfast" icon="presets/accommodation/guest_house.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="مسافرخانه" icon="presets/accommodation/guest_house.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=guest_house" />
 	            <space />
 	            <key key="tourism" value="guest_house" />
 	            <reference ref="name_operator" />
-	            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
-	            <text key="rooms" text="Rooms" />
-	            <text key="beds" text="Beds" />
-	            <combo key="guest_house" text="Type" values="agritourism,bed_and_breakfast" />
+	            <combo key="stars" text="ستاره" values="1,2,3,4,5,6,7" />
+	            <text key="rooms" text="اتاق‌ها" />
+	            <text key="beds" text="تخت‌ها" />
+	            <combo key="guest_house" text="نوع" values="agritourism,bed_and_breakfast" />
 	            <reference ref="wheelchair" />
 	            <space />
 	            <reference ref="internet_smoking" />
@@ -2706,27 +2706,27 @@
 	            <reference ref="link_contact_address_payment" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Guest House/Bed & Breakfast -->
-	        <item name="Apartment" icon="presets/accommodation/apartment.svg" type="node,closedway" preset_name_label="true">
+	        <item name="آپارتمان" icon="presets/accommodation/apartment.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:tourism=apartment" />
 	            <space />
 	            <key key="tourism" value="apartment" />
 	            <reference ref="name_operator" />
 	            <combo key="number_of_apartments" text="Number of apartments" values="1,2,3,4,5,6,7,8,9,10" />
-	            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+	            <combo key="stars" text="ستاره" values="1,2,3,4,5,6,7" />
 	            <reference ref="wheelchair" />
 	            <space />
 	            <reference ref="internet_smoking" />
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Apartment -->
-	        <item name="Chalet" icon="presets/accommodation/chalet.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کلبه ییلاقی" icon="presets/accommodation/chalet.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=chalet" />
 	            <space />
 	            <key key="tourism" value="chalet" />
 	            <reference ref="name_operator" />
-	            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
-	            <text key="rooms" text="Rooms" />
-	            <text key="beds" text="Beds" />
+	            <combo key="stars" text="ستاره" values="1,2,3,4,5,6,7" />
+	            <text key="rooms" text="اتاق‌ها" />
+	            <text key="beds" text="تخت‌ها" />
 	            <reference ref="wheelchair" />
 	            <space />
 	            <reference ref="internet_smoking" />
@@ -2734,14 +2734,14 @@
 	            <reference ref="link_contact_address_payment" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Chalet -->
-	        <item name="Hostel" icon="presets/accommodation/hostel.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="خوابگاه" icon="presets/accommodation/hostel.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=hostel" />
 	            <space />
 	            <key key="tourism" value="hostel" />
 	            <reference ref="name_operator" />
-	            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
-	            <text key="rooms" text="Rooms" />
-	            <text key="beds" text="Beds" />
+	            <combo key="stars" text="ستاره" values="1,2,3,4,5,6,7" />
+	            <text key="rooms" text="اتاق‌ها" />
+	            <text key="beds" text="تخت‌ها" />
 	            <reference ref="wheelchair" />
 	            <space />
 	            <reference ref="internet_smoking" />
@@ -2749,127 +2749,127 @@
 	            <reference ref="link_contact_address_payment" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Hostel -->
-	        <item name="Alpine Hut" icon="presets/accommodation/alpine_hut.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="پناهگاه کوهنوردی" icon="presets/accommodation/alpine_hut.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=alpine_hut" />
 	            <space />
 	            <key key="tourism" value="alpine_hut" />
 	            <reference ref="name_operator" />
-	            <text key="ele" text="Elevation" />
-	            <text key="rooms" text="Rooms" />
-	            <text key="beds" text="Beds" />
-	            <combo key="reservation" text="Reservation" values="yes,no,required,recommended,members_only" />
+	            <text key="ele" text="ارتفاع" />
+	            <text key="rooms" text="اتاق‌ها" />
+	            <text key="beds" text="تخت‌ها" />
+	            <combo key="reservation" text="رزرو" values="yes,no,required,recommended,members_only" />
 	            <space />
 	            <reference ref="internet_smoking" />
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Alpine Hut -->
-	        <item name="Wilderness Hut" icon="presets/accommodation/wilderness_hut.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="پناهگاه دورافتاده" icon="presets/accommodation/wilderness_hut.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=wilderness_hut" />
 	            <space />
 	            <key key="tourism" value="wilderness_hut" />
 	            <reference ref="name_operator" />
-	            <combo key="access" text="Access rights" values="yes,permissive,customers,private" />
+	            <combo key="access" text="دسترسی" values="yes,permissive,customers,private" />
 	            <text key="capacity" text="ظرفیت" />
 	            <reference ref="fee" />
 	            <check key="toilets" text="سرویس بهداشتی" />
-	            <check key="shower" text="Shower" />
-	            <combo key="drinking_water" text="Drinking Water" values="yes,no,seasonal" />
-	            <combo key="reservation" text="Reservation" values="yes,no,required,recommended,members_only" />
-	            <text key="ele" text="Elevation" />
-	            <text key="description" text="Closer description" />
+	            <check key="shower" text="دوش" />
+	            <combo key="drinking_water" text="آب شرب" values="yes,no,seasonal" />
+	            <combo key="reservation" text="رزرو" values="yes,no,required,recommended,members_only" />
+	            <text key="ele" text="ارتفاع" />
+	            <text key="description" text="توضیحات دقیق‌تر" />
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Wilderness Hut -->
 	        <separator/>
-	        <item name="Caravan Site/RV Park" icon="presets/accommodation/caravan.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="پارک ماشین کاروان" icon="presets/accommodation/caravan.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=caravan_site" />
 	            <space />
 	            <key key="tourism" value="caravan_site" />
 	            <reference ref="name_operator" />
-	            <combo key="stars" text="Stars" values="1,2,3,4,5" />
+	            <combo key="stars" text="ستاره" values="1,2,3,4,5" />
 	            <reference ref="wheelchair" />
 	            <space />
-	            <text key="capacity" text="Number of places" />
+	            <text key="capacity" text="ظرفیت" />
 	            <reference ref="fee_interval" />
-	            <combo key="sanitary_dump_station" text="Dump Station" values="yes,public,customers,no" />
-	            <check key="power_supply" text="Power supply" />
-	            <check key="tents" text="Tents allowed" />
+	            <combo key="sanitary_dump_station" text="سیستم تخلیه فاضلاب" values="yes,public,customers,no" />
+	            <check key="power_supply" text="برق" />
+	            <check key="tents" text="امکان برپایی چادر" />
 	            <space />
 	            <reference ref="internet_smoking" />
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Caravan Site/RV Park -->
-	        <item name="Campsite" icon="presets/accommodation/camping.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="اردوگاه" icon="presets/accommodation/camping.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=camp_site" />
 	            <space />
 	            <key key="tourism" value="camp_site" />
 	            <reference ref="name_operator" />
-	            <combo key="stars" text="Stars" values="1,2,3,4,5" />
+	            <combo key="stars" text="ستاره" values="1,2,3,4,5" />
 	            <checkgroup columns="2">
-	                <check key="tents" text="Tents allowed" />
-	                <check key="caravans" text="Caravans allowed" />
+	                <check key="tents" text="امکان برپایی چادر" />
+	                <check key="caravans" text="ماشین کاروان" />
 	            </checkgroup>
 	            <checkgroup columns="2">
-	                <check key="backcountry" text="Backcountry" />
-	                <check key="group_only" text="Group only access" />
+	                <check key="backcountry" text="بدون نیاز به وسایل" />
+	                <check key="group_only" text="فقط ورود به صورت گروهی" />
 	            </checkgroup>
-	            <combo key="sanitary_dump_station" text="Dump Station" values="yes,public,customers,no" />
+	            <combo key="sanitary_dump_station" text="سیستم تخلیه فاضلاب" values="yes,public,customers,no" />
 	            <reference ref="wheelchair" />
 	            <reference ref="internet" />
 	            <space />
 	            <reference ref="nudism" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Campsite -->
-	        <item name="Camp pitch" icon="presets/accommodation/camp_pitch.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="اتراقگاه" icon="presets/accommodation/camp_pitch.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=camp_pitch" />
 	            <space />
 	            <key key="tourism" value="camp_pitch" />
 	            <text key="ref" text="مرجع" />
-	            <text key="addr:unit" text="Unit number" />
-	            <text key="capacity" text="Number of places" />
+	            <text key="addr:unit" text="شماره" />
+	            <text key="capacity" text="ظرفیت افراد" />
 	            <reference ref="surface" />
 	            <checkgroup columns="2">
-	                <check key="tents" text="Tents allowed" />
-	                <check key="caravans" text="Caravans allowed" />
-	                <check key="drinking_water" text="Drinking Water" />
-	                <check key="power_supply" text="Power supply" />
-	                <check key="permanent_camping" text="Permanent camping only" />
+	                <check key="tents" text="امکان برپایی چادر" />
+	                <check key="caravans" text="ماشین کاروان" />
+	                <check key="drinking_water" text="آب شرب" />
+	                <check key="power_supply" text="برق" />
+	                <check key="permanent_camping" text="فقط اردوزدن دائمی" />
 	            </checkgroup>
 	        </item> <!-- Camp pitch -->
 	    </group> <!-- Accommodation -->
-	    <group name="Food+Drinks" icon="presets/food/restaurant.svg">
-	        <item name="Restaurant" icon="presets/food/restaurant.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="غذا و نوشیدنی" icon="presets/food/restaurant.svg">
+	        <item name="رستوران" icon="presets/food/restaurant.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=restaurant" />
 	            <space />
 	            <key key="amenity" value="restaurant" />
 	            <reference ref="name_operator" />
 	            <reference ref="cuisine" />
-	            <check key="microbrewery" text="Microbrewery" />
-	            <check key="outdoor_seating" text="Outdoor seating" />
-	            <combo key="takeaway" text="Takeaway" values="yes,no,only" />
-	            <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" />
-	            <combo key="reservation" text="Reservation" values="yes,no,required,recommended,members_only" />
+	            <check key="microbrewery" text="دارای آبجوساز" />
+	            <check key="outdoor_seating" text="صندلی در هوای‌ آزاد" />
+	            <combo key="takeaway" text="بیرون‌بر" values="yes,no,only" />
+	            <combo key="delivery" text="دلیوری" values="yes,no,only,Mo-Su 12:00-22:00" />
+	            <combo key="reservation" text="رزرو" values="yes,no,required,recommended,members_only" />
 	            <reference ref="oh" />
-	            <combo key="opening_hours:kitchen" text="Kitchen Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Su 09:00-21:00|Mo-Sa 08:00-18:00|Mo-Fr 09:00-17:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00; Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" />
+	            <combo key="opening_hours:kitchen" text="ساعت کاری" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Su 09:00-21:00|Mo-Sa 08:00-18:00|Mo-Fr 09:00-17:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00; Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" />
 	            <reference ref="wheelchair" />
-	            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+	            <combo key="stars" text="ستاره" values="1,2,3,4,5,6,7" />
 	            <space />
 	            <reference ref="internet_smoking" />
 	            <space />
 	            <preset_link preset_name="Diet" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Restaurant -->
-	        <item name="Fast Food" icon="presets/food/fast_food.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فست‌فود" icon="presets/food/fast_food.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=fast_food" />
 	            <space />
 	            <key key="amenity" value="fast_food" />
 	            <reference ref="name_operator" />
 	            <reference ref="cuisine" />
-	            <check key="outdoor_seating" text="Outdoor seating" />
-	            <combo key="takeaway" text="Takeaway" values="yes,no,only" />
-	            <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" />
+	            <check key="outdoor_seating" text="صندلی در هوای آزاد" />
+	            <combo key="takeaway" text="بیرون‌بر" values="yes,no,only" />
+	            <combo key="delivery" text="دلیوری" values="yes,no,only,Mo-Su 12:00-22:00" />
 	            <reference ref="oh_wheelchair" />
 	            <space />
 	            <reference ref="internet_smoking" />
@@ -2878,27 +2878,27 @@
 	            <reference ref="link_contact_address_payment" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Fast Food -->
-	        <item name="Food Court" icon="presets/food/food_court.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="سرای غذا" icon="presets/food/food_court.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=food_court" />
 	            <space />
 	            <key key="amenity" value="food_court" />
 	            <reference ref="name_operator" />
-	            <check key="outdoor_seating" text="Outdoor seating" />
+	            <check key="outdoor_seating" text="صندلی در هوای آزاد" />
 	            <reference ref="oh_wheelchair" />
 	            <space />
 	            <reference ref="internet_smoking" />
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Food Court -->
-	        <item name="Cafe" icon="presets/food/cafe.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کافه" icon="presets/food/cafe.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=cafe" />
 	            <space />
 	            <key key="amenity" value="cafe" />
 	            <reference ref="name_operator" />
-	            <combo key="cuisine" text="Cuisine" values="ice_cream" />
-	            <check key="outdoor_seating" text="Outdoor seating" />
-	            <combo key="takeaway" text="Takeaway" values="yes,no,only" />
-	            <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" />
+	            <combo key="cuisine" text="نوع غذا" values="ice_cream" />
+	            <check key="outdoor_seating" text="صندلی در هوای آزاد" />
+	            <combo key="takeaway" text="بیرون‌بر" values="yes,no,only" />
+	            <combo key="delivery" text="دلیوری" values="yes,no,only,Mo-Su 12:00-22:00" />
 	            <reference ref="oh_wheelchair" />
 	            <space />
 	            <reference ref="internet_smoking" />
@@ -2906,14 +2906,14 @@
 	            <preset_link preset_name="Diet" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Cafe -->
-	        <item name="Ice cream" icon="presets/food/ice_cream.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بستنی‌بندی" icon="presets/food/ice_cream.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=ice_cream" />
 	            <space />
 	            <key key="amenity" value="ice_cream" />
 	            <reference ref="name_operator" />
-	            <check key="outdoor_seating" text="Outdoor seating" />
-	            <combo key="takeaway" text="Takeaway" values="yes,no,only" />
-	            <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" />
+	            <check key="outdoor_seating" text="صندلی در هوای آزاد" />
+	            <combo key="takeaway" text="بیرون‌بر" values="yes,no,only" />
+	            <combo key="delivery" text="دلیوری" values="yes,no,only,Mo-Su 12:00-22:00" />
 	            <reference ref="oh_wheelchair" />
 	            <space />
 	            <reference ref="internet_smoking" />
@@ -2921,15 +2921,15 @@
 	            <preset_link preset_name="Diet" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Ice cream -->
-	        <item name="Pub" icon="presets/food/pub.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="میخانه" icon="presets/food/pub.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=pub" />
 	            <space />
 	            <key key="amenity" value="pub" />
 	            <reference ref="name_operator" />
-	            <check key="microbrewery" text="Microbrewery" />
-	            <check key="outdoor_seating" text="Outdoor seating" />
-	            <combo key="takeaway" text="Takeaway" values="yes,no,only" />
-	            <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" />
+	            <check key="microbrewery" text="دارای دستگاه آبجوساز" />
+	            <check key="outdoor_seating" text="صندلی در هوای آزاد" />
+	            <combo key="takeaway" text="بیرون‌بر" values="yes,no,only" />
+	            <combo key="delivery" text="دلیوری" values="yes,no,only,Mo-Su 12:00-22:00" />
 	            <reference ref="oh_wheelchair" />
 	            <space />
 	            <reference ref="internet_smoking" />
@@ -2937,12 +2937,12 @@
 	            <preset_link preset_name="Diet" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Pub -->
-	        <item name="Beer Garden" icon="presets/food/biergarten.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بیرگارتن" icon="presets/food/biergarten.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=biergarten" />
 	            <space />
 	            <key key="amenity" value="biergarten" />
 	            <reference ref="name_operator" />
-	            <check key="microbrewery" text="Microbrewery" />
+	            <check key="microbrewery" text="دارای دستگاه آبجوساز" />
 	            <reference ref="oh_wheelchair" />
 	            <space />
 	            <reference ref="internet_smoking" />
@@ -2950,12 +2950,12 @@
 	            <preset_link preset_name="Diet" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Beer Garden -->
-	        <item name="Bar" icon="presets/food/bar.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بار" icon="presets/food/bar.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=bar" />
 	            <space />
 	            <key key="amenity" value="bar" />
 	            <reference ref="name_operator" />
-	            <check key="outdoor_seating" text="Outdoor seating" />
+	            <check key="outdoor_seating" text="صندلی در هوای آزاد" />
 	            <reference ref="oh_wheelchair" />
 	            <space />
 	            <reference ref="internet_smoking" />
@@ -2964,35 +2964,35 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Bar -->
 	        <separator/>
-	        <item name="Diet" icon="presets/food/diet.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="رژیم غذایی" icon="presets/food/diet.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Key:diet" />
 	            <space />
-	            <combo key="diet:vegetarian" text="Vegetarian" values="yes,no,only" />
-	            <combo key="diet:vegan" text="Vegan" values="yes,no,only" />
-	            <combo key="diet:lacto_vegetarian" text="Lacto-vegetarian" values="yes,no,only" />
-	            <combo key="diet:ovo_vegetarian" text="Ovo-vegetarian" values="yes,no,only" />
-	            <combo key="diet:pescetarian" text="Pescetarian" values="yes,no,only" />
-	            <combo key="diet:fruitarian" text="Fruitarian" values="yes,no,only" />
-	            <combo key="diet:raw" text="Raw" values="yes,no,only" />
+	            <combo key="diet:vegetarian" text="گیاه‌خواری" values="yes,no,only" />
+	            <combo key="diet:vegan" text="گیاه‌خواری مطلق" values="yes,no,only" />
+	            <combo key="diet:lacto_vegetarian" text="شیر گیاه‌خواری" values="yes,no,only" />
+	            <combo key="diet:ovo_vegetarian" text="زرده گیاه‌خواری" values="yes,no,only" />
+	            <combo key="diet:pescetarian" text="ماهی‌خواری" values="yes,no,only" />
+	            <combo key="diet:fruitarian" text="میوه‌خواری" values="yes,no,only" />
+	            <combo key="diet:raw" text="خام‌خواری" values="yes,no,only" />
 	            <space />
-	            <combo key="diet:dairy_free" text="Dairy free" values="yes,no,only" />
-	            <combo key="diet:gluten_free" text="Gluten free" values="yes,no,only" />
-	            <combo key="diet:lactose_free" text="Lactose free" values="yes,no,only" />
+	            <combo key="diet:dairy_free" text="بدون لبنیات" values="yes,no,only" />
+	            <combo key="diet:gluten_free" text="بدون گلوتن" values="yes,no,only" />
+	            <combo key="diet:lactose_free" text="بدون لاکتوز" values="yes,no,only" />
 	            <space />
-	            <combo key="diet:halal" text="Halal" values="yes,no,only" />
-	            <combo key="diet:kosher" text="Kosher" values="yes,no,only" />
+	            <combo key="diet:halal" text="حلال" values="yes,no,only" />
+	            <combo key="diet:kosher" text="کوشر" values="yes,no,only" />
 	        </item> <!-- Diet -->
 	    </group> <!-- Food+Drinks -->
-	    <group name="Tourism" icon="presets/sightseeing/attraction.svg">
-	        <item name="Attraction" icon="presets/sightseeing/attraction.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="گردشگری" icon="presets/sightseeing/attraction.svg">
+	        <item name="جاذبه گردشگری" icon="presets/sightseeing/attraction.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=attraction" />
 	            <space />
 	            <key key="tourism" value="attraction" />
 	            <text key="name" text="نام" />
-	            <combo key="reservation" text="Reservation" values="yes,no,required,recommended,members_only" />
+	            <combo key="reservation" text="رزرو" values="yes,no,required,recommended,members_only" />
 	            <reference ref="oh_wheelchair" />
 	        </item> <!-- Attraction -->
-	        <item name="Viewpoint" icon="presets/sightseeing/viewpoint.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="چشم‌انداز" icon="presets/sightseeing/viewpoint.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=viewpoint" />
 	            <space />
 	            <key key="tourism" value="viewpoint" />
@@ -3003,9 +3003,9 @@
 	            <!--<check key="man_made" value="tower" text="Look-Out Tower" />-->
 	        </item> <!-- Viewpoint -->
 	        <separator/>
-	        <item name="Information Office" icon="presets/misc/information/informationoffice.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="دفتر اطلاعات" icon="presets/misc/information/informationoffice.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:information=office" />
-	            <label text="An office where you can get information about a town or region." />
+	            <label text="یک دفتر که در آن می‌توانید درباره یک مکان یا محل اطلاعات کسب کنید." />
 	            <space />
 	            <key key="tourism" value="information" />
 	            <key key="information" value="office" />
@@ -3013,89 +3013,86 @@
 	            <reference ref="internet" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Information Office -->
-	        <item name="Map" icon="presets/misc/information/map.svg" type="node" preset_name_label="true">
+	        <item name="نقشه" icon="presets/misc/information/map.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:information=map" />
-	            <label text="A board with a map." />
+	            <label text="یک بورد نقشه." />
 	            <space />
 	            <key key="tourism" value="information" />
 	            <key key="information" value="map" />
 	            <text key="name" text="نام" />
-	            <combo key="map_type" text="Detail Grade" values="topo,street,scheme,toposcope" />
-	            <combo key="map_size" text="Shown Area" values="site,city,region" values_sort="false" />
-	            <text key="description" text="Closer description" />
-	            <optional text="Routes shown for:">
-	                <check key="hiking" text="Hiking" />
-	                <check key="bicycle" text="Cycling" />
-	                <check key="mtb" text="Mountainbiking" />
-	                <check key="ski" text="Skiing" />
-	                <check key="horse" text="Riding" />
+	            <combo key="map_type" text="نوع نقشه" values="topo,street,scheme,toposcope" />
+	            <combo key="map_size" text="مکان‌های نمایش" values="site,city,region" values_sort="false" />
+	            <text key="description" text="اطلاعات دقیق‌تر" />
+	            <optional text="راه‌های نمایش‌داده‌شده">
+	                <check key="hiking" text="کوهنوردی" />
+	                <check key="bicycle" text="دوچرخه سواری" />
+	                <check key="mtb" text="دوچرخه‌سواری کوهستانی" />
+	                <check key="ski" text="اسکی" />
+	                <check key="horse" text="اسب سواری" />
 	                <space />
-	                <label text="... other transportation modes possible" />
 	            </optional>
 	        </item> <!-- Map -->
-	        <item name="Information Board" icon="presets/misc/information/board.svg" type="node" preset_name_label="true">
+	        <item name="بورد اطلاعات" icon="presets/misc/information/board.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:information=board" />
 	            <space />
-	            <label text="A board with information." />
+	            <label text="یک بورد که روی آن اطلاعات نوشته شده." />
 	            <key key="tourism" value="information" />
 	            <key key="information" value="board" />
 	            <text key="name" text="نام" />
-	            <combo key="board_type" text="Board Content" values="notice,history,nature,wildlife,plants,geology" />
-	            <text key="description" text="Closer description" />
+	            <combo key="board_type" text="محتوا" values="notice,history,nature,wildlife,plants,geology" />
+	            <text key="description" text="اطلاعات دقیق‌تر" />
 	        </item> <!-- Information Board -->
-	        <item name="Guidepost" icon="presets/misc/information/guidepost.svg" type="node" preset_name_label="true">
+	        <item name="تابلو راهنما" icon="presets/misc/information/guidepost.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:information=guidepost" />
-	            <label text="A Signpost/Guidepost to indicate the directions to different destinations." />
+	            <label text="یک تابلو راهنما که جهت‌یابی به مکان‌های مختلف را نشان می‌دهد." />
 	            <space />
 	            <key key="tourism" value="information" />
 	            <key key="information" value="guidepost" />
 	            <reference ref="name_ref_operator" />
-	            <text key="ele" text="Elevation" />
-	            <optional text="Routes shown for:">
-	                <check key="hiking" text="Hiking" />
-	                <check key="bicycle" text="Cycling" />
-	                <check key="mtb" text="Mountainbiking" />
-	                <check key="ski" text="Skiing" />
-	                <check key="horse" text="Riding" />
+	            <text key="ele" text="ارتفاع" />
+	            <optional text="مسیر‌های نشان داده‌شده:">
+	                <check key="hiking" text="کوهنوردی" />
+	                <check key="bicycle" text="دوچرخه‌سواری" />
+	                <check key="mtb" text="دوچرخه‌سواری کوهستانی" />
+	                <check key="ski" text="اسکی" />
+	                <check key="horse" text="اسب سواری" />
 	                <space />
-	                <label text="... other transportation modes possible" />
 	            </optional>
 	        </item> <!-- Guidepost -->
-	        <item name="Information Terminal" icon="presets/misc/information/information.svg" type="node" preset_name_label="true">
+	        <item name="پایانه اطلاعات" icon="presets/misc/information/information.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:information=terminal" />
-	            <label text="Information access via electronic methods." />
+	            <label text="دسترسی به اطلاعات از طریق راه‌های الکترونیکی." />
 	            <space />
 	            <key key="tourism" value="information" />
 	            <key key="information" value="terminal" />
 	            <reference ref="name_operator" />
 	            <reference ref="wheelchair" />
-	            <text key="description" text="Closer description" />
-	            <text key="ref" text="مرجع number" />
+	            <text key="description" text="اطلاعات دقیق‌تر" />
+	            <text key="ref" text="شماره مرجع" />
 	            <reference ref="fee" />
 	            <reference ref="internet" />
 	        </item> <!-- Information Terminal -->
-	        <item name="Audio Guide" icon="presets/misc/information/information.svg" type="node" preset_name_label="true">
+	        <item name="راهنمای صوتی" icon="presets/misc/information/information.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:information=audioguide" />
-	            <label text="Information using headphones or a mobile phone." />
+	            <label text="اطلاعات از طریق هدفون یا تلفن‌همراه.." />
 	            <space />
 	            <key key="tourism" value="information" />
 	            <key key="information" value="audioguide" />
 	            <reference ref="name_operator" />
 	            <reference ref="wheelchair" />
-	            <text key="description" text="Closer description" />
-	            <text key="ref" text="مرجع number" />
+	            <text key="description" text="اطلاعات دقیق‌تر" />
+	            <text key="ref" text="شماره مرجع" />
 	            <reference ref="fee" />
 	            <space />
-	            <label text="Audioguide via mobile phone?" />
-	            <text key="phone" text="Phone number" />
-	            <label text="Use E.123 format, e.g. +49 11223 456 7890" />
+	            <label text="اطلاعات از طریق تلفن‌همراه؟" />
+	            <text key="phone" text="شماره همراه" />
 	        </item> <!-- Audio Guide -->
-	        <item name="Other Information Point" icon="presets/misc/information/information.svg" type="node,closedway" preset_name_label="true">
+	        <item name="نقاط اطلاعاتی دیگر" icon="presets/misc/information/information.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:tourism=information" />
 	            <space />
 	            <key key="tourism" value="information" />
 	            <text key="name" text="نام" />
-	            <text key="description" text="Closer description" />
+	            <text key="description" text="اطلاعات دقیق‌تر" />
 	        </item> <!-- Other Information Point -->
 	    </group> <!-- Tourism -->
 	    <group name="Leisure" icon="presets/leisure/theme_park.svg">
@@ -3229,12 +3226,12 @@
 	            <space />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Hackerspace -->
-	        <item name="Outdoor seating" icon="presets/leisure/outdoor_seating.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="صندلی در هوای آزاد" icon="presets/leisure/outdoor_seating.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=outdoor_seating" />
 	            <space />
 	            <key key="leisure" value="outdoor_seating" />
 	            <reference ref="name_operator_oh_wheelchair" />
-	        </item> <!-- Outdoor seating -->
+	        </item> <!-- صندلی در هوای آزاد -->
 	        <separator/>
 	        <item name="Playground" icon="presets/leisure/playground.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=playground" />
