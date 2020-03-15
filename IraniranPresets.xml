@@ -3095,53 +3095,53 @@
 	            <text key="description" text="اطلاعات دقیق‌تر" />
 	        </item> <!-- Other Information Point -->
 	    </group> <!-- Tourism -->
-	    <group name="Leisure" icon="presets/leisure/theme_park.svg">
-	        <item name="Movie Theater/Cinema" icon="presets/leisure/cinema.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="اوقات فراغت" icon="presets/leisure/theme_park.svg">
+	        <item name="سینما / تئاتر" icon="presets/leisure/cinema.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=cinema" />
 	            <space />
 	            <key key="amenity" value="cinema" />
 	            <reference ref="name_operator_oh_wheelchair" />
-	            <check key="drive_in" text="Drive-in theater" />
+	            <check key="drive_in" text="در خودرو" />
 	            <check key="cinema:3D" text="3D" />
-	            <text key="screen" text="Number of screens" />
+	            <text key="screen" text="تعداد پرده‌ها" />
 	            <reference ref="min_age" />
 	            <reference ref="link_contact_address_payment" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Movie Theater/Cinema -->
-	        <item name="Bandstand" icon="presets/leisure/bandstand.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="جایگاه ارکستر" icon="presets/leisure/bandstand.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=bandstand" />
 	            <space />
 	            <key key="leisure" value="bandstand" />
 	            <reference ref="name_operator_oh_wheelchair" />
-	            <combo key="access" text="Access" values="yes,permissive,private" />
+	            <combo key="access" text="دسترسی" values="yes,permissive,private" />
 	        </item> <!-- Bandstand -->
-	        <item name="Zoo" icon="presets/leisure/zoo.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="باغ‌وحش" icon="presets/leisure/zoo.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=zoo" />
 	            <space />
 	            <key key="tourism" value="zoo" />
 	            <reference ref="name_oh_wheelchair" />
-	            <combo key="zoo" text="Type" values="aviary,birds,butterfly,enclosure,falconry,petting_zoo,reptile,safari_park,wildlife_park" />
+	            <combo key="zoo" text="نوع" values="aviary,birds,butterfly,enclosure,falconry,petting_zoo,reptile,safari_park,wildlife_park" />
 	            <text key="wikipedia" text="ویکی‌پدیا" />
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Zoo -->
-	        <item name="Animal enclosure" icon="presets/attraction/animal.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="محوطه حیوانات" icon="presets/attraction/animal.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:attraction=animal" />
 	            <space />
 	            <key key="attraction" value="animal" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Animal enclosure -->
-	        <item name="Dog Park" icon="presets/leisure/dogpark.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="پارک سگ" icon="presets/leisure/dogpark.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=dog_park" />
 	            <space />
 	            <key key="leisure" value="dog_park" />
 	            <text key="name" text="نام" />
-	            <check key="area" text="Area" />
-	            <combo key="barrier" text="Barrier" values="fence,wall" />
+	            <check key="area" text="مساحت" />
+	            <combo key="barrier" text="حائل دور" values="fence,wall" />
 	            <reference ref="oh_wheelchair" />
 	            <check key="lit" text="نوردار" />
 	        </item> <!-- Dog Park -->
-	        <item name="Amusement/Theme Park" icon="presets/leisure/theme_park.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="شهربازی" icon="presets/leisure/theme_park.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:tourism=theme_park" />
 	            <space />
 	            <key key="tourism" value="theme_park" />
@@ -3149,7 +3149,7 @@
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Amusement/Theme Park -->
-	        <item name="Water Park" icon="presets/leisure/water_park.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="پارک آبی" icon="presets/leisure/water_park.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=water_park" />
 	            <space />
 	            <key key="leisure" value="water_park" />
@@ -3157,7 +3157,7 @@
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Water Park -->
-	        <item name="Resort" icon="presets/leisure/resort.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="استراحت‌گاه" icon="presets/leisure/resort.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=resort" />
 	            <space />
 	            <key key="leisure" value="resort" />
@@ -3166,7 +3166,7 @@
 	            <space />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Resort -->
-	        <item name="Beach Resort" icon="presets/leisure/beach_resort.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="استراحت‌گاه ساحلی" icon="presets/leisure/beach_resort.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=beach_resort" />
 	            <space />
 	            <key key="leisure" value="beach_resort" />
@@ -3176,7 +3176,7 @@
 	            <reference ref="nudism" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Beach Resort -->
-	        <item name="Swimming Pool" icon="presets/sport/swimming.svg" type="node,closedway" preset_name_label="true">
+	        <item name="استخر شنا" icon="presets/sport/swimming.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:leisure=swimming_pool" />
 	            <key key="leisure" value="swimming_pool" />
 	            <space />
