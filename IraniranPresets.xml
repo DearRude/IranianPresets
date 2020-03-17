@@ -3465,8 +3465,8 @@
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Other Place of Worship -->
 	    </group> <!-- Place of Worship -->
-	    <group name="Public Building" icon="presets/service/townhall.svg">
-	        <item name="Town Hall" icon="presets/service/townhall.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="ساختمان‌های عمومی" icon="presets/service/townhall.svg">
+	        <item name="شهرداری" icon="presets/service/townhall.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=townhall" />
 	            <space />
 	            <key key="amenity" value="townhall" />
@@ -3474,25 +3474,25 @@
 	            <reference ref="link_contact_address" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Town Hall -->
-	        <item name="Community Centre" icon="presets/service/community_centre.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="ساختمان محل اجتماع" icon="presets/service/community_centre.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=community_centre" />
 	            <label text="Community Centre" />
 	            <space />
 	            <key key="amenity" value="community_centre" />
 	            <reference ref="name_operator_oh_wheelchair" />
-	            <combo key="community_centre" text="Type" values="club_home,community_hall,cultural_centre,environment_centre,events_venue,family_centre,language_centre,meeting_room,parish_hall,village_hall,youth_centre" />
-	            <multiselect key="community_centre:for" text="For" values="child;juvenile;student;girl;boy;man;woman;senior;family;homosexual;multigeneration;disabled;athlete;immigrant;lgbtq" />
+	            <combo key="community_centre" text="نوع" values="club_home,community_hall,cultural_centre,environment_centre,events_venue,family_centre,language_centre,meeting_room,parish_hall,village_hall,youth_centre" />
+	            <multiselect key="community_centre:for" text="بمنظور" values="child;juvenile;student;girl;boy;man;woman;senior;family;homosexual;multigeneration;disabled;athlete;immigrant;lgbtq" />
 	            <reference ref="link_contact_address" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Community Centre -->
-	        <item name="Embassy" icon="presets/service/embassy.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="سفارت‌خانه" icon="presets/service/embassy.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=embassy" />
 	            <space />
 	            <key key="amenity" value="embassy" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Embassy -->
-	        <item name="Courthouse" icon="presets/service/courthouse.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="دادگاه" icon="presets/service/courthouse.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=courthouse" />
 	            <space />
 	            <key key="amenity" value="courthouse" />
@@ -3500,14 +3500,14 @@
 	            <reference ref="link_contact_address" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Courthouse -->
-	        <item name="Prison" icon="presets/service/prison.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="زندان" icon="presets/service/prison.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=prison" />
 	            <space />
 	            <key key="amenity" value="prison" />
 	            <reference ref="name_operator" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Prison -->
-	        <item name="Police" icon="presets/service/police.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="سازمان پلیس" icon="presets/service/police.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=police" />
 	            <space />
 	            <key key="amenity" value="police" />
@@ -3515,14 +3515,14 @@
 	            <reference ref="link_contact_address" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Police -->
-	        <item name="Ranger Station" icon="presets/service/ranger_station.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="یگان تکاوران" icon="presets/service/ranger_station.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=ranger_station" />
 	            <space />
 	            <key key="amenity" value="ranger_station" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Ranger Station -->
-	        <item name="Fire Station" icon="presets/service/firebrigade.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="آتش نشانی" icon="presets/service/firebrigade.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=fire_station" />
 	            <space />
 	            <key key="amenity" value="fire_station" />
@@ -3530,7 +3530,7 @@
 	            <reference ref="link_contact_address" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Fire Station -->
-	        <item name="Post Office" icon="presets/service/post_office.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="سازمان پست" icon="presets/service/post_office.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=post_office" />
 	            <space />
 	            <key key="amenity" value="post_office" />
@@ -3539,92 +3539,92 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Post Office -->
 	    </group> <!-- Public Buildings -->
-	    <group name="Education" icon="presets/education/school.svg">
-	        <item name="Kindergarten" icon="presets/education/kindergarten.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="آموزش" icon="presets/education/school.svg">
+	        <item name="مهدکودک" icon="presets/education/kindergarten.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=kindergarten" />
 	            <space />
 	            <key key="amenity" value="kindergarten" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="min_age" />
 	            <reference ref="max_age" />
-	            <combo key="isced:level" text="ISCED level" values="0" />
+	            <combo key="isced:level" text="دسته‌بندی بین‌المللی تحصیلات" values="0" />
 	            <reference ref="link_contact_address" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Kindergarten -->
-	        <item name="School" icon="presets/education/school.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="مدرسه" icon="presets/education/school.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=school" />
 	            <space />
 	            <key key="amenity" value="school" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="min_age" />
-	            <multiselect key="isced:level" text="ISCED level" values="0;1;2;3;4" />
+	            <multiselect key="isced:level" text="دسته‌بندی بین‌المللی تحصیلات" values="0;1;2;3;4" />
 	            <reference ref="link_contact_address" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- School -->
-	        <item name="University" icon="presets/education/university.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="دانشگاه" icon="presets/education/university.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=university" />
 	            <space />
 	            <key key="amenity" value="university" />
 	            <reference ref="name_operator_oh_wheelchair" />
-	            <multiselect key="isced:level" text="ISCED level" values="4;5;6;7;8" />
+	            <multiselect key="isced:level" text="دسته‌بندی بین‌المللی تحصیلات" values="4;5;6;7;8" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- University -->
-	        <item name="College" icon="presets/education/college.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کالج" icon="presets/education/college.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=college" />
 	            <space />
 	            <key key="amenity" value="college" />
 	            <reference ref="name_operator_oh_wheelchair" />
-	            <multiselect key="isced:level" text="ISCED level" values="3;4;5;6;7" />
+	            <multiselect key="isced:level" text="دسته‌بندی بین‌المللی تحصیلات" values="3;4;5;6;7" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- College -->
-	         <item name="Driving School" icon="presets/education/driving_school.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	         <item name="مدرسه رانندگی" icon="presets/education/driving_school.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=driving_school" />
 	            <space />
 	            <key key="amenity" value="driving_school" />
 	            <reference ref="name_operator_oh_wheelchair" />
-	            <combo key="license_classes" text="License Classes" values="A;A1;B;BE;C,A;A1;B;B1;C;C1;D;D1;BE;CE;C1E;DE;D1E" />
+	            <combo key="license_classes" text="رسته مدرک" values="A;A1;B;BE;C,A;A1;B;B1;C;C1;D;D1;BE;CE;C1E;DE;D1E" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Driving School -->
 	    </group> <!-- Education -->
-	    <group name="Health" icon="presets/health/pharmacy.svg">
-	        <item name="Hospital" icon="presets/health/hospital.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="تندرستی" icon="presets/health/pharmacy.svg">
+	        <item name="بیمارستان" icon="presets/health/hospital.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=hospital" />
 	            <space />
 	            <key key="amenity" value="hospital" />
 	            <reference ref="name_operator" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Hospital -->
-	        <item name="Clinic" icon="presets/health/clinic.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کلنیک" icon="presets/health/clinic.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=clinic" />
 	            <space />
 	            <key key="amenity" value="clinic" />
 	            <reference ref="name_operator" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Clinic -->
-	        <item name="Doctor's Office" icon="presets/health/doctors.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="مطب دکتر" icon="presets/health/doctors.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=doctors" />
 	            <space />
 	            <key key="amenity" value="doctors" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Doctor's Office -->
-	        <item name="Dentist" icon="presets/health/dentist.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="دندان پزشک" icon="presets/health/dentist.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=dentist" />
 	            <space />
 	            <key key="amenity" value="dentist" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Dentist -->
-	        <item name="Pharmacy" icon="presets/health/pharmacy.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="داروخانه" icon="presets/health/pharmacy.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=pharmacy" />
 	            <space />
 	            <key key="amenity" value="pharmacy" />
 	            <reference ref="name_operator_oh_wheelchair" />
-	            <check key="dispensing" text="Dispensing"/>
+	            <check key="dispensing" text="توزیع"/>
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Pharmacy -->
 	        <separator/>
-	        <item name="Baby Hatch/Safe Haven" icon="presets/health/baby_hatch.svg" type="node,closedway" preset_name_label="true">
+	        <item name="دریچه کودک" icon="presets/health/baby_hatch.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:amenity=baby_hatch" />
 	            <space />
 	            <key key="amenity" value="baby_hatch" />
@@ -3632,19 +3632,18 @@
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Baby Hatch/Safe Haven -->
 	        <separator/>
-	        <item name="Emergency Access Point" icon="presets/service/emergency_access_point.svg" type="node,closedway" preset_name_label="true">
+	        <item name="محل دسترسی اضطراری" icon="presets/service/emergency_access_point.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:highway=emergency_access_point" />
 	            <space />
 	            <key key="highway" value="emergency_access_point" />
-	            <text key="ref" text="Point Number" />
-	            <text key="name" text="Point Name" />
+	            <text key="ref" text="مرجع محل" />
+	            <text key="name" text="نام محل" />
 	            <text key="operator" text="مسئول" />
-	            <text key="emergency_telephone_code" text="Emergency Phone Number" />
-	            <label text="(Use number as shown on plate.)" />
+	            <text key="emergency_telephone_code" text="شماره تلفن محل" />
 	            <space />
 	        </item> <!-- Emergency Access Point -->
 	        <separator/>
-	        <item name="Veterinary" icon="presets/health/veterinary.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="دامپزشکی" icon="presets/health/veterinary.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=veterinary" />
 	            <space />
 	            <key key="amenity" value="veterinary" />
@@ -3652,33 +3651,32 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Veterinary -->
 	    </group> <!-- Health -->
-	    <group name="Emergency" icon="presets/emergency/ambulance_station.svg">
-	        <item name="Ambulance Station" icon="presets/emergency/ambulance_station.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="اورژانس" icon="presets/emergency/ambulance_station.svg">
+	        <item name="مرکز آمبولانس" icon="presets/emergency/ambulance_station.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:emergency=ambulance_station" />
 	            <space />
 	            <key key="emergency" value="ambulance_station" />
 	            <reference ref="name_operator" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Ambulance Station -->
-	        <item name="Emergency ward entrance" icon="presets/emergency/emergency_ward_entrance.svg" type="node" preset_name_label="true">
+	        <item name="ورودی بخش اورژانس" icon="presets/emergency/emergency_ward_entrance.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:emergency=emergency_ward_entrance" />
 	            <space />
 	            <key key="emergency" value="emergency_ward_entrance" />
 	            <reference ref="name_operator" />
-	            <combo key="emergency_ward_entrance" text="Type" values="walk-in,rescue_service,all" values_searchable="true" />
+	            <combo key="emergency_ward_entrance" text="نوع" values="walk-in,rescue_service,all" values_searchable="true" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Emergency ward entrance -->
-	        <item name="Automated Defibrillator" icon="presets/emergency/aed.svg" type="node" preset_name_label="true">
+	        <item name="دستگاه شوک الکتریکی" icon="presets/emergency/aed.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:emergency=defibrillator" />
 	            <space />
 	            <key key="emergency" value="defibrillator" />
 	            <reference ref="oh_wheelchair" />
 	            <text key="operator" text="مسئول" />
-	            <text key="defibrillator:location" text="Location description" />
-	            <text key="phone" text="Phone number" />
-	            <label text="Use E.123 format, e.g. +49 11223 456 7890" />
-	            <combo key="access" text="Access" values="yes,private,customers,permissive,no" />
-	            <check key="indoor" text="Located inside a building?" />
+	            <text key="defibrillator:location" text="توضیحات محل" />
+	            <text key="phone" text="شماره همراه" />
+	            <combo key="access" text="دسترسی" values="yes,private,customers,permissive,no" />
+	            <check key="indoor" text="داخل ساختمان" />
 	            <!-- lastcheck is in use for aed devices, but not yet well discussed or documented
 	            <optional>
 	                <text key="lastcheck"      text="Last check date (YYYY-MM-DD)" />
@@ -3687,42 +3685,42 @@
 	            -->
 	        </item> <!-- Automated Defibrillator -->
 	        <separator />
-	        <item name="Fire Extinguisher" icon="presets/emergency/fire_extinguisher.svg" type="node" preset_name_label="true">
+	        <item name="کپسول آتش‌نشانی" icon="presets/emergency/fire_extinguisher.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:emergency=fire_extinguisher" />
 	            <space />
 	            <key key="emergency" value="fire_extinguisher" />
 	            <text key="ref" text="مرجع" />
 	            <text key="operator" text="مسئول" />
-	            <check key="indoor" text="Indoor" />
+	            <check key="indoor" text="داخل ساختمان" />
 	        </item> <!-- Fire Extinguisher -->
-	        <item name="Fire Hose" icon="presets/emergency/fire_hose.svg" type="node" preset_name_label="true">
+	        <item name="شلنگ آتش‌نشانی" icon="presets/emergency/fire_hose.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:emergency=fire_hose" />
 	            <space />
 	            <key key="emergency" value="fire_hose" />
 	            <text key="ref" text="مرجع" />
 	            <text key="operator" text="مسئول" />
 	        </item> <!-- Fire Hose -->
-	        <item name="Fire Hydrant" icon="presets/service/fire_hydrant.svg" type="node" preset_name_label="true">
+	        <item name="شیر آتش‌نشانی" icon="presets/service/fire_hydrant.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:emergency=fire_hydrant" />
 	            <space />
 	            <key key="emergency" value="fire_hydrant" />
-	            <combo key="fire_hydrant:type" text="Shape" values_searchable="true" values_context="pipeline" >
-	                <list_entry value="pillar" short_description="A pillar type hydrant." />
-	                <list_entry value="underground" short_description="A fire hydrant simple outlet located underground." />
-	                <list_entry value="wall" short_description="A wall-mounted fire hydrant." />
-	                <list_entry value="pipe" short_description="A simple capped pipe, without the usual hydrant shape." />
+	            <combo key="fire_hydrant:type" text="شکل" values_searchable="true" values_context="pipeline" >
+	                <list_entry value="pillar" short_description="شکل ستونی" />
+	                <list_entry value="underground" short_description="زیرزمینی" />
+	                <list_entry value="wall" short_description="دیواری" />
+	                <list_entry value="pipe" short_description="لوله‌ای" />
 	            </combo>
-	            <combo key="fire_hydrant:diameter" text="Diameter (mm)" values="50,70,75,80,100,110,125,150,200,250,300,400" />
-	            <combo key="fire_hydrant:pressure" text="Pressure (bar) or suction" values_searchable="true" values_sort="false">
-	                <list_entry value="#" short_description="Pressure in bar." />
-	                <list_entry value="yes" short_description="Pressure but value unknown." />
-	                <list_entry value="suction" short_description="Water is not pressurized, a pump is needed." />
+	            <combo key="fire_hydrant:diameter" text="قطر به میلی‌متر" values="50,70,75,80,100,110,125,150,200,250,300,400" />
+	            <combo key="fire_hydrant:pressure" text="فشار به بار" values_searchable="true" values_sort="false">
+	                <list_entry value="#" short_description="فشار به بار" />
+	                <list_entry value="yes" short_description="فشار با مقدار نامعلوم" />
+	                <list_entry value="suction" short_description="آب دارای فشار نیست. پمپ نیاز است." />
 	            </combo>
 	            <optional>
 	                <text key="ref" text="مرجع" />
-	                <combo key="water_source" text="Water source">
-	                    <list_entry value="main" short_description="Hydrant is fed by the local distribution network." />
-	                    <list_entry value="groundwater" short_description="A water well." />
+	                <combo key="water_source" text="منبع آب">
+	                    <list_entry value="main" short_description="شیر توسط شبکه توزیع محلی تغذیه می شود." />
+	                    <list_entry value="groundwater" short_description="چاه آب." />
 	                    <list_entry value="stream" />
 	                    <list_entry value="river" />
 	                    <list_entry value="canal" />
@@ -3733,13 +3731,7 @@
 	                    <list_entry value="water_tank" />
 	                    <list_entry value="swimming_pool" />
 	                </combo>
-	                <combo key="fire_hydrant:position" text="Hydrant Position" values_context="hydrant position" >
-	                    <list_entry value="lane" short_description="on the side of a road lane" />
-	                    <list_entry value="parking_lot" short_description="in a parking lot" />
-	                    <list_entry value="sidewalk" short_description="on a sidewalk" />
-	                    <list_entry value="green" short_description="in a grassy area" />
-	                </combo>
-	                <text key="flow_rate" text="Flow rate with unit of measure" />
+	                <text key="flow_rate" text="آهنگ جاری شدن" />
 	                <combo key="pillar:type" text="Pillar type">
 	                    <list_entry value="dry_barrel" short_description="A style of pillar hydrant where the water shutoff valve is below ground." />
 	                    <list_entry value="wet_barrel" short_description="A style of pillar hydrant where the barrel is pressurized at all times, with individual valves for each outlet." />
