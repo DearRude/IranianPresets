@@ -3732,58 +3732,58 @@
 	                    <list_entry value="swimming_pool" />
 	                </combo>
 	                <text key="flow_rate" text="آهنگ جاری شدن" />
-	                <combo key="pillar:type" text="Pillar type">
-	                    <list_entry value="dry_barrel" short_description="A style of pillar hydrant where the water shutoff valve is below ground." />
-	                    <list_entry value="wet_barrel" short_description="A style of pillar hydrant where the barrel is pressurized at all times, with individual valves for each outlet." />
+	                <combo key="pillar:type" text="نوع ستون">
+	                    <list_entry value="dry_barrel" short_description="نوع ستونی که شیر خروجی بیرون زمین قرار گرفته است." />
+	                    <list_entry value="wet_barrel" short_description="نوع ستونی که بشکه در همه‌ی حالات با فشار قرار گرفته است." />
 	                </combo>
 	                <space />
-	                <combo key="couplings" text="Number of couplings" values="1,2,3" />
+	                <combo key="couplings" text="تعداد جفت‌ساز‌ها" values="1,2,3" />
 	                <!-- <combo key="couplings:type" text="Coupling standard" values="Bayonet,Barcelona,Guillemin,Klaue,Sprawny,Storz,UNI" /> capitalized values which is contrary to general tagging conventions -->
-	                <text key="couplings:diameters" text="Each coupling diameter (separated by ;)" />
+	                <text key="couplings:diameters" text="قطر هر جفت‌ساز" />
 	                <space />
-	                <combo key="colour" text="Colour" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" values_context="color" />
-	                <combo key="bonnet:colour" text="Colour of the top section (bonnet)" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" values_context="color" />
-	                <combo key="cap:colour" text="Colour of the caps" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" values_context="color" />
+	                <combo key="colour" text="رنگ" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" values_context="color" />
+	                <combo key="bonnet:colour" text="رنگ قسمت بالایی" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" values_context="color" />
+	                <combo key="cap:colour" text="رنگ سر" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" values_context="color" />
 	                <space />
-	                <text key="manufacturer" text="Manufacturer" />
+	                <text key="manufacturer" text="سازنده" />
 	                <text key="operator" text="مسئول" />
 	                <text key="name" text="نام" />
 	                </optional>
 	        </item> <!-- Fire Hydrant -->
-	        <item name="Water Tank" icon="presets/emergency/water_tank.svg" type="node,closedway" preset_name_label="true">
+	        <item name="تانکر اضطراری آب" icon="presets/emergency/water_tank.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:emergency=water_tank" />
 	            <space />
 	            <key key="emergency" value="water_tank" />
 	            <reference ref="name_ref_operator" />
 	            <space />
-	            <text key="water_tank:volume" text="Volume (in liters)" />
+	            <text key="water_tank:volume" text="حجم به لیتر" />
 	        </item> <!-- Water Tank -->
 	        <separator />
-	        <item name="Assembly Point" icon="presets/emergency/assembly_point.svg" type="node" preset_name_label="true">
+	        <item name="نقطه هم‌گذاری اضطراری" icon="presets/emergency/assembly_point.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:emergency=assembly_point" />
 	            <space />
 	            <key key="emergency" value="assembly_point" />
 	            <reference ref="name_ref_operator" />
 	        </item> <!-- Assembly Point -->
-	        <item name="Emergency Phone" icon="presets/vehicle/emergency_phone.svg" type="node" preset_name_label="true">
+	        <item name="تلفن اضطراری" icon="presets/vehicle/emergency_phone.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:emergency=phone" />
 	            <key key="emergency" value="phone" />
 	            <text key="ref" text="مرجع" />
 	            <text key="operator" text="مسئول" />
 	        </item> <!-- Emergency Phone -->
-	        <item name="Siren" icon="presets/emergency/siren.svg" type="node" preset_name_label="true">
+	        <item name="آژیر" icon="presets/emergency/siren.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:emergency=siren" />
 	            <key key="emergency" value="siren" />
 	            <text key="ref" text="مرجع" />
 	            <text key="operator" text="مسئول" />
 	            <space />
 	            <combo key="siren:type" text="Type" values="pneumatic,electronic,mechanical" />
-	            <multiselect key="siren:purpose" text="Purpose" values="tornado;fire;air_raid;civil_defense" values_searchable="true" />
-	            <text key="siren:range" text="Range (in meters)" />
+	            <multiselect key="siren:purpose" text="به منظور" values="tornado;fire;air_raid;civil_defense" values_searchable="true" />
+	            <text key="siren:range" text="دامنه به متر" />
 	        </item> <!-- Siren -->
 	    </group> <!-- Emergency -->
-	    <group name="Social Facility" icon="presets/social_facility/outreach.svg">
-	        <item name="Nursing Home" icon="presets/social_facility/nursing_home.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="مکان‌های اجتماعی" icon="presets/social_facility/outreach.svg">
+	        <item name="آسایشگاه" icon="presets/social_facility/nursing_home.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Key:social_facility" />
 	            <space />
 	            <key key="amenity" value="social_facility" />
@@ -3792,7 +3792,7 @@
 	            <text key="capacity" text="ظرفیت" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Nursing Home -->
-	        <item name="Nursing Home (Legacy)" icon="presets/social_facility/nursing_home.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="آسایشگاه (نسخه قدیمی)" icon="presets/social_facility/nursing_home.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=nursing_home" />
 	            <space />
 	            <key key="amenity" value="nursing_home" />
@@ -3800,27 +3800,27 @@
 	            <text key="capacity" text="ظرفیت" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Nursing Home (Legacy)-->
-	        <item name="Group Home" icon="presets/social_facility/group_home.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="خانه ویژه" icon="presets/social_facility/group_home.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Key:social_facility" />
 	            <space />
 	            <key key="amenity" value="social_facility" />
 	            <key key="social_facility" value="group_home" />
 	            <reference ref="name_operator" />
-	            <combo key="social_facility:for" text="For" value="senior" default="senior" />
+	            <combo key="social_facility:for" text="برای افراد" value="senior" default="senior" />
 	            <text key="capacity" text="ظرفیت" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Group Home -->
-	        <item name="Assisted Living" icon="presets/social_facility/assisted_living.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="سوئیت ویژه" icon="presets/social_facility/assisted_living.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Key:social_facility" />
 	            <space />
 	            <key key="amenity" value="social_facility" />
 	            <key key="social_facility" value="assisted_living" />
 	            <reference ref="name_operator" />
-	            <combo key="social_facility:for" text="For" value="senior" default="senior" />
+	            <combo key="social_facility:for" text="برای افراد" value="senior" default="senior" />
 	            <text key="capacity" text="ظرفیت" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Assisted Living -->
-	        <item name="Outreach" icon="presets/social_facility/outreach.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="سیاری" icon="presets/social_facility/outreach.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Key:social_facility" />
 	            <space />
 	            <key key="amenity" value="social_facility" />
@@ -3828,7 +3828,7 @@
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Outreach -->
-	        <item name="Shelter" name_context="social_facility" icon="presets/social_facility/shelter.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کمپ پناهگاه" name_context="social_facility" icon="presets/social_facility/shelter.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Key:social_facility" />
 	            <space />
 	            <key key="amenity" value="social_facility" />
@@ -3837,7 +3837,7 @@
 	            <text key="capacity" text="ظرفیت" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Shelter -->
-	        <item name="Food Bank" icon="presets/social_facility/food_bank.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بانک غذا" icon="presets/social_facility/food_bank.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Key:social_facility" />
 	            <space />
 	            <key key="amenity" value="social_facility" />
@@ -3846,142 +3846,141 @@
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Food Bank -->
 	    </group> <!-- Social Facility -->
-	    <group name="Facilities" icon="presets/service/telephone.svg">
-	        <item name="سرویس بهداشتی/Restrooms" icon="presets/service/toilets.svg" type="node,closedway" preset_name_label="true">
+	    <group name="وسائل تسهیل" icon="presets/service/telephone.svg">
+	        <item name="سرویس بهداشتی" icon="presets/service/toilets.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:amenity=toilets" />
 	            <space />
 	            <key key="amenity" value="toilets" />
 	            <optional>
-	                <combo key="access" text="Access rights" values="yes,permissive,customers" />
+	                <combo key="access" text="دسترسی" values="yes,permissive,customers" />
 	                <checkgroup columns="3">
-	                    <check key="female" text="Female" text_context="restroom" />
-	                    <check key="male" text="Male" text_context="restroom" />
-	                    <check key="unisex" text="Unisex" text_context="restroom" />
+	                    <check key="female" text="خانم‌ها" text_context="restroom" />
+	                    <check key="male" text="آقایان" text_context="restroom" />
+	                    <check key="unisex" text="هردو" text_context="restroom" />
 	                </checkgroup>
-	                <combo key="toilets:disposal" text="Type" values="flush,pitlatrine,chemical,bucket" />
-	                <text key="description" text="Description" />
+	                <combo key="toilets:disposal" text="نوع تخلیه" values="flush,pitlatrine,chemical,bucket" />
+	                <text key="description" text="اطلاعات بیشتر" />
 	                <reference ref="fee" />
 	                <text key="operator" text="مسئول" />
-	                <combo key="toilets:position" text="Usage Position" values="seated,seated;urinal,squat,urinal" />
+	                <combo key="toilets:position" text="نوع استفاده" values="seated,seated;urinal,squat,urinal" />
 	                <reference ref="wheelchair" />
-	                <check key="drinking_water" text="Drinking Water" />
+	                <check key="drinking_water" text="آب شرب" />
 	            </optional>
 	            <preset_link preset_name="Changing table" />
 	        </item> <!-- سرویس بهداشتی/Restrooms -->
-	        <item name="Shower" icon="presets/service/shower.svg" type="node,closedway" preset_name_label="true">
+	        <item name="دوش" icon="presets/service/shower.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:amenity=shower" />
 	            <space />
 	            <key key="amenity" value="shower" />
-	            <combo key="access" text="Access rights" values="yes,permissive,customers" />
+	            <combo key="access" text="نوع دسترسی" values="yes,permissive,customers" />
 	            <optional>
 	                <checkgroup columns="3">
-	                    <check key="female" text="Female" text_context="restroom" />
-	                    <check key="male" text="Male" text_context="restroom" />
-	                    <check key="unisex" text="Unisex" text_context="restroom" />
+	                    <check key="female" text="خانم‌ها" text_context="restroom" />
+	                    <check key="male" text="آقایان" text_context="restroom" />
+	                    <check key="unisex" text="هردو" text_context="restroom" />
 	                </checkgroup>
-	                <text key="description" text="Description" />
+	                <text key="description" text="اطلاعات بیشتر" />
 	                <reference ref="fee" />
 	                <text key="operator" text="مسئول" />
 	                <reference ref="oh_wheelchair" />
 	            </optional>
 	        </item> <!-- Shower -->
-	        <item name="Changing table" icon="presets/service/changing_table.svg" type="node,closedway" preset_name_label="true">
+	        <item name="میز تعویض پوشک" icon="presets/service/changing_table.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Key:changing_table" />
 	            <space />
-	            <combo key="changing_table" text="Changing table" values="yes,limited,no" default="yes" match="keyvalue!" />
+	            <combo key="changing_table" text="میز تعویض" values="yes,limited,no" default="yes" match="keyvalue!" />
 	            <optional>
-	                <check key="changing_table:fee" text="Fee" />
-	                <combo key="changing_table:count" text="Count" values="1,2,3,4,5" />
-	                <multiselect key="changing_table:location" text="Location" text_context="Changing table" values="dedicated_room;female_toilet;male_toilet;room;sales_area;unisex_toilet;wheelchair_toilet" />
+	                <check key="changing_table:fee" text="هزینه" />
+	                <combo key="changing_table:count" text="تعداد" values="1,2,3,4,5" />
+	                <multiselect key="changing_table:location" text="مکان" text_context="Changing table" values="dedicated_room;female_toilet;male_toilet;room;sales_area;unisex_toilet;wheelchair_toilet" />
 	                <text key="operator" text="مسئول" />
 	                <reference ref="wheelchair" />
 	            </optional>
 	        </item> <!-- Changing table -->
 	        <separator/>
-	        <item name="Post Box" icon="presets/service/post_box.svg" type="node" preset_name_label="true">
+	        <item name="صندوق پستی" icon="presets/service/post_box.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=post_box" />
 	            <space />
 	            <key key="amenity" value="post_box" />
 	            <text key="operator" text="مسئول" />
-	            <text key="ref" text="مرجع number" />
-	            <combo key="collection_times" text="Collection times" delimiter="|" values="Mo-Sa 09:00|Mo-Sa 08:00|Mo-Fr 09:00; Sa 07:00|Mo-Fr 17:30; Sa 12:00|Mo-Fr 15:00,19:00; Sa 15:10; Su 10:30" values_no_i18n="true" />
-	            <combo key="post_box:type" text="Type" values="pillar,lamp,wall,meter" values_context="post_box" />
-	            <check key="drive_through" text="Drive through" />
+	            <text key="ref" text="شماره مرجع" />
+	            <combo key="collection_times" text="زمان‌های برداشت" delimiter="|" values="Mo-Sa 09:00|Mo-Sa 08:00|Mo-Fr 09:00; Sa 07:00|Mo-Fr 17:30; Sa 12:00|Mo-Fr 15:00,19:00; Sa 15:10; Su 10:30" values_no_i18n="true" />
+	            <combo key="post_box:type" text="نوع" values="pillar,lamp,wall,meter" values_context="post_box" />
+	            <check key="drive_through" text="در-ماشین" />
 	        </item> <!-- Post Box -->
-	        <item name="Telephone" icon="presets/service/telephone.svg" type="node" preset_name_label="true">
+	        <item name="تلفن" icon="presets/service/telephone.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=telephone" />
 	            <space />
 	            <key key="amenity" value="telephone" />
 	            <text key="operator" text="مسئول" />
-	            <combo key="covered" text="Covered" values="yes,no,booth" />
+	            <combo key="covered" text="سقف" values="yes,no,booth" />
 	            <space />
-	            <check key="payment:coins" text="Coins" />
-	            <check key="payment:notes" text="Notes" text_context="payment" />
-	            <check key="payment:telephone_cards" text="Telephone cards" />
+	            <check key="payment:coins" text="پرداخت با سکه" />
+	            <check key="payment:notes" text="پرداخت با اسکناس" text_context="payment" />
+	            <check key="payment:telephone_cards" text="تلفن کارتی" />
 	            <preset_link preset_name="Payment Methods" />
 	        </item> <!-- Telephone -->
-	        <item name="Internet Cafe" icon="presets/service/internet_cafe.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کافه اینترنت" icon="presets/service/internet_cafe.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=internet_cafe" />
 	            <space />
 	            <key key="amenity" value="internet_cafe" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Internet Cafe -->
-	        <item name="Internet Access" icon="presets/service/network-wireless.svg" type="node,closedway,multipolygon,relation" preset_name_label="true">
+	        <item name="دسترسی اینترنت" icon="presets/service/network-wireless.svg" type="node,closedway,multipolygon,relation" preset_name_label="true">
 	            <link wiki="Key:internet_access" />
 	            <space />
 	            <reference ref="internet" />
 	        </item> <!-- Internet Access -->
-	        <item name="Clock" icon="presets/service/clock.svg" type="node" preset_name_label="true">
+	        <item name="ساعت" icon="presets/service/clock.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=clock" />
 	            <key key="amenity" value="clock" />
 	            <optional>
-	                <combo key="display" text="Display" values="analog,digital,sundial,unorthodox" />
+	                <combo key="display" text="نوع نمایش" values="analog,digital,sundial,unorthodox" />
 	                <reference ref="support" />
-	                <combo key="faces" text="Faces" text_context="clock" values="1,2,3,4" />
-	                <combo key="visibility" text="Visibility/readability" values="house,street,area" display_values="house (up to 5m),street (up to 20m),area (more than 20m)" values_sort="false" />
-	                <check key="date" text="Shows current date" />
-	                <check key="thermometer" text="Shows temperature" />
-	                <check key="barometer" text="Shows barometric pressure" />
-	                <check key="hygrometer" text="Shows humidity" />
+	                <combo key="visibility" text="خوانایی" values="house,street,area" display_values="house (up to 5m),street (up to 20m),area (more than 20m)" values_sort="false" />
+	                <check key="date" text="نمایش تاریخ روز" />
+	                <check key="thermometer" text="نمایش دماسنج" />
+	                <check key="barometer" text="نمایش بارومتر" />
+	                <check key="hygrometer" text="نمایش رطوبت" />
 	            </optional>
 	        </item> <!-- Clock -->
-	        <item name="Photo booth" icon="presets/service/photo_booth.svg" type="node" preset_name_label="true">
+	        <item name="غرفه تلفن" icon="presets/service/photo_booth.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=photo_booth" />
 	            <space />
 	            <key key="amenity" value="photo_booth" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	        </item> <!-- Photo booth -->
 	        <separator/>
-	        <item name="Recycling Container" icon="presets/service/recycling/recycling_container.svg" type="node,closedway" preset_name_label="true">
+	        <item name="سطل بازیافت" icon="presets/service/recycling/recycling_container.svg" type="node,closedway" preset_name_label="true">
 	           <link wiki="Tag:amenity=recycling" />
 	            <space />
 	            <key key="amenity" value="recycling" />
 	            <key key="recycling_type" value="container" />
 	            <text key="operator" text="مسئول" />
-	            <combo key="opening_hours" text="Throw in times" delimiter="|" values="24/7|Mo-Fr 06:30-12:30,15:30-20:00; Sa 08:00-12:00; PH off" values_no_i18n="true" />
+	            <combo key="opening_hours" text="زمان بازبودن سطل" delimiter="|" values="24/7|Mo-Fr 06:30-12:30,15:30-20:00; Sa 08:00-12:00; PH off" values_no_i18n="true" />
 	            <combo key="wheelchair" text="ویلچر" values="yes,limited,no" />
 	            <space />
 	            <checkgroup columns="4">
-	                <check key="recycling:batteries" text="Batteries" />
-	                <check key="recycling:cans" text="Cans" />
-	                <check key="recycling:cardboard" text="Cardboard" />
-	                <check key="recycling:clothes" text="Clothes" />
-	                <check key="recycling:electrical_appliances" text="Electrical Appliances" />
-	                <check key="recycling:glass" text="Glass" />
-	                <check key="recycling:glass_bottles" text="Glass Bottles" />
-	                <check key="recycling:green_waste" text="Green Waste" />
-	                <check key="recycling:paper" text="Paper" />
-	                <check key="recycling:plastic" text="Plastic" />
-	                <check key="recycling:plastic_bottles" text="Plastic Bottles" />
-	                <check key="recycling:plastic_packaging" text="Plastic Packaging" />
-	                <check key="recycling:scrap_metal" text="Scrap Metal" />
-	                <check key="recycling:shoes" text="Shoes" />
-	                <check key="recycling:small_appliances" text="Small Appliances" />
-	                <check key="recycling:waste" text="Waste" />
+	                <check key="recycling:batteries" text="باتری" />
+	                <check key="recycling:cans" text="قوطی" />
+	                <check key="recycling:cardboard" text="مقوا" />
+	                <check key="recycling:clothes" text="پوشاک" />
+	                <check key="recycling:electrical_appliances" text="وسایل الکترونیکی" />
+	                <check key="recycling:glass" text="شیشه" />
+	                <check key="recycling:glass_bottles" text="بطری شیشه‌ای" />
+	                <check key="recycling:green_waste" text="پسماند شیشه‌ای" />
+	                <check key="recycling:paper" text="کاغذ" />
+	                <check key="recycling:plastic" text="پلاستیک" />
+	                <check key="recycling:plastic_bottles" text="بطری پلاستیکی" />
+	                <check key="recycling:plastic_packaging" text="بسته‌بندی پلاستیکی" />
+	                <check key="recycling:scrap_metal" text="آهن قراضه" />
+	                <check key="recycling:shoes" text="کفش" />
+	                <check key="recycling:small_appliances" text="لوازم کوچک" />
+	                <check key="recycling:waste" text="پسماند" />
 	            </checkgroup>
 	        </item> <!-- Recycling Container-->
-	        <item name="Recycling Centre" icon="presets/service/recycling/recycling_centre.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="مرکز بازیافت" icon="presets/service/recycling/recycling_centre.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	           <link wiki="Tag:amenity=recycling" />
 	            <space />
 	            <key key="amenity" value="recycling" />
@@ -3989,64 +3988,63 @@
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <space />
 	            <checkgroup columns="4">
-	                <check key="recycling:batteries" text="Batteries" />
-	                <check key="recycling:cans" text="Cans" />
-	                <check key="recycling:cardboard" text="Cardboard" />
-	                <check key="recycling:clothes" text="Clothes" />
-	                <check key="recycling:electrical_appliances" text="Electrical Appliances" />
-	                <check key="recycling:glass" text="Glass" />
-	                <check key="recycling:glass_bottles" text="Glass Bottles" />
-	                <check key="recycling:green_waste" text="Green Waste" />
-	                <check key="recycling:paper" text="Paper" />
-	                <check key="recycling:plastic" text="Plastic" />
-	                <check key="recycling:plastic_bottles" text="Plastic Bottles" />
-	                <check key="recycling:plastic_packaging" text="Plastic Packaging" />
-	                <check key="recycling:scrap_metal" text="Scrap Metal" />
-	                <check key="recycling:shoes" text="Shoes" />
-	                <check key="recycling:small_appliances" text="Small Appliances" />
-	                <check key="recycling:waste" text="Waste" />
+	                <check key="recycling:batteries" text="باتری" />
+	                <check key="recycling:cans" text="قوطی" />
+	                <check key="recycling:cardboard" text="مقوا" />
+	                <check key="recycling:clothes" text="پوشاک" />
+	                <check key="recycling:electrical_appliances" text="وسایل الکترونیکی" />
+	                <check key="recycling:glass" text="شیشه" />
+	                <check key="recycling:glass_bottles" text="بطری شیشه‌ای" />
+	                <check key="recycling:green_waste" text="پسماند شیشه‌ای" />
+	                <check key="recycling:paper" text="کاغذ" />
+	                <check key="recycling:plastic" text="پلاستیک" />
+	                <check key="recycling:plastic_bottles" text="بطری پلاستیکی" />
+	                <check key="recycling:plastic_packaging" text="بسته‌بندی پلاستیکی" />
+	                <check key="recycling:scrap_metal" text="آهن قراضه" />
+	                <check key="recycling:shoes" text="کفش" />
+	                <check key="recycling:small_appliances" text="لوازم کوچک" />
+	                <check key="recycling:waste" text="پسماند" />
 	            </checkgroup>
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Recycling Centre-->
-	        <item name="Waste Basket/Trash Can" icon="presets/service/recycling/waste_basket.svg" type="node" preset_name_label="true">
+	        <item name="سطل زباله" icon="presets/service/recycling/waste_basket.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=waste_basket" />
 	            <key key="amenity" value="waste_basket" />
-	            <combo key="waste" text="Waste" values="trash,dog_excrement" />
+	            <combo key="waste" text="زباله" values="trash,dog_excrement" />
 	        </item> <!-- Waste Basket/Trash Can -->
-	        <item name="Waste Disposal/Dumpster" icon="presets/service/recycling/waste_disposal.svg" type="node" preset_name_label="true">
+	        <item name="سطل زباله بزرگ" icon="presets/service/recycling/waste_disposal.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=waste_disposal" />
 	            <key key="amenity" value="waste_disposal" />
-	            <combo key="waste" text="Waste" values="trash" />
+	            <combo key="waste" text="زباله" values="trash" />
 	        </item> <!-- Waste Disposal/Dumpster -->
-	        <item name="Sanitary Dump Station" icon="presets/service/recycling/sanitary_dump_station.svg" type="node,closedway" preset_name_label="true">
+	        <item name="ایستگاه دفع زباله" icon="presets/service/recycling/sanitary_dump_station.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Toilet_Holding_Tank_Disposal" />
 	            <space />
 	            <key key="amenity" value="sanitary_dump_station" />
-	            <check key="sanitary_dump_station:pump-out" text="Suction pumpout" />
-	            <check key="sanitary_dump_station:round_drain" text="Gravity drain for hose" />
-	            <check key="sanitary_dump_station:basin" text="Casette or Elsan Disposal" />
-	            <combo key="access" text="Access" values="yes,customers,no" />
+	            <check key="sanitary_dump_station:pump-out" text="پمپ مکش" />
+	            <check key="sanitary_dump_station:round_drain" text="تخلیه گرانشی" />
+	            <combo key="access" text="دسترسی" values="yes,customers,no" />
 	            <reference ref="fee" />
 	            <text key="operator" text="مسئول" />
-	            <combo key="opening_hours" text="Operation times" values="24/7" values_no_i18n="true" />
+	            <combo key="opening_hours" text="ساعات بازبودن" values="24/7" values_no_i18n="true" />
 	        </item> <!-- Sanitary Dump Station -->
 	        <separator/>
-	        <item name="Bench" icon="presets/leisure/bench.svg" type="node,way" preset_name_label="true">
+	        <item name="نیمکت" icon="presets/leisure/bench.svg" type="node,way" preset_name_label="true">
 	            <link wiki="Tag:amenity=bench" />
 	            <space />
 	            <key key="amenity" value="bench" />
-	            <check key="backrest" text="Backrest" />
-	            <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" />
-	            <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
-	            <combo key="seats" text="Amount of Seats" values="2,3,4,5,6,7,8,9,10" />
+	            <check key="backrest" text="تکیه پشتی" />
+	            <combo key="material" text="جنس" values="concrete,metal,plastic,stone,wood" />
+	            <combo key="colour" text="رنگ" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
+	            <combo key="seats" text="تعداد صندلی" values="2,3,4,5,6,7,8,9,10" />
 	        </item> <!-- Bench -->
-	        <item name="Shelter" icon="presets/accommodation/shelter.svg" type="node,closedway" preset_name_label="true">
+	        <item name="آلاچیق" icon="presets/accommodation/shelter.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:amenity=shelter" />
 	            <space />
 	            <key key="amenity" value="shelter" />
 	            <text key="name" text="نام" />
-	            <check key="fireplace" text="Fireplace" />
-	            <combo key="shelter_type" text="Type of shelter" values_context="shelter" values_searchable="true">
+	            <check key="fireplace" text="آتشگاه" />
+	            <combo key="shelter_type" text="نوع آلاچیق" values_context="shelter" values_searchable="true">
 	                <list_entry value="basic_hut" icon="presets/accommodation/basic_hut.svg" />
 	                <list_entry value="lean_to" icon="presets/accommodation/shelter_lean_to.svg" />
 	                <list_entry value="picnic_shelter" icon="presets/accommodation/shelter_picnic.svg" />
@@ -4055,56 +4053,56 @@
 	                <list_entry value="wildlife_hide" icon="presets/accommodation/shelter.svg" />
 	            </combo>
 	        </item> <!-- Shelter -->
-	        <item name="Hunting Stand" icon="presets/landmark/hunting_stand.svg" type="node" preset_name_label="true">
+	        <item name="جایگاه شکار" icon="presets/landmark/hunting_stand.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=hunting_stand" />
 	            <space />
 	            <key key="amenity" value="hunting_stand" />
-	            <text key="height" text="Height (meters)" />
-	            <check key="shelter" text="Shelter" />
-	            <check key="hide" text="Hide" text_context="hunting stand" />
-	            <check key="lockable" text="Lockable" />
+	            <text key="height" text="ارتفاع به متر" />
+	            <check key="shelter" text="جایگاه" />
+	            <check key="hide" text="مخفی" text_context="hunting stand" />
+	            <check key="lockable" text="قابل قفل" />
 	        </item> <!-- Hunting Stand -->
 	        <separator/>
-	        <item name="Drinking Water" icon="presets/food/drinking_water.svg" type="node" preset_name_label="true">
+	        <item name="آب شرب" icon="presets/food/drinking_water.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=drinking_water" />
 	            <space />
 	            <key key="amenity" value="drinking_water" />
-	            <check key="indoor" text="Indoor" />
+	            <check key="indoor" text="درون ساختمان" />
 	            <optional>
 	                <text key="name" text="نام" />
-	                <text key="description" text="Description" />
+	                <text key="description" text="اطلاعات بیشتر" />
 	            </optional>
 	        </item> <!-- Drinking Water -->
-	        <item name="Water Point" icon="presets/accommodation/water.svg" type="node" preset_name_label="true">
+	        <item name="پایانه آب" icon="presets/accommodation/water.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=water_point" />
 	            <space />
 	            <key key="amenity" value="water_point" />
 	            <optional>
-	                <check key="drinking_water" text="Drinking Water" />
+	                <check key="drinking_water" text="آب شرب" />
 	                <text key="name" text="نام" />
-	                <text key="description" text="Description" />
+	                <text key="description" text="اطلاعات بیشتر" />
 	            </optional>
 	        </item> <!-- Water Point -->
-	        <item name="Animal watering place" icon="presets/misc/watering_place.svg" type="node,closedway" preset_name_label="true">
+	        <item name="آب برای حیوانات" icon="presets/misc/watering_place.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:amenity=watering_place" />
 	            <space />
 	            <key key="amenity" value="watering_place" />
 	            <optional>
 	                <text key="name" text="نام" />
-	                <text key="description" text="Description" />
+	                <text key="description" text="اطلاعات بیشتر" />
 	            </optional>
 	        </item> <!-- Animal watering place -->
-	        <item name="Compressed Air" icon="presets/vehicle/compressed_air.svg" type="node" preset_name_label="true">
+	        <item name="هوای فشرده" icon="presets/vehicle/compressed_air.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=compressed_air" />
 	            <space />
 	            <key key="amenity" value="compressed_air" />
 	            <reference ref="name_ref" />
 	            <text key="operator" text="مسئول" />
 	            <reference ref="fee" />
-	            <multiselect key="valves" text="Valves" values="dunlop;schrader;sclaverand;regina" display_values="Dunlop (Woods);Schrader;Sclaverand (Presta);Regina" values_searchable="true" />
+	            <multiselect key="valves" text="نوع شیر" values="dunlop;schrader;sclaverand;regina" display_values="Dunlop (Woods);Schrader;Sclaverand (Presta);Regina" values_searchable="true" />
 	        </item> <!-- Compressed Air -->
 	        <separator/>
-	        <item name="Advertising Column" icon="presets/leisure/advertising_column.svg" type="node,closedway" preset_name_label="true">
+	        <item name="ستون تبلیغات" icon="presets/leisure/advertising_column.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:advertising=column" />
 	            <space />
 	            <key key="advertising" value="column" />
@@ -4112,7 +4110,7 @@
 	                <check key="lit" text="نوردار" />
 	            </optional>
 	        </item> <!-- Advertising Column -->
-	        <item name="Billboard" icon="presets/leisure/billboard.svg" type="node,way" preset_name_label="true">
+	        <item name="بیلبورد" icon="presets/leisure/billboard.svg" type="node,way" preset_name_label="true">
 	            <link wiki="Tag:advertising=billboard" />
 	            <space />
 	            <key key="advertising" value="billboard" />
@@ -4122,9 +4120,9 @@
 	        </item> <!-- Billboard -->
 	    </group> <!-- Facilities -->
 	  </group>  <!-- Facilities -->
-	  <group name="Sports" icon="presets/sport/soccer.svg">
-	    <group name="Sport Facilities" icon="presets/sport/stadium.svg">
-	        <item name="Stadium" icon="presets/sport/stadium.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	  <group name="ورزشی" icon="presets/sport/soccer.svg">
+	    <group name="امکانات ورزشی" icon="presets/sport/stadium.svg">
+	        <item name="استادیوم" icon="presets/sport/stadium.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=stadium" />
 	            <space />
 	            <key key="leisure" value="stadium" />
@@ -4132,7 +4130,7 @@
 	            <reference ref="sport" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Stadium -->
-	        <item name="Sports Centre" icon="presets/sport/sports_centre.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="مرکز ورزشی" icon="presets/sport/sports_centre.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=sports_centre" />
 	            <space />
 	            <key key="leisure" value="sports_centre" />
@@ -4141,7 +4139,7 @@
 	            <reference ref="link_contact_address_payment" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Sports Centre -->
-	        <item name="Fitness Centre" icon="presets/sport/fitness_centre.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="باشگاه پرورش اندام" icon="presets/sport/fitness_centre.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=fitness_centre" />
 	            <space />
 	            <key key="leisure" value="fitness_centre" />
@@ -4150,159 +4148,146 @@
 	            <reference ref="link_contact_address_payment" />
 	            <preset_link preset_name="Building" />
 	        </item> <!-- Fitness Centre -->
-	        <item name="Pitch" icon="presets/sport/pitch.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="زمین ورزشی" icon="presets/sport/pitch.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=pitch" />
 	            <space />
 	            <key key="leisure" value="pitch" />
 	            <text key="name" text="نام" />
 	            <reference ref="sport" />
-	            <combo key="surface" text="Surface" values="artificial_turf,asphalt,clay,concrete,decoturf,grass,sand,tartan,ground" />
+	            <combo key="surface" text="جنس" values="artificial_turf,asphalt,clay,concrete,decoturf,grass,sand,tartan,ground" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Pitch -->
-	        <item name="Racetrack" icon="presets/sport/track.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
+	        <item name="مسیر مسابقه" icon="presets/sport/track.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=track" />
 	            <space />
 	            <key key="leisure" value="track" />
 	            <text key="name" text="نام" />
-	            <combo key="sport" text="Sport" values="athletics,cycling,dog_racing,equestrian,horse_racing,running,roller_skating,ice_skating" values_context="sport" />
-	            <combo key="surface" text="Surface" values="artificial_turf,asphalt,clay,concrete,decoturf,grass,sand,tartan,ground" />
+	            <combo key="sport" text="ورزش" values="athletics,cycling,dog_racing,equestrian,horse_racing,running,roller_skating,ice_skating" values_context="sport" />
+	            <combo key="surface" text="جنس" values="artificial_turf,asphalt,clay,concrete,decoturf,grass,sand,tartan,ground" />
 	        </item> <!-- Racetrack -->
-	        <group name="Golf" icon="presets/sport/golf/golf.svg">
-	                <item name="Golf Course" icon="presets/sport/golf/golf.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <group name="گلف" icon="presets/sport/golf/golf.svg">
+	                <item name="زمین گلف" icon="presets/sport/golf/golf.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                    <link wiki="Tag:leisure=golf_course" />
 	                    <space />
 	                    <key key="leisure" value="golf_course" />
 	                    <reference ref="name_oh_wheelchair" />
 	                </item> <!-- Golf Course -->
 	            <separator/>
-	            <item name="Tee" name_context="golf" icon="presets/sport/golf/tee.svg" type="node,closedway" preset_name_label="true">
+	            <item name="نگه‌دارنده توپ گلف" name_context="golf" icon="presets/sport/golf/tee.svg" type="node,closedway" preset_name_label="true">
 	                <link wiki="Tag:leisure=golf_course" />
 	                <space />
 	                <key key="golf" value="tee" />
 	            </item> <!-- Tee -->
-	            <item name="Hole" name_context="golf" icon="presets/sport/golf/hole.svg" type="way" preset_name_label="true">
+	            <item name="حفره گلف" name_context="golf" icon="presets/sport/golf/hole.svg" type="way" preset_name_label="true">
 	                <link wiki="Tag:leisure=golf_course" />
 	                <space />
 	                <key key="golf" value="hole" />
 	                <text key="ref" text="مرجع" />
-	                <text key="par" text="Par" />
 	                <optional>
 	                    <text key="name" text="نام" />
-	                    <combo key="handicap" text="Handicap rating" values="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18" />
+	                    <combo key="handicap" text="امتیاز معلولین" values="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18" />
 	                </optional>
 	            </item> <!-- Hole -->
-	            <item name="Pin" name_context="golf" icon="presets/sport/golf/pin.svg" type="node" preset_name_label="true">
-	                <link wiki="Tag:leisure=golf_course" />
-	                <space />
-	                <key key="golf" value="pin" />
-	                <text key="ref" text="مرجع" />
-	            </item> <!-- Pin -->
 	            <separator/>
-	            <item name="Bunker" name_context="golf" icon="presets/sport/golf/bunker.svg" type="closedway" preset_name_label="true">
+	            <item name="چاله گلف" name_context="golf" icon="presets/sport/golf/bunker.svg" type="closedway" preset_name_label="true">
 	                <link wiki="Tag:golf=bunker" />
 	                <space />
 	                <key key="golf" value="bunker" />
-	                <combo key="natural" text="Natural" text_context="golf" values="sand" default="sand" />
+	                <combo key="natural" text="طبیعی" text_context="golf" values="sand" default="sand" />
 	            </item> <!-- Bunker -->
-	             <item name="Frontal Water hazard" name_context="golf" icon="presets/sport/golf/water_hazard.svg" type="closedway" preset_name_label="true">
+	             <item name="موانع جلویی آبی" name_context="golf" icon="presets/sport/golf/water_hazard.svg" type="closedway" preset_name_label="true">
 	                <link wiki="Tag:leisure=golf_course" />
 	                <space />
 	                <key key="golf" value="water_hazard" />
 	                <key key="natural" value="water" match="keyvalue" />
 	            </item> <!-- Frontal Water hazard -->
-	             <item name="Lateral water hazard" name_context="golf" icon="presets/sport/golf/lateral_water_hazard.svg" type="closedway" preset_name_label="true">
+	             <item name="موانع پشتی آبی" name_context="golf" icon="presets/sport/golf/lateral_water_hazard.svg" type="closedway" preset_name_label="true">
 	                <link wiki="Tag:leisure=golf_course" />
 	                <space />
 	                <key key="golf" value="lateral_water_hazard" />
 	                <key key="natural" value="water" match="keyvalue" />
 	            </item> <!-- Lateral water hazard -->
 	            <separator/>
-	            <item name="Green" name_context="golf" icon="presets/sport/golf/green.svg" type="closedway,multipolygon" preset_name_label="true">
+	            <item name="قسمت سبز گلف" name_context="golf" icon="presets/sport/golf/green.svg" type="closedway,multipolygon" preset_name_label="true">
 	                <link wiki="Tag:leisure=golf_course" />
 	                <space />
 	                <key key="golf" value="green" />
 	            </item> <!-- Green -->
-	            <item name="Fairway" name_context="golf" icon="presets/sport/golf/fairway.svg" type="closedway,multipolygon" preset_name_label="true">
+	            <item name="مسیر توپ گلف" name_context="golf" icon="presets/sport/golf/fairway.svg" type="closedway,multipolygon" preset_name_label="true">
 	                <link wiki="Tag:golf=fairway" />
 	                <space />
 	                <key key="golf" value="fairway" />
 	                <key key="surface" value="grass" match="keyvalue" />
 	            </item> <!-- Fairway -->
-	            <item name="Rough" name_context="golf" icon="presets/sport/golf/rough.svg" type="closedway,multipolygon" preset_name_label="true">
+	            <item name="مساحت چمنی گلف" name_context="golf" icon="presets/sport/golf/rough.svg" type="closedway,multipolygon" preset_name_label="true">
 	                <link wiki="Tag:leisure=golf_course" />
 	                <space />
 	                <key key="golf" value="rough" />
 	            </item> <!-- Rough -->
 	            <separator/>
-	            <item name="Driving range" name_context="golf" icon="presets/sport/golf/driving_range.svg" type="node,closedway" preset_name_label="true">
+	            <item name="دامنه رانندگی گلف" name_context="golf" icon="presets/sport/golf/driving_range.svg" type="node,closedway" preset_name_label="true">
 	                <link wiki="Tag:leisure=golf_course" />
 	                <space />
 	                <key key="golf" value="driving_range" />
 	            </item> <!-- Driving range -->
 	        </group> <!-- Golf -->
-	        <item name="Miniature Golf" icon="presets/sport/miniature_golf.svg" type="node,closedway,multipolygon" preset_name_label="true">
-	            <link wiki="Tag:leisure=miniature_golf" />
-	            <space />
-	            <key key="leisure" value="miniature_golf" />
-	            <reference ref="name_oh_wheelchair" />
-	        </item> <!-- Miniature Golf -->
 	    </group> <!-- Sport Facilities -->
-	    <group name="Sport" icon="presets/sport/multi.svg">
-	        <item name="Multi" icon="presets/sport/multi.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="ورزش‌ها" icon="presets/sport/multi.svg">
+	        <item name="چندورزشی" icon="presets/sport/multi.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=multi" />
 	            <space />
 	            <key key="sport" value="multi" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,fitness_centre,stadium,track" values_context="running" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,fitness_centre,stadium,track" values_context="running" />
 	        </item> <!-- Multi -->
-	        <item name="Nine-pin Bowling" icon="presets/sport/9pin.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بولینگ نُه‌پین" icon="presets/sport/9pin.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=9pin" />
 	            <space />
 	            <key key="sport" value="9pin" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium" />
 	        </item> <!-- Nine-pin Bowling -->
-	        <item name="Ten-pin Bowling" icon="presets/sport/10pin.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بولینگ ده‌پین" icon="presets/sport/10pin.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=10pin" />
 	            <space />
 	            <key key="sport" value="10pin" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium" />
 	        </item> <!-- Ten-pin Bowling -->
-	        <item name="Archery" icon="presets/sport/archery.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="تیراندازی با کمان" icon="presets/sport/archery.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=archery" />
 	            <space />
 	            <key key="sport" value="archery" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium" />
 	        </item> <!-- Archery -->
-	        <item name="Track and Field Athletics" icon="presets/sport/athletics.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="دو و میدانی" icon="presets/sport/athletics.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sports=athletics" />
 	            <space />
 	            <key key="sport" value="athletics" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="running" default="track" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium,track" values_context="running" default="track" />
 	        </item> <!-- Track and Field Athletics -->
-	        <item name="Running" icon="presets/sport/running.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="دو" icon="presets/sport/running.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=running" />
 	            <space />
 	            <key key="sport" value="running" />
 	            <reference ref="name_operator" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="running" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium,track" values_context="running" />
 	        </item> <!-- Running -->
-	        <item name="Climbing site" icon="presets/sport/climbing.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
+	        <item name="سایت صخره‌نوردی" icon="presets/sport/climbing.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=climbing" />
 	            <space />
 	            <key key="sport" value="climbing" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="sports_centre" />
+	            <combo key="leisure" text="نوع" values="sports_centre" />
 	            <reference ref="climbing_styles" />
-	            <text key="climbing:routes" text="Number of routes" />
-	            <text key="ele" text="Usual elevation at the bottom of the routes" />
+	            <text key="climbing:routes" text="تعداد مسیر‌ها" />
+	            <text key="ele" text="ارتفاع پایین مسیر‌ها" />
 	            <space />
-	            <combo key="climbing:length" text="Usual route length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" />
-	            <combo key="climbing:length:min" text="Minimal climbing length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" />
-	            <combo key="climbing:length:max" text="Maximum climbing length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" />
+	            <combo key="climbing:length" text="طول مسیر به متر" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" />
+	            <combo key="climbing:length:min" text="حداقل طول مسیر به متر" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" />
+	            <combo key="climbing:length:max" text="حداکثر طول مسیر به متر" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" />
 	            <space />
 	            <combo key="climbing:grade:UIAA:min" text="UIAA: Simplest route" values="4,4+,5-,5,5+,6-,6,6+,7-,7,7+,8-,8,8+,9-,9,9+,10-,10,10+,11-,11,11+,12-" values_no_i18n="true" />
 	            <combo key="climbing:grade:UIAA:max" text="UIAA: Most difficult route" values="4,4+,5-,5,5+,6-,6,6+,7-,7,7+,8-,8,8+,9-,9,9+,10-,10,10+,11-,11,11+,12-" values_no_i18n="true" />
@@ -4318,7 +4303,7 @@
 	            <reference ref="climbing_optional_attributes" />
 	            <space />
 	        </item> <!-- Climbing site -->
-	        <item name="Climbing route" icon="presets/sport/climbing.svg" type="node,way" preset_name_label="true">
+	        <item name="مسیر صخره‌نوردی" icon="presets/sport/climbing.svg" type="node,way" preset_name_label="true">
 	            <link wiki="Tag:sport=climbing" />
 	            <space />
 	            <key key="sport" value="climbing" />
@@ -4327,138 +4312,137 @@
 	            <reference ref="climbing_styles" />
 	            <combo key="climbing:bolted" text="Bolts" values="yes,no,1,2,3,4,5,6" values_sort="false" values_no_i18n="true" />
 	            <combo key="climbing:pitches" text="Pitches" values="1,2,3,4,5,6,7,8" default="1" values_no_i18n="true" />
-	            <combo key="climbing:length" text="Route length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" />
+	            <combo key="climbing:length" text="طول مسیر به متر" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" />
 	            <space />
 	            <combo key="climbing:grade:UIAA" text="UIAA grading" values="4,4+,5-,5,5+,6-,6,6+,7-,7,7+,8-,8,8+,9-,9,9+,10-,10,10+,11-,11,11+,12-" values_no_i18n="true" />
 	            <combo key="climbing:grade:french" text="French grading" values="4,5a,5b,5c,6a,6a+,6b,6b+,6c,6c+,7a,7a+,7b,7b+,7c,7c+,8a,8a+,8b,8b+,8c,8c+,9a,9a+,9b,9b+" values_no_i18n="true" />
 	            <combo key="climbing:grade:saxon" text="Saxon grading" values="IV,V,VI,VIIa,VIIb,VIIc,VIIIa,VIIIb,VIIIc,IXa,IXb,IXc,Xa,Xb,Xc,XIa,XIb,XIc" values_no_i18n="true" />
 	            <reference ref="climbing_optional_attributes" />
 	        </item> <!-- Climbing route -->
-	        <item name="Canoeing/Kayaking" icon="presets/sport/canoe.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
+	        <item name="قایقرانی بلم" icon="presets/sport/canoe.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=canoe" />
 	            <space />
 	            <key key="sport" value="canoe" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Canoeing/Kayaking -->
-	        <item name="Rowing" icon="presets/sport/rowing.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="قایقرانی" icon="presets/sport/rowing.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=rowing" />
 	            <space />
 	            <key key="sport" value="rowing" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Rowing -->
-	        <item name="Cycling" icon="presets/sport/cycling.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="دوچرخه‌سواری" icon="presets/sport/cycling.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=cycling" />
 	            <space />
 	            <key key="sport" value="cycling" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="racing" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium,track" values_context="racing" />
 	        </item> <!-- Cycling -->
-	        <item name="Dog Racing" icon="presets/sport/dog_racing.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="مسابقه سگ" icon="presets/sport/dog_racing.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=dog_racing" />
 	            <space />
 	            <key key="sport" value="dog_racing" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="racing" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium,track" values_context="racing" />
 	        </item> <!-- Dog Racing -->
-	        <item name="Equestrian" icon="presets/sport/equestrian.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="سوارکاری" icon="presets/sport/equestrian.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=equestrian" />
 	            <space />
 	            <key key="sport" value="equestrian" />
 	            <text key="name" text="نام" />
 	            <reference ref="riding_surface" />
 	        </item> <!-- Equestrian -->
-	        <item name="Horse Racing" icon="presets/sport/riding.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="مسابقه اسب" icon="presets/sport/riding.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=horse_racing" />
 	            <space />
 	            <key key="sport" value="horse_racing" />
 	            <text key="name" text="نام" />
 	            <reference ref="riding_surface" />
 	        </item> <!-- Horse Racing -->
-	        <item name="Gymnastics" icon="presets/sport/gymnastics.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="ژیمناستیک" icon="presets/sport/gymnastics.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=gymnastics" />
 	            <space />
 	            <key key="sport" value="gymnastics" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,fitness_centre,stadium" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,fitness_centre,stadium" />
 	        </item> <!-- Gymnastics -->
-	        <item name="Ice Skating" icon="presets/sport/ice_skating.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="اسکیت روی یخ" icon="presets/sport/ice_skating.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=ice_skating" />
 	            <space />
 	            <key key="sport" value="ice_skating" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" default="ice_rink" />
+	            <combo key="leisure" text="نوع" values="ice_rink,pitch,sports_centre,stadium" default="ice_rink" />
 	        </item> <!-- Ice Skating -->
-	        <item name="Roller Skating" icon="presets/sport/roller_skating.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="اسکیت" icon="presets/sport/roller_skating.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=roller_skating"/>
 	            <space />
 	            <key key="sport" value="roller_skating" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium" />
 	        </item> <!-- Roller Skating -->
-	        <item name="Skateboard" icon="presets/sport/skateboard.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="اسکیت‌بورد" icon="presets/sport/skateboard.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=skateboard" />
 	            <space />
 	            <key key="sport" value="skateboard" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" default="pitch" values_context="racing" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium,track" default="pitch" values_context="racing" />
 	        </item> <!-- Skateboard -->
-	        <item name="Swimming" icon="presets/sport/swimming.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="شنای آب" icon="presets/sport/swimming.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=swimming" />
 	            <space />
 	            <key key="sport" value="swimming" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="sports_centre,stadium,swimming_pool,water_park" default="swimming_pool" values_searchable="true" />
+	            <combo key="leisure" text="نوع" values="sports_centre,stadium,swimming_pool,water_park" default="swimming_pool" values_searchable="true" />
 	        </item> <!-- Swimming -->
-	        <item name="Scuba Diving" icon="presets/sport/scuba_diving.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="غواصی" icon="presets/sport/scuba_diving.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=scuba_diving" />
 	            <space />
 	            <key key="sport" value="scuba_diving" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Scuba Diving -->
-	        <item name="Skiing" icon="presets/sport/skiing.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
+	        <item name="اسکی" icon="presets/sport/skiing.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Piste_Maps" />
 	            <space />
 	            <text key="name" text="نام" />
-	            <combo key="piste:type" text="Piste type" values="connection,downhill,hike,ice_skate,nordic,playground,skitour,sled,sleigh,snow_park" values_searchable="true" match="keyvalue"/>
+	            <combo key="piste:type" text="نوع پیست" values="connection,downhill,hike,ice_skate,nordic,playground,skitour,sled,sleigh,snow_park" values_searchable="true" match="keyvalue"/>
 	            <optional>
-	                <combo key="piste:difficulty" text="Difficulty" values="novice,easy,intermediate,advanced,expert,freeride" values_context="piste:difficulty" values_searchable="true" values_sort="false" />
-	                <combo key="piste:grooming" text="Grooming" values="classic,mogul,skating,classic+skating,scooter,backcountry" values_context="piste:grooming" />
+	                <combo key="piste:difficulty" text="درجه سختی" values="novice,easy,intermediate,advanced,expert,freeride" values_context="piste:difficulty" values_searchable="true" values_sort="false" />
 	            </optional>
 	        </item> <!-- Skiing -->
-	        <item name="Shooting" icon="presets/sport/range.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="تیراندازی" icon="presets/sport/range.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=shooting" />
 	            <space />
 	            <key key="sport" value="shooting" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium" />
 	        </item> <!-- Shooting -->
 	    </group> <!-- Sport -->
-	    <group name="Sport (Ball)" icon="presets/sport/soccer.svg">
-	        <item name="Soccer" icon="presets/sport/soccer.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="ورزش توپی" icon="presets/sport/soccer.svg">
+	        <item name="فوتبال" icon="presets/sport/soccer.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=soccer" />
 	            <space />
 	            <key key="sport" value="soccer" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- Soccer -->
-	        <item name="Australian Football" icon="presets/sport/football.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فوتبال استرالیایی" icon="presets/sport/football.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=australian_football" />
 	            <space />
 	            <key key="sport" value="australian_football" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- Australian Football -->
-	        <item name="American Football" icon="presets/sport/football.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فوتبال آمریکایی" icon="presets/sport/football.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=american_football" />
 	            <space />
 	            <key key="sport" value="american_football" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- American Football -->
-	        <item name="Canadian Football" icon="presets/sport/football.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فوتبال کانادایی" icon="presets/sport/football.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=canadian_football" />
 	            <space />
 	            <key key="sport" value="canadian_football" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- Canadian Football -->
-	        <item name="Gaelic Games" icon="presets/sport/soccer.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بازی‌های گالی" icon="presets/sport/soccer.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=gaelic_games" />
 	            <space />
 	            <key key="sport" value="gaelic_games" />
@@ -4471,166 +4455,166 @@
 	                <check key="gaelic_games:handball" text="Handball" />
 	            </optional>
 	        </item> <!-- Gaelic Games -->
-	        <item name="Rugby League" icon="presets/sport/football.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="لیگ راگبی" icon="presets/sport/football.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=rugby_league" />
 	            <space />
 	            <key key="sport" value="rugby_league" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- Rugby League -->
-	        <item name="Rugby Union" icon="presets/sport/football.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="اتحادیه راگبی" icon="presets/sport/football.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=rugby_union" />
 	            <space />
 	            <key key="sport" value="rugby_union" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- Rugby Union -->
-	        <item name="Baseball" icon="presets/sport/baseball.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بیسبال" icon="presets/sport/baseball.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=baseball" />
 	            <space />
 	            <key key="sport" value="baseball" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- Baseball -->
-	        <item name="Basketball" icon="presets/sport/basketball.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بسکتبال" icon="presets/sport/basketball.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=basketball" />
 	            <space />
 	            <key key="sport" value="basketball" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- Basketball -->
-	        <item name="Handball" icon="presets/sport/handball.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="هندبال" icon="presets/sport/handball.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=handball" />
 	            <space />
 	            <key key="sport" value="handball" />
 	            <reference ref="name_operator" />
-	            <combo key="leisure" text="Type" values="stadium,pitch,sports_centre" />
+	            <combo key="leisure" text="نوع" values="stadium,pitch,sports_centre" />
 	        </item> <!-- Handball -->
-	        <item name="Volleyball" icon="presets/sport/volleyball.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="والیبال" icon="presets/sport/volleyball.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=volleyball" />
 	            <space />
 	            <key key="sport" value="volleyball" />
 	            <reference ref="name_operator" />
-	            <combo key="leisure" text="Type" values="stadium,pitch,sports_centre" />
+	            <combo key="leisure" text="نوع" values="stadium,pitch,sports_centre" />
 	        </item> <!-- Volleyball -->
-	        <item name="Beach Volleyball" icon="presets/sport/beachvolleyball.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="والیبال ساحلی" icon="presets/sport/beachvolleyball.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=beachvolleyball" />
 	            <space />
 	            <key key="sport" value="beachvolleyball" />
 	            <reference ref="name_operator" />
-	            <combo key="leisure" text="Type" values="stadium,pitch,sports_centre" />
+	            <combo key="leisure" text="نوع" values="stadium,pitch,sports_centre" />
 	        </item> <!-- Beach Volleyball -->
-	        <item name="Billiards" icon="presets/sport/billiards.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بیلیارد" icon="presets/sport/billiards.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=billiards" />
 	            <space />
 	            <key key="sport" value="billiards" />
 	            <reference ref="name_operator" />
-	            <combo key="leisure" text="Type" values="stadium,pitch,sports_centre" />
+	            <combo key="leisure" text="نوع" values="stadium,pitch,sports_centre" />
 	        </item> <!-- Billiards -->
-	        <item name="Golf" icon="presets/sport/golf.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="گلف" icon="presets/sport/golf.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=golf" />
 	            <space />
 	            <key key="sport" value="golf" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="golf_course,pitch,sports_centre,stadium" default="golf_course" />
+	            <combo key="leisure" text="نوع" values="golf_course,pitch,sports_centre,stadium" default="golf_course" />
 	        </item> <!-- Golf -->
-	        <item name="Boule" icon="presets/sport/boule.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بوچه" icon="presets/sport/boule.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=boules" />
 	            <space />
 	            <key key="sport" value="boules" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- Boule -->
-	        <item name="Lawn Bowling" icon="presets/sport/boule.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="گوی‌بازی" icon="presets/sport/boule.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=bowls" />
 	            <space />
 	            <key key="sport" value="bowls" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- Lawn Bowling -->
-	        <item name="Cricket" icon="presets/sport/cricket.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کریکت" icon="presets/sport/cricket.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=cricket" />
 	            <space />
 	            <key key="sport" value="cricket" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- Cricket -->
-	        <item name="Croquet" icon="presets/sport/croquet.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کروکیت" icon="presets/sport/croquet.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=croquet" />
 	            <space />
 	            <key key="sport" value="croquet" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- Croquet -->
-	        <item name="Field Hockey" icon="presets/sport/field_hockey.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="هاکی" icon="presets/sport/field_hockey.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=field_hockey" />
 	            <space />
 	            <key key="sport" value="field_hockey" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium" />
 	        </item> <!-- Field Hockey -->
-	        <item name="Ice Hockey" icon="presets/sport/ice_hockey.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="هاکی یخی" icon="presets/sport/ice_hockey.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=ice_hockey" />
 	            <space />
 	            <key key="sport" value="ice_hockey" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" />
+	            <combo key="leisure" text="نوع" values="ice_rink,pitch,sports_centre,stadium" />
 	        </item> <!-- Ice Hockey -->
-	        <item name="Pelota" icon="presets/sport/pelota.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="پلتا" icon="presets/sport/pelota.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=pelota" />
 	            <space />
 	            <key key="sport" value="pelota" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- Pelota -->
-	        <item name="Racquetball" icon="presets/sport/racquetball.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="راکت‌بال" icon="presets/sport/racquetball.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=racquet" />
 	            <space />
 	            <key key="sport" value="racquet" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium" />
 	        </item> <!-- Racquetball -->
-	        <item name="Table Tennis/Ping-Pong" icon="presets/sport/table_tennis.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="تنیس روی میز" icon="presets/sport/table_tennis.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=table_tennis" />
 	            <space />
 	            <key key="sport" value="table_tennis" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium" />
 	        </item> <!-- Table Tennis/Ping-Pong -->
-	        <item name="Tennis" icon="presets/sport/tennis.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="تنیس" icon="presets/sport/tennis.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=tennis" />
 	            <space />
 	            <key key="sport" value="tennis" />
 	            <reference ref="name_leisure_pitch" />
 	        </item> <!-- Tennis -->
 	    </group> <!-- Sport (Ball) -->
-	    <group name="Motorsport" icon="presets/vehicle/motorbike.svg">
-	        <item name="Motorsport" icon="presets/sport/motor.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="ورزش موتوری" icon="presets/vehicle/motorbike.svg">
+	        <item name="ورزش موتوری" icon="presets/sport/motor.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=motor" />
 	            <space />
 	            <key key="sport" value="motor" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="racing" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,stadium,track" values_context="racing" />
 	        </item> <!-- Motorsport -->
-	        <item name="Kart Racing" icon="presets/sport/karting.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کارتینگ" icon="presets/sport/karting.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=karting" />
 	            <space />
 	            <key key="sport" value="karting" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="racing" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,track" values_context="racing" />
 	        </item> <!-- Kart Racing -->
-	        <item name="Motocross" icon="presets/sport/motocross.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="موتور کراس" icon="presets/sport/motocross.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=motocross" />
 	            <space />
 	            <key key="sport" value="motocross" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="racing" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,track" values_context="racing" />
 	        </item> <!-- Motocross -->
 	        <separator/>
-	        <item name="Model Aerodrome" icon="presets/transport/airport.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="پهپاد رانی" icon="presets/transport/airport.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=model_aerodrome" />
 	            <space />
 	            <key key="sport" value="model_aerodrome" />
 	            <text key="name" text="نام" />
 	            <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="aerialway" />
 	        </item> <!-- Model Aerodrome -->
-	        <item name="RC Car" icon="presets/sport/rc_car.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="خودرو از راه دور" icon="presets/sport/rc_car.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:sport=rc_car" />
 	            <space />
 	            <key key="sport" value="rc_car" />
 	            <text key="name" text="نام" />
-	            <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="racing" />
+	            <combo key="leisure" text="نوع" values="pitch,sports_centre,track" values_context="racing" />
 	        </item> <!-- RC Car -->
 	    </group> <!-- Motorsport -->
 	  </group> <!-- Sports -->
