@@ -1333,7 +1333,7 @@
 	            <reference ref="leaf" />
 	            <optional>
 	                <reference ref="genus_species_taxon" />
-	                <text key="height" text="Height (meters)" length="7" />
+	                <text key="height" text="ارتفاع به متر" length="7" />
 	            </optional>
 	        </item> <!-- Hedge -->
 	        <item name="حصار" icon="presets/barrier/fence.svg" type="way,closedway" preset_name_label="true">
@@ -1341,7 +1341,7 @@
 	            <key key="barrier" value="fence" />
 	            <optional>
 	                <combo key="fence_type" text="Type" values="barbed_wire,bars,chain_link,concrete,electric,metal,pole,railing,split_rail,wire,wood" />
-	                <text key="height" text="Height (meters)" length="7" />
+	                <text key="height" text="ارتفاع به متر" length="7" />
 	            </optional>
 	        </item> <!-- Fence -->
 	        <item name="نرده دست" icon="presets/barrier/handrail.svg" type="way,closedway" preset_name_label="true">
@@ -1623,7 +1623,7 @@
 	            <space />
 	            <key key="waterway" value="waterfall" />
 	            <reference ref="name_wikipedia" />
-	            <text key="height" text="Height (meters)" />
+	            <text key="height" text="ارتفاع به متر" />
 	        </item> <!-- Waterfall -->
 	        <item name="سرریز" icon="presets/nautical/weir.svg" type="node,way" preset_name_label="true">
 	            <link wiki="Tag:waterway=weir" />
@@ -4618,44 +4618,44 @@
 	        </item> <!-- RC Car -->
 	    </group> <!-- Motorsport -->
 	  </group> <!-- Sports -->
-	  <group name="Man Made" icon="presets/landmark/works.svg">
-	    <group name="Man Made" icon="presets/landmark/works.svg">
-	        <item name="Building" icon="presets/landmark/building.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	  <group name="مصنوع انسان" icon="presets/landmark/works.svg">
+	    <group name="عاریه" icon="presets/landmark/works.svg">
+	        <item name="ساختمان" icon="presets/landmark/building.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Key:building" />
 	            <space />
-	            <combo key="building" text="Building" values="allotment_house,bakehouse,barn,basilica,cabin,carport,cathedral,chapel,church,college,commercial,construction,cowshed,farm_auxiliary,fire_station,garage,garages,gasometer,greenhouse,hangar,hospital,industrial,kindergarten,manufacture,mosque,office,public,retail,roof,ruins,school,service,shed,silo,stable,storage_tank,supermarket,synagogue,temple,toilets,train_station,transformer_tower,transportation,university,warehouse,yes" values_context="building" default="yes" match="keyvalue!" values_searchable="true" />
+	            <combo key="building" text="ساختمان" values="allotment_house,bakehouse,barn,basilica,cabin,carport,cathedral,chapel,church,college,commercial,construction,cowshed,farm_auxiliary,fire_station,garage,garages,gasometer,greenhouse,hangar,hospital,industrial,kindergarten,manufacture,mosque,office,public,retail,roof,ruins,school,service,shed,silo,stable,storage_tank,supermarket,synagogue,temple,toilets,train_station,transformer_tower,transportation,university,warehouse,yes" values_context="building" default="yes" match="keyvalue!" values_searchable="true" />
 	            <optional>
 	                <text key="name" text="نام" />
-	                <combo key="building:levels" text="Levels" values="1,2,3,4,5,6,7,8,9,10,11" text_context="building" />
-	                <text key="height" text="Height (meters)" />
+	                <combo key="building:levels" text="تعداد طبقه" values="1,2,3,4,5,6,7,8,9,10,11" text_context="building" />
+	                <text key="height" text="ارتفاع به متر" />
 	            </optional>
 	            <preset_link preset_name="Address" />
 	        </item> <!-- Building -->
-	        <item name="Residential Building" icon="presets/landmark/building.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="ساختمان مسکونی" icon="presets/landmark/building.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Key:building" />
 	            <space />
-	            <combo key="building" text="Building" values="yes,residential,apartments,ger,house,hotel,hut,bungalow,dormitory,terrace,detached,farm" default="residential" match="keyvalue!" values_context="building" values_searchable="true" />
+	            <combo key="building" text="نوع ساختمان" values="yes,residential,apartments,ger,house,hotel,hut,bungalow,dormitory,terrace,detached,farm" default="residential" match="keyvalue!" values_context="building" values_searchable="true" />
 	            <optional>
 	                <text key="name" text="نام" />
-	                <combo key="building:levels" text="Levels" values="1,2,3,4,5,6,7,8,9,10,11" text_context="building" />
-	                <text key="height" text="Height (meters)" />
+	                <combo key="building:levels" text="تعداد طبقه" values="1,2,3,4,5,6,7,8,9,10,11" text_context="building" />
+	                <text key="height" text="ارتفاع به متر" />
 	            </optional>
 	            <preset_link preset_name="Address" />
 	        </item> <!-- Residential Building -->
-	        <item name="Building part" icon="presets/landmark/building.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="قسمت ساختمانی" icon="presets/landmark/building.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Key:building:part" />
 	            <space />
-	            <combo key="building:part" text="Building part" values="allotment_house,bakehouse,barn,college,commercial,construction,cowshed,farm_auxiliary,garage,garages,greenhouse,hangar,hospital,industrial,office,retail,roof,ruins,school,shed,supermarket,toilets,transportation,university,warehouse,yes" values_context="building" default="yes" match="keyvalue!" values_searchable="true" />
+	            <combo key="building:part" text="قسمت ساختمانی" values="allotment_house,bakehouse,barn,college,commercial,construction,cowshed,farm_auxiliary,garage,garages,greenhouse,hangar,hospital,industrial,office,retail,roof,ruins,school,shed,supermarket,toilets,transportation,university,warehouse,yes" values_context="building" default="yes" match="keyvalue!" values_searchable="true" />
 	            <text key="name" text="نام" />
-	            <combo key="building:levels" text="Levels" values="1,2,3,4,5,6,7,8,9,10,11" text_context="building" />
-	            <combo key="building:min_level" text="Skipped Levels" values="1,2,3,4,5,6,7,8,9,10" text_context="building" />
-	            <text key="height" text="Height (meters)" />
-	            <text key="min_height" text="Skipped height (meters)" />
+	            <combo key="building:levels" text="تعداد طبقه" values="1,2,3,4,5,6,7,8,9,10,11" text_context="building" />
+	            <combo key="building:min_level" text="کمترین تعداد طبقه" values="1,2,3,4,5,6,7,8,9,10" text_context="building" />
+	            <text key="height" text="ارتفاع به متر" />
+	            <text key="min_height" text="کمترین ارتفاع" />
 	        </item> <!-- Building part -->
-	        <item name="Entrance" icon="presets/misc/entrance_yes.svg" type="node" preset_name_label="true">
+	        <item name="ورودی" icon="presets/misc/entrance_yes.svg" type="node" preset_name_label="true">
 	            <link wiki="Key:entrance" />
 	            <space />
-	            <combo key="entrance" text="Entrance" values_context="entrance" default="yes" match="key">
+	            <combo key="entrance" text="ورودی" values_context="entrance" default="yes" match="key">
 	                <list_entry value="yes" icon="presets/misc/entrance_yes.svg" />
 	                <list_entry value="main" icon="presets/misc/entrance_main.svg" />
 	                <list_entry value="service" icon="presets/misc/entrance_service.svg" />
@@ -4664,100 +4664,100 @@
 	                <list_entry value="staircase" icon="presets/misc/entrance_yes.svg" />
 	                <list_entry value="home" icon="presets/misc/entrance_yes.svg" />
 	            </combo>
-	            <combo key="access" text="Access" values="yes,delivery,private,no" />
+	            <combo key="access" text="دسترسی" values="yes,delivery,private,no" />
 	            <reference ref="wheelchair" />
 	            <optional>
-	                <text key="ref" text="Entrance number" />
-	                <text key="addr:flats" text="Flat numbers" />
+	                <text key="ref" text="شماره ورودی" />
+	                <text key="addr:flats" text="شماره ساختمان" />
 	            </optional>
 	        </item> <!-- Entrance -->
-	        <item name="Non-public police facility" icon="presets/service/police_non_public.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="ساختمان پلیس غیرعمومی" icon="presets/service/police_non_public.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Key:police" />
 	            <space />
-	            <combo key="police" text="Type" values="barracks,car_pound,checkpoint,detention,naval_base,offices,range,storage,training_area,yes" values_context="police" match="keyvalue!" values_searchable="true" />
+	            <combo key="police" text="نوع" values="barracks,car_pound,checkpoint,detention,naval_base,offices,range,storage,training_area,yes" values_context="police" match="keyvalue!" values_searchable="true" />
 	            <optional>
 	                <text key="name" text="نام" />
 	                <text key="operator" text="مسئول" />
 	            </optional>
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Non-public police facility -->
-	        <item name="Tower" icon="presets/landmark/tower.svg" type="node,closedway" preset_name_label="true">
+	        <item name="برج" icon="presets/landmark/tower.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=tower" />
 	            <space />
 	            <key key="man_made" value="tower" />
 	            <text key="name" text="نام" />
-	            <combo key="tower:type" text="Tower type" values="bell_tower,communication,cooling,defensive,observation,radar,watchtower" values_searchable="true" />
+	            <combo key="tower:type" text="نوع برج" values="bell_tower,communication,cooling,defensive,observation,radar,watchtower" values_searchable="true" />
 	            <optional>
-	                <text key="height" text="Height (meters)" />
+	                <text key="height" text="ارتفاع به متر" />
 	                <text key="operator" text="مسئول" />
 	            </optional>
 	        </item> <!-- Tower -->
-	        <item name="Flagpole" icon="presets/misc/flag.svg" type="node" preset_name_label="true">
+	        <item name="میله پرچم" icon="presets/misc/flag.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:man_made=flagpole" />
 	            <key key="man_made" value="flagpole" />
 	        </item> <!-- Flagpole -->
-	        <item name="Cross" icon="presets/landmark/cross.svg" type="node" preset_name_label="true">
+	        <item name="صلیب" icon="presets/landmark/cross.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:man_made=cross" />
 	            <key key="man_made" value="cross" />
 	        </item> <!-- Cross -->
 	        <separator/>
-	        <item name="Works" icon="presets/landmark/works.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کارخانه" icon="presets/landmark/works.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:man_made=works" />
 	            <space />
 	            <key key="man_made" value="works" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Works -->
-	        <item name="Chimney" icon="presets/landmark/chimney.svg" type="node,closedway" preset_name_label="true">
+	        <item name="دودکش" icon="presets/landmark/chimney.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=chimney" />
 	            <space />
 	            <key key="man_made" value="chimney" />
 	            <reference ref="name_operator" />
-	            <text key="height" text="Height (meters)" />
+	            <text key="height" text="ارتفاع به متر" />
 	        </item> <!-- Chimney -->
-	        <item name="Kiln" icon="presets/misc/kiln.svg" type="node,closedway" preset_name_label="true">
+	        <item name="کوره" icon="presets/misc/kiln.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=kiln" />
 	            <space />
 	            <key key="man_made" value="kiln" />
 	            <reference ref="name_operator" />
 	            <combo key="product" text="Product" values="lime,charcoal,bricks" />
 	        </item> <!-- Kiln -->
-	        <item name="Windmill" icon="presets/landmark/windmill.svg" type="node,closedway" preset_name_label="true">
+	        <item name="آسیاب بادی" icon="presets/landmark/windmill.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=windmill" />
 	            <space />
 	            <key key="man_made" value="windmill" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Windmill -->
-	        <item name="Gasometer" icon="presets/landmark/gasometer.svg" type="node,closedway" preset_name_label="true">
+	        <item name="مخزن گاز" icon="presets/landmark/gasometer.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=gasometer" />
 	            <space />
 	            <key key="man_made" value="gasometer" />
 	            <optional>
 	                <reference ref="name_operator" />
-	                <combo key="building" text="Building" values="gasometer" values_context="building" />
-	                <text key="height" text="Height (meters)" length="7" />
+	                <combo key="building" text="ساختمان" values="gasometer" values_context="building" />
+	                <text key="height" text="ارتفاع به متر" length="7" />
 	            </optional>
 	        </item> <!-- Gasometer -->
-	        <item name="Silo" icon="presets/landmark/silo.svg" type="node,closedway" preset_name_label="true">
+	        <item name="سیلو" icon="presets/landmark/silo.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=silo" />
 	            <space />
 	            <key key="man_made" value="silo" />
 	            <optional>
 	                <reference ref="name_operator" />
-	                <combo key="building" text="Building" values="silo" values_context="building" />
-	                <text key="height" text="Height (meters)" length="7" />
+	                <combo key="building" text="ساختمان" values="silo" values_context="building" />
+	                <text key="height" text="ارتفاع به متر" length="7" />
 	            </optional>
 	        </item> <!-- Silo -->
-	        <item name="Storage Tank" icon="presets/landmark/storage_tank.svg" type="node,closedway">
+	        <item name="مخزن سیال" icon="presets/landmark/storage_tank.svg" type="node,closedway">
 	            <link wiki="Tag:man_made=storage_tank" />
 	            <key key="man_made" value="storage_tank" />
 	            <optional>
 	                <reference ref="name_operator" />
-	                <combo key="building" text="Building" values="storage_tank" values_context="building" />
-	                <combo key="content"  text="Content" values="fuel,manure,oil,sewage,silage,slurry,water,wine" values_context="content" />
-	                <text key="height" text="Height (meters)" length="7" />
+	                <combo key="building" text="ساختمان" values="storage_tank" values_context="building" />
+	                <combo key="content"  text="محتویات" values="fuel,manure,oil,sewage,silage,slurry,water,wine" values_context="content" />
+	                <text key="height" text="ارتفاع به متر" length="7" />
 	            </optional>
 	        </item> <!-- Storage Tank -->
-	        <item name="Bunker Silo" icon="presets/landmark/bunker_silo.svg" type="node,closedway" preset_name_label="true">
+	        <item name="سیلو سر باز" icon="presets/landmark/bunker_silo.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=bunker_silo" />
 	            <space />
 	            <key key="man_made" value="bunker_silo" />
@@ -4765,36 +4765,35 @@
 	                <reference ref="name_operator" />
 	            </optional>
 	        </item> <!-- Bunker Silo -->
-	        <item name="Crane" icon="presets/landmark/crane.svg" type="node,way,closedway" preset_name_label="true">
+	        <item name="جرثقیل" icon="presets/landmark/crane.svg" type="node,way,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=crane" />
 	            <space />
 	            <key key="man_made" value="crane" />
 	            <optional>
-	                <combo key="crane:type" text="Type" values="floor-mounted_crane,gantry_crane,portal_crane,travel_lift" />
+	                <combo key="crane:type" text="نوع" values="floor-mounted_crane,gantry_crane,portal_crane,travel_lift" />
 	                <reference ref="name_operator" />
 	            </optional>
 	        </item> <!-- Crane -->
-	        <item name="Mineshaft" icon="presets/landmark/mine.svg" type="node,closedway" preset_name_label="true">
+	        <item name="معدنچفت" icon="presets/landmark/mine.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=mineshaft" />
 	            <space />
 	            <key key="man_made" value="mineshaft" />
 	            <text key="name" text="نام" />
-	            <combo key="mineshaft_type" text="Function" values="winding,air" />
-	            <text key="depth" text="Depth in meters" />
+	            <combo key="mineshaft_type" text="عملکرد" values="winding,air" />
+	            <text key="depth" text="عمق به متر" />
 	            <text key="operator" text="مسئول" />
-	            <combo key="resource" text="Resource" values="aggregate,bauxite,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon" />
-	            <check key="headframe" text="Visible Headframe" />
-	            <check key="disused" text="Disused" />
+	            <combo key="resource" text="منبع" values="aggregate,bauxite,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon" />
+	            <check key="disused" text="غیراستفاده" />
 	        </item> <!-- Mineshaft -->
-	        <item name="Adit" icon="presets/landmark/adit.svg" type="node" preset_name_label="true">
+	        <item name="معدنچفت افقی" icon="presets/landmark/adit.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:man_made=adit" />
 	            <space />
 	            <key key="man_made" value="adit" />
 	            <text key="name" text="نام" />
-	            <text key="length" text="Length in meters" />
+	            <text key="length" text="طول به متر" />
 	            <text key="operator" text="مسئول" />
-	            <combo key="resource" text="Resource" values="aggregate,bauxite,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon" />
-	            <check key="disused" text="Disused" />
+	            <combo key="resource" text="منبع" values="aggregate,bauxite,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon" />
+	            <check key="disused" text="غیراستفاده" />
 	        </item> <!-- Adit -->
 	        <item name="امبارکمنت" icon="presets/misc/embankment.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:man_made=embankment" />
@@ -4802,190 +4801,186 @@
 	            <key key="man_made" value="embankment" />
 	        </item> <!-- امبارکمنت -->
 	        <separator/>
-	        <item name="Pipeline" icon="presets/landmark/pipeline.svg" type="way" preset_name_label="true">
+	        <item name="خط لوله" icon="presets/landmark/pipeline.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:man_made=pipeline" />
 	            <space />
 	            <key key="man_made" value="pipeline" />
 	            <text key="name" text="نام" />
 	            <text key="ref" text="مرجع" />
 	            <reference ref="operator_substance" />
-	            <combo key="location" text="Location" values="underground,underwater,overground" values_context="pipeline" />
-	            <combo key="diameter" text="Diameter (mm)" values="800,1000,1200,1500,1600,1800,2200,2300,2400,2500,2600,2800,3200,3300,3400,3500,4000,4200,4300,4800" />
-	            <text key="pressure" text="Pressure (bar)" />
+	            <combo key="location" text="مکان" values="underground,underwater,overground" values_context="pipeline" />
+	            <combo key="diameter" text="قطر لوله" values="800,1000,1200,1500,1600,1800,2200,2300,2400,2500,2600,2800,3200,3300,3400,3500,4000,4200,4300,4800" />
+	            <text key="pressure" text="فشار به بار" />
 	        </item> <!-- Pipeline -->
-	        <item name="Pipeline Valve" icon="presets/misc/valve.svg" type="node" preset_name_label="true">
+	        <item name="شیر خط لوله" icon="presets/misc/valve.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:pipeline=valve" />
 	            <space />
 	            <key key="pipeline" value="valve" />
-	            <combo key="valve" text="Valve type" values="butterfly,globe,ball,plug,gate,needle,spool" values_context="valve" />
-	            <combo key="actuator" text="Actuator" values="electric_motor,hydraulic_cylinder,manual,pneumatic_cylinder,solenoid,thermostatic" values_context="actuator" />
-	            <combo key="handle" text="Handle" values="lever,wheel,cross,button" values_context="handle" />
-	            <combo key="turn_to_close" text="جهت to close" values="clockwise,anti_clockwise" />
-	            <combo key="sensor:position" text="Position sensor" values="optical,mechanical,inductive,yes" />
+	            <combo key="valve" text="نوع شیر" values="butterfly,globe,ball,plug,gate,needle,spool" values_context="valve" />
+	            <combo key="actuator" text="فعال کننده" values="electric_motor,hydraulic_cylinder,manual,pneumatic_cylinder,solenoid,thermostatic" values_context="actuator" />
+	            <combo key="handle" text="قبضه" values="lever,wheel,cross,button" values_context="handle" />
+	            <combo key="turn_to_close" text="جهت بسته‌شدن" values="clockwise,anti_clockwise" />
+	            <combo key="sensor:position" text="سنسور" values="optical,mechanical,inductive,yes" />
 	            <reference ref="ref_operator" />
 	        </item> <!-- Pipeline Valve -->
-	        <item name="Marker" icon="presets/misc/pipeline_marker.svg" type="node" preset_name_label="true">
+	        <item name="نشانگر" icon="presets/misc/pipeline_marker.svg" type="node" preset_name_label="true">
 	            <link wiki="Key:marker" />
 	            <space />
-	            <combo key="marker" text="Type" values="aerial,ground,pedestal,plate,post,stone" values_context="marker" match="key" />
-	            <combo key="utility" text="Utility" values="chemical,gas,heating,hydrant,oil,power,sewerage,street_lighting,telecom,television,waste,water" />
+	            <combo key="marker" text="نوع" values="aerial,ground,pedestal,plate,post,stone" values_context="marker" match="key" />
+	            <combo key="utility" text="استفاده" values="chemical,gas,heating,hydrant,oil,power,sewerage,street_lighting,telecom,television,waste,water" />
 	            <optional>
 	                <reference ref="ref_operator" />
-	                <combo key="material" text="Material" values="concrete,metal,plastic,steel,stone,wood" />
-	                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
-	                <combo key="location" text="Location" values="underground,overground" values_context="pipeline" />
+	                <combo key="material" text="جنس" values="concrete,metal,plastic,steel,stone,wood" />
+	                <combo key="colour" text="رنگ" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
+	                <combo key="location" text="مکان" values="underground,overground" values_context="pipeline" />
 	            </optional>
 	        </item> <!-- Marker -->
-	        <item name="Manhole" icon="presets/misc/manhole.svg" type="node" preset_name_label="true">
+	        <item name="چاه زیرزمینی" icon="presets/misc/manhole.svg" type="node" preset_name_label="true">
 	            <link wiki="Key:manhole" />
 	            <space />
 	            <key key="man_made" value="manhole" />
-	            <combo key="manhole" text="Type" values="drain,gas,heat,power,rainwater,sewer,telecom,water" values_context="manhole" values_searchable="true" />
+	            <combo key="manhole" text="نوع چاه" values="drain,gas,heat,power,rainwater,sewer,telecom,water" values_context="manhole" values_searchable="true" />
 	            <reference ref="ref_operator" />
 	        </item> <!-- Manhole -->
 	        <separator/>
-	        <item name="Water Tower" icon="presets/landmark/water_tower.svg" type="node,closedway" preset_name_label="true">
+	        <item name="برج مخزن آب" icon="presets/landmark/water_tower.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=water_tower" />
 	            <space />
 	            <key key="man_made" value="water_tower" />
 	             <optional>
 	                <reference ref="name_operator" />
-	                <text key="height" text="Height (meters)" length="7" />
+	                <text key="height" text="ارتفاع به متر" length="7" />
 	            </optional>
 	        </item> <!-- Water Tower -->
-	        <item name="Water Works" icon="presets/landmark/water_works.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="مخزن و کارخانه آب" icon="presets/landmark/water_works.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:man_made=water_works" />
 	            <space />
 	            <key key="man_made" value="water_works" />
 	            <reference ref="name_operator" />
 	        </item> <!-- Water Works -->
-	        <item name="Wastewater Treatment Plant" icon="presets/landmark/wastewater_plant.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="مخزن و کارخانه فاضل‌آب" icon="presets/landmark/wastewater_plant.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:man_made=wastewater_plant" />
 	            <space />
 	            <key key="man_made" value="wastewater_plant" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Wastewater Treatment Plant -->
-	        <item name="Watermill" icon="presets/landmark/watermill.svg" type="node,closedway" preset_name_label="true">
+	        <item name="آسیاب آبی" icon="presets/landmark/watermill.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=watermill" />
 	            <space />
 	            <key key="man_made" value="watermill" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Watermill -->
-	        <item name="Fountain" icon="presets/misc/fountain.svg" type="node,closedway" preset_name_label="true">
+	        <item name="آبنما" icon="presets/misc/fountain.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:amenity=fountain" />
 	            <space />
 	            <key key="amenity" value="fountain" />
 	            <optional>
 	                <text key="name" text="نام" />
-	                <check key="drinking_water" text="Drinking Water" />
+	                <check key="drinking_water" text="آب شرب" />
 	            </optional>
 	        </item> <!-- Fountain -->
-	        <item name="Water Well" icon="presets/landmark/water_well.svg" type="node,closedway" preset_name_label="true">
+	        <item name="چاه آب" icon="presets/landmark/water_well.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=water_well" />
 	            <space />
 	            <key key="man_made" value="water_well" />
 	            <optional>
 	                <text key="name" text="نام" />
-	                <combo key="pump" text="Pump" values="yes,no,manual,powered"  values_sort="false"/>
+	                <combo key="pump" text="پمپ" values="yes,no,manual,powered"  values_sort="false"/>
 	            </optional>
 	        </item> <!-- Water Well -->
 	        <separator/>
-	        <item name="Lighthouse" icon="presets/landmark/lighthouse.svg" type="node,closedway" preset_name_label="true">
+	        <item name="فانوس دریایی" icon="presets/landmark/lighthouse.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=lighthouse" />
 	            <space />
 	            <key key="man_made" value="lighthouse" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Lighthouse -->
-	        <item name="Beacon" icon="presets/landmark/beacon.svg" name_context="man_made" type="node,closedway" preset_name_label="true">
+	        <item name="چراغ دریایی" icon="presets/landmark/beacon.svg" name_context="man_made" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=beacon" />
 	            <space />
 	            <key key="man_made" value="beacon" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Beacon -->
-	        <item name="Street Lamp" icon="presets/misc/streetlamp.svg" type="node" preset_name_label="true">
+	        <item name="چراغ شهری" icon="presets/misc/streetlamp.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:highway=street_lamp" />
 	            <space />
 	            <key key="highway" value="street_lamp" />
-	            <combo key="lamp_type" text="Type" values="electric,floodlight,sodium,solar_lamp" values_context="lamp_type" match="key" />
-	            <combo key="lamp_mount" text="Mounted on" values="bent_mast,straight_mast,suspended,wall" values_context="lamp_mount" match="key" />
-	            <combo key="opening_hours" text="Operation times" values="Mo-Fr 22:00-05:00" values_no_i18n="true" />
+	            <combo key="lamp_type" text="نوع" values="electric,floodlight,sodium,solar_lamp" values_context="lamp_type" match="key" />
+	            <combo key="lamp_mount" text="سوارشده روی" values="bent_mast,straight_mast,suspended,wall" values_context="lamp_mount" match="key" />
+	            <combo key="opening_hours" text="زمان کارکرد" values="Mo-Fr 22:00-05:00" values_no_i18n="true" />
 	        </item> <!-- Street Lamp -->
-	        <item name="Street cabinet" icon="presets/misc/street_cabinet.svg" type="node" preset_name_label="true">
+	        <item name="کابینت شهری" icon="presets/misc/street_cabinet.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:man_made=street_cabinet" />
 	            <key key="man_made" value="street_cabinet" />
 	            <optional>
-	                <combo key="street_cabinet" text="Type" values="cable_tv,gas,postal_service,power,street_lighting,telecom,traffic_control,traffic_monitoring,transport_management,waste,water,water_management" />
+	                <combo key="street_cabinet" text="نوع" values="cable_tv,gas,postal_service,power,street_lighting,telecom,traffic_control,traffic_monitoring,transport_management,waste,water,water_management" />
 	                <reference ref="ref_operator" />
-	                <text key="manufacturer" text="Manufacturer" />
-	                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
+	                <text key="manufacturer" text="سازنده" />
+	                <combo key="colour" text="رنگ" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
 	             </optional>
 	        </item> <!-- Street cabinet -->
-	        <item name="Monitoring Station" icon="presets/misc/monitoring_station.svg" type="node,closedway" preset_name_label="true">
+	        <item name="ایستگاه پایش" icon="presets/misc/monitoring_station.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=monitoring_station" />
 	            <space />
 	            <key key="man_made" value="monitoring_station" />
 	            <reference ref="name_operator" />
-	            <label text="Monitoring:" />
+	            <label text="پایش:" />
 	            <checkgroup columns="3">
-	                <check key="monitoring:water_level" text="Water level" />
-	                <check key="monitoring:tide_gauge" text="Tide Level" />
-	                <check key="monitoring:groundwater" text="Groundwater" />
-	                <check key="monitoring:traffic" text="Traffic" />
-	                <check key="monitoring:air_quality" text="Air Quality" />
-	                <check key="monitoring:noise" text="Noise" />
-	                <check key="monitoring:gps" text="GPS Signals" />
-	                <check key="monitoring:glonass" text="GLONASS Signals" />
-	                <check key="monitoring:galileo" text="Galileo Signals" />
-	                <check key="monitoring:weather" text="Weather" />
-	                <check key="monitoring:radiation" text="Radiation" />
-	                <check key="monitoring:seismic_activity" text="Seismic Activity" />
+	                <check key="monitoring:water_level" text="سطح آب" />
+	                <check key="monitoring:tide_gauge" text="سطح کشندی" />
+	                <check key="monitoring:traffic" text="ترافیک" />
+	                <check key="monitoring:air_quality" text="کیفیت هوا" />
+	                <check key="monitoring:noise" text="آلودگی صوتی" />
+	                <check key="monitoring:gps" text="سیگنال GPS" />
+	                <check key="monitoring:weather" text="آب و هوا" />
+	                <check key="monitoring:radiation" text="اشعه" />
 	            </checkgroup>
-	            <label text="Recording:" />
+	            <label text="ضبط:" />
 	            <checkgroup columns="3">
-	                <check key="recording:automated" text="Automated" />
-	                <check key="recording:manually" text="Manually" />
-	                <check key="recording:remote" text="Remote" />
+	                <check key="recording:automated" text="اتوماتیک" />
+	                <check key="recording:manually" text="دستی" />
+	                <check key="recording:remote" text="از راه دور" />
 	            </checkgroup>
-	            <label text="Display:" />
+	            <label text="نمایش:" />
 	            <checkgroup columns="2">
-	                <check key="display:analog" text="Analog" />
-	                <check key="display:digital" text="Digital" />
+	                <check key="display:analog" text="آنالوگ" />
+	                <check key="display:digital" text="دیجیتال" />
 	            </checkgroup>
 	        </item> <!-- Monitoring Station -->
-	        <item name="Survey Point" icon="presets/landmark/survey_point.svg" type="node" preset_name_label="true">
+	        <item name="نقطه بررسی" icon="presets/landmark/survey_point.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:man_made=survey_point" />
 	            <space />
 	            <key key="man_made" value="survey_point" />
 	            <text key="name" text="نام" />
 	            <text key="ref" text="مرجع" />
-	            <text key="ele" text="Elevation" />
-	            <combo key="material" text="Material" values="andesite,brass,bronze,concrete,granite,metal,steel,stone" />
+	            <text key="ele" text="ارتفاع" />
+	            <combo key="material" text="جنس" values="andesite,brass,bronze,concrete,granite,metal,steel,stone" />
 	        </item> <!-- Survey Point -->
-	        <item name="Surveillance Camera" icon="presets/service/surveillance.svg" type="node" preset_name_label="true">
+	        <item name="دوربین مداربسته" icon="presets/service/surveillance.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:man_made=surveillance" />
 	            <space />
 	            <key key="man_made" value="surveillance" />
 	            <key key="surveillance:type" value="camera" />
-	            <combo key="surveillance" text="Type" values="indoor,outdoor,public" />
-	            <combo key="surveillance:zone" text="Zone" values="town,parking,traffic,shop,bank,building" />
+	            <combo key="surveillance" text="نوع" values="indoor,outdoor,public" />
+	            <combo key="surveillance:zone" text="قلمرو" values="town,parking,traffic,shop,bank,building" />
 	            <text key="operator" text="مسئول" />
 	            <optional>
 	                <text key="name" text="نام" />
 	                <text key="ref" text="مرجع" />
 	            </optional>
 	            <space />
-	            <label text="Camera" />
+	            <label text="دوربین" />
 	            <space />
-	            <combo key="camera:type" text="Type" values="fixed,panning,dome" values_context="camera:type" match="key" />
-	            <combo key="camera:mount" text="Mounted on" values="wall,pole,ceiling" values_context="camera:mount" match="key" />
+	            <combo key="camera:type" text="نوع" values="fixed,panning,dome" values_context="camera:type" match="key" />
+	            <combo key="camera:mount" text="سوار شده روی" values="wall,pole,ceiling" values_context="camera:mount" match="key" />
 	            <optional>
-	                <text key="camera:direction" text="جهت in degrees" match="key" />
-	                <text key="camera:angle" text="Inclination in degrees" match="key" />
-	                <text key="height" text="Height (meters)" />
+	                <text key="camera:direction" text="جهت به درجه" match="key" />
+	                <text key="camera:angle" text="شیب به درجه" match="key" />
+	                <text key="height" text="ارتفاع به متر" />
 	            </optional>
 	        </item> <!-- Surveillance Camera -->
 	    </group> <!-- Man Made -->
-	    <group name="Bridges" icon="presets/transport/bridge/bridge.svg">
+	    <group name="پل‌ها" icon="presets/transport/bridge/bridge.svg">
 	        <item name="پل" icon="presets/transport/bridge/bridge.svg" type="way,relation,multipolygon" preset_name_label="true">
 	            <link wiki="Key:bridge" />
 	            <space />
@@ -5323,7 +5318,7 @@
 	            <link wiki="Tag:building=transformer_tower" />
 	            <space />
 	            <key key="building" value="transformer_tower" />
-	            <text key="height" text="Height (meters)" />
+	            <text key="height" text="ارتفاع به متر" />
 	            <reference ref="ref_operator" />
 	            <preset_link preset_name="Power Substation" />
 	        </item> <!-- Transformer Tower -->
@@ -5341,7 +5336,7 @@
 	            <link wiki="Tag:power=portal" />
 	            <space />
 	            <key key="power" value="portal" />
-	            <text key="height" text="Height (meters)" />
+	            <text key="height" text="ارتفاع به متر" />
 	            <combo key="structure" text="Type of construction" values="lattice,tubular,solid" />
 	            <combo key="material" text="Material" values="concrete,metal,plastic,steel,stone,wood" />
 	            <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="color" />
@@ -5353,7 +5348,7 @@
 	            <link wiki="Tag:power=tower" />
 	            <space />
 	            <key key="power" value="tower" />
-	            <text key="height" text="Height (meters)" />
+	            <text key="height" text="ارتفاع به متر" />
 	            <combo key="structure" text="Type of construction" values="lattice,tubular,solid" />
 	            <combo key="material" text="Material" values="concrete,metal,plastic,steel,stone,wood" />
 	            <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="color" />
@@ -6928,7 +6923,7 @@
 	            <space />
 	            <key key="natural" value="cliff" />
 	            <text key="name" text="نام" />
-	            <text key="height" text="Height (meters)" />
+	            <text key="height" text="ارتفاع به متر" />
 	        </item> <!-- Cliff -->
 	        <item name="Cave Entrance" icon="presets/landmark/cave_entrance.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:natural=cave_entrance" />
@@ -6978,7 +6973,7 @@
 	            <optional>
 	                <reference ref="genus_species_taxon" />
 	                <space />
-	                <text key="height" text="Height (meters)" />
+	                <text key="height" text="ارتفاع به متر" />
 	                <text key="diameter_crown" text="Diameter crown (meters)" />
 	                <text key="circumference" text="Circumference (meters)" />
 	                <space />
@@ -6994,7 +6989,7 @@
 	            <reference ref="leaf" />
 	            <optional>
 	                <reference ref="genus_species_taxon" />
-	                <text key="height" text="Height (meters)" />
+	                <text key="height" text="ارتفاع به متر" />
 	            </optional>
 	        </item> <!-- Tree Row -->
 	        <item name="Wood" icon="presets/landmark/forest.svg" type="closedway,multipolygon" preset_name_label="true">
@@ -7102,7 +7097,7 @@
 	            <key key="natural" value="stone" />
 	            <reference ref="name_wikipedia" />
 	            <optional>
-	                <text key="height" text="Height (meters)" length="7" />
+	                <text key="height" text="ارتفاع به متر" length="7" />
 	                <text key="width" text="عرض به متر" />
 	            </optional>
 	        </item> <!-- Stone -->
@@ -7807,7 +7802,7 @@
 	            <key key="type" value="bridge" />
 	            <combo key="layer" text="لایه" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
 	            <reference ref="name_ref" />
-	            <text key="height" text="Height (meters)" />
+	            <text key="height" text="ارتفاع به متر" />
 	            <text key="length" text="Length (meters)" />
 	            <text key="operator" text="مسئول" />
 	            <roles>
