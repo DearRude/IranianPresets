@@ -5731,41 +5731,41 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Wine -->
 	    </group> <!-- Food -->
-	    <group name="Clothes" icon="presets/shop/clothes.svg">
-	        <item name="Clothes" icon="presets/shop/clothes.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="پوشاک" icon="presets/shop/clothes.svg">
+	        <item name="لباس فروشی" icon="presets/shop/clothes.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=clothes" />
 	            <space />
 	            <key key="shop" value="clothes" />
 	            <reference ref="name_oh_wheelchair" />
 	            <combo key="second_hand" text="دست دوم" values="yes,no,only" />
-	            <combo key="organic" text="Organic" values="yes,no,only" />
+	            <combo key="organic" text="ارگانیک" values="yes,no,only" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Clothes -->
-	        <item name="Boutique" icon="presets/shop/boutique.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بوتیک" icon="presets/shop/boutique.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=boutique" />
 	            <space />
 	            <key key="shop" value="boutique" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Boutique -->
-	        <item name="Shoes" icon="presets/shop/shoes.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کفش فروشی" icon="presets/shop/shoes.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=shoes" />
 	            <space />
 	            <key key="shop" value="shoes" />
 	            <reference ref="name_oh_wheelchair" />
 	            <combo key="second_hand" text="دست دوم" values="yes,no,only" />
-	            <combo key="organic" text="Organic" values="yes,no,only" />
+	            <combo key="organic" text="ارگانیک" values="yes,no,only" />
 	            <check key="shoes:repair" text="Offers repairs" text_context="shoes" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Shoes -->
-	        <item name="Outdoor" icon="presets/shop/outdoor.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه اسباب صحرایی" icon="presets/shop/outdoor.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=outdoor" />
 	            <space />
 	            <key key="shop" value="outdoor" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Outdoor -->
-	        <item name="Sports" icon="presets/sport/multi.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه ورزشی" icon="presets/sport/multi.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	             <link wiki="Tag:shop=sports" />
 	            <space />
 	            <key key="shop" value="sports" />
@@ -5773,14 +5773,14 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Sports -->
 	        <separator/>
-	        <item name="Dry Cleaning" icon="presets/shop/laundry.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="خشک‌شویی" icon="presets/shop/laundry.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=dry_cleaning" />
 	            <space />
 	            <key key="shop" value="dry_cleaning" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Dry Cleaning -->
-	        <item name="Laundry" icon="presets/shop/laundry.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="رخت‌شوی خانه" icon="presets/shop/laundry.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=laundry" />
 	            <space />
 	            <key key="shop" value="laundry" />
@@ -5789,14 +5789,14 @@
 	            <check key="laundry_service" text="Laundry Service" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Laundry -->
-	        <item name="Tailor" icon="presets/shop/tailor.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="خیاطی" icon="presets/shop/tailor.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=tailor" />
 	            <space />
 	            <key key="shop" value="tailor" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Tailor -->
-	        <item name="Fabric" icon="presets/shop/fabric.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="پارچه فروشی" icon="presets/shop/fabric.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=fabric" />
 	            <space />
 	            <key key="shop" value="fabric" />
@@ -5804,64 +5804,64 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Fabric -->
 	    </group> <!-- Clothes -->
-	    <group name="Electronic" icon="presets/shop/electronics.svg">
-	        <item name="Computer" icon="presets/shop/computer.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="الکترونیک" icon="presets/shop/electronics.svg">
+	        <item name="رایانه" icon="presets/shop/computer.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=computer" />
 	            <space />
 	            <key key="shop" value="computer" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Computer -->
-	        <item name="Electronics" icon="presets/shop/electronics.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه الکترونیک" icon="presets/shop/electronics.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=electronics" />
 	            <space />
 	            <key key="shop" value="electronics" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Computer -->
-	        <item name="Mobile Phone" icon="presets/shop/mobile_phone.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="تلفن همراه" icon="presets/shop/mobile_phone.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=mobile_phone" />
 	            <space />
 	            <key key="shop" value="mobile_phone" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Mobile Phone -->
-	        <item name="Watches" icon="presets/shop/watches.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="ساعت مچی" icon="presets/shop/watches.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=watches" />
 	            <space />
 	            <key key="shop" value="watches" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Watches -->
-	        <item name="Vacuum Cleaner" icon="presets/shop/vacuum_cleaner.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="جاروی برقی" icon="presets/shop/vacuum_cleaner.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=vacuum_cleaner" />
 	            <space />
 	            <key key="shop" value="vacuum_cleaner" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Vacuum Cleaner -->
-	        <item name="Hifi" icon="presets/shop/hifi.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="تجهیزات صوتی" icon="presets/shop/hifi.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=hifi" />
 	            <space />
 	            <key key="shop" value="hifi" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Hifi -->
-	        <item name="Video" icon="presets/shop/video.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="ویدئو کلوپ" icon="presets/shop/video.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=video" />
 	            <space />
 	            <key key="shop" value="video" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Video -->
-	        <item name="Video Games" icon="presets/shop/video_games.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بازی‌های ویدئویی" icon="presets/shop/video_games.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=video_games" />
 	            <space />
 	            <key key="shop" value="video_games" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Video Games -->
-	        <item name="Music" icon="presets/shop/music.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="موسیقی" icon="presets/shop/music.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=music" />
 	            <space />
 	            <key key="shop" value="music" />
@@ -5869,36 +5869,454 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Music -->
 	    </group> <!-- Electronic -->
-	    <group name="Cash" icon="presets/money/dollar.svg">
-	        <item name="Bank" icon="presets/money/bank.svg" type="node,closedway,multipolygon" preset_name_label="true">
-	            <link wiki="Tag:amenity=bank" />
-	            <space />
-	            <key key="amenity" value="bank" />
-	            <reference ref="name_brand_operator_oh_wheelchair" />
-	            <check key="atm" text="Automated Teller Machine" default="on" />
-	            <text key="ref" text="مرجع" />
-	            <reference ref="link_contact_address" />
-	            <preset_link preset_name="Building" />
-	        </item> <!-- Bank -->
-	        <item name="Money Exchange" icon="presets/money/exchange.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="پول" icon="presets/money/dollar.svg">
+			<item name="بانک" icon="presets/money/bank.svg" type="node,closedway,multipolygon">
+				<label text="بانک"/>
+				<link wiki="Tag:amenity=bank"/>
+				<key key="amenity" value="bank"/>
+				<combo text="Name" key="name" values="بانک اقتصاد نوین,بانک کشاورزی,بانک مسکن,بانک ملت,بانک ملی,بانک پارسیان,بانک پاسارگاد,بانک صادرات,بانک سپه"/>
+				<combo text="English name" key="name:en" values="Eqtesad Novin,Keshavarzi,Maskan,Mellat,Melli,Parsian,Pasargad,Saderat,Shahr Bank,Sepah"/>
+				<combo text="Brand" key="brand" values="bmi,bsi,enbank,shahr-bank,sepah"/>
+				<text text="Branch" key="branch" default=""/>
+				<text text="Reference" key="ref" default=""/>
+				<text text="Bank Identifier Code" key="bic" default=""/>
+				<combo text="Website" key="website" values="www.bmi.ir,www.bsi.ir,www.enbank.ir,www.banksepah.ir,www.shahr-bank.ir"/>
+				<reference ref="opening_hours" />
+				<reference ref="wheelchair" />
+				<space/>
+				<reference ref="operator_operatortype"/>
+				<space/>
+				<text text="Operator wikipedia" key="operator:wikipedia" default=""/>
+				<check text="Automated teller machine" key="atm"/>
+				<check text="Drive through" key="drive_through"/>
+        </item>
+	        <group name="بانک" icon="presets/money/bank.svg">
+			        <item icon="presets/money/iran-banks/Sepah-Bank.png" type="node,closedway,multipolygon" name="سپه">
+                    <label text="سپه"/>
+                    <link wiki="Tag:amenity=bank"/>
+                    <key key="wikipedia" value="en:Bank Sepah"/>
+                    <key key="amenity" value="bank"/>
+                    <key key="name" value="بانک سپه"/>
+                    <key key="name:en" value="Bank Sepah"/>
+                    <key key="brand" value="Sepah"/>
+                    <key key="website" value="www.banksepah.ir"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space/>
+                    <reference ref="operator_operatortype"/>
+                    <space/>
+                    <reference ref="opening_hours"/>
+                    <space/>
+                    <reference ref="wheelchair"/>
+                    <space/>
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                </item>
+
+                <item icon="presets/money/iran-banks/Melli-Bank.png" type="node,closedway,multipolygon" name="ملی">
+                    <label text="ملی"/>
+                    <key key="amenity" value="bank"/>
+                    <key key="name" value="بانک ملی ایران"/>
+                    <key key="name:en" value="Melli Bank"/>
+                    <key key="brand" value="bmi"/>
+                    <key key="website" value="www.bmi.ir"/>
+                    <key key="opening_hours" value="Sa-We 07:30-13:30; Th 07:30-12:30"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/Shahr-Bank.png" type="node,closedway,multipolygon" name="بانک شهر">
+                    <label text="بانک شهر"/>
+                    <key key="amenity" value="bank"/>
+                    <key key="name" value="بانک شهر"/>
+                    <key key="name:en" value="Shahr Bank"/>
+                    <key key="brand" value="shahr-bank"/>
+                    <key key="website" value="www.shahr-bank.ir"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/Mellat-Bank.png" type="node,closedway,multipolygon" name="ملت">
+                    <label text="ملت"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک ملت" key="name"/>
+                    <key value="Mellat Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/Refah-Bank.png" type="node,closedway,multipolygon" name="رفاه">
+                    <label text="رفاه"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک رفاه کارگران" key="name"/>
+                    <key value="Refah Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/Sina-Bank.png" type="node,closedway,multipolygon" name="سینا">
+                    <label text="سینا"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک سینا" key="name"/>
+                    <key value="Sina Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/Maskan-Bank.png" type="node,closedway,multipolygon" name="مسکن">
+                    <label text="مسکن"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک مسکن" key="name"/>
+                    <key value="Maskan Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/Ayandeh-Bank.png" type="node,closedway,multipolygon" name="آینده">
+                    <label text="آینده"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک آینده" key="name"/>
+                    <key value="Ayandeh Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/Saman-Bank.png" type="node,closedway,multipolygon" name="سامان">
+                    <label text="سامان"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک سامان" key="name"/>
+                    <key value="Saman Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/Sarmayeh-Bank.png" type="node,closedway,multipolygon" name="سرمایه">
+                    <label text="سرمایه"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک سرمایه" key="name"/>
+                    <key value="Sarmayeh Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+
+                <item icon="presets/money/iran-banks/Saderat-Bank.png" type="node,closedway,multipolygon" name="صادرات">
+                    <label text="صادرات"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک صادرات ایران" key="name"/>
+                    <key value="Saderat Bank" key="name:en"/>
+                    <key key="brand" value="bsi"/>
+                    <key key="website" value="www.bsi.ir"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+
+                <item icon="presets/money/iran-banks/Ghavamin-Bank.png" type="node,closedway,multipolygon" name="قوامین">
+                    <label text="قوامین"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک قوامین" key="name"/>
+                    <key value="Ghavamin Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+
+                <item icon="presets/money/iran-banks/Parsian-Bank.png" type="node,closedway,multipolygon" name="پارسیان">
+                    <label text="پارسیان"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک پارسیان" key="name"/>
+                    <key value="Parsian Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/Keshavarzi-Bank.png" type="node,closedway,multipolygon" name="کشاورزی">
+                    <label text="کشاورزی"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک کشاورزی" key="name"/>
+                    <key value="Keshavarzi Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/Pasargad-Bank.png" type="node,closedway,multipolygon" name="پاسارگاد">
+                    <label text="پاسارگاد"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک پاسارگارد" key="name"/>
+                    <key value="Pasargad Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/IranZamin-Bank.png" type="node,closedway,multipolygon" name="ایران زمین">
+                    <label text="ایران زمین"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک ایران زمین" key="name"/>
+                    <key value="Iran Zamin Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/EghtesadNovin-bank.png" type="node,closedway,multipolygon" name="اقتصاد نوین">
+                    <label text="اقتصاد نوین"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک اقتصاد نوین" key="name"/>
+                    <key value="Eghtesad Novin Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/Gardeshgari-Bank.png" type="node,closedway,multipolygon" name="گردشگری">
+                    <label text="گردشگری"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک گردشگری" key="name"/>
+                    <key value="Gardeshgari Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/Karafarin-Bank.png" type="node,closedway,multipolygon" name="کارآفرین">
+                    <label text="کارآفرین"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک کارآفرین" key="name"/>
+                    <key value="Karafarin Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+                    
+                <item icon="presets/money/iran-banks/Tosee-Saderat-Bank.png" type="node,closedway,multipolygon" name="توسعه صادرات">
+                    <label text="توسعه صادرات"/>
+                    <key value="bank" key="amenity"/>
+                    <key value="بانک توسعه صادرات" key="name"/>
+                    <key value="Tosee Saderat Bank" key="name:en"/>
+                    <key value="" key="brand"/>
+                    <text text="Branch" key="branch" default=""/>
+                    <text text="Bank Identifier Code" key="bic" default=""/>
+                    <text text="Reference" key="ref" default=""/>
+                    <space />
+                    <reference ref="operator_operatortype" />
+                    <space />
+                    <reference ref="opening_hours" />
+                    <reference ref="wheelchair" />
+                    <space />
+                    <check text="سوار اتومبیل" key="drive_through"/>
+                    <check text="عابربانک" key="atm"/>
+                    <link wiki="Tag:amenity=bank"/>
+                </item>
+			</group>
+	        <item name="صرافی" icon="presets/money/exchange.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=bureau_de_change" />
 	            <space />
 	            <key key="amenity" value="bureau_de_change" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Money Exchange -->
-	        <item name="Money transfer" icon="presets/money/money_transfer.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="واگذاری پول" icon="presets/money/money_transfer.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=money_transfer" />
 	            <space />
 	            <key key="amenity" value="money_transfer" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Money transfer -->
-	        <item name="Automated Teller Machine" icon="presets/money/atm.svg" type="node" preset_name_label="true">
+	        <item name="عابربانک" icon="presets/money/atm.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:amenity=atm" />
 	            <space />
 	            <key key="amenity" value="atm" />
-	            <text key="brand" text="Brand" />
+	            <text key="brand" text="برند" />
 	            <text key="operator" text="مسئول" />
 	            <reference ref="oh_wheelchair" />
 	        </item> <!-- Automated Teller Machine -->
@@ -5910,78 +6328,78 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Pawnbroker -->
 	    </group> <!-- Cash -->
-	    <group name="Home decoration" icon="presets/shop/interior_decoration.svg">
-	        <item name="Doors" icon="presets/shop/doors.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="دکوراسیون منزل" icon="presets/shop/interior_decoration.svg">
+	        <item name="فروشگاه در" icon="presets/shop/doors.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=doors" />
 	            <space />
 	            <key key="shop" value="doors" />
 	            <reference ref="name_brand_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Doors -->
-	        <item name="Furniture" icon="presets/shop/furniture.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه مبلمان" icon="presets/shop/furniture.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=furniture" />
 	            <space />
 	            <key key="shop" value="furniture" />
 	            <reference ref="name_brand_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Furniture -->
-	        <item name="Kitchen" icon="presets/shop/kitchen.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه لوازم آشپزخانه" icon="presets/shop/kitchen.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=kitchen" />
 	            <space />
 	            <key key="shop" value="kitchen" />
 	            <reference ref="name_brand_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Kitchen -->
-	        <item name="Houseware" icon="presets/shop/houseware.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه لوازم خانگی" icon="presets/shop/houseware.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=houseware" />
 	            <space />
 	            <key key="shop" value="houseware" />
 	            <reference ref="name_brand_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Houseware -->
-	        <item name="Curtain" icon="presets/shop/curtain.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="پرده فروشی" icon="presets/shop/curtain.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=curtain" />
 	            <space />
 	            <key key="shop" value="curtain" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Curtain -->
-	        <item name="Art" icon="presets/shop/art.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه محصولات هنری" icon="presets/shop/art.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=art" />
 	            <space />
 	            <key key="shop" value="art" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Art -->
-	        <item name="Frame" icon="presets/shop/frame.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه قاب عکس" icon="presets/shop/frame.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=frame" />
 	            <space />
 	            <key key="shop" value="frame" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Frame -->
-	        <item name="Bed" icon="presets/shop/bed.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه تخت‌خواب" icon="presets/shop/bed.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=bed" />
 	            <space />
 	            <key key="shop" value="bed" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Bed -->
-	        <item name="Carpet" icon="presets/shop/carpet.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه فرش و موکت" icon="presets/shop/carpet.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=carpet" />
 	            <space />
 	            <key key="shop" value="carpet" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Carpet -->
-	        <item name="Interior Decoration" icon="presets/shop/interior_decoration.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="دکوراسیون داخلی" icon="presets/shop/interior_decoration.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=interior_decoration" />
 	            <space />
 	            <key key="shop" value="interior_decoration" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Interior Decoration -->
-	        <item name="Antiques" icon="presets/shop/antique.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="عتیقه فروشی" icon="presets/shop/antique.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=antiques" />
 	            <space />
 	            <key key="shop" value="antiques" />
