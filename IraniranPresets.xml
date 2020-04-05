@@ -5438,32 +5438,32 @@
 	            </optional>
 	        </item> <!-- Power Cable -->
 	    </group> <!-- Power -->
-	    <group name="Telecom" icon="presets/telecom/telecom.svg">
-	        <item name="Telecom Street Cabinet" icon="presets/telecom/telecom_cabinet.svg" type="node" preset_name_label="true">
+	    <group name="مخابرات" icon="presets/telecom/telecom.svg">
+	        <item name="کابینت مخابرات شهری" icon="presets/telecom/telecom_cabinet.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:man_made=street_cabinet" />
 	            <key key="man_made" value="street_cabinet" />
 	            <key key="street_cabinet" value="telecom" />
 	            <optional>
 	                <reference ref="ref_operator" />
-	                <text key="manufacturer" text="Manufacturer" />
-	                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
+	                <text key="manufacturer" text="سازنده" />
+	                <combo key="colour" text="رنگ" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
 	             </optional>
 	        </item> <!-- Telecom Street Cabinet -->
-	        <item name="Telephone Exchange" icon="presets/telecom/exchange.svg" type="node,closedway" preset_name_label="true">
+	        <item name="تلفن‌خانه" icon="presets/telecom/exchange.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:telecom=exchange" />
 	            <space />
 	            <key key="telecom" value="exchange" />
 	            <reference ref="telecom_medium" />
 	            <reference ref="ref_operator" />
 	        </item> <!-- Telephone Exchange -->
-	        <item name="Connection Point" icon="presets/telecom/connection_point.svg" type="node,closedway" preset_name_label="true">
+	        <item name="نقطه اتصال‌دهنده" icon="presets/telecom/connection_point.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:telecom=connection_point" />
 	            <space />
 	            <key key="telecom" value="connection_point" />
 	            <reference ref="telecom_medium" />
 	            <reference ref="ref_operator" />
 	        </item> <!-- Connection Point -->
-	        <item name="Service Device" icon="presets/telecom/service_device.svg" type="node,closedway" preset_name_label="true">
+	        <item name="دستگاه سرویس" icon="presets/telecom/service_device.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:telecom=service_device" />
 	            <space />
 	            <key key="telecom" value="service_device" />
@@ -5471,105 +5471,105 @@
 	            <reference ref="ref_operator" />
 	        </item> <!-- Service Device -->
 	    </group> <!-- Telecom -->
-	    <group name="Historic Places" icon="presets/sightseeing/castle.svg">
-	        <item name="Castle" icon="presets/sightseeing/castle.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="مکان‌های تاریخی" icon="presets/sightseeing/castle.svg">
+	        <item name="قلعه" icon="presets/sightseeing/castle.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:historic=castle" />
 	            <space />
 	            <key key="historic" value="castle" />
-	            <combo key="castle_type" text="Type" values="stately,defensive,fortress,manor,palace" />
+	            <combo key="castle_type" text="نوع" values="stately,defensive,fortress,manor,palace" />
 	            <reference ref="name_wikipedia" />
-	            <check key="ruins" text="Ruins" />
+	            <check key="ruins" text="ویرانه" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Castle -->
-	        <item name="Fort" icon="presets/sightseeing/fort.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="دژ" icon="presets/sightseeing/fort.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:historic=fort" />
 	            <space />
 	            <key key="historic" value="fort" />
 	            <reference ref="name_wikipedia" />
-	            <check key="ruins" text="Ruins" />
+	            <check key="ruins" text="ویرانه" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Fort -->
-	        <item name="Ruins" icon="presets/sightseeing/ruins.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="ویرانه" icon="presets/sightseeing/ruins.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:historic=ruins" />
 	            <space />
 	            <key key="historic" value="ruins" />
 	            <reference ref="name_oh_wheelchair" />
 	        </item> <!-- Ruins -->
-	        <item name="Archaeological Site" icon="presets/sightseeing/archaeological.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="موقعیت باستان‌شناسی" icon="presets/sightseeing/archaeological.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:historic=archaeological_site" />
 	            <space />
 	            <key key="historic" value="archaeological_site" />
-	            <combo key="site_type" text="Type" values="tumulus,megalith,fortification,settlement,necropolis,city" />
+	            <combo key="site_type" text="نوع" values="tumulus,megalith,fortification,settlement,necropolis,city" />
 	            <reference ref="name_oh_wheelchair" />
 	        </item> <!-- Archaeological Site -->
-	        <item name="Battlefield" icon="presets/sightseeing/battlefield.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="نبردگاه" icon="presets/sightseeing/battlefield.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:historic=battlefield" />
 	            <space />
 	            <key key="historic" value="battlefield" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Battlefield -->
-	        <item name="Palaeontological Site" icon="presets/sightseeing/palaeontological_site.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="موقعیت دیرینه‌شناسی" icon="presets/sightseeing/palaeontological_site.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:geological=palaeontological_site" />
 	            <space />
 	            <key key="geological" value="palaeontological_site" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Palaeontological Site -->
 	        <separator/>
-	        <item name="Grave" icon="presets/misc/grave.svg" type="node,closedway" preset_name_label="true">
+	        <item name="قبر" icon="presets/misc/grave.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:cemetery=grave" />
 	            <space />
 	            <key key="cemetery" value="grave" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Grave -->
-	        <item name="Tomb" icon="presets/misc/tomb.svg" type="node,closedway" preset_name_label="true">
+	        <item name="مقبره" icon="presets/misc/tomb.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:historic=tomb" />
 	            <space />
 	            <key key="historic" value="tomb" />
-	            <combo key="tomb" text="Type" values="columbarium,crypt,hypogeum,mausoleum,pyramid,rock-cut,sarcophagus,tumulus,vault,war_grave" values_context="tomb" values_searchable="true" />
+	            <combo key="tomb" text="نوع" values="columbarium,crypt,hypogeum,mausoleum,pyramid,rock-cut,sarcophagus,tumulus,vault,war_grave" values_context="tomb" values_searchable="true" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Tomb -->
 	        <separator/>
-	        <item name="Monument" icon="presets/sightseeing/monument.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="یادمان" icon="presets/sightseeing/monument.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:historic=monument" />
 	            <space />
 	            <key key="historic" value="monument" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Monument -->
-	        <item name="Memorial" icon="presets/sightseeing/memorial.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="یادواره" icon="presets/sightseeing/memorial.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:historic=memorial" />
 	            <space />
 	            <key key="historic" value="memorial" />
 	            <text key="name" text="نام" />
-	            <combo key="memorial" text="Type" values="bust,plaque,statue,stele,stone,war_memorial" values_context="memorial" values_searchable="true" />
+	            <combo key="memorial" text="نوع" values="bust,plaque,statue,stele,stone,war_memorial" values_context="memorial" values_searchable="true" />
 	            <optional>
-	                <text key="inscription" text="Inscription" />
-	                <text key="artist_name" text="Artist Name" />
-	                <combo key="material" text="Material" values="concrete,granite,metal,plastic,steel,stone,wood" />
-	                <text key="start_date" text="Start date" />
+	                <text key="inscription" text="کتیبه" />
+	                <text key="artist_name" text="نام هنرمند" />
+	                <combo key="material" text="جنس" values="concrete,granite,metal,plastic,steel,stone,wood" />
+	                <text key="start_date" text="زمان شروع" />
 	                <text key="wikipedia" text="ویکی‌پدیا" />
 	            </optional>
 	        </item> <!-- Memorial -->
-	        <item name="Wayside Cross" icon="presets/religion/wayside_cross.svg" type="node,closedway" preset_name_label="true">
+	        <item name="صلیب کنار راهی" icon="presets/religion/wayside_cross.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:historic=wayside_cross" />
 	            <space />
 	            <key key="historic" value="wayside_cross" />
 	            <text key="name" text="نام" />
 	            <reference ref="religious_catholic_christian" />
-	            <text key="start_date" text="Start date" />
-	            <text key="inscription" text="Inscription" />
+	            <text key="start_date" text="زمان شروع" />
+	            <text key="inscription" text="کتیبه" />
 	        </item> <!-- Wayside Cross -->
-	        <item name="Wayside Shrine" icon="presets/religion/wayside_shrine.svg" type="node,closedway" preset_name_label="true">
+	        <item name="معبد کنار‌راهی" icon="presets/religion/wayside_shrine.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:historic=wayside_shrine" />
 	            <space />
 	            <key key="historic" value="wayside_shrine" />
 	            <text key="name" text="نام" />
 	            <reference ref="religious_catholic_christian" />
-	            <check key="amenity" text="Place of worship" value_on="place_of_worship" disable_off="true" />
-	            <combo key="building" text="Building" values="wayside_shrine,yes" values_context="building" />
-	            <text key="start_date" text="Start date" />
-	            <text key="inscription" text="Inscription" />
+	            <check key="amenity" text="مکان عبادت" value_on="place_of_worship" disable_off="true" />
+	            <combo key="building" text="ساختمان" values="wayside_shrine,yes" values_context="building" />
+	            <text key="start_date" text="زمان شروع" />
+	            <text key="inscription" text="کتیبه" />
 	        </item> <!-- Wayside Shrine -->
-	        <item name="Boundary Stone" icon="presets/landmark/boundary_stone.svg" type="node,closedway" preset_name_label="true">
+	        <item name="سنگ کرانه" icon="presets/landmark/boundary_stone.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:historic=boundary_stone" />
 	            <space />
 	            <key key="historic" value="boundary_stone" />
