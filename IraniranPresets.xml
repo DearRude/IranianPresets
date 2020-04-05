@@ -5577,23 +5577,23 @@
 	        </item> <!-- Boundary Stone -->
 	    </group> <!-- Historic Places -->
 	  </group> <!-- Man Made -->
-	  <group name="Shops" icon="presets/shop/mall.svg">
-	    <group name="Food" icon="presets/shop/supermarket.svg">
-	        <item name="Supermarket" icon="presets/shop/supermarket.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	  <group name="مغازه" icon="presets/shop/mall.svg">
+	    <group name="غذا" icon="presets/shop/supermarket.svg">
+	        <item name="سوپرمارکت" icon="presets/shop/supermarket.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=supermarket" />
 	            <space />
 	            <key key="shop" value="supermarket" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Supermarket -->
-	        <item name="Convenience Store" icon="presets/shop/convenience.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="خواربار فروشی" icon="presets/shop/convenience.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=convenience" />
 	            <space />
 	            <key key="shop" value="convenience" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Convenience Store -->
-	        <item name="Kiosk" icon="presets/shop/kiosk.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کیوسک" icon="presets/shop/kiosk.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=kiosk" />
 	            <space />
 	            <key key="shop" value="kiosk" />
@@ -5601,70 +5601,70 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Kiosk -->
 	        <separator/>
-	        <item name="Bakery" icon="presets/shop/groceries/bakery.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="نانوایی" icon="presets/shop/groceries/bakery.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=bakery" />
 	            <space />
 	            <key key="shop" value="bakery" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Bakery -->
-	        <item name="Butcher" icon="presets/shop/groceries/butcher.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="قصابی" icon="presets/shop/groceries/butcher.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=butcher" />
 	            <space />
 	            <key key="shop" value="butcher" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Butcher -->
-	        <item name="Seafood" icon="presets/shop/groceries/seafood.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه خوراک دریایی" icon="presets/shop/groceries/seafood.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=seafood" />
 	            <space />
 	            <key key="shop" value="seafood" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Seafood -->
-	        <item name="Dairy" icon="presets/shop/groceries/dairy.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه لبنیات" icon="presets/shop/groceries/dairy.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=dairy" />
 	            <space />
 	            <key key="shop" value="dairy" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Dairy -->
-	        <item name="Cheese" icon="presets/shop/groceries/cheese.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه پنیر" icon="presets/shop/groceries/cheese.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=cheese" />
 	            <space />
 	            <key key="shop" value="cheese" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Cheese -->
-	        <item name="Deli (Fine Food)" icon="presets/shop/groceries/deli.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="حاضری فروشی" icon="presets/shop/groceries/deli.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=deli" />
 	            <space />
 	            <key key="shop" value="deli" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Deli (Fine Food) -->
-	        <item name="Pastry" icon="presets/shop/groceries/pastry.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه فراورده‌های آردی" icon="presets/shop/groceries/pastry.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=pastry" />
 	            <space />
 	            <key key="shop" value="pastry" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Pastry -->
-	        <item name="Confectionery" icon="presets/shop/groceries/confectionery.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه فراورده‌های قندی" icon="presets/shop/groceries/confectionery.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=confectionery" />
 	            <space />
 	            <key key="shop" value="confectionery" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Confectionery -->
-	        <item name="Tea" icon="presets/shop/groceries/tea.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه چای" icon="presets/shop/groceries/tea.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=tea" />
 	            <space />
 	            <key key="shop" value="tea" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Tea -->
-	        <item name="Coffee" icon="presets/shop/groceries/coffee.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه قهوه" icon="presets/shop/groceries/coffee.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=coffee" />
 	            <space />
 	            <key key="shop" value="coffee" />
@@ -5672,15 +5672,15 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Coffee -->
 	        <separator/>
-	        <item name="Public Market" icon="presets/shop/marketplace.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
+	        <item name="بازارگاه" icon="presets/shop/marketplace.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=marketplace" />
 	            <space />
 	            <key key="amenity" value="marketplace" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <text key="website" text="وبسایت" />
-	            <combo key="organic" text="Organic" values="yes,no,only" />
+	            <combo key="organic" text="ارگانیک" values="yes,no,only" />
 	        </item> <!-- Public Market -->
-	        <item name="Greengrocer" icon="presets/shop/groceries/greengrocer.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="میوه فروشی" icon="presets/shop/groceries/greengrocer.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=greengrocer" />
 	            <space />
 	            <key key="shop" value="greengrocer" />
@@ -5688,42 +5688,42 @@
 	            <combo key="organic" text="Organic" values="yes,no,only" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Greengrocer -->
-	        <item name="Farm Stand" icon="presets/shop/groceries/farm.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه کشتزار" icon="presets/shop/groceries/farm.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=farm" />
 	            <space />
 	            <key key="shop" value="farm" />
 	            <reference ref="name_oh_wheelchair" />
-	            <text key="description" text="Description" />
-	            <combo key="organic" text="Organic" values="yes,no,only" />
+	            <text key="description" text="اطلاعات بیشتر" />
+	            <combo key="organic" text="ارگانیک" values="yes,no,only" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Farm Stand -->
 	        <separator/>
-	        <item name="Organic" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="ارگانیک" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Key:organic" />
 	            <space />
-	            <combo text="Organic/Bio" key="organic" values="yes,no,only" match="key" />
+	            <combo text="ارگانیک / زیستی" key="organic" values="yes,no,only" match="key" />
 	        </item> <!-- Organic -->
-	        <item name="Fair Trade" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه تجارت منصفانه" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Key:fair_trade" />
 	            <space />
 	            <combo text="Fair Trade" key="fair_trade" values="no,yes,only" match="key" />
 	        </item> <!-- Fair Trade -->
 	        <separator/>
-	        <item name="Alcohol" icon="presets/shop/alcohol.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه مشروبات الکلی" icon="presets/shop/alcohol.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=alcohol" />
 	            <space />
 	            <key key="shop" value="alcohol" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Alcohol -->
-	        <item name="Beverages" icon="presets/shop/beverages.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه نوشیدنی" icon="presets/shop/beverages.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=beverages" />
 	            <space />
 	            <key key="shop" value="beverages" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Beverages -->
-	        <item name="Wine" icon="presets/shop/wine.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه شراب" icon="presets/shop/wine.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=wine" />
 	            <space />
 	            <key key="shop" value="wine" />
