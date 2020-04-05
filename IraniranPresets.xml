@@ -5009,74 +5009,74 @@
 	            </optional>
 	        </item> <!-- پل outline -->
 	    </group> <!-- Bridges -->
-	    <group name="Military" name_context="preset group" icon="presets/landuse/military.svg">
-	        <item name="Airfield" icon="presets/transport/airport/airfield.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="نضامی" name_context="preset group" icon="presets/landuse/military.svg">
+	        <item name="میدان هوایی" icon="presets/transport/airport/airfield.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:military=airfield" />
 	            <space />
 	            <key key="military" value="airfield" match="keyvalue!" />
 	            <reference ref="aerodrome" />
 	        </item> <!-- Airfield -->
-	        <item name="Barracks" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="سربازخانه" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:military=barracks" />
 	            <space />
 	            <key key="military" value="barracks" />
 	        </item> <!-- Barracks -->
-	        <item name="Bunker" icon="presets/landmark/bunker.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="پناهگاه" icon="presets/landmark/bunker.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:military=bunker" />
 	            <space />
 	            <key key="military" value="bunker" />
-	            <combo key="bunker_type" text="Type" values="hardened_aircraft_shelter,munitions,pillbox" match="key" />
-	            <combo key="location" text="Location" values="overground,underground" values_context="bunker" />
+	            <combo key="bunker_type" text="نوع" values="hardened_aircraft_shelter,munitions,pillbox" match="key" />
+	            <combo key="location" text="مکان" values="overground,underground" values_context="bunker" />
 	            <text key="name" text="نام" />
-	            <check key="historic" text="Historic" />
-	            <check key="ruins" text="Ruins" />
+	            <check key="historic" text="تاریخی" />
+	            <check key="ruins" text="خرابه" />
 	        </item> <!-- Bunker -->
-	        <item name="Range" icon="presets/sport/range.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="میدان تیر" icon="presets/sport/range.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:military=range" />
 	            <space />
 	            <key key="military" value="range" />
 	        </item> <!-- Range -->
 	    </group> <!-- Military -->
-	    <group name="Power" icon="presets/power/power.svg">
-	        <item name="Power Plant" icon="presets/power/plant.svg" type="closedway,relation,multipolygon" preset_name_label="true">
+	    <group name="انرژی" icon="presets/power/power.svg">
+	        <item name="نیروگاه" icon="presets/power/plant.svg" type="closedway,relation,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:power=plant" />
 	            <space />
 	            <key key="power" value="plant" />
 	            <reference ref="name_ref_operator" />
-	            <text key="start_date" text="Start date" />
-	            <optional text="Output forms of energy (optional):">
-	                <combo key="plant:output:electricity" text="electricity" values="yes,2 W,3 kW,5 MW,7 GW" />
-	                <combo key="plant:output:hot_water" text="hot water" values="yes,2 W,3 kW,5 MW,7 GW" />
-	                <combo key="plant:output:hot_air" text="hot air" values="yes,2 W,3 kW,5 MW,7 GW" />
-	                <combo key="plant:output:cold_water" text="cold water" values="yes,2 W,3 kW,5 MW,7 GW" />
-	                <combo key="plant:output:cold_air" text="cold air" values="yes,2 W,3 kW,5 MW,7 GW" />
-	                <combo key="plant:output:compressed_air" text="compressed air" values="yes,2 W,3 kW,5 MW,7 GW" />
-	                <combo key="plant:output:steam" text="steam" values="yes,2 W,3 kW,5 MW,7 GW" />
-	                <combo key="plant:output:vacuum" text="vacuum" values="yes,2 W,3 kW,5 MW,7 GW" />
+	            <text key="start_date" text="تاریخ تاسیس" />
+	            <optional text="نوع انرژی خروجی:">
+	                <combo key="plant:output:electricity" text="الکتریکی" values="yes,2 W,3 kW,5 MW,7 GW" />
+	                <combo key="plant:output:hot_water" text="آب جوش" values="yes,2 W,3 kW,5 MW,7 GW" />
+	                <combo key="plant:output:hot_air" text="هوای جوش" values="yes,2 W,3 kW,5 MW,7 GW" />
+	                <combo key="plant:output:cold_water" text="آب سرد" values="yes,2 W,3 kW,5 MW,7 GW" />
+	                <combo key="plant:output:cold_air" text="هوای سرد" values="yes,2 W,3 kW,5 MW,7 GW" />
+	                <combo key="plant:output:compressed_air" text="هوای فشرده" values="yes,2 W,3 kW,5 MW,7 GW" />
+	                <combo key="plant:output:steam" text="بخار" values="yes,2 W,3 kW,5 MW,7 GW" />
+	                <combo key="plant:output:vacuum" text="مکش" values="yes,2 W,3 kW,5 MW,7 GW" />
 	                <space />
 	                <combo key="plant:source" text="Plant source" values="biofuel,biogas,biomass,coal,diesel,gas,gasoline,geothermal,hydro,nuclear,oil,osmotic,solar,tidal,waste,wave,wind" />
 	            </optional>
 	        </item> <!-- Power Plant -->
-	        <group name="Power Generator" icon="presets/power/generator.svg">
-	            <item name="Biofuel Power Generator" icon="presets/power/power_source-biofuel.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <group name="مولد انرژی" icon="presets/power/generator.svg">
+	            <item name="مولد بیوزیستی" icon="presets/power/power_source-biofuel.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="biofuel" />
 	                <reference ref="power_generator" />
 	                <key key="generator:method" value="combustion" />
-	                <combo key="generator:type" text="Generator Type" values="gas_turbine,reciprocating_engine,steam_generator" />
+	                <combo key="generator:type" text="نوع مولد" values="gas_turbine,reciprocating_engine,steam_generator" />
 	                <reference ref="power_output" />
 	            </item> <!-- Power Generator -->
-	            <item name="Biogas Power Generator" icon="presets/power/power_source-biofuel.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="مولد بیوگازی" icon="presets/power/power_source-biofuel.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="biogas" />
 	                <reference ref="power_generator" />
 	                <key key="generator:method" value="combustion" />
-	                <combo key="generator:type" text="Generator Type" values="reciprocating_engine,steam_generator" />
+	                <combo key="generator:type" text="نوع مولد" values="reciprocating_engine,steam_generator" />
 	                <reference ref="power_output" />
 	            </item> <!-- Biogas Power Generator -->
-	            <item name="Biomass Power Generator" icon="presets/power/power_source-biofuel.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="مولد زیست‌توده" icon="presets/power/power_source-biofuel.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="biomass" />
 	                <reference ref="power_generator" />
-	                <combo key="generator:method" text="Method" values_context="generator method" values="anaerobic_digestion,combustion,gasification" />
-	                <combo key="generator:type" text="Generator Type" values_searchable="true">
+	                <combo key="generator:method" text="متد" values_context="generator method" values="anaerobic_digestion,combustion,gasification" />
+	                <combo key="generator:type" text="نوع مولد" values_searchable="true">
 	                    <list_entry value="bioreactor" short_description="anaerobic_digestion / combustion" />
 	                    <list_entry value="pyrolysis" short_description="" />
 	                    <list_entry value="steam_generator" short_description="combustion" />
@@ -5084,46 +5084,46 @@
 	                </combo>
 	                <reference ref="power_output" />
 	            </item> <!-- Biomass Power Generator -->
-	            <item name="Coal Power Generator" icon="presets/power/power_source-coal.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="مولد ذغالی" icon="presets/power/power_source-coal.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="coal" />
 	                <reference ref="power_generator" />
 	                <key key="generator:method" value="combustion" />
-	                <combo key="generator:type" text="Generator Type" values="steam_generator,steam_turbine" />
+	                <combo key="generator:type" text="نوع مولد" values="steam_generator,steam_turbine" />
 	                <reference ref="power_output" />
 	            </item> <!-- Coal Power Generator -->
-	            <item name="Gas Power Generator" icon="presets/power/power_source-gas.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="مولد گازی" icon="presets/power/power_source-gas.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="gas" />
 	                <reference ref="power_generator" />
 	                <key key="generator:method" value="combustion" />
-	                <combo key="generator:type" text="Generator Type" values="combined_cycle,gas_turbine,reciprocating_engine,steam_generator,steam_turbine" />
+	                <combo key="generator:type" text="نوع مولد" values="combined_cycle,gas_turbine,reciprocating_engine,steam_generator,steam_turbine" />
 	                <reference ref="power_output" />
 	            </item> <!-- Gas Power Generator -->
-	            <item name="Oil Power Generator" icon="presets/power/power_source-oil.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="مولد نفتی" icon="presets/power/power_source-oil.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="oil" />
 	                <reference ref="power_generator" />
 	                <key key="generator:method" value="combustion" />
-	                <combo key="generator:type" text="Generator Type" values="steam_generator,steam_turbine" />
+	                <combo key="generator:type" text="نوع مولد" values="steam_generator,steam_turbine" />
 	                <reference ref="power_output" />
 	            </item> <!-- Oil Power Generator -->
-	            <item name="دیزل Power Generator" icon="presets/power/power_source-oil.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="مولد دیزل" icon="presets/power/power_source-oil.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="diesel" />
 	                <reference ref="power_generator" />
 	                <key key="generator:method" value="combustion" />
-	                <combo key="generator:type" text="Generator Type" values="reciprocating_engine,steam_generator" />
+	                <combo key="generator:type" text="نوع مولد" values="reciprocating_engine,steam_generator" />
 	                <reference ref="power_output" />
 	            </item> <!-- دیزل Power Generator -->
-	            <item name="Gasoline Power Generator" icon="presets/power/power_source-oil.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="مولد گازوئیلی" icon="presets/power/power_source-oil.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="gasoline" />
 	                <reference ref="power_generator" />
 	                <key key="generator:method" value="combustion" />
-	                <combo key="generator:type" text="Generator Type" values="reciprocating_engine,steam_generator" />
+	                <combo key="generator:type" text="نوع مولد" values="reciprocating_engine,steam_generator" />
 	                <reference ref="power_output" />
 	            </item> <!-- Gasoline Power Generator -->
-	            <item name="Nuclear Reactor" icon="presets/power/power_source-nuclear.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="راکتور هسته‌ای" icon="presets/power/power_source-nuclear.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="nuclear" />
 	                <reference ref="power_generator" />
-	                <combo key="generator:method" text="Method" values_context="generator method" values="fission,fusion" />
-	                <combo key="generator:type" text="Generator Type" values_searchable="true">
+	                <combo key="generator:method" text="متد" values_context="generator method" values="fission,fusion" />
+	                <combo key="generator:type" text="نوع مولد" values_searchable="true">
 	                    <list_entry value="BWR-1" display_value="Boiling Water Reactor 1 (BWR-1)" short_description="fission" />
 	                    <list_entry value="BWR-2" display_value="Boiling Water Reactor 2 (BWR-2)" short_description="fission" />
 	                    <list_entry value="BWR-3" display_value="Boiling Water Reactor 3 (BWR-3)" short_description="fission" />
@@ -5144,35 +5144,35 @@
 	                </combo>
 	                <reference ref="power_output" />
 	            </item> <!-- Nuclear Reactor -->
-	            <item name="Solar Power Generator" icon="presets/power/power_source-sun.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="مولد خورشیدی" icon="presets/power/power_source-sun.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="solar" />
 	                <reference ref="power_generator" />
-	                <combo key="generator:method" text="Method" values_context="generator method" values="photovoltaic,thermal" />
-	                <combo key="generator:type" text="Generator Type" values_searchable="true">
+	                <combo key="generator:method" text="روش" values_context="generator method" values="photovoltaic,thermal" />
+	                <combo key="generator:type" text="نوع مولد" values_searchable="true">
 	                    <list_entry value="solar_photovoltaic_panel" short_description="photovoltaic" />
 	                    <list_entry value="solar_thermal_collector" short_description="thermal" />
 	                    <list_entry value="steam_turbine" short_description="thermal" />
 	                </combo>
 	                <reference ref="power_output" />
 	            </item> <!-- Solar Power Generator -->
-	            <item name="Waste Power Generator" icon="presets/power/power_source-waste.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="مولد ضایعاتی" icon="presets/power/power_source-waste.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="waste" />
 	                <reference ref="power_generator" />
-	                <combo key="generator:method" text="Method" values_context="generator method" values="combustion,gasification,pyrolysis" />
-	                <combo key="generator:type" text="Generator Type" values_searchable="true">
+	                <combo key="generator:method" text="روش" values_context="generator method" values="combustion,gasification,pyrolysis" />
+	                <combo key="generator:type" text="نوع مولد" values_searchable="true">
 	                    <list_entry value="bioreactor" short_description="gasification" />
 	                    <list_entry value="pyrolysis" short_description="" />
 	                    <list_entry value="reciprocating_engine" short_description="combustion" />
 	                    <list_entry value="steam_generator" short_description="combustion" />
 	                </combo>
-	                <combo key="generator:type" text="Generator Type" values="bioreactor,reciprocating_engine,steam_generator" />
+	                <combo key="generator:type" text="نوع مولد" values="bioreactor,reciprocating_engine,steam_generator" />
 	                <reference ref="power_output" />
 	            </item> <!-- Waste Power Generator -->
-	            <item name="Water Turbine" icon="presets/power/power_source-water.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="توربین آبی" icon="presets/power/power_source-water.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="hydro" />
 	                <reference ref="power_generator" />
-	                <combo key="generator:method" text="Method" values_context="generator method" values="run-of-the-river,water-pumped-storage,water-storage" />
-	                <combo key="generator:type" text="Generator Type" values_searchable="true">
+	                <combo key="generator:method" text="نوع" values_context="generator method" values="run-of-the-river,water-pumped-storage,water-storage" />
+	                <combo key="generator:type" text="نوع مولد" values_searchable="true">
 	                    <list_entry value="francis_turbine" short_description="all methods" />
 	                    <list_entry value="hydrodynamic_screw" short_description="run-of-the-river" />
 	                    <list_entry value="kaplan_turbine" short_description="run-of-the-river / water-storage" />
@@ -5180,48 +5180,48 @@
 	                </combo>
 	                <reference ref="power_output" />
 	            </item> <!-- Water Turbine -->
-	            <item name="Tidal Water Turbine" icon="presets/power/power_source-water.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="توربین آبی کشندی" icon="presets/power/power_source-water.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="tidal" />
 	                <reference ref="power_generator" />
-	                <combo key="generator:method" text="Method" values_context="generator method" values="barrage,stream" />
-	                <combo key="generator:type" text="Generator Type" values_searchable="true">
+	                <combo key="generator:method" text="روش" values_context="generator method" values="barrage,stream" />
+	                <combo key="generator:type" text="نوع مولد" values_searchable="true">
 	                    <list_entry value="horizontal_axis" short_description="stream" />
 	                    <list_entry value="kaplan_turbine" short_description="barrage" />
 	                    <list_entry value="vertical_axis" short_description="stream" />
 	                </combo>
 	                <reference ref="power_output" />
 	            </item> <!-- Tidal Water Turbine -->
-	            <item name="Wave Energy Converter" icon="presets/power/power_source-water.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="مبدل انرژی موج" icon="presets/power/power_source-water.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="wave" />
 	                <reference ref="power_generator" />
 	                <reference ref="power_output" />
 	            </item> <!-- Wave Energy Converter -->
-	            <item name="Osmotic Power Generator" icon="presets/power/power_source-water.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="مولد اسمزی" icon="presets/power/power_source-water.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="osmotic" />
 	                <reference ref="power_generator" />
 	                <reference ref="power_output" />
 	            </item> <!-- Osmotic Power Generator -->
-	            <item name="Geothermal Power Generator" icon="presets/power/power_source-geothermal.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	            <item name="مولد زمین‌گرایی" icon="presets/power/power_source-geothermal.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	                <key key="generator:source" value="geothermal" />
 	                <reference ref="power_generator" />
-	                <combo key="generator:type" text="Generator Type" values="heat_pump,steam_turbine" />
+	                <combo key="generator:type" text="نوع مولد" values="heat_pump,steam_turbine" />
 	                <reference ref="power_output" />
 	            </item> <!-- Geothermal Power Generator -->
-	            <item name="Wind Turbine" icon="presets/power/power_source-wind.svg" type="node,closedway" preset_name_label="true">
+	            <item name="توربین باد" icon="presets/power/power_source-wind.svg" type="node,closedway" preset_name_label="true">
 	                <key key="generator:source" value="wind" />
 	                <reference ref="power_generator" />
 	                <key key="generator:method" value="wind_turbine" />
-	                <combo key="generator:type" text="Generator Type" values="horizontal_axis,vertical_axis" />
+	                <combo key="generator:type" text="نوع مولد" values="horizontal_axis,vertical_axis" />
 	                <reference ref="power_output" />
 	            </item> <!-- Wind Turbine -->
 	        </group> <!-- Power Generator -->
 	        <separator/>
-	        <item name="Power Substation" icon="presets/power/substation.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="پست برق" icon="presets/power/substation.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:power=substation" />
 	            <space />
 	            <key key="power" value="substation" />
 	            <text key="name" text="نام" />
-	            <combo key="substation" text="Type of substation" values="compensation,converter,distribution,industrial,minor_distribution,traction,transition,transmission" values_context="power" />
+	            <combo key="substation" text="نوع پست" values="compensation,converter,distribution,industrial,minor_distribution,traction,transition,transmission" values_context="power" />
 	            <reference ref="power_extra" />
 	            <optional>
 	                <combo key="rating" text="Power rating (kVA/MVA)" values="2700 kVA,12500 kVA,15 MVA,50 MVA,100 MVA" />
@@ -5229,7 +5229,7 @@
 	                <check key="gas_insulated" text="Gas insulated" />
 	            </optional>
 	        </item> <!-- Power Substation -->
-	        <item name="Power Transformer" icon="presets/power/transformer.svg" type="node" preset_name_label="true">
+	        <item name="مبدل برق (ترانس)" icon="presets/power/transformer.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:power=transformer" />
 	            <space />
 	            <key key="power" value="transformer" />
@@ -5239,7 +5239,7 @@
 	            <reference ref="ref_operator" />
 	            <reference ref="optional_transformer_rating_phases_devices_windings" />
 	        </item> <!-- Power Transformer -->
-	        <item name="Power Switchgear" icon="presets/power/switchgear.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="کلیدابزار برق" icon="presets/power/switchgear.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:power=switchgear" />
 	            <space />
 	            <label text="(Please only use this tag if more detailed mapping using busbars and bays is impossible!)" />
@@ -5251,25 +5251,25 @@
 	                <check key="gas_insulated" text="Gas insulated" />
 	            </optional>
 	        </item> <!-- Power Switchgear -->
-	        <item name="Power Busbar" icon="presets/power/busbar.svg" type="way" preset_name_label="true">
+	        <item name="شینه برق" icon="presets/power/busbar.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:line=busbar" />
 	            <space />
 	            <key key="power" value="line" />
 	            <key key="line" value="busbar" />
 	            <reference ref="power_line_extra" />
 	        </item> <!-- Power Busbar -->
-	        <item name="Power Bay" icon="presets/power/bay.svg" type="way" preset_name_label="true">
+	        <item name="گلوگاه برق" icon="presets/power/bay.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:line=bay" />
 	            <space />
 	            <key key="power" value="line" />
 	            <key key="line" value="bay" />
 	            <reference ref="power_line_extra" />
 	        </item> <!-- Power Bay -->
-	        <item name="Power Switch" icon="presets/power/switch.svg" type="node" preset_name_label="true">
+	        <item name="کلید برق" icon="presets/power/switch.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:power=switch" />
 	            <space />
 	            <key key="power" value="switch" />
-	            <combo key="switch" text="Type of switch" values="circuit_breaker,disconnector,earthing,mechanical" match="key" values_context="power" />
+	            <combo key="switch" text="نوع کلید" values="circuit_breaker,disconnector,earthing,mechanical" match="key" values_context="power" />
 	            <reference ref="power_loc" />
 	            <optional>
 	                <reference ref="voltage" />
@@ -5278,43 +5278,43 @@
 	            </optional>
 	        </item> <!-- Power Switch -->
 	        <separator/>
-	        <item name="Power Converter" icon="presets/power/converter.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="مبدل جریان برق" icon="presets/power/converter.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:power=converter" />
 	            <space />
 	            <key key="power" value="converter" />
-	            <combo key="converter" text="Type of converter" values="lcc,vsc,back-to-back" match="key" values_context="power" />
+	            <combo key="converter" text="نوع مبدل جریان" values="lcc,vsc,back-to-back" match="key" values_context="power" />
 	            <reference ref="voltage_frequency" />
 	            <reference ref="ref_operator" />
 	            <optional>
-	                <combo key="poles" text="Amount of poles" values="monopole,bipole" />
-	                <combo key="rating" text="Power rating (MVA)" values="15 MVA,50 MVA,100 MVA" />
+	                <combo key="poles" text="تعداد قطب" values="monopole,bipole" />
+	                <combo key="rating" text="مقدار توان" values="15 MVA,50 MVA,100 MVA" />
 	            </optional>
 	        </item> <!-- Power Converter -->
-	        <item name="Power Compensator" icon="presets/power/compensator.svg" type="node,closedway" preset_name_label="true">
+	        <item name="جبران‌کننده برق" icon="presets/power/compensator.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:power=compensator" />
 	            <space />
 	            <key key="power" value="compensator" />
-	            <combo key="compensator" text="Type of compensator" values="filter,series_capacitor,series_reactor,shunt_capacitor,shunt_reactor,statcom,static_var,synchronous_condenser" match="key" values_context="power" />
+	            <combo key="compensator" text="نوع جبران‌کننده" values="filter,series_capacitor,series_reactor,shunt_capacitor,shunt_reactor,statcom,static_var,synchronous_condenser" match="key" values_context="power" />
 	            <reference ref="voltage_frequency" />
 	            <reference ref="ref_operator" />
 	            <optional>
-	                <combo key="rating" text="Power rating (kvar/Mvar)" values="500 kvar,1 Mvar,5 Mvar" />
+	                <combo key="rating" text="مقدار توان" values="500 kvar,1 Mvar,5 Mvar" />
 	            </optional>
 	        </item> <!-- Power Compensator -->
 	        <separator/>
-	        <item name="Power Street Cabinet" icon="presets/power/cable_distribution_cabinet.svg" type="node" preset_name_label="true">
+	        <item name="کابینت برق شهری" icon="presets/power/cable_distribution_cabinet.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:man_made=street_cabinet" />
 	            <key key="man_made" value="street_cabinet" />
 	            <key key="street_cabinet" value="power" />
 	            <optional>
-	                <combo key="voltage" text="Voltage in Volts (V)" values="600,400,220,110" /> <!-- Recheck values -->
+	                <combo key="voltage" text="ولتاژ به ولت" values="600,400,220,110" /> <!-- Recheck values -->
 	                <reference ref="ref_operator" />
 	                <text key="manufacturer" text="Manufacturer" />
-	                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
+	                <combo key="colour" text="رنگ" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
 	             </optional>
 	        </item> <!-- Power Street Cabinet -->
 	        <separator/>
-	        <item name="Transformer Tower" icon="presets/power/transformer_tower.svg" type="node,closedway" preset_name_label="true">
+	        <item name="برج مولد" icon="presets/power/transformer_tower.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:building=transformer_tower" />
 	            <space />
 	            <key key="building" value="transformer_tower" />
@@ -5322,7 +5322,7 @@
 	            <reference ref="ref_operator" />
 	            <preset_link preset_name="Power Substation" />
 	        </item> <!-- Transformer Tower -->
-	        <item name="Terminal" icon="presets/power/terminal.svg" type="node" preset_name_label="true">
+	        <item name="پایانه برق" icon="presets/power/terminal.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:power=terminal" />
 	            <space />
 	            <key key="power" value="terminal" />
@@ -5332,70 +5332,70 @@
 	                <text key="operator" text="مسئول" />
 	            </optional>
 	        </item> <!-- Terminal -->
-	        <item name="Power Portal" icon="presets/power/portal.svg" type="node,way" preset_name_label="true">
+	        <item name="برج قدرت لنگری" icon="presets/power/portal.svg" type="node,way" preset_name_label="true">
 	            <link wiki="Tag:power=portal" />
 	            <space />
 	            <key key="power" value="portal" />
 	            <text key="height" text="ارتفاع به متر" />
-	            <combo key="structure" text="Type of construction" values="lattice,tubular,solid" />
-	            <combo key="material" text="Material" values="concrete,metal,plastic,steel,stone,wood" />
-	            <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="color" />
+	            <combo key="structure" text="نوع ساخت" values="lattice,tubular,solid" />
+	            <combo key="material" text="جنس" values="concrete,metal,plastic,steel,stone,wood" />
+	            <combo key="colour" text="رنگ" values="black,red,white,gray,red/white" values_context="color" />
 	            <reference ref="ref_operator" />
-	            <combo key="design" text="Portal design" values="portal,portal_two-level,portal_three-level" values_context="power" />
-	            <combo key="line_attachment" text="Line attachment" values="anchor,pin,pulley,suspension" values_context="power" />
+	            <combo key="design" text="طراحی لنگر" values="portal,portal_two-level,portal_three-level" values_context="power" />
+	            <combo key="line_attachment" text="اتصال کابل" values="anchor,pin,pulley,suspension" values_context="power" />
 	        </item> <!-- Power Portal -->
-	        <item name="Power Tower" icon="presets/power/tower.svg" type="node" preset_name_label="true">
+	        <item name="برج قدرت" icon="presets/power/tower.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:power=tower" />
 	            <space />
 	            <key key="power" value="tower" />
 	            <text key="height" text="ارتفاع به متر" />
-	            <combo key="structure" text="Type of construction" values="lattice,tubular,solid" />
-	            <combo key="material" text="Material" values="concrete,metal,plastic,steel,stone,wood" />
-	            <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="color" />
+	            <combo key="structure" text="نوع ساخت" values="lattice,tubular,solid" />
+	            <combo key="material" text="جنس" values="concrete,metal,plastic,steel,stone,wood" />
+	            <combo key="colour" text="رنگ" values="black,red,white,gray,red/white" values_context="color" />
 	            <reference ref="ref_operator" />
 	            <optional>
-	                <combo key="tower:type" text="Tower type" values="termination,branch,transposing,crossing,transition" text_context="power" values_context="power" />
-	                <combo key="branch:type" text="Branch tower type" values="tap,split,loop,cross" values_context="power" />
-	                <combo key="design" text="Tower design" values="one-level,two-level,donau,three-level,barrel,asymmetric,triangle,flag,donau;one-level,four-level,six-level,nine-level,delta,delta_two-level,y-frame,x-frame,h-frame,guyed_h-frame,portal,portal_two-level,portal_three-level,guyed_v-frame,bipole,monopolar" values_context="power" />
-	                <combo key="line_attachment" text="Line attachment" values="anchor,pin,pulley,suspension" values_context="power" />
-	                <check key="triple_tower" text="Triple tower" />
-	                <check key="design:incomplete" text="Incomplete tower" />
-	                <check key="location:transition" text="Location transition" disable_off="true" />
+	                <combo key="tower:type" text="نوع برج" values="termination,branch,transposing,crossing,transition" text_context="power" values_context="power" />
+	                <combo key="branch:type" text="نوع شاخه" values="tap,split,loop,cross" values_context="power" />
+	                <combo key="design" text="طراحی برج" values="one-level,two-level,donau,three-level,barrel,asymmetric,triangle,flag,donau;one-level,four-level,six-level,nine-level,delta,delta_two-level,y-frame,x-frame,h-frame,guyed_h-frame,portal,portal_two-level,portal_three-level,guyed_v-frame,bipole,monopolar" values_context="power" />
+	                <combo key="line_attachment" text="اتصال کابل" values="anchor,pin,pulley,suspension" values_context="power" />
+	                <check key="triple_tower" text="برج سه‌تایی" />
+	                <check key="design:incomplete" text="برج ناقص" />
+	                <check key="location:transition" text="مکان ترازیسیون" disable_off="true" />
 	            </optional>
 	        </item> <!-- Power Tower -->
-	        <item name="Pole" icon="presets/power/pole.svg" type="node" preset_name_label="true">
+	        <item name="تیر برق" icon="presets/power/pole.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:power=pole" />
 	            <space />
 	            <key key="power" value="pole" />
 	            <reference ref="power_pole" />
 	        </item> <!-- Pole -->
-	        <item name="Pole with Switch" icon="presets/power/pole_switch.svg" type="node" preset_name_label="true">
+	        <item name="تیر برق با کلید" icon="presets/power/pole_switch.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:power=pole" />
 	            <space />
 	            <key key="power" value="pole" />
-	            <label text="Pole Attributes:" />
+	            <label text="صفت‌های تیربرق:" />
 	            <reference ref="power_pole" />
 	            <space />
-	            <label text="Switch Attributes:" />
-	            <combo key="switch" text="Type" values="circuit_breaker,disconnector,earthing,mechanical" match="key!" values_context="power" />
+	            <label text="صفت‌های کلید:" />
+	            <combo key="switch" text="نوع" values="circuit_breaker,disconnector,earthing,mechanical" match="key!" values_context="power" />
 	            <optional>
 	                <reference ref="voltage" />
 	                <reference ref="cables" />
 	            </optional>
 	        </item> <!-- Pole with Switch -->
-	        <item name="Pole with Transformer" icon="presets/power/pole_transformer.svg" type="node" preset_name_label="true">
+	        <item name="تیربرق با مبدل" icon="presets/power/pole_transformer.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:power=pole" />
 	            <space />
 	            <key key="power" value="pole" />
 	            <label text="Pole Attributes:" />
 	            <reference ref="power_pole" />
 	            <space />
-	            <label text="Transformer Attributes:" />
+	            <label text="صفت‌های مبدل:" />
 	            <key key="transformer" value="distribution" match="key!" />
 	            <reference ref="transformer_voltage_frequency" />
 	            <reference ref="optional_transformer_rating_phases_devices_windings" />
 	        </item> <!-- Pole with Transformer -->
-	        <item name="Catenary mast" icon="presets/power/catenary_mast.svg" type="node" preset_name_label="true">
+	        <item name="تیربرق با سیم‌بالاسر" icon="presets/power/catenary_mast.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:power=catenary_mast" />
 	            <space />
 	            <key key="power" value="catenary_mast" />
@@ -5404,27 +5404,27 @@
 	                <text key="operator" text="مسئول" />
 	            </optional>
 	        </item> <!-- Catenary mast -->
-	        <item name="Insulator" icon="presets/power/insulator.svg" type="node,way" preset_name_label="true">
+	        <item name="عایق الکتریکی" icon="presets/power/insulator.svg" type="node,way" preset_name_label="true">
 	            <link wiki="Tag:power=insulator" />
 	            <space />
 	            <key key="power" value="insulator" />
 	            <combo key="line_attachment" text="Line attachment" values="anchor,pin,pulley,suspension" values_context="power" />
 	            <reference ref="ref_operator" />
 	        </item> <!-- Insulator -->
-	        <item name="Power Line" icon="presets/power/line.svg" type="way" preset_name_label="true">
+	        <item name="خط برق" icon="presets/power/line.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:power=line" />
 	            <space />
-	            <combo key="power" text="Line type" values="line,minor_line" default="line" match="keyvalue!" />
+	            <combo key="power" text="نوع خط" values="line,minor_line" default="line" match="keyvalue!" />
 	            <reference ref="voltage_frequency" />
 	            <reference ref="ref_operator" />
 	            <optional>
 	                <reference ref="cables_circuits" />
-	                <combo key="wires" text="Number of conductors/wires per cable" values="single,double,triple,quad,fivefold,sixfold,eightfold" values_context="power" values_sort="false" />
+	                <combo key="wires" text="تعداد رسانا بر کابل" values="single,double,triple,quad,fivefold,sixfold,eightfold" values_context="power" values_sort="false" />
 	                <combo key="layer" text="لایه" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
-	                <check key="communication" text="Used for data communications" value_on="line" value_off="" default="off" />
+	                <check key="communication" text="استفاده برای ارتباطات" value_on="line" value_off="" default="off" />
 	            </optional>
 	        </item> <!-- Power Line -->
-	        <item name="Power Cable" icon="presets/power/cable.svg" type="way" preset_name_label="true">
+	        <item name="کابل برق" icon="presets/power/cable.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:power=cable" />
 	            <space />
 	            <key key="power" value="cable" />
@@ -5432,9 +5432,9 @@
 	            <reference ref="ref_operator" />
 	            <optional>
 	                <reference ref="cables_circuits" />
-	                <combo key="location" text="Location" values="underground,underwater,overground" values_context="power cable" />
+	                <combo key="location" text="مکان" values="underground,underwater,overground" values_context="power cable" />
 	                <combo key="layer" text="لایه" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
-	                <check key="communication" text="Used for data communications" value_on="line" value_off="" default="off" />
+	                <check key="communication" text="استفاده برای ارتباطات" value_on="line" value_off="" default="off" />
 	            </optional>
 	        </item> <!-- Power Cable -->
 	    </group> <!-- Power -->
