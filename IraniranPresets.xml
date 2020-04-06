@@ -6407,22 +6407,22 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Antiques -->
 	    </group> <!-- Home decoration -->
-	    <group name="Printed Material" icon="presets/shop/stationery.svg">
-	        <item name="Stationery" icon="presets/shop/stationery.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="اوراق چاپی" icon="presets/shop/stationery.svg">
+	        <item name="فروشگاه لوازم التحریر" icon="presets/shop/stationery.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=stationery" />
 	            <space />
 	            <key key="shop" value="stationery" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Stationery -->
-	        <item name="Copy Shop" icon="presets/shop/copyshop.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فتوکپی" icon="presets/shop/copyshop.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=copyshop" />
 	            <space />
 	            <key key="shop" value="copyshop" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Copy Shop -->
-	        <item name="Book Store" icon="presets/shop/book.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کتاب فروشی" icon="presets/shop/book.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=books" />
 	            <space />
 	            <key key="shop" value="books" />
@@ -6430,14 +6430,14 @@
 	            <combo key="second_hand" text="دست دوم" values="yes,no,only" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Book Store -->
-	        <item name="Newspaper Stand" icon="presets/shop/news.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="باجه روزنامه" icon="presets/shop/news.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=newsagent" />
 	            <space />
 	            <key key="shop" value="newsagent" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Newspaper Stand -->
-	        <item name="Ticket" icon="presets/shop/ticket.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="بلیط فروشی" icon="presets/shop/ticket.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=ticket" />
 	            <space />
 	            <key key="shop" value="ticket" />
@@ -6445,90 +6445,90 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Ticket -->
 	    </group> <!-- Printed Material -->
-	    <group name="For the body" icon="presets/shop/body.svg">
-	        <item name="Chemist" icon="presets/shop/chemist.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="برای بدن" icon="presets/shop/body.svg">
+	        <item name="فروشگاه مواد بهداشتی" icon="presets/shop/chemist.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=chemist" />
 	            <space />
 	            <key key="shop" value="chemist" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Chemist -->
-	        <item name="Cosmetics" icon="presets/shop/cosmetics.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه مواد آرایشی" icon="presets/shop/cosmetics.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=cosmetics" />
 	            <space />
 	            <key key="shop" value="cosmetics" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Cosmetics -->
-	        <item name="Perfumery" icon="presets/shop/perfumery.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="عطر فروشی" icon="presets/shop/perfumery.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=perfumery" />
 	            <space />
 	            <key key="shop" value="perfumery" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Perfumery -->
-	        <item name="Beauty" icon="presets/shop/beauty.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="سالن زیبایی" icon="presets/shop/beauty.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=beauty" />
 	            <space />
 	            <key key="shop" value="beauty" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Beauty -->
-	        <item name="Tobacco" icon="presets/shop/tobacco.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="تنباکو فروشی" icon="presets/shop/tobacco.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=tobacco" />
 	            <space />
 	            <key key="shop" value="tobacco" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Tobacco -->
-	        <item name="E-cigarette" icon="presets/shop/e-cigarette.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه سیگار الکترونیکی" icon="presets/shop/e-cigarette.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=e-cigarette" />
 	            <space />
 	            <key key="shop" value="e-cigarette" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- E-cigarette -->
-	        <item name="Hairdresser/Barber" icon="presets/shop/hairdresser.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="پیرایشگاه مو" icon="presets/shop/hairdresser.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=hairdresser" />
 	            <space />
 	            <key key="shop" value="hairdresser" />
 	            <reference ref="name_oh_wheelchair" />
 	            <checkgroup columns="3">
-	                <check key="female" text="Female" />
-	                <check key="male" text="Male" />
-	                <check key="unisex" text="Unisex" />
+	                <check key="female" text="زنانه" />
+	                <check key="male" text="مردانه" />
+	                <check key="unisex" text="هردو" />
 	            </checkgroup>
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Hairdresser/Barber -->
-	        <item name="Massage" icon="presets/shop/massage.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="سالن ماساژ" icon="presets/shop/massage.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=massage" />
 	            <space />
 	            <key key="shop" value="massage" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Massage -->
-	        <item name="Tattoo" icon="presets/shop/tattoo.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="سالن تتو" icon="presets/shop/tattoo.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=tattoo" />
 	            <space />
 	            <key key="shop" value="tattoo" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Tattoo -->
-	        <item name="Optician" icon="presets/shop/optician.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="عینک‌‌سازی" icon="presets/shop/optician.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=optician" />
 	            <space />
 	            <key key="shop" value="optician" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Optician -->
-	        <item name="Hearing Aids" icon="presets/shop/hearing_aids.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="سمعک‌سازی" icon="presets/shop/hearing_aids.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=hearing_aids" />
 	            <space />
 	            <key key="shop" value="hearing_aids" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Hearing Aids -->
-	        <item name="Medical Supply" icon="presets/shop/medical_supply.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="تجهیزات پزشکی" icon="presets/shop/medical_supply.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=medical_supply" />
 	            <space />
 	            <key key="shop" value="medical_supply" />
@@ -6536,14 +6536,14 @@
 	            <check key="dispensing" text="Dispensing" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Medical Supply -->
-	        <item name="Jewellery" icon="presets/shop/jewelry.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="جواهر فروشی" icon="presets/shop/jewelry.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=jewelry" />
 	            <space />
 	            <key key="shop" value="jewelry" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Jewellery -->
-	        <item name="Erotic" icon="presets/shop/erotic.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="اروتیک" icon="presets/shop/erotic.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=erotic" />
 	            <space />
 	            <key key="shop" value="erotic" />
