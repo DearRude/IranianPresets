@@ -6791,71 +6791,71 @@
 	        </checkgroup>
 	    </item> <!-- Payment Methods -->
 	  </group> <!-- Shops -->
-	  <group name="Offices" icon="presets/office/private_company.svg">
-	    <item name="Accountant" icon="presets/office/accountant.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	  <group name="اداره‌ها" icon="presets/office/private_company.svg">
+	    <item name="دفتر حسابداری" icon="presets/office/accountant.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=accountant" />
 	        <space />
 	        <key key="office" value="accountant" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Accountant -->
-	    <item name="Advertising agency" icon="presets/office/advertising_agency.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="آژانس تبلیغاتی" icon="presets/office/advertising_agency.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=advertising_agency" />
 	        <space />
 	        <key key="office" value="advertising_agency" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Advertising agency -->
-	    <item name="Architect" icon="presets/office/architect.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="دفتر معماری" icon="presets/office/architect.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=architect" />
 	        <space />
 	        <key key="office" value="architect" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Architect -->
-	    <item name="Association" icon="presets/office/association.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="انجمن" icon="presets/office/association.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=association" />
 	        <space />
 	        <key key="office" value="association" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Association -->
-	    <item name="Private company" icon="presets/office/private_company.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="سازمان خصوصی" icon="presets/office/private_company.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=company" />
 	        <space />
 	        <key key="office" value="company" />
 	        <reference ref="name_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Private company -->
-	    <item name="Educational institution" icon="presets/office/educational_institution.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="کانون تحصیلی" icon="presets/office/educational_institution.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=educational_institution" />
 	        <space />
 	        <key key="office" value="educational_institution" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Educational institution -->
-	    <item name="Employment agency" icon="presets/office/employment_agency.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="آژانس کاریابی" icon="presets/office/employment_agency.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=employment_agency" />
 	        <space />
 	        <key key="office" value="employment_agency" />
 	        <reference ref="name_brand_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Employment agency -->
-	    <item name="Estate agent" icon="presets/office/real_state.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="آژانس املاک" icon="presets/office/real_state.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=estate_agent" />
 	        <space />
 	        <key key="office" value="estate_agent" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Estate agent -->
-	    <item name="Foundation" icon="presets/office/foundation.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="موسسه" icon="presets/office/foundation.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=foundation" />
 	        <space />
 	        <key key="office" value="foundation" />
 	        <reference ref="name_brand_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Foundation -->
-	    <item name="Government" icon="presets/office/government.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="اداره دولتی" icon="presets/office/government.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=government" />
 	        <space />
 	        <key key="office" value="government" />
@@ -6864,56 +6864,56 @@
 	        <reference ref="oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Government -->
-	    <item name="Insurance" icon="presets/office/insurance.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="اداره بیمه" icon="presets/office/insurance.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=insurance" />
 	        <space />
 	        <key key="office" value="insurance" />
 	        <reference ref="name_brand_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Insurance -->
-	    <item name="It specialist" icon="presets/office/it.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="فناوری اطلاعات" icon="presets/office/it.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=it" />
 	        <space />
 	        <key key="office" value="it" />
 	        <reference ref="name_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- It specialist -->
-	    <item name="Lawyer" icon="presets/office/lawyer.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="دفتر وکالت" icon="presets/office/lawyer.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=lawyer" />
 	        <space />
 	        <key key="office" value="lawyer" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Lawyer -->
-	    <item name="Newspaper" icon="presets/office/newspaper.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="دفتر روزنامه" icon="presets/office/newspaper.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=newspaper" />
 	        <space />
 	        <key key="office" value="newspaper" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Newspaper -->
-	    <item name="Non-governmental organisation (NGO)" icon="presets/office/ong.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="سازمان مردم‌نهاد" icon="presets/office/ong.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=ngo" />
 	        <space />
 	        <key key="office" value="ngo" />
 	        <reference ref="name_brand_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Non-governmental organisation (NGO) -->
-	    <item name="Notary" icon="presets/office/notary.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="دفتر اسناد رسمی" icon="presets/office/notary.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=notary" />
 	        <space />
 	        <key key="office" value="notary" />
 	        <reference ref="name_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Notary -->
-	    <item name="Political party" icon="presets/office/political_party.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="دفتر حزب سیاسی" icon="presets/office/political_party.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=political_party" />
 	        <space />
 	        <key key="office" value="political_party" />
 	        <reference ref="name_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Political party -->
-	    <item name="Religion" icon="presets/office/religion.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="دفتر مذهبی" icon="presets/office/religion.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=religion" />
 	        <space />
 	        <key key="office" value="religion" />
@@ -6922,21 +6922,21 @@
 	        <reference ref="oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Religion -->
-	    <item name="Research" icon="presets/office/research.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="دفتر تحقیقاتی" icon="presets/office/research.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=research" />
 	        <space />
 	        <key key="office" value="research" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Research -->
-	    <item name="Tax advisor" icon="presets/office/tax_advisor.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="دفتر مالیاتی" icon="presets/office/tax_advisor.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=tax_advisor" />
 	        <space />
 	        <key key="office" value="tax_advisor" />
 	        <reference ref="name_brand_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Tax advisor -->
-	    <item name="Telecommunication" icon="presets/office/telecommunication.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="اداره مخابراتی" icon="presets/office/telecommunication.svg" name_context="office" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:office=telecommunication" />
 	        <space />
 	        <key key="office" value="telecommunication" />
@@ -6944,29 +6944,29 @@
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Telecommunication -->
 	  </group> <!-- Offices -->
-	  <group name="Craft" icon="presets/craft/painter.svg">
-	    <item name="Beekeeper" icon="presets/craft/beekeeper.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	  <group name="پیشه‌وری" icon="presets/craft/painter.svg">
+	    <item name="زنبورداری" icon="presets/craft/beekeeper.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=beekeeper" />
 	        <space />
 	        <key key="craft" value="beekeeper" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Beekeeper -->
-	    <item name="Brewery" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="آبجوسازی" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=brewery" />
 	        <space />
 	        <key key="craft" value="brewery" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Brewery -->
-	    <item name="Winery" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="شراب‌سازی" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=winery" />
 	        <space />
 	        <key key="craft" value="winery" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Winery -->
-	    <item name="Caterer" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="سورسات‌چی" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=caterer" />
 	        <space />
 	        <key key="craft" value="caterer" />
@@ -6974,77 +6974,77 @@
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Caterer -->
 	    <separator/> <!-- food group -->
-	    <item name="Upholsterer" icon="presets/craft/upholsterer.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="تودوزی" icon="presets/craft/upholsterer.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=upholsterer" />
 	        <space />
 	        <key key="craft" value="upholsterer" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Upholsterer -->
-	    <item name="Key cutter" icon="presets/craft/key_cutter.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="کلید‌سازی" icon="presets/craft/key_cutter.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=key_cutter" />
 	        <space />
 	        <key key="craft" value="key_cutter" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Key cutter -->
-	    <item name="Locksmith" icon="presets/craft/locksmith.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="قفل‌سازی" icon="presets/craft/locksmith.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=locksmith" />
 	        <space />
 	        <key key="craft" value="locksmith" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Locksmith -->
-	    <item name="Electrician" icon="presets/craft/electrician.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="تکنسین الکتریک" icon="presets/craft/electrician.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=electrician" />
 	        <space />
 	        <key key="craft" value="electrician" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Electrician -->
-	    <item name="Plumber" icon="presets/craft/plumber.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="لوله‌کشی" icon="presets/craft/plumber.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=plumber" />
 	        <space />
 	        <key key="craft" value="plumber" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Plumber -->
-	    <item name="Hvac" icon="presets/craft/hvac.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="اچ‌واک" icon="presets/craft/hvac.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=hvac" />
 	        <space />
 	        <key key="craft" value="hvac" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Hvac -->
-	    <item name="Painter" icon="presets/craft/painter.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="نقاشی" icon="presets/craft/painter.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=painter" />
 	        <space />
 	        <key key="craft" value="painter" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Painter -->
-	    <item name="Tiler" icon="presets/craft/tiler.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="کاشی‌کاری" icon="presets/craft/tiler.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=tiler" />
 	        <space />
 	        <key key="craft" value="tiler" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Tiler -->
-	    <item name="Window construction" icon="presets/craft/window_construction.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="ساخت‌وساز پنچره" icon="presets/craft/window_construction.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=window_construction" />
 	        <space />
 	        <key key="craft" value="window_construction" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Window construction -->
-	    <item name="Carpenter" icon="presets/craft/carpenter.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="نجاری" icon="presets/craft/carpenter.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=carpenter" />
 	        <space />
 	        <key key="craft" value="carpenter" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Carpenter -->
-	    <item name="Roofer" icon="presets/craft/roofer.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="سقف‌سازی" icon="presets/craft/roofer.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=roofer" />
 	        <space />
 	        <key key="craft" value="roofer" />
@@ -7052,35 +7052,35 @@
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Roofer -->
 	    <separator/> <!-- apartment/house group -->
-	    <item name="Photographer" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="عکاسی" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=photographer" />
 	        <space />
 	        <key key="craft" value="photographer" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Photographer -->
-	    <item name="Handicraft" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="صنایع دستی" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=handicraft" />
 	        <space />
 	        <key key="craft" value="handicraft" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Handicraft -->
-	    <item name="Pottery" icon="presets/craft/pottery.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="سفال‌گری" icon="presets/craft/pottery.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=pottery" />
 	        <space />
 	        <key key="craft" value="pottery" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Pottery -->
-	    <item name="Gardener" icon="presets/craft/gardener.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="باغبانی" icon="presets/craft/gardener.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=gardener" />
 	        <space />
 	        <key key="craft" value="gardener" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Gardener -->
-	    <item name="Shoemaker" icon="presets/craft/shoemaker.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="کفش‌سازی" icon="presets/craft/shoemaker.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=shoemaker" />
 	        <space />
 	        <key key="craft" value="shoemaker" />
@@ -7088,28 +7088,28 @@
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Shoemaker -->
 	    <separator/> <!-- other "soft"/art craft group -->
-	    <item name="Sawmill" icon="presets/craft/sawmill.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="چوب‌بری" icon="presets/craft/sawmill.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=sawmill" />
 	        <space />
 	        <key key="craft" value="sawmill" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Sawmill -->
-	    <item name="Stonemason" icon="presets/craft/stonemason.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="سنگ‌تراشی" icon="presets/craft/stonemason.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=stonemason" />
 	        <space />
 	        <key key="craft" value="stonemason" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Stonemason -->
-	    <item name="Blacksmith" icon="presets/craft/blacksmith.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="آهنگری" icon="presets/craft/blacksmith.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=blacksmith" />
 	        <space />
 	        <key key="craft" value="blacksmith" />
 	        <reference ref="name_operator_oh_wheelchair" />
 	        <reference ref="link_contact_address" />
 	    </item> <!-- Blacksmith -->
-	    <item name="Metal construction" icon="presets/craft/metal_construction.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <item name="ساخت‌و‌ساز فلزات" icon="presets/craft/metal_construction.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Tag:craft=metal_construction" />
 	        <space />
 	        <key key="craft" value="metal_construction" />
