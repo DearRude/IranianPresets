@@ -7351,17 +7351,17 @@
 	            <space />
 	            <key key="natural" value="reef" />
 	            <text key="name" text="نام" />
-	            <combo key="reef" text="Type" values="coral,oyster,rock,sand" />
+	            <combo key="reef" text="نوع" values="coral,oyster,rock,sand" />
 	        </item> <!-- Reef -->
 	    </group> <!-- Geography -->
-	    <group name="Nature" icon="presets/landmark/trees.svg">
-	        <item name="Tree" icon="presets/landmark/trees.svg" type="node" preset_name_label="true">
+	    <group name="طبیعت" icon="presets/landmark/trees.svg">
+	        <item name="درخت" icon="presets/landmark/trees.svg" type="node" preset_name_label="true">
 	            <link wiki="Tag:natural=tree" />
 	            <label text="A single tree." />
 	            <space />
 	            <key key="natural" value="tree" />
 	            <reference ref="leaf_without_mixed" />
-	            <combo key="denotation" text="Denotation" values_searchable="true" values_context="tree denotation" >
+	            <combo key="denotation" text="تفکیک" values_searchable="true" values_context="tree denotation" >
 	                <list_entry value="landmark" short_description="Trees remarkable due to its size or prominent location, usually visible from great distances and useful for navigation." />
 	                <list_entry value="natural_monument" short_description="Especially old tree, often with a particular shape. Usually protected for its uniqueness." />
 	                <list_entry value="avenue" short_description="Trees aligned along a road." />
@@ -7379,7 +7379,7 @@
 	                <text key="start_date" text="Start date" />
 	            </optional>
 	        </item> <!-- Tree -->
-	        <item name="Tree Row" icon="presets/landmark/tree_row.svg" type="way" preset_name_label="true">
+	        <item name="ردیف درخت" icon="presets/landmark/tree_row.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:natural=tree_row" />
 	            <label text="A line of trees." />
 	            <space />
@@ -7390,36 +7390,37 @@
 	                <text key="height" text="ارتفاع به متر" />
 	            </optional>
 	        </item> <!-- Tree Row -->
-	        <item name="Wood" icon="presets/landmark/forest.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="درخت‌پوشیده" icon="presets/landmark/forest.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:natural=wood" />
-	            <label text="Woodland where timber production does not dominate use." />
+	            <label text="جنگلی که استفاده الوارسازی در آن رواج ندارد." />
 	            <space />
 	            <key key="natural" value="wood" />
 	            <text key="name" text="نام" />
 	            <reference ref="leaf" />
 	        </item> <!-- Wood -->
-	        <item name="Forest" icon="presets/landmark/forest.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="جنگل" icon="presets/landmark/forest.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=forest" />
+				<label text="جنگلی که استفاده الوارسازی در آن رواج دارد." />
 	            <space />
 	            <key key="landuse" value="forest" />
 	            <reference ref="leaf" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Forest -->
-	        <item name="Cutline" icon="presets/landmark/cutline.svg" type="way" preset_name_label="true">
+	        <item name="شکاف سبز" icon="presets/landmark/cutline.svg" type="way" preset_name_label="true">
 	            <link wiki="Tag:man_made=cutline" />
 	            <space />
 	            <key key="man_made" value="cutline" />
-	            <combo key="cutline" text="Type" values="border,firebreak,hunting,loggingmachine,pipeline,piste,section" values_context="cutline" />
+	            <combo key="cutline" text="نوع" values="border,firebreak,hunting,loggingmachine,pipeline,piste,section" values_context="cutline" />
 	        </item> <!-- Cutline -->
-	        <item name="Grassland" icon="presets/landuse/meadow.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="مرتع" icon="presets/landuse/meadow.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:natural=grassland" />
 	            <label text="Where vegetation is dominated by grasses (Poaceae) and other herbaceous (non-woody) plants. Excludes cultivated areas and wetlands." />
 	            <space />
 	            <key key="natural" value="grassland" />
 	            <text key="name" text="نام" />
-	            <combo key="grassland" text="Type" values="pampas,prairie,puszta,savanna,steppe,veld" />
+	            <combo key="grassland" text="نوع" values="pampas,prairie,puszta,savanna,steppe,veld" />
 	        </item> <!-- Grassland -->
-	        <item name="Nature Reserve" icon="presets/leisure/nature_reserve.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="ذخیره‌گاه طبیعی" icon="presets/leisure/nature_reserve.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=nature_reserve" />
 	            <space />
 	            <key key="leisure" value="nature_reserve" />
