@@ -6552,15 +6552,15 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Erotic -->
 	    </group> <!-- For the body -->
-	    <group name="Other" icon="presets/shop/mall.svg">
-	        <item name="Department Store" icon="presets/shop/mall.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	    <group name="دیگر" icon="presets/shop/mall.svg">
+	        <item name="فروشگاه بزرگ" icon="presets/shop/mall.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=department_store" />
 	            <space />
 	            <key key="shop" value="department_store" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Department Store -->
-	        <item name="Mall" icon="presets/shop/mall.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="مرکز خرید" icon="presets/shop/mall.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=mall" />
 	            <space />
 	            <key key="shop" value="mall" />
@@ -6568,14 +6568,14 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Mall -->
 	        <separator/>
-	        <item name="Florist" icon="presets/shop/florist.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="گل‌فروشی" icon="presets/shop/florist.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=florist" />
 	            <space />
 	            <key key="shop" value="florist" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Florist -->
-	        <item name="Garden Centre" icon="presets/shop/garden_centre.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="مرکز باغبانی" icon="presets/shop/garden_centre.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=garden_centre" />
 	            <space />
 	            <key key="shop" value="garden_centre" />
@@ -6583,28 +6583,28 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Garden Centre -->
 	        <separator/>
-	        <item name="Do-It-Yourself Store" icon="presets/shop/diy_store.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه خودت-انجام-بده" icon="presets/shop/diy_store.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=doityourself" />
 	            <space />
 	            <key key="shop" value="doityourself" />
 	            <reference ref="name_brand_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Do-It-Yourself Store -->
-	        <item name="Hardware" icon="presets/shop/hardware.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه ابزارآلات" icon="presets/shop/hardware.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=hardware" />
 	            <space />
 	            <key key="shop" value="hardware" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Hardware -->
-	        <item name="Paint" icon="presets/shop/paint.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="رنگ فروشی" icon="presets/shop/paint.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=paint" />
 	            <space />
 	            <key key="shop" value="paint" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Paint -->
-	        <item name="Gas" icon="presets/shop/gas.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کپسول فروشی" icon="presets/shop/gas.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=gas" />
 	            <space />
 	            <key key="shop" value="gas" />
@@ -6612,35 +6612,35 @@
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Gas -->
 	        <separator/>
-	        <item name="Travel Agency" icon="presets/shop/travel_agency.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="آژانس مسافرتی" icon="presets/shop/travel_agency.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=travel_agency" />
 	            <space />
 	            <key key="shop" value="travel_agency" />
 	            <reference ref="name_brand_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Travel Agency -->
-	        <item name="Scuba diving" icon="presets/shop/scuba_diving.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه غواصی" icon="presets/shop/scuba_diving.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=scuba_diving" />
 	            <space />
 	            <key key="shop" value="scuba_diving" />
 	            <reference ref="name_brand_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Scuba diving -->
-	        <item name="Musical Instrument" icon="presets/shop/musical_instrument.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه ساز‌های موسیقی" icon="presets/shop/musical_instrument.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=musical_instrument" />
 	            <space />
 	            <key key="shop" value="musical_instrument" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Musical Instrument -->
-	        <item name="Toys" icon="presets/shop/toys.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه اسباب‌بازی" icon="presets/shop/toys.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=toys" />
 	            <space />
 	            <key key="shop" value="toys" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Toys -->
-	        <item name="Gift/Souvenir" icon="presets/shop/present.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کادو فروشی" icon="presets/shop/present.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=gift" />
 	            <space />
 	            <key key="shop" value="gift" />
@@ -6650,77 +6650,77 @@
 	            </optional>
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Gift/Souvenir -->
-	        <item name="Variety Store" icon="presets/shop/variety_store.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="حراجی" icon="presets/shop/variety_store.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=variety_store" />
 	            <space />
 	            <key key="shop" value="variety_store" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Variety Store -->
-	        <item name="Party supplies" icon="presets/shop/party.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه لوازم مهمانی" icon="presets/shop/party.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=party" />
 	            <space />
 	            <key key="shop" value="party" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Party supplies -->
-	        <item name="Charity" icon="presets/shop/charity.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="خیریه" icon="presets/shop/charity.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=charity" />
 	            <space />
 	            <key key="shop" value="charity" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Charity -->
-	        <item name="Bookmaker" icon="presets/shop/lottery.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="قمارخانه" icon="presets/shop/lottery.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=bookmaker" />
 	            <space />
 	            <key key="shop" value="bookmaker" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Bookmaker -->
-	        <item name="Lottery" icon="presets/shop/lottery.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="باجه بلیط لاتاری" icon="presets/shop/lottery.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=lottery" />
 	            <space />
 	            <key key="shop" value="lottery" />
 	            <reference ref="name_operator_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Lottery -->
-	        <item name="Bag" icon="presets/shop/bag.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="چمدان فروشی" icon="presets/shop/bag.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=bag" />
 	            <space />
 	            <key key="shop" value="bag" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Bag -->
-	        <item name="Pet" icon="presets/shop/pet.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="فروشگاه حیوان خانگی" icon="presets/shop/pet.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=pet" />
 	            <space />
 	            <key key="shop" value="pet" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Pet -->
-	        <item name="Pet grooming" icon="presets/shop/pet_grooming.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="کلینیک حیوانات خانگی" icon="presets/shop/pet_grooming.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=pet_grooming" />
 	            <space />
 	            <key key="shop" value="pet_grooming" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Pet grooming -->
-	        <item name="Photo" icon="presets/shop/photo.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="عکاسی" icon="presets/shop/photo.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=photo" />
 	            <space />
 	            <key key="shop" value="photo" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Photo -->
-	        <item name="Weapons" icon="presets/shop/weapons.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="اسلحه فروشی" icon="presets/shop/weapons.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=weapons" />
 	            <space />
 	            <key key="shop" value="weapons" />
 	            <reference ref="name_oh_wheelchair" />
 	            <reference ref="link_contact_address_payment" />
 	        </item> <!-- Weapons -->
-	        <item name="Funeral Directors" icon="presets/shop/funeral_directors.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="قواد خانه" icon="presets/shop/funeral_directors.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=funeral_directors" />
 	            <space />
 	            <key key="shop" value="funeral_directors" />
@@ -6729,25 +6729,25 @@
 	        </item> <!-- Funeral Directors -->
 	    </group> <!-- Other -->
 	        <separator/>
-	    <item name="Vending Machine" icon="presets/transport/ticket-machine.svg" type="node" preset_name_label="true">
+	    <item name="دستگاه فروش خودکار" icon="presets/transport/ticket-machine.svg" type="node" preset_name_label="true">
 	        <link wiki="Tag:amenity=vending_machine" />
 	        <space />
 	        <key key="amenity" value="vending_machine" />
 	        <multiselect key="vending" text="Vending products" values="admission_tickets;animal_feed;bicycle_tube;cigarettes;coffee;condoms;drinks;elongated_coin;excrement_bags;food;milk;newspapers;parking_tickets;parcel_pickup;parcel_mail_in;photos;public_transport_tickets;SIM_cards;stamps;sweets;telephone_vouchers;toys" values_searchable="true" />
 	        <text key="operator" text="مسئول" />
-	        <text key="ref" text="مرجع number" />
+	        <text key="ref" text="شماره مرجع" />
 	        <preset_link preset_name="Payment Methods" />
 	    </item> <!-- Vending Machine -->
-	    <item name="Payment Methods" icon="presets/money/dollar.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
+	    <item name="روش پرداخت" icon="presets/money/dollar.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
 	        <link wiki="Key:payment" />
 	        <space />
-	        <combo key="payment:cash" text="Cash" values="yes,no" match="keyvalue" />
+	        <combo key="payment:cash" text="نقد" values="yes,no" match="keyvalue" />
 	        <checkgroup columns="4">
-	            <check key="payment:coins" text="Coins" match="keyvalue" />
-	            <check key="payment:notes" text="Notes" text_context="payment" match="keyvalue" />
+	            <check key="payment:coins" text="سکه" match="keyvalue" />
+	            <check key="payment:notes" text="اسکناس" text_context="payment" match="keyvalue" />
 	        </checkgroup>
 	        <space />
-	        <combo key="payment:debit_cards" text="Debit cards" values="no" match="keyvalue" />
+	        <combo key="payment:debit_cards" text="کارت بانکی" values="no" match="keyvalue" />
 	        <checkgroup columns="4">
 	            <check key="payment:bankaxess" text="BankAxess" match="keyvalue" />
 	            <check key="payment:bancomat" text="Bancomat" match="keyvalue" />
@@ -6759,7 +6759,7 @@
 	            <check key="payment:visa_electron" text="Visa Electron" match="keyvalue" />
 	        </checkgroup>
 	        <space />
-	        <combo key="payment:credit_cards" text="Credit cards" values="no" match="keyvalue" />
+	        <combo key="payment:credit_cards" text="کارت اعتباری" values="no" match="keyvalue" />
 	        <checkgroup columns="4">
 	            <check key="payment:american_express" text="American Express" match="keyvalue" />
 	            <check key="payment:diners_club" text="Diners Club" match="keyvalue" />
@@ -6783,7 +6783,7 @@
 	            <check key="payment:ep_moneo" text="Moneo (fr)" match="keyvalue" />
 	        </checkgroup>
 	        <space />
-	        <combo key="payment:cryptocurrencies" text="Cryptocurrencies" values="no" match="keyvalue" />
+	        <combo key="payment:cryptocurrencies" text="رمز‌ارز" values="no" match="keyvalue" />
 	        <checkgroup columns="4">
 	            <check key="payment:bitcoin" text="Bitcoin" match="keyvalue" />
 	            <check key="payment:dogecoin" text="Dogecoin" match="keyvalue" />
