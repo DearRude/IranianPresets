@@ -1,4 +1,4 @@
-	<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 	<presets
 	xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
 	author="Ebrahim Nejati"
@@ -127,7 +127,6 @@
 	    </chunk>
 	    <chunk id="name_ref_operator">
 	        <text key="name" text="نام" />
-	        <reference ref="مرجع مسئول" />
 	    </chunk>
 	    <chunk id="name_operator">
 	        <text key="name" text="نام" />
@@ -498,6 +497,7 @@
 	    <combo key="material" text="جنس دیوار" values="adobe,brick,concrete,masonry,reinforced_concrete,stone" />
 	  </chunk>
 	  <!--  Groups -->
+	  <group name="Persian Presets" icon="icon/iranian-flag.png">
 	  <group name="معابر" icon="presets/transport/way/way_secondary.svg">
 	    <group name="خیابان‌ها" icon="presets/transport/way/way_secondary.svg">
 	        <item name="آزادراه" icon="presets/transport/way/way_motorway.svg" type="way" preset_name_label="true">
@@ -570,7 +570,7 @@
 	            </optional>
 	            <preset_link preset_name="تضییق‌های جاده‌ای" />
 	        </item> <!-- Trunk -->
-	        <item name="Trunk Link" icon="presets/transport/way/way_trunk_link.svg" type="way" preset_name_label="true">
+	        <item name="بزرگراه پیوندی" icon="presets/transport/way/way_trunk_link.svg" type="way" preset_name_label="true">
 	            <link wiki="Highway_link" />
 	            <space />
 	            <key key="highway" value="trunk_link" />
@@ -736,21 +736,6 @@
 	            </optional>
 	            <preset_link preset_name="تضییق‌های جاده‌ای" />
 	        </item> <!-- Bicycle Road -->
-	        <item name="Living Street" icon="presets/transport/way/way_living_street.svg" type="way,closedway" preset_name_label="true">
-	            <link wiki="Tag:highway=living_street" />
-	            <space />
-	            <key key="highway" value="living_street" />
-	            <text key="name" text="نام" />
-	            <optional>
-	                <combo key="lanes" text="لین‌ها" values="1,2,3" length="3" />
-	                <combo key="layer" text="لایه" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
-	                <reference ref="surface_smoothness" />
-	                <reference ref="highway_yesno_incline_oneway_lit_width" />
-	                <check key="narrow" text="باریک" disable_off="true" />
-	                <check key="trolley_wire" text="کابل اتوبوس برقی" />
-	            </optional>
-	            <preset_link preset_name="تضییق‌های جاده‌ای" />
-	        </item> <!-- Living Street -->
 	        <item name="معبر عابر پیاده" icon="presets/transport/way/way_pedestrian.svg" type="way,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:highway=pedestrian" />
 	            <space />
@@ -927,7 +912,7 @@
 	            </optional>
 	            <preset_link preset_name="تضییق‌های جاده‌ای" />
 	        </item> <!-- Track -->
-	        <item name="Path" icon="presets/transport/way/path.svg" type="way,closedway" preset_name_label="true">
+	        <item name="راه" icon="presets/transport/way/path.svg" type="way,closedway" preset_name_label="true">
 	            <link wiki="Tag:highway=path" />
 	            <key key="highway" value="path" />
 	            <optional>
@@ -8220,4 +8205,5 @@
 	            </roles>
 	        </item> <!-- تونل -->
 	    </group> <!-- Relations -->
+	</group> <!-- All -->
 	</presets>
