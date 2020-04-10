@@ -7315,7 +7315,7 @@
 	            <key key="natural" value="valley" />
 	            <reference ref="name_wikipedia" />
 	        </item> <!-- Valley -->
-	        <item name="صخره" icon="presets/misc/cliff.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
+	        <item name="پرتگاه" icon="presets/misc/cliff.svg" type="node,way,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:natural=cliff" />
 	            <label text="A steep rock face exposure, with a significant vertical, or near vertical (leave the lower face to the right of the way)." />
 	            <space />
@@ -7427,28 +7427,28 @@
 	            <text key="name" text="نام" />
 	        </item> <!-- Nature Reserve -->
 	        <separator/>
-	        <item name="Scree" icon="presets/landuse/scree.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="سنگ‌ریزه" icon="presets/landuse/scree.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:natural=scree" />
 	            <label text="An accumulation of loose angular rocks." />
 	            <space />
 	            <key key="natural" value="scree" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Scree -->
-	        <item name="Shingle" icon="presets/landuse/shingle.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="قلوه‌سنگ" icon="presets/landuse/shingle.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:natural=shingle" />
 	            <label text="An accumulation of loose rounded rocks on a beach or riverbed." />
 	            <space />
 	            <key key="natural" value="shingle" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Shingle -->
-	        <item name="Fell" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="برش طبیعی" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:natural=fell" />
 	            <label text="Bare upper lying uncultivated land principally covered with grass and often grazed." />
 	            <space />
 	            <key key="natural" value="fell" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Fell -->
-	        <item name="Scrub" icon="presets/landuse/scrub.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="خارستان" icon="presets/landuse/scrub.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:natural=scrub" />
 	            <label text="Bare lower lying uncultivated land with bushes but little or no tree cover." />
 	            <space />
@@ -7458,28 +7458,28 @@
 	                <reference ref="leaf" />
 	            </optional>
 	        </item> <!-- Scrub -->
-	        <item name="Heath" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="خلنگزار" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:natural=heath" />
 	            <label text="Bare lower lying uncultivated land with a shrubland habitat found mainly on free-draining infertile, acidic soils, and is characterised by open, low-growing woody vegetation." />
 	            <space />
 	            <key key="natural" value="heath" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Heath -->
-	        <item name="Sand" icon="presets/landuse/sand.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="ماسه" icon="presets/landuse/sand.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:natural=sand" />
 	            <label text="Large area covered with sand." />
 	            <space />
 	            <key key="natural" value="sand" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Sand -->
-	        <item name="Bare Rock" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="سنگلاخ" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:natural=bare_rock" />
 	            <label text="For areas of solid visible rock that is sparsely vegetated or not vegetated at all." />
 	            <space />
 	            <key key="natural" value="bare_rock" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Bare Rock -->
-	        <item name="Rock" icon="presets/misc/rock.svg" type="node,closedway" preset_name_label="true">
+	        <item name="صخره" icon="presets/misc/rock.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:natural=rock" />
 	            <label text="A notable rock or group of rocks, with at least one of them firmly attached to the underlying bedrock." />
 	            <space />
@@ -7489,7 +7489,7 @@
 	                <check key="tourism" text="Tourism attraction" value_on="attraction" disable_off="true" />
 	            </optional>
 	        </item> <!-- Rock -->
-	        <item name="Stone" icon="presets/misc/stone.svg" type="node,closedway" preset_name_label="true">
+	        <item name="سنگ" icon="presets/misc/stone.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:natural=stone" />
 	            <label text="A single notable free-standing rock, which may differ from the composition of the terrain it lies in." />
 	            <space />
@@ -7501,47 +7501,47 @@
 	            </optional>
 	        </item> <!-- Stone -->
 	    </group> <!-- Nature -->
-	    <group name="Land use" icon="presets/landuse/farmland.svg">
-	        <item name="Farmyard" icon="presets/landuse/farmyard.svg" type="closedway,multipolygon" preset_name_label="true">
+	    <group name="اراضی" icon="presets/landuse/farmland.svg">
+	        <item name="مزرعه‌سرا" icon="presets/landuse/farmyard.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=farmyard" />
 	            <space />
 	            <key key="landuse" value="farmyard" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Farmyard -->
-	        <item name="Farmland" icon="presets/landuse/farmland.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="مزرعه" icon="presets/landuse/farmland.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=farmland" />
 	            <space />
 	            <key key="landuse" value="farmland" />
-	            <combo key="crop" text="Crop" values="corn,grass,rice,wheat,hop,cereal,tea,sugarcane" values_context="crop" />
+	            <combo key="crop" text="محصول" values="corn,grass,rice,wheat,hop,cereal,tea,sugarcane" values_context="crop" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Farmland -->
-	        <item name="Meadow" icon="presets/landuse/meadow.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="علف‌زار" icon="presets/landuse/meadow.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=meadow" />
 	            <space />
 	            <key key="landuse" value="meadow" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Meadow -->
-	        <item name="Orchard" icon="presets/landuse/orchard.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="باغ میوه" icon="presets/landuse/orchard.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=orchard" />
 	            <space />
 	            <key key="landuse" value="orchard" />
 	            <combo key="trees" text="Trees" values="almond_trees,apple_trees,banana_plants,cherry_trees,coconut_palms,coffea_plants,hazel_plants,oil_palms,olive_trees,orange_trees,peach_trees,persimmon_trees,plum_trees,tea_plants,walnut_trees" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Orchard -->
-	        <item name="Vineyard" icon="presets/landuse/vineyard.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="تاکستان" icon="presets/landuse/vineyard.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=vineyard" />
 	            <space />
 	            <key key="landuse" value="vineyard" />
 	            <key key="crop" value="grape" match="keyvalue" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Vineyard -->
-	        <item name="Greenhouse Horticulture" icon="presets/landuse/greenhouse_horticulture.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="ناحیه گلخانه" icon="presets/landuse/greenhouse_horticulture.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=greenhouse_horticulture" />
 	            <space />
 	            <key key="landuse" value="greenhouse_horticulture" />
 	            <reference ref="optional_name_operator" />
 	        </item> <!-- Greenhouse Horticulture -->
-	        <item name="Plant Nursery" icon="presets/landuse/plant_nursery.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="پرورشگاه گیاه" icon="presets/landuse/plant_nursery.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=plant_nursery" />
 	            <key key="landuse" value="plant_nursery" />
 	            <reference ref="optional_name_operator" />
@@ -7549,13 +7549,13 @@
 	            <reference ref="leaf" />
 	            <reference ref="genus_species_taxon" />
 	        </item> <!-- Plant Nursery -->
-	        <item name="Salt Pond" icon="presets/landuse/salt_pond.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="دریاچه نمک" icon="presets/landuse/salt_pond.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=salt_pond" />
 	            <space />
 	            <key key="landuse" value="salt_pond" />
 	            <reference ref="optional_name_operator" />
 	        </item> <!-- Salt Pond -->
-	        <item name="Aquaculture" icon="presets/landuse/aquaculture.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="آبزی‌پروری" icon="presets/landuse/aquaculture.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=aquaculture" />
 	            <space />
 	            <key key="landuse" value="aquaculture" />
@@ -7563,13 +7563,13 @@
 	            <reference ref="optional_name_operator" />
 	        </item> <!-- Aquaculture -->
 	        <separator/>
-	        <item name="Allotments" icon="presets/landuse/allotments.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="مزرعه اشتراکی" icon="presets/landuse/allotments.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=allotments" />
 	            <space />
 	            <key key="landuse" value="allotments" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Allotments -->
-	        <item name="Flowerbed" icon="presets/landuse/flowerbed.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="بستر گل" icon="presets/landuse/flowerbed.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=flowerbed" />
 	            <space />
 	            <key key="landuse" value="flowerbed" />
@@ -7578,59 +7578,59 @@
 	                <reference ref="genus_species_taxon" />
 	            </optional>
 	        </item> <!-- Flowerbed -->
-	        <item name="Garden" icon="presets/leisure/garden.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="باغ تزئینی" icon="presets/leisure/garden.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=garden" />
 	            <space />
 	            <key key="leisure" value="garden" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Garden -->
-	        <item name="Grass" icon="presets/landuse/meadow.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="چمن" icon="presets/landuse/meadow.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=grass" />
 	            <space />
 	            <key key="landuse" value="grass" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Grass -->
-	        <item name="Village Green" icon="presets/leisure/common.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="دهکده سبز" icon="presets/leisure/common.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=village_green" />
 	            <space />
 	            <key key="landuse" value="village_green" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Village Green -->
-	        <item name="Park" icon="presets/leisure/park.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="پارک" icon="presets/leisure/park.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:leisure=park" />
 	            <space />
 	            <key key="leisure" value="park" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Park -->
-	        <item name="Recreation Ground" icon="presets/leisure/common.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="باشگاه بیرونی" icon="presets/leisure/common.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=recreation_ground" />
 	            <space />
 	            <key key="landuse" value="recreation_ground" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Recreation Ground -->
 	        <separator/>
-	        <item name="Religious" icon="presets/religion/religion.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="مساحت مذهبی" icon="presets/religion/religion.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=religious" />
 	            <space />
 	            <key key="landuse" value="religious" />
 	            <text key="name" text="نام" />
 	            <reference ref="religious" />
 	        </item> <!-- Religious -->
-	        <item name="Cemetery" icon="presets/landuse/cemetery.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="قبرستان" icon="presets/landuse/cemetery.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=cemetery" />
 	            <space />
 	            <key key="landuse" value="cemetery" />
 	            <text key="name" text="نام" />
 	            <reference ref="religious" />
 	        </item> <!-- Cemetery -->
-	        <item name="Graveyard" icon="presets/landuse/graveyard.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="آرامگاه" icon="presets/landuse/graveyard.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:amenity=grave_yard" />
 	            <space />
 	            <key key="amenity" value="grave_yard" />
 	            <text key="name" text="نام" />
 	            <reference ref="religious" />
 	        </item> <!-- Graveyard -->
-	        <item name="Cemetery sector" icon="presets/misc/cemetery_sector.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="قطعه قبرستان" icon="presets/misc/cemetery_sector.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:cemetery=sector" />
 	            <space />
 	            <key key="cemetery" value="sector" />
@@ -7640,75 +7640,75 @@
 	            </optional>
 	        </item> <!-- Cemetery sector-->
 	        <separator/>
-	        <item name="Residential Area" icon="presets/landmark/building.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="منطقه مسکونی" icon="presets/landmark/building.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=residential" />
 	            <space />
 	            <key key="landuse" value="residential" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Residential Area -->
-	        <item name="Retail" icon="presets/shop/mall.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="لبه تجاری" icon="presets/shop/mall.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=retail" />
 	            <space />
 	            <key key="landuse" value="retail" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Retail -->
-	        <item name="Commercial" icon="presets/landuse/commercial.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="منطقه تجاری" icon="presets/landuse/commercial.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=commercial" />
 	            <space />
 	            <key key="landuse" value="commercial" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Commercial -->
-	        <item name="Industrial" icon="presets/landmark/works.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="منطقه صنعتی" icon="presets/landmark/works.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=industrial" />
 	            <space />
 	            <key key="landuse" value="industrial" />
 	            <combo key="industrial" text="Type" values="bakery,brewery,brickyard,depot,distributor,factory,grinding_mill,heating_station,machine_shop,mine,oil,port,salt_pond,sawmill,scrap_yard,shipyard,slaughterhouse,warehouse" values_context="industrial" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Industrial -->
-	        <item name="Garages" icon="presets/landuse/garages.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="مساحت گاراژ" icon="presets/landuse/garages.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=garages" />
 	            <space />
 	            <key key="landuse" value="garages" />
 	            <reference ref="optional_name_operator" />
 	        </item> <!-- Garages -->
-	        <item name="Railway Land" icon="presets/landuse/railway.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="مساحت راه‌آهن" icon="presets/landuse/railway.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=railway" />
 	            <space />
 	            <key key="landuse" value="railway" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Railway Land -->
-	        <item name="Military" icon="presets/landuse/military.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="منطقه نظامی" icon="presets/landuse/military.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=military" />
 	            <space />
 	            <key key="landuse" value="military" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Military -->
 	        <separator/>
-	        <item name="Construction Area" icon="presets/landuse/construction.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="منطقه ساخت‌وساز" icon="presets/landuse/construction.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=construction" />
 	            <space />
 	            <key key="landuse" value="construction" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Construction Area -->
-	        <item name="Brownfield" icon="presets/landuse/brownfield.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="منطقه دوباره‌ساخت" icon="presets/landuse/brownfield.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=brownfield" />
 	            <space />
 	            <key key="landuse" value="brownfield" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Brownfield -->
-	        <item name="Greenfield" icon="presets/landuse/greenfield.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="منطقه اولین‌ساخت" icon="presets/landuse/greenfield.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=greenfield" />
 	            <space />
 	            <key key="landuse" value="greenfield" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Greenfield -->
-	        <item name="Landfill" icon="presets/landuse/landfill.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="منطقه دفن زباله" icon="presets/landuse/landfill.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=landfill" />
 	            <space />
 	            <key key="landuse" value="landfill" />
 	            <reference ref="optional_name" />
 	        </item> <!-- Landfill -->
-	        <item name="Quarry" icon="presets/landmark/mine.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="معدن روباز" icon="presets/landmark/mine.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:landuse=quarry" />
 	            <space />
 	            <key key="landuse" value="quarry" />
@@ -7717,7 +7717,7 @@
 	        </item> <!-- Quarry -->
 	    </group> <!-- Landuse -->
 	  </group> <!-- Geography -->
-	    <group name="Annotation" icon="presets/misc/housenumber.svg">
+	    <group name="گزارمان" icon="presets/misc/housenumber.svg">
 	        <item name="نام" icon="presets/misc/name.svg" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
 	            <link wiki="Key:name" />
 	            <space />
@@ -7733,16 +7733,16 @@
 	                <text key="short_name" text="Common name abbreviation" match="key" />
 	            </optional>
 	        </item> <!-- Name -->
-	        <item name="Address" icon="presets/misc/housenumber.svg" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
+	        <item name="آدرس" icon="presets/misc/housenumber.svg" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
 	            <link wiki="Key:addr" />
 	            <space />
-	            <text key="addr:housenumber" text="House number" match="key" auto_increment="-2,-1,+1,+2" />
-	            <text key="addr:street" text="Street name" use_last_as_default="force" match="key" alternative_autocomplete_keys="name" />
+	            <text key="addr:housenumber" text="شماره پلاک" match="key" auto_increment="-2,-1,+1,+2" />
+	            <text key="addr:street" text="نام خیابان" use_last_as_default="force" match="key" alternative_autocomplete_keys="name" />
 	            <optional>
-	                <text key="addr:place" text="Place name" use_last_as_default="force" match="key" alternative_autocomplete_keys="name" />
-	                <text key="addr:city" text="City name" use_last_as_default="force" match="key" />
-	                <text key="addr:postcode" text="Post code" use_last_as_default="force" match="key" />
-	                <combo key="addr:country" text="Country code" values_from="java.util.Locale#getISOCountries" use_last_as_default="force" match="key" />
+	                <text key="addr:place" text="نام محله" use_last_as_default="force" match="key" alternative_autocomplete_keys="name" />
+	                <text key="addr:city" text="نام شهر" use_last_as_default="force" match="key" />
+	                <text key="addr:postcode" text="کد پستی" use_last_as_default="force" match="key" />
+	                <combo key="addr:country" text="کد ملی" values_from="java.util.Locale#getISOCountries" use_last_as_default="force" match="key" />
 	            </optional>
 	            <optional text="Optional values for specific countries">
 	                <text key="addr:unit" text="Unit/Suite" match="key" />
@@ -7756,7 +7756,7 @@
 	                <combo key="addr:state" text="State" text_context="addr:" values="AL,AK,AZ,AR,CA,CO,CT,DE,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MD,MA,MI,MN,MS,MO,MT,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OK,OR,PA,RI,SC,SD,TN,TX,UT,VT,VA,WA,WV,WI,DC,AS,GU,MP,PR,UM,VI" use_last_as_default="force" match="key" />
 	            </optional>
 	        </item> <!-- Address -->
-	        <item name="Address Interpolation" icon="presets/misc/interpolation.svg" type="way" preset_name_label="true">
+	        <item name="الحاق آدرس" icon="presets/misc/interpolation.svg" type="way" preset_name_label="true">
 	           <link wiki="Key:addr" />
 	            <space />
 	            <combo key="addr:interpolation" text="Numbering scheme" values="odd,even,all,alphabetic" default="odd" match="key" />
@@ -7764,33 +7764,20 @@
 	                <combo key="addr:inclusion" text="Accuracy" values="actual,estimate,potential" match="key" />
 	            </optional>
 	        </item> <!-- Address Interpolation -->
-	        <item name="Contact (Common Schema)" icon="presets/misc/contact.svg" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
+	        <item name="راه‌های ارتباطی" icon="presets/misc/contact.svg" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
 	            <link wiki="Annotations" />
 	            <space />
 	            <text key="website" text="وبسایت" match="key" />
-	            <text key="email" text="Email Address" match="key" />
+	            <text key="email" text="ادرس ایمیل" match="key" />
 	            <space />
-	            <text key="phone" text="Phone number" match="key" />
-	            <text key="fax" text="Fax Number" match="key" />
+	            <text key="phone" text="شماره تلفن" match="key" />
+	            <text key="fax" text="شماره فکس" match="key" />
 	            <label text="Use E.123 format, e.g. +49 11223 456 7890" />
 	            <space />
 	            <text key="wikipedia" text="ویکی‌پدیا" />
-	            <text key="image" text="Image" />
+	            <text key="image" text="تصویر" />
 	        </item> <!-- Contact (Common Schema) -->
-	        <item name="Contact (Schema with 'contact:*' Prefix)" icon="presets/misc/contact.svg" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
-	            <link wiki="Key:contact" />
-	            <space />
-	            <text key="contact:website" text="وبسایت" match="key" />
-	            <text key="contact:email" text="Email Address" match="key" />
-	            <space />
-	            <text key="contact:phone" text="Phone number" match="key" />
-	            <text key="contact:fax" text="Fax Number" match="key" />
-	            <label text="Use E.123 format, e.g. +49 11223 456 7890" />
-	            <space />
-	            <text key="wikipedia" text="ویکی‌پدیا" />
-	            <text key="image" text="Image" />
-	        </item> <!-- Contact (Schema with 'contact:*' Prefix) -->
-	        <item name="Description" icon="presets/misc/description.svg" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
+	        <item name="توضیحات" icon="presets/misc/description.svg" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
 	            <link wiki="Key:description" />
 	            <space />
 	            <label text="A short text with additional information." text_context="description=*" />
@@ -7802,7 +7789,7 @@
 	            <preset_link preset_name="Note" />
 	            <preset_link preset_name="Fixme" />
 	        </item> <!-- Description -->
-	        <item name="Note" icon="presets/misc/note.svg" name_context="the tag note=*" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
+	        <item name="یادداشت (برای مپر‌ها)" icon="presets/misc/note.svg" name_context="the tag note=*" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
 	            <link wiki="Key:note" />
 	            <space />
 	            <label text="An important hint for other mappers (not for the end user)." text_context="note=*" />
@@ -7813,7 +7800,7 @@
 	            <preset_link preset_name="Fixme" />
 	            <preset_link preset_name="Description" />
 	        </item> <!-- Note -->
-	        <item name="Fixme" icon="presets/misc/fixme.svg" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
+	        <item name="منو درست کن" icon="presets/misc/fixme.svg" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
 	            <link wiki="Key:fixme" />
 	            <space />
 	            <label text="A hint for other mappers (not for the end user), that an object needs an improvement."  text_context="fixme=*"/>
