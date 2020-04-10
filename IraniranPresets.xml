@@ -5914,7 +5914,7 @@
                     <check text="عابربانک" key="atm"/>
                 </item>
 
-                <item icon="presets/money/iran-banks/Melli-Bank.png" type="node,closedway,multipolygon" name="ملی">
+                <item icon="icons/iran-banks/Melli-Bank.png" type="node,closedway,multipolygon" name="ملی">
                     <label text="ملی"/>
                     <key key="amenity" value="bank"/>
                     <key key="name" value="بانک ملی ایران"/>
@@ -5936,7 +5936,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/Shahr-Bank.png" type="node,closedway,multipolygon" name="بانک شهر">
+                <item icon="icons/iran-banks/Shahr-Bank.png" type="node,closedway,multipolygon" name="بانک شهر">
                     <label text="بانک شهر"/>
                     <key key="amenity" value="bank"/>
                     <key key="name" value="بانک شهر"/>
@@ -5957,7 +5957,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/Mellat-Bank.png" type="node,closedway,multipolygon" name="ملت">
+                <item icon="icons/iran-banks/Mellat-Bank.png" type="node,closedway,multipolygon" name="ملت">
                     <label text="ملت"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک ملت" key="name"/>
@@ -5977,7 +5977,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/Refah-Bank.png" type="node,closedway,multipolygon" name="رفاه">
+                <item icon="icons/iran-banks/Refah-Bank.png" type="node,closedway,multipolygon" name="رفاه">
                     <label text="رفاه"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک رفاه کارگران" key="name"/>
@@ -5997,7 +5997,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/Sina-Bank.png" type="node,closedway,multipolygon" name="سینا">
+                <item icon="icons/iran-banks/Sina-Bank.png" type="node,closedway,multipolygon" name="سینا">
                     <label text="سینا"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک سینا" key="name"/>
@@ -6017,7 +6017,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/Maskan-Bank.png" type="node,closedway,multipolygon" name="مسکن">
+                <item icon="icons/iran-banks/Maskan-Bank.png" type="node,closedway,multipolygon" name="مسکن">
                     <label text="مسکن"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک مسکن" key="name"/>
@@ -6037,7 +6037,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/Ayandeh-Bank.png" type="node,closedway,multipolygon" name="آینده">
+                <item icon="icons/iran-banks/Ayandeh-Bank.png" type="node,closedway,multipolygon" name="آینده">
                     <label text="آینده"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک آینده" key="name"/>
@@ -6057,7 +6057,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/Saman-Bank.png" type="node,closedway,multipolygon" name="سامان">
+                <item icon="icons/iran-banks/Saman-Bank.png" type="node,closedway,multipolygon" name="سامان">
                     <label text="سامان"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک سامان" key="name"/>
@@ -6077,7 +6077,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/Sarmayeh-Bank.png" type="node,closedway,multipolygon" name="سرمایه">
+                <item icon="icons/iran-banks/Sarmayeh-Bank.png" type="node,closedway,multipolygon" name="سرمایه">
                     <label text="سرمایه"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک سرمایه" key="name"/>
@@ -6097,7 +6097,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
 
-                <item icon="presets/money/iran-banks/Saderat-Bank.png" type="node,closedway,multipolygon" name="صادرات">
+                <item icon="icons/iran-banks/Saderat-Bank.png" type="node,closedway,multipolygon" name="صادرات">
                     <label text="صادرات"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک صادرات ایران" key="name"/>
@@ -6118,7 +6118,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
 
-                <item icon="presets/money/iran-banks/Ghavamin-Bank.png" type="node,closedway,multipolygon" name="قوامین">
+                <item icon="icons/iran-banks/Ghavamin-Bank.png" type="node,closedway,multipolygon" name="قوامین">
                     <label text="قوامین"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک قوامین" key="name"/>
@@ -6138,7 +6138,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
 
-                <item icon="presets/money/iran-banks/Parsian-Bank.png" type="node,closedway,multipolygon" name="پارسیان">
+                <item icon="icons/iran-banks/Parsian-Bank.png" type="node,closedway,multipolygon" name="پارسیان">
                     <label text="پارسیان"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک پارسیان" key="name"/>
@@ -6158,7 +6158,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/Keshavarzi-Bank.png" type="node,closedway,multipolygon" name="کشاورزی">
+                <item icon="icons/iran-banks/Keshavarzi-Bank.png" type="node,closedway,multipolygon" name="کشاورزی">
                     <label text="کشاورزی"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک کشاورزی" key="name"/>
@@ -6178,7 +6178,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/Pasargad-Bank.png" type="node,closedway,multipolygon" name="پاسارگاد">
+                <item icon="icons/iran-banks/Pasargad-Bank.png" type="node,closedway,multipolygon" name="پاسارگاد">
                     <label text="پاسارگاد"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک پاسارگارد" key="name"/>
@@ -6198,7 +6198,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/IranZamin-Bank.png" type="node,closedway,multipolygon" name="ایران زمین">
+                <item icon="icons/iran-banks/IranZamin-Bank.png" type="node,closedway,multipolygon" name="ایران زمین">
                     <label text="ایران زمین"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک ایران زمین" key="name"/>
@@ -6218,7 +6218,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/EghtesadNovin-bank.png" type="node,closedway,multipolygon" name="اقتصاد نوین">
+                <item icon="icons/iran-banks/EghtesadNovin-bank.png" type="node,closedway,multipolygon" name="اقتصاد نوین">
                     <label text="اقتصاد نوین"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک اقتصاد نوین" key="name"/>
@@ -6238,7 +6238,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/Gardeshgari-Bank.png" type="node,closedway,multipolygon" name="گردشگری">
+                <item icon="icons/iran-banks/Gardeshgari-Bank.png" type="node,closedway,multipolygon" name="گردشگری">
                     <label text="گردشگری"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک گردشگری" key="name"/>
@@ -6258,7 +6258,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/Karafarin-Bank.png" type="node,closedway,multipolygon" name="کارآفرین">
+                <item icon="icons/iran-banks/Karafarin-Bank.png" type="node,closedway,multipolygon" name="کارآفرین">
                     <label text="کارآفرین"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک کارآفرین" key="name"/>
@@ -6278,7 +6278,7 @@
                     <link wiki="Tag:amenity=bank"/>
                 </item>
                     
-                <item icon="presets/money/iran-banks/Tosee-Saderat-Bank.png" type="node,closedway,multipolygon" name="توسعه صادرات">
+                <item icon="icons/iran-banks/Tosee-Saderat-Bank.png" type="node,closedway,multipolygon" name="توسعه صادرات">
                     <label text="توسعه صادرات"/>
                     <key value="bank" key="amenity"/>
                     <key value="بانک توسعه صادرات" key="name"/>
