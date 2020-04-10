@@ -7812,24 +7812,24 @@
 	            <preset_link preset_name="Description" />
 	        </item> <!-- Fixme -->
 	    </group> <!-- Annotation -->
-	    <group name="Relations" icon="presets/misc/relations.svg">
-	        <item name="Multipolygon" icon="presets/misc/multipolygon.svg" type="relation,multipolygon" preset_name_label="true">
+	    <group name="ریلیشن" icon="presets/misc/relations.svg">
+	        <item name="مالتی‌پالیگن" icon="presets/misc/multipolygon.svg" type="relation,multipolygon" preset_name_label="true">
 	            <link wiki="Relation:multipolygon" />
 	            <key key="type" value="multipolygon" />
 	            <optional>
 	                <text key="name" text="نام" />
 	            </optional>
 	            <roles>
-	                <role key="outer" text="outer segment" requisite="required" type="way,closedway" />
-	                <role key="inner" text="inner segment" requisite="optional" type="way,closedway" />
+	                <role key="outer" text="خطوط خارجی" requisite="required" type="way,closedway" />
+	                <role key="inner" text="خطوط داخلی" requisite="optional" type="way,closedway" />
 	            </roles>
 	        </item> <!-- Multipolygon -->
-	        <item name="Boundary" icon="presets/misc/boundaries.svg" type="relation,multipolygon" preset_name_label="true">
+	        <item name="باندری" icon="presets/misc/boundaries.svg" type="relation,multipolygon" preset_name_label="true">
 	            <link wiki="Relation:boundary" />
 	            <space />
 	            <key key="type" value="boundary" />
 	            <text key="name" text="نام" />
-	            <combo key="boundary" text="Boundary type" values="administrative,maritime,national_park,political,postal_code,protected_area" values_searchable="true" />
+	            <combo key="boundary" text="نوع باندری" values="administrative,maritime,national_park,political,postal_code,protected_area" values_searchable="true" />
 	            <optional>
 	                <combo key="admin_level" text="Administrative level" values="1,2,3,4,5,6,7,8,9,10,11" />
 	            </optional>
@@ -7841,7 +7841,7 @@
 	                <role key="label" text="Label point" requisite="optional" type="node" count="1" />
 	            </roles>
 	        </item> <!-- Boundary -->
-	        <item name="Building" icon="presets/landmark/building.svg" type="relation" preset_name_label="true">
+	        <item name="ساختمان" icon="presets/landmark/building.svg" type="relation" preset_name_label="true">
 	            <link wiki="Relation:building" />
 	            <key key="type" value="building" />
 	            <preset_link preset_name="Building" />
@@ -7856,7 +7856,7 @@
 	                <role key="level_-?\d+" text="Building level" regexp="true" requisite="optional" type="relation" />
 	            </roles>
 	        </item> <!-- Building -->
-	        <item name="Site" type="relation" preset_name_label="true">
+	        <item name="محل" type="relation" preset_name_label="true">
 	            <link wiki="Relation:site" />
 	            <space />
 	            <key key="type" value="site" />
@@ -7869,7 +7869,7 @@
 	            </roles>
 	        </item> <!-- Site -->
 	        <separator/>
-	        <item name="Turn Restriction" icon="presets/vehicle/restriction/turn_restrictions/no_u_turn.svg" type="relation" preset_name_label="true">
+	        <item name="محدودیت‌های ترافیکی" icon="presets/vehicle/restriction/turn_restrictions/no_u_turn.svg" type="relation" preset_name_label="true">
 	            <link wiki="Relation:restriction" />
 	            <space />
 	            <key key="type" value="restriction" />
@@ -7880,7 +7880,7 @@
 	                <role key="to" text="to way" requisite="required" count="1" type="way" />
 	            </roles>
 	        </item> <!-- Turn Restriction -->
-	        <item name="Enforcement" icon="presets/vehicle/restriction/speed_camera.svg" type="relation" preset_name_label="true">
+	        <item name="اجرایی" icon="presets/vehicle/restriction/speed_camera.svg" type="relation" preset_name_label="true">
 	            <link wiki="Relation:enforcement" />
 	            <space />
 	            <key key="type" value="enforcement" />
@@ -7896,8 +7896,8 @@
 	            </roles>
 	        </item> <!-- Enforcement -->
 	        <separator/>
-	        <group name="Routes" icon="presets/misc/route.svg">
-	            <item name="Bicycle Route" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	        <group name="مسیر" icon="presets/misc/route.svg">
+	            <item name="مسیر دوچرخه" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Tag:route=bicycle" />
 	                <space/>
 	                <key key="type" value="route"/>
@@ -7911,7 +7911,7 @@
 	                    <reference ref="route_segment_roles" />
 	                </roles>
 	            </item> <!-- Bicycle Route -->
-	            <item name="Mountain Biking Route" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <item name="مسیر دوچرخه کوهستانی" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Mountain_biking" />
 	                <space/>
 	                <key key="type" value="route"/>
@@ -7924,7 +7924,7 @@
 	                    <reference ref="route_segment_roles" />
 	                </roles>
 	            </item> <!-- Mountain Biking Route -->
-	            <item name="Hiking Route" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <item name="مسیر کوهنوردی" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Tag:route=hiking#Tagging_walking_and_hiking_Route_Networks" />
 	                <space/>
 	                <key key="type" value="route"/>
@@ -7936,7 +7936,7 @@
 	                </optional>
 	                <reference ref="walking_routes_roles" />
 	            </item> <!-- Hiking Route -->
-	            <item name="Walking Route" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <item name="مسیر پیاده‌روی" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Tag:route=foot" />
 	                <space/>
 	                <key key="type" value="route"/>
@@ -7948,7 +7948,7 @@
 	                </optional>
 	                <reference ref="walking_routes_roles" />
 	            </item> <!-- Walking Route -->
-	            <item name="Running Route" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <item name="مسیر دویدن" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Tag:route=running" />
 	                <space/>
 	                <key key="type" value="route"/>
@@ -7962,7 +7962,7 @@
 	                    <reference ref="route_start_stop_roles" />
 	                </roles>
 	            </item> <!-- Running Route -->
-	            <item name="Fitness Trail" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <item name="مسیر فیتنس" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Tag:route=fitness_trail" />
 	                <space/>
 	                <key key="type" value="route"/>
@@ -7978,7 +7978,7 @@
 	                    <role key="station" text="fitness station" requisite="optional" type="node,way,closedway" member_expression="leisure=fitness_station" />
 	                </roles>
 	            </item> <!-- Fitness Trail -->
-	            <item name="Riding Route" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <item name="مسیر اسب‌سواری" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Tag:route=horse" />
 	                <space/>
 	                <key key="type" value="route"/>
@@ -7995,7 +7995,7 @@
 	                    <role key="guidepost" text="guidepost" requisite="optional" type="node" member_expression="information=guidepost"/>
 	                </roles>
 	            </item> <!-- Riding Route -->
-	            <item name="Piste Route" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <item name="مسیر پیست" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Tag:route=piste" />
 	                <space/>
 	                <key key="type" value="route"/>
@@ -8016,7 +8016,7 @@
 	                    <role key="guidepost" text="guidepost" requisite="optional" type="node" member_expression="information=guidepost"/>
 	                </roles>
 	            </item> <!-- Piste Route -->
-	            <item name="Ski Route" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <item name="مسیر اسکی" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Tag:route=ski" />
 	                <space/>
 	                <key key="type" value="route"/>
@@ -8038,7 +8038,7 @@
 	                </roles>
 	            </item> <!-- Ski Route -->
 	            <separator/>
-	            <item name="Detour Route" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <item name="مسیر راه فرعی" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Tag:route=detour" />
 	                <space/>
 	                <key key="type" value="route"/>
@@ -8055,7 +8055,7 @@
 	                    <role key="guidepost" text="guidepost" requisite="optional" type="node" member_expression="information=guidepost"/>
 	                </roles>
 	            </item> <!-- Detour Route -->
-	            <item name="Power Route" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <item name="مسیر برق" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Tag:route=power" />
 	                <space/>
 	                <key key="type" value="route"/>
@@ -8066,7 +8066,7 @@
 	                    <role key="substation" text="Power Substation" requisite="optional" type="way,closedway,multipolygon" member_expression="power"/>
 	                </roles>
 	            </item> <!-- Power Route -->
-	            <item name="Railway Route" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <item name="مسیر راه‌آهن" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Tag:route=railway" />
 	                <space/>
 	                <key key="type" value="route"/>
@@ -8076,7 +8076,7 @@
 	                    <role key="" text="route segment" requisite="required" type="way" member_expression="railway|route=ferry"/>
 	                </roles>
 	            </item> <!-- Railway Route -->
-	            <item name="Road Route" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <item name="مسیر جاده‌ای" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Tag:route=road" />
 	                <space/>
 	                <key key="type" value="route"/>
@@ -8094,7 +8094,7 @@
 	                </roles>
 	            </item> <!-- Road Route -->
 	            <separator/>
-	            <item name="Superroute" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	            <item name="ابَرمسیر" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	                <link wiki="Relation:superroute" />
 	                <space/>
 	                <key key="type" value="superroute"/>
@@ -8105,7 +8105,7 @@
 	                </roles>
 	            </item> <!-- Superroute -->
 	        </group> <!-- Routes -->
-	        <item name="Route Network" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
+	        <item name="شبکه مسیر" icon="presets/misc/route.svg" type="relation" preset_name_label="true">
 	            <link wiki="Relation:network" />
 	            <space />
 	            <key key="type" value="network" />
@@ -8119,7 +8119,7 @@
 	            </roles>
 	        </item> <!-- Route Network -->
 	        <separator/>
-	        <item name="Associated Street" icon="presets/misc/housenumber.svg" type="relation" preset_name_label="true">
+	        <item name="خیابان‌های مربوط" icon="presets/misc/housenumber.svg" type="relation" preset_name_label="true">
 	            <link wiki="Relation:associatedStreet" />
 	            <space />
 	            <key key="type" value="associatedStreet" />
@@ -8129,7 +8129,7 @@
 	                <role key="house" text="house" requisite="required" type="node,way,closedway,multipolygon" member_expression="&quot;addr:housenumber&quot; | &quot;addr:interpolation&quot; | &quot;addr:housename&quot;" />
 	            </roles>
 	        </item> <!-- Associated Street -->
-	        <item name="Street" type="relation" preset_name_label="true">
+	        <item name="ریلیشن خیابان" type="relation" preset_name_label="true">
 	            <link wiki="Relation:street" />
 	            <space />
 	            <key key="type" value="street" />
@@ -8141,7 +8141,7 @@
 	                <role key="associated" text="anything related to the street" requisite="optional" type="node,way,closedway" />
 	            </roles>
 	        </item> <!-- Street -->
-	        <item name="Destination Sign" icon="presets/misc/information/guidepost.svg" type="relation" preset_name_label="true">
+	        <item name="تابلو مقصد" icon="presets/misc/information/guidepost.svg" type="relation" preset_name_label="true">
 	            <link wiki="Relation:destination_sign" />
 	            <space />
 	            <key key="type" value="destination_sign" />
@@ -8159,7 +8159,7 @@
 	            </roles>
 	        </item> <!-- Destination Sign -->
 	        <separator/>
-	        <item name="Waterway" icon="presets/nautical/waterway_river.svg" type="relation" preset_name_label="true">
+	        <item name="ریلیشن آبراهه" icon="presets/nautical/waterway_river.svg" type="relation" preset_name_label="true">
 	            <link wiki="Relation:waterway" />
 	            <space />
 	            <key key="type" value="waterway" />
