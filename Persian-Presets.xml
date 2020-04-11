@@ -60,6 +60,24 @@
 	            <check key="cutting" text="دره" disable_off="true" />
 	        </checkgroup>
 	    </chunk>
+		<chunk id="climbing_styles">
+	    <label text="Climbing styles:" />
+	    <checkgroup columns="2">
+	      <check key="climbing:boulder" text="Boulders" />
+	      <check key="climbing:sport" text="Sport climbing" />
+	         <check key="climbing:toprope" text="Top rope (approach at the route top + letting the rope down)" />
+	         <check key="climbing:trad" text="Traditional climbing (no fixed anchors)" />
+	      <check key="climbing:multipitch" text="Multi-pitch climbing" />
+	      <check key="climbing:ice" text="Ice climbing" />
+	      <check key="climbing:mixed" text="Mixed climbing" />
+	      <check key="climbing:deepwater" text="Deep Water Soloing" />
+	    </checkgroup>
+	  </chunk>
+		<chunk id="genus_species_taxon">
+	        <text key="genus" text="Genus" />
+	        <text key="species" text="Species" />
+	        <text key="taxon" text="Taxon" />
+	    </chunk>
 	    <chunk id="highway_yesno_incline">
 	        <reference ref="highway_yesno" />
 	        <combo key="incline" text="شیب" values="10%,-10%,10°,-10°,up,down"/>
@@ -145,6 +163,9 @@
 	    <chunk id="wheelchair">
 	        <combo key="wheelchair" text="ویلچر" values="yes,limited,no" />
 	    </chunk>
+		<chunk id="opening_hours">
+            <combo key="opening_hours" text="Opening hours" values="24/7,Sa-Th 07:00-17:00,Fr 08:00-20:00,Mo 10:00-12:00\,12:30-15:00; Tu-Fr 08:00-12:00\,12:30-15:00; Sa 08:00-12:00,Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off,sunrise-sunset"/>
+		</chunk>
 	    <chunk id="oh_wheelchair">
 	        <reference ref="oh" />
 	        <reference ref="wheelchair" />
@@ -195,6 +216,15 @@
 	            <text key="maxwidth" text="حداکثر عرض (متر)" length="7" />
 	        </optional>
 	    </chunk>
+		<chunk id="leaf_without_mixed">
+	        <combo key="leaf_type" text="Leaf type" values="broadleaved,needleleaved,leafless" values_searchable="true" />
+	        <combo key="leaf_cycle" text="Leaf cycle" values_searchable="true" >
+	            <list_entry value="deciduous" short_description="Plants that are leafless for a certain period during the year." />
+	            <list_entry value="evergreen" short_description="Plants that are never entirely without green foliage." />
+	            <list_entry value="semi_deciduous" short_description="Plants that lose their foliage for a very short period, when old leaves fall off and new foliage growth is starting." />
+	            <list_entry value="semi_evergreen" short_description="Plants that lose most, but not all, of their foliage for a fraction of the year." />
+	        </combo>
+	    </chunk>
 	    <chunk id="optional_name">
 	        <optional>
 	            <text key="name" text="نام" />
@@ -227,6 +257,9 @@
 	        <reference ref="fee_interval" />
 	        <text key="operator" text="مسئول" />
 	        <reference ref="surface_smoothness" />
+	    </chunk>
+		<chunk id="fee_interval">
+	        <combo key="fee" text="Fee" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" />
 	    </chunk>
 	    <chunk id="maxstay">
 	        <combo key="maxstay" text="حداکثر زمان (دقیقه)" values="0,30,60,90,120,180" />
@@ -271,6 +304,10 @@
 	            <list_entry value="mixed" short_description="زیستگاه‌هایی با گیاهانی از هردو نوع" />
 	        </combo>
 	    </chunk>
+		<chunk id="operator_operatortype">
+            <text text="Operator" key="operator" default=""/>
+            <combo key="operator:type" text="Operator type" values="government,private,public,religious,ngo,community,consortium,cooperative"/>
+		</chunk>
 		<chunk id="leaf_without_mix">
 	        <combo key="leaf_type" text="نوع برگ" values="broadleaved,needleleaved,mixed,leafless" values_searchable="true" />
 	        <combo key="leaf_cycle" text="چرخه برگ" values_searchable="true" >
@@ -489,6 +526,21 @@
 	    <combo key="colour" text="رنگ (به نام HTML یا کد HEX)" values_context="color" values="black,blue,brown,gray,green,orange,purple,red,silver,white,yellow,#CD853F" />
 	    <combo key="duration" text="مدت‌زمان (M, MM, HH:MM, or HH:MM:SS)" values="5,10,15,20,30,60,120,10:30" values_no_i18n="true" />
 	    <combo key="interval" text="فاصله زمانی (M, MM, HH:MM, or HH:MM:SS)" values="5,10,15,20,30,60,120,10:30" values_no_i18n="true" />
+	  </chunk>
+	  <chunk id="climbing_optional_attributes">
+	    <optional>
+	      <combo key="climbing:orientation" text="Orientation" values="N,NE,E,SE,S,SW,W,NW" values_no_i18n="true" values_sort="false"/>
+	      <combo key="climbing:quality" text="Rock/ice quality" values="fragile,medium,solid" />
+	      <combo key="climbing:rock" text="Rock type" rows="3" values="limestone,sandstone,granite,basalt,slate" />
+	      <check key="climbing:summit_log" text="Summit/route log/register" />
+	      <check key="indoor" text="Climbing routes indoor" />
+	      <check key="outdoor" text="Climbing routes outdoor" />           
+	      <text key="website" text="Official web site (e.g. operator)" />
+	      <text key="url" text="Unofficial web site" />
+	      <combo key="opening_hours" text="Opening Hours" delimiter="|" values="24/7|sunset-sunrise open; sunrise-sunset closed|Mar-Jun closed; Jul-Feb Mo-Su,PH sunrise-sunset|Mo-Fr 15:00-22:00; Sa-Su 11:00-22:00" values_no_i18n="true"/>
+	      <combo key="fee" text="Fee" values="yes,no,Sa-Su 08:00-20:00"/>
+	      <combo key="access" text="Access" values="yes,no,customers,private" />
+	    </optional>
 	  </chunk>
 	  <chunk id="nudism">
 	    <combo key="nudism" text="برهنگی" values="yes,no,obligatory,designated,customary,permissive" />
@@ -4980,19 +5032,19 @@
 	            <combo key="bridge:structure" text="Structure" values="arch,beam,cable-stayed,floating,humpback,simple-suspension,suspension,truss" match="key" />
 	            <reference ref="optional_bridge" />
 	        </item> <!-- پل -->
-	        <item name="Movable پل" icon="presets/transport/bridge/bridge_movable.svg" type="way,relation,multipolygon" preset_name_label="true">
+	        <item name="پل محرک" icon="presets/transport/bridge/bridge_movable.svg" type="way,relation,multipolygon" preset_name_label="true">
 	            <link wiki="Key:bridge:movable" />
 	            <space />
 	            <key key="bridge" value="movable" />
 	            <combo key="bridge:movable" text="Type" values="bascule,drawbridge,lift,submersible,swing,transporter,retractable,tilt" match="key" />
 	            <reference ref="optional_bridge" />
 	        </item> <!-- Movable پل -->
-	        <item name="پل Support" icon="presets/transport/bridge/bridge_support.svg" type="node,closedway" preset_name_label="true">
+	        <item name="پل نگهدارنده" icon="presets/transport/bridge/bridge_support.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Key:bridge:support" />
 	            <space />
 	            <combo key="bridge:support" text="Type" values="abutment,lift_pier,pier,pivot_pier,pylon" match="key" />
 	        </item> <!-- پل Support -->
-	        <item name="پل outline" icon="presets/transport/bridge/bridge_outline.svg" type="closedway,multipolygon" preset_name_label="true">
+	        <item name="پل پیرامون" icon="presets/transport/bridge/bridge_outline.svg" type="closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:man_made=bridge" />
 	            <space />
 	            <key key="man_made" value="bridge" />
@@ -6312,7 +6364,7 @@
 	            <text key="operator" text="مسئول" />
 	            <reference ref="oh_wheelchair" />
 	        </item> <!-- Automated Teller Machine -->
-	        <item name="Pawnbroker" icon="presets/shop/pawnbroker.svg" type="node,closedway,multipolygon" preset_name_label="true">
+	        <item name="پاون شاپ" icon="presets/shop/pawnbroker.svg" type="node,closedway,multipolygon" preset_name_label="true">
 	            <link wiki="Tag:shop=pawnbroker" />
 	            <space />
 	            <key key="shop" value="pawnbroker" />
