@@ -7,18 +7,18 @@
 ## Usage
 
 ## TODO
-- This page in Persian
-- Fix Icons
-- Add a glossory for translated words
+- [ ] Translate this page in Persian
+- [ ] Fix Icons
+- [ ] Add a glossory for translated words
 
 ## Acknowladgement 🤝
-- Thanks to MohammadReza Nourozi for his commenting on Translation
-- Thanks to Kiarash.Q for his former Iranian Presets
+- MohammadReza Nourozi for his commenting on Translation.
+- Kiarash.Q for his former Iranian Presets.
   
 ## Contribute ✍
 In order to to contribute in this project:
-- You can either make an issue and explain how this project can be improved
-- Edit the files directly and pull request
+- You can either make an issue and explain how this project can be improved.
+- Edit the files directly and pull request.
   
 ## Support this project 💰
 Consider :star: this repo.
