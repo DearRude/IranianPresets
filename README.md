@@ -4,29 +4,30 @@
 ## Installation :construction:
 #### Download from preset list (recommended)
 
-    Move to Preset→Preset Preferences (or Edit→Preferences)→the 3rd button(left)→Tagging Presets.
-    Find and click "Iranian Presets" item in Available presets.
-    Click blue arrow(▶) to move to Active presets.
-    Restart JOSM.
+- Move to Preset ↪ Preset Preferences (or Edit ↪ Preferences) ↪ the 3rd button (left) ↪ Tagging Presets.
+- Find and click "Persian Presets" item in Available presets.
+- Click blue arrow (▶) to move to Active presets.
+- Restart JOSM.
 
 
 #### Enter the URL
-    Move to Preset→Preset Preferences (or Edit→Preferences)→the 3rd button(left)→Tagging Presets.
-    Click + button placed top right, and you will see a display.
-    Click button placed next to the "URL / File" Blank, and paste the URL.
-        if you enter https://josm.openstreetmap.de/josmfile?page=Presets/Iranian_Preset&zip=1, you won't need to exchange the URL for the update, but you can't update the preset unless removing JOSM cache files.
-    Restart JOSM.
+- Open Preset ↪ Preset Preferences (or Edit ↪ Preferences) ↪ the 3rd button(left) ↪ Tagging Presets.
+- Click + button placed top right, and you will see a display.
+- Click button placed next to the "URL / File" Blank, and paste the URL.
+- Copy [this link](https://github.com/DearRude/IranianPresets/archive/0.01v.zip) to the panel
+- Restart JOSM.
 
+![install](doc/install.gif)
 #### Apply the file directly
 
-    Download the preset file.
-    Move to Preset→Preset Preferences (or Edit→Preferences)→the 3rd button(left)→Tagging Presets
-    Click + button placed top right, and you will see a display.
-    Click button placed next to the "URL / File" Blank, and apply the downloaded file.
-    Restart JOSM.
+- Download the preset file.
+- Move to Preset ↪ Preset Preferences (or Edit ↪ Preferences) ↪ the 3rd button (left) ↪ Tagging Presets
+- Click + button placed top right, and you will see a display.
+- Click button placed next to the "URL / File" Blank, and apply the downloaded file.
+- Restart JOSM.
 
 ## Usage
-Go to Presets tab and select your preset.
+Go to Presets tab and select your preset. Enjoy 😉
 
 ## TODO
 - [ ] Translate this page in Persian
