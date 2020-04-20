@@ -7859,28 +7859,28 @@
 	        </item> <!-- Square -->
 	    </group> <!-- Places -->
 		<group icon="presets/misc/boundaries.svg" name="مرز مکانی">
-			<item type="way,closedway" icon="adminlevel_4.png" name="مرز استان">
+			<item type="way,closedway" icon="presets/place/capital.svg" name="مرز استان">
 				<label text="مرز استان"/>
 				<link wiki="Tag:boundary=administrative"/>
 				<key key="boundary" value="administrative"/>
 				<key key="admin_level" value="4"/>
 			</item>
 
-			<item type="way,closedway" icon="adminlevel_6.png" name="مرز شهرستان">
+			<item type="way,closedway" icon="presets/place/capital.svg" name="مرز شهرستان">
 				<label text="مرز شهرستان"/>
 				<link wiki="Tag:boundary=administrative"/>
 				<key key="boundary" value="administrative"/>
 				<key key="admin_level" value="5"/>
 			</item>
 
-			<item type="way,closedway" icon="adminlevel_7.png" name="مرز بخش">
+			<item type="way,closedway" icon="presets/place/city.svg" name="مرز بخش">
 				<label text="مرز بخش"/>
 				<link wiki="Tag:boundary=administrative"/>
 				<key key="boundary" value="administrative"/>
 				<key key="admin_level" value="6"/>
 			</item>
 
-			<item type="way,closedway" icon="adminlevel_8.png" name="مرز دهستان">
+			<item type="way,closedway" icon="presets/place/village.svg" name="مرز دهستان">
 				<label text="مرز دهستان"/>
 				<link wiki="Tag:boundary=administrative"/>
 				<key key="boundary" value="administrative"/>
@@ -7889,14 +7889,14 @@
 
 			<separator/>
 
-			<item type="way,closedway" icon="adminlevel_8.png" name="مرز شهر">
+			<item type="way,closedway" icon="presets/place/town.svg" name="مرز شهر">
 				<label text="مرز شهر"/>
 				<link wiki="Tag:boundary=administrative"/>
 				<key key="boundary" value="administrative"/>
 				<key key="admin_level" value="7"/>
 			</item>
 
-			<item type="way,closedway" icon="adminlevel_9.png" name="مرز روستا">
+			<item type="way,closedway" icon="presets/place/hamlet.svg" name="مرز روستا">
 				<label text="مرز روستا"/>
 				<link wiki="Tag:boundary=administrative"/>
 				<key key="boundary" value="administrative"/>
@@ -7905,14 +7905,14 @@
 
 			<separator/>
 
-			<item type="way,closedway" icon="adminlevel_10.png" name="مرز منطقه شهری">
+			<item type="way,closedway" icon="presets/place/suburb.svg" name="مرز منطقه شهری">
 				<label text="مرز منطقه شهری"/>
 				<link wiki="Tag:boundary=administrative"/>
 				<key key="boundary" value="administrative"/>
 				<key key="admin_level" value="9"/>
 			</item>
 
-			<item type="way,closedway" icon="adminlevel_10.png" name="مرز ناحیه شهری">
+			<item type="way,closedway" icon="presets/place/quarter.svg" name="مرز ناحیه شهری">
 				<label text="مرز ناحیه شهری"/>
 				<link wiki="Tag:boundary=administrative"/>
 				<key key="boundary" value="administrative"/>
