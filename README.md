@@ -31,7 +31,7 @@ Go to Presets tab and select your preset. Enjoy 😉
 
 ## TODO
 - [ ] Translate this page in Persian
-- [ ] Fix Icons
+- [x] Fix Icons
 - [ ] Add a glossory for translated words
 
 ## Acknowladgement 🤝
