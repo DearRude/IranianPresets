@@ -14,12 +14,12 @@
 - Open Preset ↪ Preset Preferences (or Edit ↪ Preferences) ↪ the 3rd button(left) ↪ Tagging Presets.
 - Click + button placed top right, and you will see a display.
 - Click button placed next to the "URL / File" Blank, and paste the URL.
-- Copy [this link](https://github.com/DearRude/IranianPresets/archive/0.01v.zip) to the panel
+- Copy [this link](https://github.com/DearRude/IranianPresets/blob/master/zip/latast.zip) to the panel
 - Restart JOSM.
 
 ![install](doc/install.gif)
-#### Apply the file directly
-
+#### Apply the file directly 
+Note: You will not get updates this way.
 - Download the preset file.
 - Move to Preset ↪ Preset Preferences (or Edit ↪ Preferences) ↪ the 3rd button (left) ↪ Tagging Presets
 - Click + button placed top right, and you will see a display.
