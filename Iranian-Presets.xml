@@ -5196,7 +5196,7 @@
 	            </optional>
 	            <reference ref="link_contact_address" />
 	        </item> <!-- Non-public police facility -->
-	        <item name="برج" icon="presets/landmark/tower.svg" type="node,closedway" preset_name_label="true">
+	        <item name="برج" icon="presets/tower/tower.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=tower" />
 	            <space />
 	            <key key="man_made" value="tower" />
@@ -5358,7 +5358,7 @@
 	            <reference ref="ref_operator" />
 	        </item> <!-- Manhole -->
 	        <separator/>
-	        <item name="برج مخزن آب" icon="presets/landmark/water_tower.svg" type="node,closedway" preset_name_label="true">
+	        <item name="برج مخزن آب" icon="presets/tower/water_tower.svg" type="node,closedway" preset_name_label="true">
 	            <link wiki="Tag:man_made=water_tower" />
 	            <space />
 	            <key key="man_made" value="water_tower" />
