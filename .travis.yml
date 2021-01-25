@@ -1,0 +1,14 @@
+dist: trusty
+language: bash
+script:
+  - rm .gitignore
+  - cd src
+  - zip -r ../IranianPersets.zip *
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_DEPLOY_TOKEN
+  keep-history: true
+  on:
+    branch: master
