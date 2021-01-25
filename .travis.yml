@@ -1,6 +1,7 @@
 dist: trusty
 language: bash
 script:
+  - rm .gitignore
   - cd src
   - zip -r ../IranianPersets.zip *
 
