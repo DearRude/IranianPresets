@@ -1,5 +1,7 @@
 <div dir="rtl">
+
 # پریست‌های فارسی اوپن‌استریت‌مپ
+
 ![preview](doc/preview.gif)
 
 ## نصب :construction:

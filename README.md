@@ -1,6 +1,7 @@
 # OpenStreetMap Iranian Presets 🇮🇷
 ![preview](doc/preview.gif)
 
+[به فارسی](README-FA.md)
 ## Installation :construction:
 #### Download from preset list
 
@@ -20,6 +21,7 @@ Go to Presets tab and select your preset. Enjoy 😉
 ## Acknowledgement 🤝
 - MohammadReza Nourozi for his commenting on Translation.
 - Kiarash.Q for his former Iranian Presets.
+- Arian Ardeshiri for translating this page.
 
 ## Contribute ✍
 In order to to contribute in this project:
