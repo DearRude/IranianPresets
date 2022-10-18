@@ -1833,10 +1833,11 @@
 	            <key key="natural" value="coastline" />
 	            <text key="name" text="نام" />
 	        </item> <!-- Coastline -->
-	        <item name="رودکنار" icon="presets/nautical/waterway_riverbank.svg" type="closedway,multipolygon" preset_name_label="true">
-	            <link wiki="Tag:waterway=riverbank" />
+	        <item name="رودکنار" icon="presets/nautical/waterway_river.svg" type="closedway,multipolygon" preset_name_label="true">
+	            <link wiki="Tag:water=river" />
 	            <space />
-	            <key key="waterway" value="riverbank" />
+	            <key key="natural" value="water" />
+	            <key key="water" value="river" />
 	            <text key="name" text="نام" />
 	            <check key="intermittent" text="Intermittent (contains not permanently water)" disable_off="true" />
 	            <check key="tidal" text="In the tidal range" disable_off="true" />
@@ -9124,9 +9125,9 @@
 	                <text key="wikipedia" text="ویکی‌پدیا" />
 	            </optional>
 	            <roles>
-	                <role key="" text="waterways (no riverbank)" requisite="optional" type="way" member_expression="waterway -waterway:riverbank" />
-	                <role key="main_stream" text="waterways (no riverbank)" requisite="optional" type="way" member_expression="waterway -waterway:riverbank" />
-	                <role key="side_stream" text="branch waterways (no riverbank)" requisite="optional" type="way" member_expression="waterway -waterway:riverbank" />
+	                <role key="" text="waterways" requisite="optional" type="way" member_expression="waterway" />
+	                <role key="main_stream" text="waterways" requisite="optional" type="way" member_expression="waterway" />
+	                <role key="side_stream" text="branch waterways" requisite="optional" type="way" member_expression="waterway" />
 	                <role key="spring" text="spring of waterway" requisite="optional" type="node" />
 	            </roles>
 	        </item> <!-- Waterway -->
